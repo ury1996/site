@@ -19,6 +19,10 @@ import { vidracarias } from './vidracarias';
 import { pocosArtesianos } from './pocos-artesianos';
 import { segurancaEletronica } from './seguranca-eletronica';
 import { protecaoContraIncendio } from './protecao-contra-incendio';
+import { oficinasMecanicas } from './oficinas-mecanicas';
+import { funilariaEPintura } from './funilaria-e-pintura';
+import { pneus } from './pneus';
+import { transportadoras } from './transportadoras';
 
 /**
  * Lista de nichos publicados. Cada entrada aqui vira uma página estática em
@@ -48,6 +52,10 @@ export const nichos: Nicho[] = [
   pocosArtesianos,
   segurancaEletronica,
   protecaoContraIncendio,
+  oficinasMecanicas,
+  funilariaEPintura,
+  pneus,
+  transportadoras,
 ];
 
 export function getNichoPorSlug(slug: string): Nicho | undefined {
