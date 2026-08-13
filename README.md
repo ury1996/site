@@ -6,7 +6,7 @@ Minas Gerais. Construído com [Astro](https://astro.build), pronto para deploy n
 ## Stack
 
 - **Astro** — páginas estáticas (SSG), zero JS por padrão.
-- **@astrojs/sitemap** — gera `sitemap-index.xml` automaticamente no build.
+- **`src/pages/sitemap.xml.ts`** — gera `/sitemap.xml` (arquivo único) no build, listando a home, o hub de nichos e todas as páginas de nicho.
 - Vanilla CSS (escopado por componente) + um punhado de `<script>` inline para o
   diagnóstico interativo e os formulários de lead.
 
