@@ -1,6 +1,6 @@
 export const site = {
   nome: 'Sites Rankly',
-  url: 'https://www.sitesrankly.com.br',
+  url: 'https://sitesparaempresas.sitesrankly.com.br',
   titulo: 'Sites para Empresas de Energia Solar em MG | Sites Rankly',
   descricao:
     'Criação de sites e landing pages para empresas de energia solar em Minas Gerais. Site rápido, SEO local e captação por WhatsApp para gerar orçamentos todos os dias. Proposta grátis em 24h.',
