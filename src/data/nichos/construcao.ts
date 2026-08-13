@@ -226,7 +226,7 @@ export const construcao: Nicho = {
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua empresa ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar pedidos de orçamento.',
   },
 
-  relacionados: ['imobiliarias', 'advocacia', 'contabilidade'],
+  relacionados: ['escritorios-de-engenharia', 'escritorios-de-arquitetura', 'esquadrias'],
   resumoCard:
     'Sites com portfólio de obras, credibilidade técnica (ART/RRT) e captação de orçamentos por WhatsApp.',
 };
