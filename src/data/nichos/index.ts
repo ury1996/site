@@ -23,6 +23,9 @@ import { oficinasMecanicas } from './oficinas-mecanicas';
 import { funilariaEPintura } from './funilaria-e-pintura';
 import { pneus } from './pneus';
 import { transportadoras } from './transportadoras';
+import { oticas } from './oticas';
+import { saloesDeBeleza } from './saloes-de-beleza';
+import { petShops } from './pet-shops';
 
 /**
  * Lista de nichos publicados. Cada entrada aqui vira uma página estática em
@@ -56,6 +59,9 @@ export const nichos: Nicho[] = [
   funilariaEPintura,
   pneus,
   transportadoras,
+  oticas,
+  saloesDeBeleza,
+  petShops,
 ];
 
 export function getNichoPorSlug(slug: string): Nicho | undefined {

@@ -226,7 +226,7 @@ export const estetica: Nicho = {
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua clínica ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site lotar a agenda.',
   },
 
-  relacionados: ['clinicas-odontologicas', 'academias', 'clinicas-veterinarias'],
+  relacionados: ['saloes-de-beleza', 'oticas', 'academias'],
   resumoCard:
     'Sites com portfólio de resultados, agendamento direto no WhatsApp e SEO local — pensados para lotar a agenda da clínica.',
 };

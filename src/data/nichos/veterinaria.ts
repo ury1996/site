@@ -226,7 +226,7 @@ export const veterinaria: Nicho = {
     sub: 'A pergunta é: para qual clínica esse tutor vai ligar primeiro — a sua ou a concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site encher a agenda de consultas.',
   },
 
-  relacionados: ['clinicas-odontologicas', 'clinicas-de-estetica', 'academias'],
+  relacionados: ['pet-shops', 'clinicas-de-estetica', 'academias'],
   resumoCard:
     'Sites com agendamento direto no WhatsApp, destaque para emergência 24h e SEO local voltado ao mercado pet.',
 };
