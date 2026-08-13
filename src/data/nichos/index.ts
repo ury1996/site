@@ -1,5 +1,6 @@
 import type { Nicho } from './tipos';
 import { advocacia } from './advocacia';
+import { odontologia } from './odontologia';
 
 /**
  * Lista de nichos publicados. Cada entrada aqui vira uma página estática em
@@ -8,7 +9,7 @@ import { advocacia } from './advocacia';
  * Novos nichos são adicionados aqui um de cada vez, conforme o conteúdo de
  * cada página fica pronto.
  */
-export const nichos: Nicho[] = [advocacia];
+export const nichos: Nicho[] = [advocacia, odontologia];
 
 export function getNichoPorSlug(slug: string): Nicho | undefined {
   return nichos.find((n) => n.slug === slug);
