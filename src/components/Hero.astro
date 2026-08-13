@@ -1,0 +1,165 @@
+---
+import LeadForm from './LeadForm.astro';
+
+interface Props {
+  eyebrow: string;
+  /** HTML confiável — permite <em>destaque</em>. */
+  tituloHtml: string;
+  /** HTML confiável — permite <strong>. */
+  subHtml: string;
+  selos: string[];
+  whatsappUrl: string;
+  formTitulo?: string;
+  formSub?: string;
+  situacoes?: string[];
+  mensagem?: string;
+}
+
+const {
+  eyebrow,
+  tituloHtml,
+  subHtml,
+  selos,
+  whatsappUrl,
+  formTitulo = 'Receba uma proposta grátis',
+  formSub = 'Diagnóstico da sua presença digital em até 24h úteis.',
+  situacoes,
+  mensagem,
+} = Astro.props;
+---
+
+<section class="hero" aria-labelledby="titulo-hero">
+  <div class="sol-nascente" aria-hidden="true"></div>
+
+  <div class="container hero-grid">
+    <div class="hero-texto">
+      <p class="eyebrow eyebrow-claro">{eyebrow}</p>
+
+      <h1 id="titulo-hero" set:html={tituloHtml} />
+
+      <p class="hero-sub" set:html={subHtml} />
+
+      <ul class="hero-selos" role="list">
+        {selos.map((selo) => <li>✓ {selo}</li>)}
+      </ul>
+
+      <div class="hero-ctas">
+        <a class="btn btn-fantasma" href={whatsappUrl} target="_blank" rel="noopener">
+          Falar no WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-card" id="proposta">
+      <h2 class="hero-card-titulo">{formTitulo}</h2>
+      <p class="hero-card-sub">{formSub}</p>
+      <LeadForm id="hero" situacoes={situacoes} mensagem={mensagem} />
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(180deg, #060f20 0%, var(--noite) 55%, #1a3055 100%);
+    color: #fff;
+    padding-block: clamp(56px, 8vw, 110px);
+  }
+
+  .sol-nascente {
+    position: absolute;
+    left: 50%;
+    bottom: -32vw;
+    transform: translateX(-50%);
+    width: 90vw;
+    height: 90vw;
+    max-width: 1100px;
+    max-height: 1100px;
+    border-radius: 50%;
+    background: radial-gradient(
+      circle,
+      rgba(255, 182, 39, 0.55) 0%,
+      rgba(255, 138, 0, 0.22) 38%,
+      transparent 68%
+    );
+    pointer-events: none;
+  }
+
+  .hero-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: clamp(32px, 5vw, 72px);
+    align-items: center;
+  }
+
+  .eyebrow-claro {
+    color: var(--sol);
+  }
+
+  h1 {
+    font-size: clamp(2.05rem, 4.8vw, 3.4rem);
+    font-weight: 800;
+    color: #fff;
+  }
+
+  h1 :global(em) {
+    font-style: normal;
+    color: var(--sol);
+    background: linear-gradient(120deg, var(--sol), var(--brasa));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .hero-sub {
+    font-size: 1.12rem;
+    color: rgba(255, 255, 255, 0.82);
+    max-width: 34rem;
+  }
+
+  .hero-selos {
+    list-style: none;
+    padding: 0;
+    margin: 22px 0 26px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 22px;
+    font-size: 0.94rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+  }
+
+  .hero-ctas {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .hero-card {
+    background: var(--branco);
+    color: var(--grafite);
+    border-radius: var(--raio);
+    padding: 28px;
+    box-shadow: var(--sombra);
+    scroll-margin-top: 90px;
+  }
+
+  .hero-card-titulo {
+    font-size: 1.35rem;
+    margin-bottom: 4px;
+  }
+
+  .hero-card-sub {
+    font-size: 0.9rem;
+    color: var(--cinza);
+    margin-bottom: 18px;
+  }
+
+  @media (max-width: 900px) {
+    .hero-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -7,16 +7,24 @@ interface Props {
   /** "claro" para fundos brancos, "escuro" para fundos noite. */
   variante?: 'claro' | 'escuro';
   rotuloBotao?: string;
+  /** Opções do select "Sua empresa hoje". */
+  situacoes?: string[];
+  /** Primeira linha da mensagem enviada ao WhatsApp (antes de nome/telefone/situação). */
+  mensagem?: string;
 }
 
-const { id, variante = 'claro', rotuloBotao = 'Receber proposta grátis' } = Astro.props;
-
-const situacoes = [
-  'Não tenho site',
-  'Tenho site, mas não gera orçamentos',
-  'Quero uma landing page para anúncios',
-  'Quero site + SEO/Google Ads',
-];
+const {
+  id,
+  variante = 'claro',
+  rotuloBotao = 'Receber proposta grátis',
+  situacoes = [
+    'Não tenho site',
+    'Tenho site, mas não gera orçamentos',
+    'Quero uma landing page para anúncios',
+    'Quero site + SEO/Google Ads',
+  ],
+  mensagem = site.whatsappMensagem,
+} = Astro.props;
 
 const rotulos: Record<string, string> = {
   'Não tenho site': 'Ainda não tenho site',
@@ -27,6 +35,7 @@ const rotulos: Record<string, string> = {
   class:list={['lead-form', variante === 'escuro' && 'escuro']}
   data-lead-form
   data-whats={site.whatsapp}
+  data-mensagem={mensagem}
   id={`form-${id}`}
   novalidate
 >
@@ -151,9 +160,10 @@ const rotulos: Record<string, string> = {
 
       const dados = new FormData(form);
       const whats = form.dataset.whats;
+      const mensagem = form.dataset.mensagem || 'Olá! Quero um site para minha empresa.';
 
       const texto = [
-        'Olá! Tenho uma empresa de energia solar e quero um site.',
+        mensagem,
         `*Nome:* ${dados.get('nome')}`,
         `*WhatsApp:* ${dados.get('telefone')}`,
         `*Situação:* ${dados.get('situacao')}`,

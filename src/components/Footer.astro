@@ -5,8 +5,9 @@ import { site } from '../config/site';
 const ano = new Date().getFullYear();
 
 const navegacao = [
+  { href: '/', texto: 'Início' },
+  { href: '/sites-para-empresas', texto: 'Nichos atendidos' },
   { href: '#diagnostico', texto: 'Diagnóstico do seu site' },
-  { href: '#como-funciona', texto: 'Como funciona' },
   { href: '#faq', texto: 'Perguntas frequentes' },
 ];
 ---
@@ -14,13 +15,13 @@ const navegacao = [
 <footer class="rodape">
   <div class="container rodape-grid">
     <div>
-      <a href="#inicio" class="rodape-logo-link">
+      <a href="/" class="rodape-logo-link">
         <Logo width={180} height={88} alt={site.nome} />
       </a>
       <p>
-        Sites que geram orçamentos para empresas de energia solar. Criação de sites,
-        landing pages, SEO local e Google Ads para integradoras solares em todo o estado
-        de {site.regiao}.
+        Sites que geram orçamentos e agendamentos para empresas em {site.regiao}. Criação
+        de sites, landing pages, SEO local e Google Ads sob medida para o seu nicho —
+        <a href="/sites-para-empresas">veja os segmentos que atendemos</a>.
       </p>
     </div>
 

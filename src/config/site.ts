@@ -33,7 +33,10 @@ export const site = {
   },
 } as const;
 
-/** Link do WhatsApp já com a mensagem padrão codificada. */
-export const whatsappUrl = `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(
-  site.whatsappMensagem,
-)}`;
+/** Monta um link wa.me com uma mensagem customizada já codificada. */
+export function whatsappUrlPara(mensagem: string): string {
+  return `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(mensagem)}`;
+}
+
+/** Link do WhatsApp já com a mensagem padrão (institucional) codificada. */
+export const whatsappUrl = whatsappUrlPara(site.whatsappMensagem);

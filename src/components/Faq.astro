@@ -1,0 +1,83 @@
+---
+interface FaqItem {
+  pergunta: string;
+  resposta: string;
+}
+
+interface Props {
+  eyebrow?: string;
+  titulo: string;
+  itens: FaqItem[];
+}
+
+const { eyebrow = 'Perguntas frequentes', titulo, itens } = Astro.props;
+---
+
+<section class="secao faq" id="faq" aria-labelledby="titulo-faq">
+  <div class="container faq-inner">
+    <p class="eyebrow">{eyebrow}</p>
+    <h2 id="titulo-faq">{titulo}</h2>
+
+    {
+      itens.map((item) => (
+        <details class="faq-item">
+          <summary>{item.pergunta}</summary>
+          <p>{item.resposta}</p>
+        </details>
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .faq {
+    background: var(--ceu);
+  }
+
+  .faq-inner {
+    max-width: 780px;
+  }
+
+  .faq-item {
+    background: var(--branco);
+    border: 1px solid var(--borda);
+    border-radius: 14px;
+    margin-top: 12px;
+    padding: 0 22px;
+  }
+
+  .faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    padding: 18px 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .faq-item summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq-item summary::after {
+    content: '+';
+    font-family: var(--fonte-display);
+    font-size: 1.4rem;
+    color: var(--brasa);
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+  }
+
+  .faq-item[open] summary::after {
+    transform: rotate(45deg);
+  }
+
+  .faq-item p {
+    padding-bottom: 18px;
+    margin: 0;
+    color: var(--cinza);
+    font-size: 0.95rem;
+  }
+</style>

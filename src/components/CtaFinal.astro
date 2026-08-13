@@ -1,0 +1,67 @@
+---
+import LeadForm from './LeadForm.astro';
+
+interface Props {
+  titulo: string;
+  sub: string;
+  whatsappUrl: string;
+  situacoes?: string[];
+  mensagem?: string;
+}
+
+const { titulo, sub, whatsappUrl, situacoes, mensagem } = Astro.props;
+---
+
+<section class="secao cta-final" aria-labelledby="titulo-cta">
+  <div class="container cta-grid">
+    <div>
+      <h2 id="titulo-cta">{titulo}</h2>
+      <p class="cta-sub">{sub}</p>
+      <a class="btn btn-fantasma" href={whatsappUrl} target="_blank" rel="noopener">
+        Prefiro falar no WhatsApp
+      </a>
+    </div>
+
+    <div class="cta-card">
+      <LeadForm id="final" situacoes={situacoes} mensagem={mensagem} />
+    </div>
+  </div>
+</section>
+
+<style>
+  .cta-final {
+    background: linear-gradient(160deg, var(--noite) 30%, #33270a 130%);
+    color: #fff;
+  }
+
+  .cta-final h2 {
+    color: #fff;
+    max-width: 24ch;
+  }
+
+  .cta-sub {
+    color: rgba(255, 255, 255, 0.78);
+    max-width: 36rem;
+    margin-bottom: 26px;
+  }
+
+  .cta-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: clamp(32px, 5vw, 72px);
+    align-items: center;
+  }
+
+  .cta-card {
+    background: var(--branco);
+    border-radius: var(--raio);
+    padding: 28px;
+    box-shadow: var(--sombra);
+  }
+
+  @media (max-width: 900px) {
+    .cta-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

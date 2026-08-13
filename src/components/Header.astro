@@ -1,17 +1,18 @@
 ---
 import Logo from './Logo.astro';
+import { site } from '../config/site';
 
 const links = [
   { href: '#diagnostico', texto: 'Diagnóstico' },
   { href: '#como-funciona', texto: 'Como funciona' },
-  { href: '#depoimentos', texto: 'Resultados' },
   { href: '#faq', texto: 'Dúvidas' },
+  { href: '/sites-para-empresas', texto: 'Nichos atendidos' },
 ];
 ---
 
 <header class="topo">
   <div class="container topo-inner">
-    <a href="#inicio" class="logo" aria-label={`${'Sites Rankly'} — início`}>
+    <a href="/" class="logo" aria-label={`${site.nome} — início`}>
       <Logo width={132} height={64} priority />
     </a>
 

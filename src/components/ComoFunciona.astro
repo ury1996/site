@@ -1,0 +1,88 @@
+---
+interface Passo {
+  titulo: string;
+  texto: string;
+}
+
+interface Props {
+  eyebrow?: string;
+  titulo?: string;
+  passos: Passo[];
+}
+
+const {
+  eyebrow = 'Do diagnóstico ao primeiro lead',
+  titulo = 'Como funciona — em 3 passos simples',
+  passos,
+} = Astro.props;
+---
+
+<section class="secao como" id="como-funciona" aria-labelledby="titulo-como">
+  <div class="container">
+    <p class="eyebrow">{eyebrow}</p>
+    <h2 id="titulo-como">{titulo}</h2>
+
+    <ol class="passos" role="list">
+      {
+        passos.map((passo, i) => (
+          <li class="passo">
+            <span class="passo-num" aria-hidden="true">
+              {i + 1}
+            </span>
+            <h3>{passo.titulo}</h3>
+            <p>{passo.texto}</p>
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</section>
+
+<style>
+  .passos {
+    list-style: none;
+    padding: 0;
+    margin: 34px 0 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+  }
+
+  .passo {
+    position: relative;
+    background: var(--branco);
+    border: 1px solid var(--borda);
+    border-radius: var(--raio);
+    padding: 30px 26px 26px;
+  }
+
+  .passo-num {
+    display: inline-grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, var(--sol), var(--brasa));
+    color: var(--noite);
+    font-family: var(--fonte-display);
+    font-weight: 800;
+    font-size: 1.2rem;
+  }
+
+  .passo h3 {
+    font-size: 1.12rem;
+  }
+
+  .passo p {
+    font-size: 0.94rem;
+    color: var(--cinza);
+    margin: 0;
+  }
+
+  @media (max-width: 820px) {
+    .passos {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -1,0 +1,117 @@
+---
+import type { GetStaticPaths } from 'astro';
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Hero from '../components/Hero.astro';
+import Numeros from '../components/Numeros.astro';
+import Diagnostico from '../components/Diagnostico.astro';
+import ComoFunciona from '../components/ComoFunciona.astro';
+import Beneficios from '../components/Beneficios.astro';
+import Depoimentos from '../components/Depoimentos.astro';
+import Artigo from '../components/Artigo.astro';
+import Faq from '../components/Faq.astro';
+import NichosRelacionados from '../components/NichosRelacionados.astro';
+import CtaFinal from '../components/CtaFinal.astro';
+import WhatsAppFloat from '../components/WhatsAppFloat.astro';
+import { whatsappUrlPara } from '../config/site';
+import { nichos, getRelacionados } from '../data/nichos';
+
+export const getStaticPaths = (() => {
+  return nichos.map((nicho) => ({
+    params: { slug: nicho.slug },
+    props: { nicho },
+  }));
+}) satisfies GetStaticPaths;
+
+const { nicho } = Astro.props;
+
+const whatsappUrl = whatsappUrlPara(nicho.whatsappMensagem);
+const relacionados = getRelacionados(nicho).map((n) => ({
+  slug: n.slug,
+  nomePlural: n.nomePlural,
+  resumo: n.resumoCard,
+}));
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: nicho.faq.map((item) => ({
+    '@type': 'Question',
+    name: item.pergunta,
+    acceptedAnswer: { '@type': 'Answer', text: item.resposta },
+  })),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Início', item: 'https://www.sitesrankly.com.br/' },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: `Sites para ${nicho.nomePlural}`,
+      item: `https://www.sitesrankly.com.br/sites-para-${nicho.slug}`,
+    },
+  ],
+};
+---
+
+<Layout titulo={nicho.tituloSeo} descricao={nicho.descricaoSeo}>
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <Header />
+
+  <main id="inicio">
+    <Hero
+      eyebrow={nicho.hero.eyebrow}
+      tituloHtml={nicho.hero.tituloHtml}
+      subHtml={nicho.hero.subHtml}
+      selos={nicho.hero.selos}
+      whatsappUrl={whatsappUrl}
+      situacoes={nicho.situacoes}
+      mensagem={nicho.whatsappMensagem}
+    />
+
+    <Numeros />
+
+    <Diagnostico
+      titulo={nicho.diagnostico.titulo}
+      introHtml={nicho.diagnostico.introHtml}
+      notaTexto={nicho.diagnostico.notaTexto}
+      itens={nicho.diagnostico.itens}
+    />
+
+    <ComoFunciona passos={nicho.passos} />
+
+    <Beneficios titulo={nicho.beneficios.titulo} itens={nicho.beneficios.itens} />
+
+    <Depoimentos titulo={nicho.depoimentos.titulo} itens={nicho.depoimentos.itens} />
+
+    <Artigo
+      eyebrow={nicho.artigo.eyebrow}
+      titulo={nicho.artigo.titulo}
+      secoes={nicho.artigo.secoes}
+    />
+
+    <Faq
+      titulo={`Dúvidas de quem quer um site para ${nicho.nomeSingular}`}
+      itens={nicho.faq}
+    />
+
+    {relacionados.length > 0 && <NichosRelacionados itens={relacionados} />}
+
+    <CtaFinal
+      titulo={nicho.ctaFinal.titulo}
+      sub={nicho.ctaFinal.sub}
+      whatsappUrl={whatsappUrl}
+      situacoes={nicho.situacoes}
+      mensagem={nicho.whatsappMensagem}
+    />
+  </main>
+
+  <Footer />
+  <WhatsAppFloat url={whatsappUrl} />
+</Layout>

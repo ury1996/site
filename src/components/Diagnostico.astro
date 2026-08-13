@@ -1,22 +1,31 @@
 ---
 import { itensDiagnostico } from '../data/conteudo';
+
+interface Props {
+  titulo?: string;
+  /** HTML confiável (permite <strong>) — primeiro parágrafo. */
+  introHtml?: string;
+  notaTexto?: string;
+  itens?: string[];
+}
+
+const {
+  titulo = 'Seu site está pronto para vender energia solar?',
+  introHtml = `Quando alguém da sua região pesquisa <strong>"energia solar"</strong> no Google,
+        seu site precisa aparecer, carregar rápido e convencer. Marque o que o seu site já
+        tem hoje e veja a nota dele como <strong>vendedor</strong>.`,
+  notaTexto = 'Estes 6 pontos são o que separa um "site vitrine" de um site que gera orçamentos toda semana. O diagnóstico completo — com análise do seu site e dos concorrentes — é gratuito.',
+  itens = itensDiagnostico,
+} = Astro.props;
 ---
 
 <section class="secao simulador" id="diagnostico" aria-labelledby="titulo-sim">
   <div class="container sim-grid">
     <div>
       <p class="eyebrow">Diagnóstico em 1 minuto</p>
-      <h2 id="titulo-sim">Seu site está pronto para vender energia solar?</h2>
-      <p>
-        Quando alguém da sua região pesquisa <strong>"energia solar"</strong> no Google,
-        seu site precisa aparecer, carregar rápido e convencer. Marque o que o seu site já
-        tem hoje e veja a nota dele como <strong>vendedor</strong>.
-      </p>
-      <p class="sim-nota">
-        Estes 6 pontos são o que separa um "site vitrine" de um site que gera orçamentos
-        toda semana. O diagnóstico completo — com análise do seu site e dos concorrentes —
-        é gratuito.
-      </p>
+      <h2 id="titulo-sim">{titulo}</h2>
+      <p set:html={introHtml} />
+      <p class="sim-nota">{notaTexto}</p>
     </div>
 
     <div class="sim-card">
@@ -24,7 +33,7 @@ import { itensDiagnostico } from '../data/conteudo';
 
       <div class="diag-lista" role="group" aria-labelledby="diag-legenda">
         {
-          itensDiagnostico.map((item) => (
+          itens.map((item) => (
             <label class="diag-item">
               <input type="checkbox" data-diag />
               <span>{item}</span>

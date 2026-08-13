@@ -1,0 +1,104 @@
+---
+interface ItemNicho {
+  slug: string;
+  nomePlural: string;
+  resumo: string;
+}
+
+interface Props {
+  itens: ItemNicho[];
+}
+
+const { itens } = Astro.props;
+---
+
+<section class="secao relacionados" aria-labelledby="titulo-relacionados">
+  <div class="container">
+    <p class="eyebrow">Outros nichos que atendemos</p>
+    <h2 id="titulo-relacionados">Sites para outros tipos de empresa</h2>
+
+    <div class="rel-grid">
+      {
+        itens.map((item) => (
+          <a class="rel-card" href={`/sites-para-${item.slug}`}>
+            <h3>
+              Sites para {item.nomePlural} <span aria-hidden="true">→</span>
+            </h3>
+            <p>{item.resumo}</p>
+          </a>
+        ))
+      }
+    </div>
+
+    <p class="rel-todos">
+      <a href="/sites-para-empresas">Ver todos os nichos que atendemos →</a>
+    </p>
+  </div>
+</section>
+
+<style>
+  .relacionados {
+    background: var(--ceu);
+  }
+
+  .rel-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 30px;
+  }
+
+  .rel-card {
+    display: block;
+    background: var(--branco);
+    border: 1px solid var(--borda);
+    border-radius: var(--raio);
+    padding: 22px;
+    text-decoration: none;
+    color: inherit;
+    transition:
+      transform 0.15s ease,
+      border-color 0.15s ease;
+  }
+
+  .rel-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--brasa);
+  }
+
+  .rel-card h3 {
+    font-size: 1.02rem;
+    margin-bottom: 8px;
+    color: var(--noite);
+  }
+
+  .rel-card h3 span {
+    color: var(--brasa);
+  }
+
+  .rel-card p {
+    font-size: 0.88rem;
+    color: var(--cinza);
+    margin: 0;
+  }
+
+  .rel-todos {
+    margin: 26px 0 0;
+    font-weight: 600;
+  }
+
+  .rel-todos a {
+    color: var(--brasa);
+    text-decoration: none;
+  }
+
+  .rel-todos a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 820px) {
+    .rel-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -1,0 +1,60 @@
+---
+interface Secao {
+  titulo: string;
+  paragrafos: string[];
+}
+
+interface Props {
+  eyebrow?: string;
+  titulo: string;
+  secoes: Secao[];
+}
+
+const { eyebrow = 'Guia completo', titulo, secoes } = Astro.props;
+---
+
+<section class="secao artigo" aria-labelledby="titulo-artigo">
+  <div class="container artigo-inner">
+    <p class="eyebrow">{eyebrow}</p>
+    <h2 id="titulo-artigo">{titulo}</h2>
+
+    {
+      secoes.map((secao) => (
+        <div class="artigo-secao">
+          <h3>{secao.titulo}</h3>
+          {secao.paragrafos.map((paragrafo) => (
+            <p set:html={paragrafo} />
+          ))}
+        </div>
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .artigo {
+    background: var(--branco);
+  }
+
+  .artigo-inner {
+    max-width: 780px;
+  }
+
+  .artigo-secao {
+    margin-top: 34px;
+  }
+
+  .artigo-secao h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.6em;
+  }
+
+  .artigo-secao p {
+    color: var(--cinza);
+    font-size: 1rem;
+  }
+
+  .artigo-secao p :global(strong) {
+    color: var(--grafite);
+  }
+</style>

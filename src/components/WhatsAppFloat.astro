@@ -1,10 +1,16 @@
 ---
 import { whatsappUrl } from '../config/site';
+
+interface Props {
+  url?: string;
+}
+
+const { url = whatsappUrl } = Astro.props;
 ---
 
 <a
   class="whats-flutuante"
-  href={whatsappUrl}
+  href={url}
   target="_blank"
   rel="noopener"
   aria-label="Conversar no WhatsApp"

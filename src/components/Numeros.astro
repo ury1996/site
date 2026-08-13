@@ -1,0 +1,57 @@
+---
+import { numeros as numerosPadrao } from '../data/conteudo';
+
+interface Props {
+  numeros?: typeof numerosPadrao;
+}
+
+const { numeros = numerosPadrao } = Astro.props;
+---
+
+<section class="prova" aria-label="Nossos números">
+  <div class="container prova-grid">
+    {
+      numeros.map((item) => (
+        <div>
+          <strong>{item.valor}</strong>
+          <span>{item.rotulo}</span>
+        </div>
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .prova {
+    background: var(--noite);
+    color: #fff;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .prova-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    padding-block: 26px;
+    text-align: center;
+  }
+
+  .prova-grid strong {
+    display: block;
+    font-family: var(--fonte-display);
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: var(--sol);
+  }
+
+  .prova-grid span {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  @media (max-width: 720px) {
+    .prova-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>
