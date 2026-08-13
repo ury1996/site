@@ -5,6 +5,7 @@ import { estetica } from './estetica';
 import { imobiliarias } from './imobiliarias';
 import { construcao } from './construcao';
 import { veterinaria } from './veterinaria';
+import { academias } from './academias';
 
 /**
  * Lista de nichos publicados. Cada entrada aqui vira uma página estática em
@@ -20,6 +21,7 @@ export const nichos: Nicho[] = [
   imobiliarias,
   construcao,
   veterinaria,
+  academias,
 ];
 
 export function getNichoPorSlug(slug: string): Nicho | undefined {
