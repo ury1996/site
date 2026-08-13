@@ -26,6 +26,10 @@ import { transportadoras } from './transportadoras';
 import { oticas } from './oticas';
 import { saloesDeBeleza } from './saloes-de-beleza';
 import { petShops } from './pet-shops';
+import { hoteisEPousadas } from './hoteis-e-pousadas';
+import { restaurantes } from './restaurantes';
+import { cerimonialEEventos } from './cerimonial-e-eventos';
+import { fotografia } from './fotografia';
 
 /**
  * Lista de nichos publicados. Cada entrada aqui vira uma página estática em
@@ -62,6 +66,10 @@ export const nichos: Nicho[] = [
   oticas,
   saloesDeBeleza,
   petShops,
+  hoteisEPousadas,
+  restaurantes,
+  cerimonialEEventos,
+  fotografia,
 ];
 
 export function getNichoPorSlug(slug: string): Nicho | undefined {
