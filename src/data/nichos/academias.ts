@@ -2,6 +2,7 @@ import type { Nicho } from './tipos';
 
 export const academias: Nicho = {
   slug: 'academias',
+  categoria: 'saude-e-bem-estar',
   nomeSingular: 'academia ou estúdio fitness',
   nomePlural: 'academias e estúdios fitness',
   profissional: 'personal trainer',

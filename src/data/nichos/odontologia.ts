@@ -2,6 +2,7 @@ import type { Nicho } from './tipos';
 
 export const odontologia: Nicho = {
   slug: 'clinicas-odontologicas',
+  categoria: 'saude-e-bem-estar',
   nomeSingular: 'clínica odontológica',
   nomePlural: 'clínicas odontológicas',
   profissional: 'dentista',

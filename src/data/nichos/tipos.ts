@@ -35,6 +35,8 @@ export interface NichoArtigoSecao {
 export interface Nicho {
   /** Usado na URL: /sites-para-{slug} */
   slug: string;
+  /** Slug de uma categoria em src/data/categorias.ts. */
+  categoria: string;
   /** Ex.: "escritório de advocacia" — singular, minúsculo. */
   nomeSingular: string;
   /** Ex.: "escritórios de advocacia" — plural, minúsculo. */

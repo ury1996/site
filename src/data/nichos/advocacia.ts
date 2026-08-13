@@ -2,6 +2,7 @@ import type { Nicho } from './tipos';
 
 export const advocacia: Nicho = {
   slug: 'advocacia',
+  categoria: 'juridico-e-administrativo',
   nomeSingular: 'escritório de advocacia',
   nomePlural: 'escritórios de advocacia',
   profissional: 'advogado',

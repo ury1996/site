@@ -38,7 +38,18 @@ export function getRelacionados(nicho: Nicho): Nicho[] {
 
   if (relacionados.length > 0) return relacionados;
 
-  // Fallback: se não houver relacionados declarados (ou ainda não publicados),
-  // usa os primeiros 3 outros nichos disponíveis.
-  return nichos.filter((n) => n.slug !== nicho.slug).slice(0, 3);
+  // Fallback: nichos da mesma categoria primeiro (mais relevância temática);
+  // completa com outros nichos disponíveis se a categoria ainda tiver poucos.
+  const mesmaCategoria = nichos.filter(
+    (n) => n.slug !== nicho.slug && n.categoria === nicho.categoria,
+  );
+  const outros = nichos.filter(
+    (n) => n.slug !== nicho.slug && n.categoria !== nicho.categoria,
+  );
+  return [...mesmaCategoria, ...outros].slice(0, 3);
+}
+
+/** Agrupa os nichos publicados por categoria, na ordem de src/data/categorias.ts. */
+export function getNichosPorCategoria(categoriaSlug: string): Nicho[] {
+  return nichos.filter((n) => n.categoria === categoriaSlug);
 }

@@ -2,6 +2,7 @@ import type { Nicho } from './tipos';
 
 export const imobiliarias: Nicho = {
   slug: 'imobiliarias',
+  categoria: 'juridico-e-administrativo',
   nomeSingular: 'imobiliária',
   nomePlural: 'imobiliárias',
   profissional: 'corretor de imóveis',

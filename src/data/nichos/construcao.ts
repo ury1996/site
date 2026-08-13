@@ -2,6 +2,7 @@ import type { Nicho } from './tipos';
 
 export const construcao: Nicho = {
   slug: 'construtoras',
+  categoria: 'construcao-e-engenharia',
   nomeSingular: 'construtora ou empresa de reformas',
   nomePlural: 'construtoras e empresas de reformas',
   profissional: 'engenheiro ou arquiteto',

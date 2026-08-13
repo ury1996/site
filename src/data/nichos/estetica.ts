@@ -2,6 +2,7 @@ import type { Nicho } from './tipos';
 
 export const estetica: Nicho = {
   slug: 'clinicas-de-estetica',
+  categoria: 'saude-e-bem-estar',
   nomeSingular: 'clínica de estética',
   nomePlural: 'clínicas de estética',
   profissional: 'especialista em estética',

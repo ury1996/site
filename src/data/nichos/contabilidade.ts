@@ -2,6 +2,7 @@ import type { Nicho } from './tipos';
 
 export const contabilidade: Nicho = {
   slug: 'contabilidade',
+  categoria: 'juridico-e-administrativo',
   nomeSingular: 'escritório de contabilidade',
   nomePlural: 'escritórios de contabilidade',
   profissional: 'contador',

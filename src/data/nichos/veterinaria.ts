@@ -2,6 +2,7 @@ import type { Nicho } from './tipos';
 
 export const veterinaria: Nicho = {
   slug: 'clinicas-veterinarias',
+  categoria: 'saude-e-bem-estar',
   nomeSingular: 'clínica veterinária',
   nomePlural: 'clínicas veterinárias',
   profissional: 'veterinário',
