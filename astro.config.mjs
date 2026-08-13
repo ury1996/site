@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://sitesparaempresas.sitesrankly.com.br',
+  site: 'https://www.sitesrankly.com.br',
   trailingSlash: 'ignore',
   integrations: [sitemap()],
   build: {
