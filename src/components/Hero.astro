@@ -13,6 +13,10 @@ interface Props {
   formSub?: string;
   situacoes?: string[];
   mensagem?: string;
+  /** Miniatura opcional (ex.: imagem OG do nicho) exibida acima do eyebrow. */
+  imagemOg?: string;
+  /** Alt/title da miniatura — recomendado ser igual ao título da página. */
+  imagemOgTitulo?: string;
 }
 
 const {
@@ -25,6 +29,8 @@ const {
   formSub = 'Diagnóstico da sua presença digital em até 24h úteis.',
   situacoes,
   mensagem,
+  imagemOg,
+  imagemOgTitulo,
 } = Astro.props;
 ---
 
@@ -33,6 +39,19 @@ const {
 
   <div class="container hero-grid">
     <div class="hero-texto">
+      {imagemOg && (
+        <img
+          class="hero-thumb"
+          src={imagemOg}
+          alt={imagemOgTitulo ?? eyebrow}
+          title={imagemOgTitulo ?? eyebrow}
+          width="1200"
+          height="630"
+          loading="eager"
+          fetchpriority="high"
+        />
+      )}
+
       <p class="eyebrow eyebrow-claro">{eyebrow}</p>
 
       <h1 id="titulo-hero" set:html={tituloHtml} />
@@ -96,6 +115,16 @@ const {
 
   .eyebrow-claro {
     color: var(--sol);
+  }
+
+  .hero-thumb {
+    display: block;
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    margin-bottom: 20px;
   }
 
   h1 {
