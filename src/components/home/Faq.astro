@@ -1,0 +1,122 @@
+---
+import { FAQ, whatsappLink } from '../../consts';
+---
+
+<section class="sec sec--paper" id="faq" aria-labelledby="t-faq">
+  <div class="wrap fq__in">
+    <div class="fq__lado" data-reveal>
+      <p class="eyebrow">Dúvidas</p>
+      <h2 class="h2" id="t-faq">Você deve estar se perguntando...</h2>
+      <p class="lede">
+        As perguntas que chegam antes de todo projeto. Se a sua não está aqui, é só chamar.
+      </p>
+      <a class="btn btn--amber fq__cta" href={whatsappLink} target="_blank" rel="noopener">
+        Tirar dúvida no WhatsApp
+      </a>
+    </div>
+
+    <div class="fq__lista">
+      {FAQ.map((f, i) => (
+        <details class="fq__item" name="faq" data-reveal>
+          <summary>
+            <span class="fq__num">{String(i + 1).padStart(2, '0')}</span>
+            <span class="fq__q">{f.pergunta}</span>
+            <span class="fq__ic" aria-hidden="true"></span>
+          </summary>
+          <div class="fq__r">
+            <p>{f.resposta}</p>
+          </div>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .fq__in {
+    display: grid;
+    gap: clamp(2.4rem, 5vw, 4rem);
+    align-items: start;
+  }
+  .fq__lado h2 {
+    max-width: 15ch;
+  }
+  .fq__cta {
+    margin-top: 1.9rem;
+  }
+  .fq__item {
+    border-bottom: 1px solid var(--line);
+  }
+  .fq__item summary {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem 0;
+    cursor: pointer;
+    list-style: none;
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: clamp(1rem, 1.9vw, 1.14rem);
+    transition: color 0.25s;
+  }
+  .fq__item summary::-webkit-details-marker {
+    display: none;
+  }
+  .fq__item summary:hover {
+    color: var(--blue-light);
+  }
+  .fq__num {
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    color: var(--amber);
+    flex: none;
+  }
+  .fq__q {
+    flex: 1;
+  }
+  .fq__ic {
+    flex: none;
+    position: relative;
+    width: 16px;
+    height: 16px;
+  }
+  .fq__ic::before,
+  .fq__ic::after {
+    content: '';
+    position: absolute;
+    inset: 50% 0 auto 0;
+    height: 2px;
+    background: var(--blue-light);
+    border-radius: 2px;
+    transition: transform 0.3s var(--ease);
+  }
+  .fq__ic::after {
+    transform: rotate(90deg);
+  }
+  .fq__item[open] .fq__ic::after {
+    transform: rotate(0);
+  }
+  .fq__r {
+    padding: 0 0 1.5rem 2.3rem;
+    max-width: 68ch;
+  }
+  .fq__r p {
+    color: var(--txt-dim);
+    font-size: 0.96rem;
+  }
+  .fq__item[open] .fq__r {
+    animation: abre 0.35s var(--ease);
+  }
+  @keyframes abre {
+    from {
+      opacity: 0;
+      transform: translateY(-6px);
+    }
+  }
+
+  @media (min-width: 940px) {
+    .fq__in {
+      grid-template-columns: 0.8fr 1.2fr;
+    }
+  }
+</style>

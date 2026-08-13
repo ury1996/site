@@ -1,0 +1,268 @@
+---
+import '../styles/home.css';
+import Header from '../components/home/Header.astro';
+import Footer from '../components/home/Footer.astro';
+import WhatsappFab from '../components/home/WhatsappFab.astro';
+import { SITE, CONTATO, FAQ } from '../consts';
+
+interface Props {
+  titulo: string;
+  descricao: string;
+  imagem?: string;
+  tipo?: 'website' | 'article';
+  noindex?: boolean;
+  breadcrumbs?: { nome: string; href: string }[];
+  comFaq?: boolean;
+}
+
+const {
+  titulo,
+  descricao,
+  imagem = SITE.ogImagem,
+  tipo = 'website',
+  noindex = false,
+  breadcrumbs = [],
+  comFaq = false,
+} = Astro.props;
+
+const canonical = new URL(Astro.url.pathname.replace(/\/$/, '') || '/', SITE.url).href;
+const ogAbsoluta = new URL(imagem, SITE.url).href;
+const logoAbsoluta = new URL(SITE.logo, SITE.url).href;
+
+/* ---------------------------------------------------------------- JSON-LD
+   Um único grafo conectado por @id: o Google entende melhor do que
+   vários blocos soltos. */
+const grafo: Record<string, unknown>[] = [
+  {
+    '@type': ['Organization', 'ProfessionalService', 'LocalBusiness'],
+    '@id': `${SITE.url}/#organizacao`,
+    name: SITE.nome,
+    legalName: SITE.nomeLegal,
+    url: SITE.url,
+    description: SITE.descricao,
+    foundingDate: SITE.fundadaEm,
+    email: CONTATO.email,
+    telephone: CONTATO.telefoneE164,
+    priceRange: '$$',
+    logo: {
+      '@type': 'ImageObject',
+      '@id': `${SITE.url}/#logo`,
+      url: logoAbsoluta,
+      contentUrl: logoAbsoluta,
+      caption: SITE.nome,
+    },
+    image: { '@id': `${SITE.url}/#logo` },
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: CONTATO.cidade,
+      addressRegion: CONTATO.estado,
+      postalCode: CONTATO.cep,
+      addressCountry: 'BR',
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: CONTATO.geo.lat,
+      longitude: CONTATO.geo.lng,
+    },
+    areaServed: [
+      { '@type': 'AdministrativeArea', name: 'Minas Gerais' },
+      { '@type': 'AdministrativeArea', name: 'São Paulo' },
+      { '@type': 'Country', name: 'Brasil' },
+    ],
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        opens: '09:00',
+        closes: '18:00',
+      },
+    ],
+    sameAs: [CONTATO.instagram, CONTATO.linkedin].filter(Boolean),
+    contactPoint: [
+      {
+        '@type': 'ContactPoint',
+        telephone: CONTATO.telefoneE164,
+        contactType: 'customer service',
+        areaServed: 'BR',
+        availableLanguage: ['Portuguese'],
+      },
+    ],
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Serviços da Sites Rankly',
+      itemListElement: [
+        'Criação de sites',
+        'Gestão de Google Ads',
+        'Consultoria e otimização de SEO',
+        'Manutenção e segurança de sites',
+      ].map((s) => ({
+        '@type': 'Offer',
+        itemOffered: { '@type': 'Service', name: s, provider: { '@id': `${SITE.url}/#organizacao` } },
+      })),
+    },
+  },
+  {
+    '@type': 'WebSite',
+    '@id': `${SITE.url}/#site`,
+    url: SITE.url,
+    name: SITE.nome,
+    description: SITE.descricao,
+    inLanguage: SITE.idioma,
+    publisher: { '@id': `${SITE.url}/#organizacao` },
+  },
+  {
+    '@type': 'WebPage',
+    '@id': `${canonical}#pagina`,
+    url: canonical,
+    name: titulo,
+    description: descricao,
+    inLanguage: SITE.idioma,
+    isPartOf: { '@id': `${SITE.url}/#site` },
+    about: { '@id': `${SITE.url}/#organizacao` },
+    primaryImageOfPage: { '@type': 'ImageObject', url: ogAbsoluta },
+  },
+];
+
+if (breadcrumbs.length) {
+  grafo.push({
+    '@type': 'BreadcrumbList',
+    '@id': `${canonical}#trilha`,
+    itemListElement: breadcrumbs.map((b, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: b.nome,
+      item: new URL(b.href, SITE.url).href,
+    })),
+  });
+}
+
+if (comFaq) {
+  grafo.push({
+    '@type': 'FAQPage',
+    '@id': `${canonical}#faq`,
+    mainEntity: FAQ.map((f) => ({
+      '@type': 'Question',
+      name: f.pergunta,
+      acceptedAnswer: { '@type': 'Answer', text: f.resposta },
+    })),
+  });
+}
+
+const jsonLd = JSON.stringify({ '@context': 'https://schema.org', '@graph': grafo });
+---
+
+<!doctype html>
+<html lang="pt-BR" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>{titulo}</title>
+    <meta name="description" content={descricao} />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="pt-BR" href={canonical} />
+    <link rel="alternate" hreflang="x-default" href={canonical} />
+
+    <meta
+      name="robots"
+      content={noindex
+        ? 'noindex, nofollow'
+        : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'}
+    />
+    <meta name="googlebot" content={noindex ? 'noindex, nofollow' : 'index, follow'} />
+
+    <meta name="author" content={SITE.nome} />
+    <meta name="publisher" content={SITE.nome} />
+    <meta name="theme-color" content={SITE.temaCor} />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- SEO local -->
+    <meta name="geo.region" content={CONTATO.regiao} />
+    <meta name="geo.placename" content={`${CONTATO.cidade}, ${CONTATO.estadoNome}`} />
+    <meta name="geo.position" content={`${CONTATO.geo.lat};${CONTATO.geo.lng}`} />
+    <meta name="ICBM" content={`${CONTATO.geo.lat}, ${CONTATO.geo.lng}`} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content={tipo} />
+    <meta property="og:site_name" content={SITE.nome} />
+    <meta property="og:locale" content={SITE.locale} />
+    <meta property="og:title" content={titulo} />
+    <meta property="og:description" content={descricao} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogAbsoluta} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={`${SITE.nome} — criação de sites, Google Ads e SEO`} />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={titulo} />
+    <meta name="twitter:description" content={descricao} />
+    <meta name="twitter:image" content={ogAbsoluta} />
+    <meta name="twitter:image:alt" content={SITE.nome} />
+
+    <!-- Ícones -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/images/marca/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="sitemap" href="/sitemap.xml" />
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@400;600;700;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@400;600;700;800&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@400;600;700;800&display=swap"
+      />
+    </noscript>
+
+    <script type="application/ld+json" is:inline set:html={jsonLd} />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <Header />
+    <main id="conteudo">
+      <slot />
+    </main>
+    <Footer />
+    <WhatsappFab />
+
+    <script is:inline>
+      // Revelação no scroll — leve, sem biblioteca.
+      (() => {
+        const alvos = document.querySelectorAll('[data-reveal]');
+        if (!alvos.length) return;
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          alvos.forEach((el) => el.classList.add('is-in'));
+          return;
+        }
+        const io = new IntersectionObserver(
+          (entradas) => {
+            entradas.forEach((e) => {
+              if (e.isIntersecting) {
+                e.target.classList.add('is-in');
+                io.unobserve(e.target);
+              }
+            });
+          },
+          { rootMargin: '0px 0px -8% 0px', threshold: 0.08 },
+        );
+        alvos.forEach((el) => io.observe(el));
+      })();
+    </script>
+  </body>
+</html>

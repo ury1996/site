@@ -1,0 +1,38 @@
+---
+import Base from '../layouts/Home.astro';
+---
+
+<Base
+  titulo="Página não encontrada | Sites Rankly"
+  descricao="A página que você procurou não existe mais ou mudou de endereço."
+  noindex={true}
+>
+  <section class="sec e404">
+    <div class="wrap">
+      <p class="eyebrow">Erro 404</p>
+      <h1 class="h2">Essa página saiu do ar.</h1>
+      <p class="lede">
+        O endereço mudou ou nunca existiu. Volte para a página inicial ou fale com a gente
+        que encontramos o que você procura.
+      </p>
+      <div class="e404__acoes">
+        <a class="btn btn--amber" href="/">Voltar ao início</a>
+        <a class="btn btn--ghost" href="/contato">Falar com a gente</a>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .e404 {
+    min-height: 60vh;
+    display: grid;
+    align-items: center;
+  }
+  .e404__acoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 2rem;
+  }
+</style>

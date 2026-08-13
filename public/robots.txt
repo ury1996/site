@@ -1,4 +1,16 @@
+# Sites Rankly — robots.txt
 User-agent: *
+Allow: /
+
+# Parâmetros de campanha não geram página nova: evita conteúdo duplicado
+Disallow: /*?gclid=
+Disallow: /*?fbclid=
+Disallow: /*?utm_
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
 Allow: /
 
 Sitemap: https://www.sitesrankly.com.br/sitemap.xml

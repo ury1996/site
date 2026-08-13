@@ -21,7 +21,10 @@ const {
   imagem = site.ogImage,
 } = Astro.props;
 
-const canonical = new URL(path, site.url).href;
+/* Sem barra final: o vercel.json serve as URLs com `trailingSlash: false`,
+   então o canonical precisa apontar para a URL que realmente responde 200
+   (com barra, o Vercel devolve um 301 e o canonical vira redirecionamento). */
+const canonical = new URL(path.replace(/\/+$/, '') || '/', site.url).href;
 const ogImage = new URL(imagem, site.url).href;
 /** Imagem institucional (marca) usada no JSON-LD — não varia por página, diferente do og:image. */
 const brandImage = new URL(site.ogImage, site.url).href;

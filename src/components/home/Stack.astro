@@ -1,0 +1,73 @@
+---
+import { STACK } from '../../consts';
+---
+
+<section class="sec sec--paper st" aria-labelledby="t-stack">
+  <div class="wrap st__in">
+    <div class="st__txt" data-reveal>
+      <p class="eyebrow">Ferramentas</p>
+      <h2 class="h2" id="t-stack">Usamos a ferramenta certa. Não a da moda.</h2>
+      <p class="lede">
+        Nada de trocar de tecnologia a cada trimestre. Trabalhamos com o que já provou que
+        aguenta o tranco — por isso o projeto entrega rápido e continua de pé depois.
+      </p>
+    </div>
+
+    <div class="st__grade">
+      {STACK.map((g) => (
+        <div class="st__grupo" data-reveal>
+          <h3>{g.grupo}</h3>
+          <ul>
+            {g.itens.map((i) => (
+              <li>{i}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .st__in {
+    display: grid;
+    gap: clamp(2.4rem, 5vw, 4rem);
+    align-items: start;
+  }
+  .st__txt h2 {
+    max-width: 16ch;
+  }
+  .st__grade {
+    display: grid;
+    gap: 1.6rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
+  }
+  .st__grupo h3 {
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--amber);
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid var(--line-strong);
+  }
+  .st__grupo ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: grid;
+    gap: 0.55rem;
+  }
+  .st__grupo li {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--txt-dim);
+  }
+
+  @media (min-width: 900px) {
+    .st__in {
+      grid-template-columns: 0.85fr 1.15fr;
+    }
+  }
+</style>

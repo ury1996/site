@@ -1,0 +1,97 @@
+---
+import { CONTATO, whatsappLink } from '../../consts';
+---
+
+<section class="sec ct" aria-labelledby="t-cta">
+  <div class="ct__glow" aria-hidden="true"></div>
+  <div class="wrap ct__in">
+    <p class="ct__tag">
+      <span class="ct__ponto" aria-hidden="true"></span>
+      Agenda aberta para novos projetos
+    </p>
+    <h2 class="h2 ct__h2" id="t-cta">Bora colocar seu site para trabalhar?</h2>
+    <p class="ct__sub">
+      Sem apresentação de slides, sem processo de três semanas para começar. Conte o que você
+      precisa e a gente assume daí em diante.
+    </p>
+    <div class="ct__acoes">
+      <a class="btn btn--amber" href={whatsappLink} target="_blank" rel="noopener">
+        Falar no WhatsApp
+      </a>
+      <a class="btn btn--ghost" href="/contato">Enviar mensagem</a>
+    </div>
+    <p class="ct__email">
+      ou escreva para <a href={`mailto:${CONTATO.email}`}>{CONTATO.email}</a>
+    </p>
+  </div>
+</section>
+
+<style>
+  .ct {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    border-top: 1px solid var(--line);
+  }
+  .ct__glow {
+    position: absolute;
+    left: 50%;
+    bottom: -60%;
+    transform: translateX(-50%);
+    width: 110vw;
+    height: 90vw;
+    max-height: 800px;
+    background: radial-gradient(circle, rgba(74, 144, 217, 0.22), transparent 60%);
+    pointer-events: none;
+  }
+  .ct__in {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ct__tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.4rem 0.9rem;
+    border: 1px solid var(--line-strong);
+    border-radius: 999px;
+    font-size: 0.78rem;
+    color: var(--txt-dim);
+    margin-bottom: 1.6rem;
+  }
+  .ct__ponto {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--amber);
+  }
+  .ct__h2 {
+    max-width: 16ch;
+    font-size: clamp(2.1rem, 6vw, 4rem);
+  }
+  .ct__sub {
+    max-width: 52ch;
+    margin-top: 1.3rem;
+    color: var(--txt-dim);
+    font-size: clamp(1rem, 1.7vw, 1.12rem);
+  }
+  .ct__acoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-top: 2.2rem;
+  }
+  .ct__email {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--txt-dim);
+  }
+  .ct__email a {
+    color: var(--blue-light);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+</style>

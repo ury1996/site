@@ -1,70 +1,32 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import Hero from '../components/Hero.astro';
-import Numeros from '../components/Numeros.astro';
-import Diagnostico from '../components/Diagnostico.astro';
-import ComoFunciona from '../components/ComoFunciona.astro';
-import Beneficios from '../components/Beneficios.astro';
-import Depoimentos from '../components/Depoimentos.astro';
-import Faq from '../components/Faq.astro';
-import CtaFinal from '../components/CtaFinal.astro';
-import WhatsAppFloat from '../components/WhatsAppFloat.astro';
-import { whatsappUrl } from '../config/site';
-import { passos, beneficios, depoimentos, faq } from '../data/conteudo';
-
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: faq.map((item) => ({
-    '@type': 'Question',
-    name: item.pergunta,
-    acceptedAnswer: { '@type': 'Answer', text: item.resposta },
-  })),
-};
+import Base from '../layouts/Home.astro';
+import Hero from '../components/home/Hero.astro';
+import Marquee from '../components/home/Marquee.astro';
+import Servicos from '../components/home/Servicos.astro';
+import Sobre from '../components/home/Sobre.astro';
+import Projetos from '../components/home/Projetos.astro';
+import Extras from '../components/home/Extras.astro';
+import Stack from '../components/home/Stack.astro';
+import Processo from '../components/home/Processo.astro';
+import Faq from '../components/home/Faq.astro';
+import CtaFinal from '../components/home/CtaFinal.astro';
+import { SITE } from '../consts';
 ---
 
-<Layout>
-  <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
-
-  <Header />
-
-  <main id="inicio">
-    <Hero
-      eyebrow="Sites para empresas de energia solar · Minas Gerais"
-      tituloHtml="Sua empresa de energia solar merece um site que <em>gera orçamentos</em> todos os dias"
-      subHtml="Criamos sites e landing pages para integradoras solares de Minas Gerais: rápidos, no topo do Google da sua região e com leads chegando <strong>direto no seu WhatsApp</strong>."
-      selos={['Diagnóstico e proposta grátis', 'Calculadora de economia inclusa', 'SEO local para sua cidade']}
-      whatsappUrl={whatsappUrl}
-    />
-
-    <Numeros />
-
-    <Diagnostico />
-
-    <ComoFunciona passos={passos} />
-
-    <Beneficios
-      titulo="Construído para o mercado solar — não um site genérico"
-      itens={beneficios}
-    />
-
-    <Depoimentos
-      eyebrow="Resultados no setor solar"
-      titulo='Integradoras que trocaram "site vitrine" por site que vende'
-      itens={depoimentos}
-    />
-
-    <Faq titulo="Dúvidas de quem quer um site para empresa de energia solar" itens={faq} />
-
-    <CtaFinal
-      titulo="Enquanto você lê isso, alguém em Minas está pesquisando energia solar"
-      sub="A pergunta é: quem vai aparecer para ele — você ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar orçamentos."
-      whatsappUrl={whatsappUrl}
-    />
-  </main>
-
-  <Footer />
-  <WhatsAppFloat />
-</Layout>
+<Base
+  titulo={SITE.titulo}
+  descricao={SITE.descricao}
+  comFaq={true}
+  breadcrumbs={[{ nome: 'Início', href: '/' }]}
+>
+  <Hero />
+  <Marquee />
+  <Servicos />
+  <Sobre />
+  <Projetos />
+  <Extras />
+  <Stack />
+  <Processo />
+  <Faq />
+  <CtaFinal />
+</Base>

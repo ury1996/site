@@ -1,0 +1,170 @@
+---
+import Base from '../layouts/Home.astro';
+import { CONTATO, whatsappLink } from '../consts';
+---
+
+<Base
+  titulo="Contato | Sites Rankly — orçamento de site, Google Ads e SEO"
+  descricao="Fale com a Sites Rankly e receba um orçamento para criação de site, campanha de Google Ads ou consultoria de SEO. Atendimento em Minas Gerais e todo o Brasil."
+  breadcrumbs={[
+    { nome: 'Início', href: '/' },
+    { nome: 'Contato', href: '/contato' },
+  ]}
+>
+  <section class="sec ctt">
+    <div class="wrap ctt__in">
+      <div>
+        <p class="eyebrow">Contato</p>
+        <h1 class="h2">Conte o seu projeto</h1>
+        <p class="lede">
+          Responda em duas linhas o que você precisa. Retornamos em até um dia útil com as
+          próximas perguntas — e, quando o escopo já estiver claro, com a proposta.
+        </p>
+
+        <ul class="ctt__dados">
+          <li>
+            <span>WhatsApp</span>
+            <a href={whatsappLink} target="_blank" rel="noopener">{CONTATO.telefoneExibicao}</a>
+          </li>
+          <li>
+            <span>E-mail</span>
+            <a href={`mailto:${CONTATO.email}`}>{CONTATO.email}</a>
+          </li>
+          <li>
+            <span>Atendimento</span>
+            <p>{CONTATO.horario}</p>
+          </li>
+          <li>
+            <span>Base</span>
+            <p>{CONTATO.cidade} — {CONTATO.estadoNome}, Brasil</p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Troque o "action" pelo seu endpoint (Formspree, Web3Forms, WPForms, etc.) -->
+      <form class="frm" action="#" method="post">
+        <div class="frm__linha">
+          <label for="nome">Nome</label>
+          <input id="nome" name="nome" type="text" required autocomplete="name" placeholder="Seu nome" />
+        </div>
+        <div class="frm__linha">
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" required autocomplete="email" placeholder="voce@empresa.com.br" />
+        </div>
+        <div class="frm__linha">
+          <label for="tel">WhatsApp</label>
+          <input id="tel" name="telefone" type="tel" autocomplete="tel" placeholder="(00) 00000-0000" />
+        </div>
+        <div class="frm__linha">
+          <label for="servico">O que você precisa</label>
+          <select id="servico" name="servico">
+            <option>Criação de site</option>
+            <option>Google Ads</option>
+            <option>SEO</option>
+            <option>Manutenção do site atual</option>
+            <option>Ainda não sei</option>
+          </select>
+        </div>
+        <div class="frm__linha">
+          <label for="msg">Detalhes</label>
+          <textarea id="msg" name="mensagem" rows="5" placeholder="Conte um pouco do negócio e do objetivo"></textarea>
+        </div>
+        <button class="btn btn--amber frm__btn" type="submit">Enviar mensagem</button>
+        <p class="frm__nota">Seus dados ficam só com a gente. Sem lista de e-mail, sem spam.</p>
+      </form>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .ctt__in {
+    display: grid;
+    gap: clamp(2.4rem, 5vw, 4rem);
+    align-items: start;
+  }
+  .ctt h1 {
+    max-width: 14ch;
+  }
+  .ctt__dados {
+    list-style: none;
+    padding: 0;
+    margin: 2.4rem 0 0;
+    display: grid;
+    gap: 1.3rem;
+  }
+  .ctt__dados li span {
+    display: block;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-bottom: 0.25rem;
+  }
+  .ctt__dados a,
+  .ctt__dados p {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--txt);
+  }
+  .ctt__dados a:hover {
+    color: var(--blue-light);
+  }
+
+  .frm {
+    display: grid;
+    gap: 1rem;
+    padding: clamp(1.5rem, 3vw, 2.2rem);
+    border: 1px solid var(--line);
+    border-radius: var(--r-lg);
+    background: rgba(157, 200, 240, 0.04);
+  }
+  .frm__linha {
+    display: grid;
+    gap: 0.4rem;
+  }
+  .frm label {
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--txt-dim);
+  }
+  .frm input,
+  .frm select,
+  .frm textarea {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    background: rgba(5, 13, 31, 0.6);
+    border: 1px solid var(--line-strong);
+    border-radius: 12px;
+    font-size: 1rem; /* 16px: abaixo disso o iOS dá zoom ao focar o campo */
+    transition: border-color 0.2s;
+  }
+  .frm input::placeholder,
+  .frm textarea::placeholder {
+    color: rgba(164, 183, 210, 0.5);
+  }
+  .frm input:focus,
+  .frm select:focus,
+  .frm textarea:focus {
+    border-color: var(--blue-light);
+  }
+  .frm textarea {
+    resize: vertical;
+  }
+  .frm__btn {
+    margin-top: 0.4rem;
+    justify-content: center;
+  }
+  .frm__nota {
+    font-size: 0.8rem;
+    color: var(--txt-dim);
+    text-align: center;
+  }
+
+  @media (min-width: 900px) {
+    .ctt__in {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+</style>

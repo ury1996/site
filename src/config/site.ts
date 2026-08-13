@@ -12,7 +12,7 @@ export const site = {
    * padrão da home (sobrescrito por página via <Layout descricao={...}>).
    */
   descricaoEmpresa:
-    'Agência especializada em criação de sites institucionais e landing pages para empresas de diversos segmentos em Minas Gerais — energia solar, advocacia, odontologia, estética, imobiliárias, construção civil, veterinária, academias e contabilidade. Sites rápidos, SEO local e captação de clientes por WhatsApp.',
+    'Agência digital de criação de sites, Google Ads e SEO. Atendemos mais de 40 segmentos — construção, instalações e energia, segurança, automotivo, saúde, jurídico, hospitalidade, educação, serviços domésticos, indústria e agronegócio — com sites rápidos, SEO local e captação de clientes por WhatsApp.',
   ogImage: '/og.png',
   locale: 'pt_BR',
   lang: 'pt-BR',

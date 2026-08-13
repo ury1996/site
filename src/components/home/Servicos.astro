@@ -1,0 +1,103 @@
+---
+import { SERVICOS } from '../../consts';
+---
+
+<section class="sec sec--paper" id="servicos" aria-labelledby="t-servicos">
+  <div class="wrap">
+    <header class="sv__topo" data-reveal>
+      <p class="eyebrow">O que fazemos</p>
+      <h2 class="h2" id="t-servicos">Serviços</h2>
+      <p class="lede">
+        Do primeiro rascunho ao primeiro cliente vindo do Google. Cuidamos de cada camada —
+        para você cuidar do seu negócio.
+      </p>
+    </header>
+
+    <div class="sv__grade">
+      {SERVICOS.map((s, i) => (
+        <article class="sv__card" data-reveal style={`transition-delay:${(i % 2) * 90}ms`}>
+          <div class="sv__cab">
+            <span class="sv__num">{s.numero}</span>
+            <h3 class="sv__titulo">{s.titulo}</h3>
+          </div>
+          <p class="sv__txt">{s.resumo}</p>
+          <ul class="sv__chips">
+            {s.itens.map((it) => (
+              <li>{it}</li>
+            ))}
+          </ul>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .sv__topo {
+    max-width: 62ch;
+    margin-bottom: clamp(2.5rem, 5vw, 4rem);
+  }
+  .sv__grade {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+  .sv__card {
+    display: flex;
+    flex-direction: column;
+    padding: clamp(1.8rem, 3.5vw, 2.8rem);
+    border: 1px solid var(--line);
+    border-radius: var(--r);
+    background: var(--card);
+    transition: border-color 0.3s var(--ease), background 0.3s var(--ease);
+  }
+  .sv__card:hover {
+    border-color: var(--line-strong);
+  }
+  .sv__cab {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    padding-bottom: 1.3rem;
+    margin-bottom: 1.3rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .sv__num {
+    font-family: var(--display);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    color: var(--amber);
+    flex: none;
+  }
+  .sv__titulo {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+  }
+  .sv__txt {
+    color: var(--txt-dim);
+    font-size: 0.98rem;
+    max-width: 46ch;
+    flex: 1;
+  }
+  .sv__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    list-style: none;
+    padding: 0;
+    margin: 1.9rem 0 0;
+  }
+  .sv__chips li {
+    font-size: 0.78rem;
+    padding: 0.35rem 0.8rem;
+    border: 1px solid var(--line-strong);
+    border-radius: 999px;
+    color: var(--txt-dim);
+  }
+
+  @media (min-width: 720px) {
+    .sv__grade {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>

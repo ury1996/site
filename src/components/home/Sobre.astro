@@ -1,0 +1,162 @@
+---
+import { NUMEROS } from '../../consts';
+import { SITE } from '../../consts';
+---
+
+<section class="sec" id="sobre" aria-labelledby="t-sobre">
+  <div class="wrap sb__in">
+    <div class="sb__lado" data-reveal>
+      <div class="sb__quadro">
+        <span class="sb__brilho" aria-hidden="true"></span>
+        <img
+          class="sb__logo"
+          src={SITE.logo}
+          alt={`Logo da ${SITE.nome}`}
+          width="400"
+          height="125"
+          loading="lazy"
+          decoding="async"
+        />
+        <span class="sb__assinatura">Criação de sites · Google Ads · SEO</span>
+      </div>
+
+      <dl class="sb__nums">
+        {NUMEROS.map((n) => (
+          <div>
+            <dd>{n.valor}</dd>
+            <dt>{n.rotulo}</dt>
+          </div>
+        ))}
+      </dl>
+    </div>
+
+    <div class="sb__txt" data-reveal>
+      <p class="eyebrow">Quem faz</p>
+      <h2 class="h2" id="t-sobre">A gente entrega o que os outros só apresentam.</h2>
+      <p>
+        A Sites Rankly é uma agência digital que nasceu fazendo site e cresceu porque site
+        parado não paga conta. Hoje unimos construção, tráfego pago e SEO no mesmo lugar:
+        WordPress, Elementor Pro, Astro, Google Ads, GA4 e Tag Manager.
+      </p>
+      <p>
+        Já entregamos portal de notícias com milhares de páginas indexadas, site de
+        dedetizadora com campanha rodando, landing de securitizadora, clínica de estética em
+        São Paulo e portfólio de mídia exterior em Goiás. Escolhemos a ferramenta certa para
+        o seu caso — não a que está na moda.
+      </p>
+      <blockquote class="sb__quote">
+        A gente não some depois que o site sobe. É aí que o trabalho começa.
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<style>
+  .sb__in {
+    display: grid;
+    gap: clamp(2.5rem, 5vw, 4.5rem);
+    align-items: center;
+  }
+
+  .sb__quadro {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.4rem;
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    border: 1px solid var(--line-strong);
+    border-radius: var(--r-lg);
+    background:
+      radial-gradient(circle at 30% 25%, rgba(74, 144, 217, 0.18), transparent 55%),
+      linear-gradient(160deg, #0b1b3a, #060f22);
+    overflow: hidden;
+  }
+  .sb__brilho {
+    position: absolute;
+    inset: -40% -40% auto auto;
+    width: 90%;
+    aspect-ratio: 1;
+    background: radial-gradient(circle, rgba(157, 200, 240, 0.22), transparent 65%);
+    pointer-events: none;
+  }
+  .sb__quadro::after {
+    content: '';
+    position: absolute;
+    inset: 14px;
+    border: 1px dashed rgba(157, 200, 240, 0.16);
+    border-radius: 18px;
+    pointer-events: none;
+  }
+  .sb__logo {
+    position: relative;
+    width: min(62%, 300px);
+    height: auto;
+  }
+  .sb__assinatura {
+    position: relative;
+    font-family: var(--display);
+    font-size: clamp(0.7rem, 1.5vw, 0.82rem);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--txt-dim);
+    text-align: center;
+  }
+
+  .sb__nums {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: var(--r);
+    overflow: hidden;
+    margin: 1.1rem 0 0;
+  }
+  .sb__nums > div {
+    background: var(--ink-2);
+    padding: 1.3rem 1.2rem;
+  }
+  .sb__nums dd {
+    font-family: var(--display);
+    font-size: clamp(1.7rem, 3.4vw, 2.3rem);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    margin: 0;
+  }
+  .sb__nums dt {
+    font-size: 0.76rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--txt-dim);
+    margin-top: 0.2rem;
+  }
+
+  .sb__txt h2 {
+    max-width: 18ch;
+  }
+  .sb__txt p {
+    margin-top: 1.3rem;
+    font-size: 1.02rem;
+    max-width: 56ch;
+    color: var(--txt-dim);
+  }
+  .sb__quote {
+    margin: 2.2rem 0 0;
+    padding-left: 1.3rem;
+    border-left: 3px solid var(--amber);
+    font-family: var(--display);
+    font-size: clamp(1.05rem, 2vw, 1.3rem);
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  @media (min-width: 900px) {
+    .sb__in {
+      grid-template-columns: 0.9fr 1.1fr;
+    }
+  }
+</style>

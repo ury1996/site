@@ -1,0 +1,74 @@
+---
+import { PROCESSO } from '../../consts';
+---
+
+<section class="sec" id="processo" aria-labelledby="t-processo">
+  <div class="wrap">
+    <header class="pr__topo" data-reveal>
+      <p class="eyebrow">Como trabalhamos</p>
+      <h2 class="h2" id="t-processo">Do "oi" ao "está no ar"</h2>
+      <p class="lede">
+        Sem mistério e sem proposta de 40 páginas. Quatro etapas, e você sabe onde o projeto
+        está em cada uma delas.
+      </p>
+    </header>
+
+    <ol class="pr__lista">
+      {PROCESSO.map((p) => (
+        <li class="pr__item" data-reveal>
+          <span class="pr__num">{p.numero}</span>
+          <h3>{p.titulo}</h3>
+          <p>{p.texto}</p>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>
+
+<style>
+  .pr__topo {
+    max-width: 58ch;
+    margin-bottom: clamp(2.5rem, 5vw, 4rem);
+  }
+  .pr__lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: clamp(1.5rem, 3vw, 2rem);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+    counter-reset: passo;
+  }
+  .pr__item {
+    position: relative;
+    padding-top: 2.4rem;
+    border-top: 2px solid var(--line-strong);
+  }
+  .pr__item::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 46px;
+    height: 2px;
+    background: var(--grad-arrow);
+  }
+  .pr__num {
+    position: absolute;
+    top: 1.1rem;
+    left: 0;
+    font-family: var(--display);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    color: var(--amber);
+  }
+  .pr__item h3 {
+    font-size: 1.28rem;
+    margin-bottom: 0.6rem;
+  }
+  .pr__item p {
+    font-size: 0.94rem;
+    color: var(--txt-dim);
+  }
+</style>

@@ -7,13 +7,13 @@ import CtaFinal from '../../components/CtaFinal.astro';
 import WhatsAppFloat from '../../components/WhatsAppFloat.astro';
 import { whatsappUrl, site } from '../../config/site';
 import { categorias, type Categoria } from '../../data/categorias';
-import { getNichosPorCategoria } from '../../data/nichos';
+import { getCardsDaCategoria, type CardNicho } from '../../data/nichos-especiais';
 
 export const getStaticPaths = (() => {
   return categorias
     .map((categoria) => ({
       categoria,
-      nichosDaCategoria: getNichosPorCategoria(categoria.slug),
+      nichosDaCategoria: getCardsDaCategoria(categoria.slug),
     }))
     .filter((c) => c.nichosDaCategoria.length > 0)
     .map(({ categoria, nichosDaCategoria }) => ({
@@ -24,7 +24,7 @@ export const getStaticPaths = (() => {
 
 interface Props {
   categoria: Categoria;
-  nichosDaCategoria: ReturnType<typeof getNichosPorCategoria>;
+  nichosDaCategoria: CardNicho[];
 }
 
 const { categoria, nichosDaCategoria } = Astro.props;
@@ -39,7 +39,7 @@ const listaSchema = {
     '@type': 'ListItem',
     position: i + 1,
     name: `Sites para ${nicho.nomePlural}`,
-    url: `${site.url}/sites-para-${nicho.slug}`,
+    url: `${site.url}${nicho.href}`,
   })),
 };
 
@@ -91,7 +91,7 @@ const breadcrumbSchema = {
         <div class="nichos-grid">
           {
             nichosDaCategoria.map((nicho) => (
-              <a class="nicho-card" href={`/sites-para-${nicho.slug}`}>
+              <a class="nicho-card" href={nicho.href}>
                 <h3>
                   Sites para {nicho.nomePlural} <span aria-hidden="true">→</span>
                 </h3>

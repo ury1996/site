@@ -1,0 +1,134 @@
+---
+import { PROJETOS } from '../../consts';
+import Media from './Media.astro';
+---
+
+<section class="sec sec--paper" id="projetos" aria-labelledby="t-projetos">
+  <div class="wrap">
+    <header class="pj__topo" data-reveal>
+      <p class="eyebrow">Seleção de trabalhos</p>
+      <h2 class="h2" id="t-projetos">Projetos no ar</h2>
+      <p class="lede">
+        Sem mockup, sem conceito. São sites e campanhas rodando de verdade, com clientes
+        recebendo contato do outro lado.
+      </p>
+    </header>
+
+    <div class="pj__grade">
+      {PROJETOS.map((p, i) => (
+        <article class={`pj__card${p.destaque ? ' pj__card--big' : ''}`} data-reveal style={`transition-delay:${(i % 3) * 80}ms`}>
+          <div class="pj__img">
+            <Media
+              src={p.imagem}
+              alt={`Projeto ${p.nome} — ${p.categoria} desenvolvido pela Sites Rankly`}
+              proporcao={p.destaque ? '16/9' : '4/3'}
+              medida={p.destaque ? '1600 × 900px' : '900 × 675px'}
+              width={p.destaque ? 1600 : 900}
+              height={p.destaque ? 900 : 675}
+            />
+          </div>
+          <div class="pj__corpo">
+            <span class="pj__cat">{p.categoria}</span>
+            <h3 class="pj__nome">{p.nome}</h3>
+            <p class="pj__desc">{p.descricao}</p>
+            <ul class="pj__tags">
+              {p.tags.map((t) => (
+                <li>{t}</li>
+              ))}
+            </ul>
+          </div>
+        </article>
+      ))}
+    </div>
+
+    <p class="pj__rodape" data-reveal>
+      Isso é só a vitrine. Já são <strong>150+ projetos</strong> entregues — e contando.
+    </p>
+  </div>
+</section>
+
+<style>
+  .pj__topo {
+    max-width: 60ch;
+    margin-bottom: clamp(2.5rem, 5vw, 4rem);
+  }
+  .pj__grade {
+    display: grid;
+    gap: 1.1rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+  }
+  .pj__card {
+    border: 1px solid var(--line);
+    border-radius: var(--r);
+    overflow: hidden;
+    background: var(--card);
+    transition: transform 0.35s var(--ease), border-color 0.35s var(--ease);
+  }
+  .pj__card:hover {
+    transform: translateY(-5px);
+    border-color: var(--line-strong);
+  }
+  .pj__img :global(.media) {
+    border-radius: 0;
+    transition: transform 0.6s var(--ease);
+  }
+  .pj__card:hover .pj__img :global(.media) {
+    transform: scale(1.03);
+  }
+  .pj__img {
+    overflow: hidden;
+    border-bottom: 1px solid var(--line);
+  }
+  .pj__corpo {
+    padding: 1.4rem 1.5rem 1.7rem;
+  }
+  .pj__cat {
+    font-family: var(--display);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--amber);
+  }
+  .pj__nome {
+    font-size: 1.3rem;
+    margin: 0.55rem 0 0.6rem;
+  }
+  .pj__desc {
+    font-size: 0.92rem;
+    color: var(--txt-dim);
+  }
+  .pj__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    list-style: none;
+    padding: 0;
+    margin: 1.2rem 0 0;
+  }
+  .pj__tags li {
+    font-size: 0.72rem;
+    padding: 0.28rem 0.65rem;
+    border: 1px solid var(--line-strong);
+    border-radius: 999px;
+    color: var(--txt-dim);
+  }
+  .pj__rodape {
+    margin-top: 2.6rem;
+    text-align: center;
+    color: var(--txt-dim);
+    font-size: 0.98rem;
+  }
+  .pj__rodape strong {
+    color: var(--amber);
+  }
+
+  @media (min-width: 820px) {
+    .pj__card--big {
+      grid-column: span 2;
+    }
+    .pj__card--big .pj__nome {
+      font-size: 1.7rem;
+    }
+  }
+</style>

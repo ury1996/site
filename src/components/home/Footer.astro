@@ -1,0 +1,156 @@
+---
+import { SITE, CONTATO, whatsappLink } from '../../consts';
+const ano = new Date().getFullYear();
+---
+
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft__topo">
+      <a class="ft__logo" href="/" aria-label={`${SITE.nome} — início`}>
+        <img src={SITE.logo} alt={`Logo ${SITE.nome}`} width="170" height="53" loading="lazy" decoding="async" />
+      </a>
+      <a class="ft__topolink" href="#topo">Voltar ao topo ↑</a>
+    </div>
+
+    <div class="ft__grade">
+      <nav aria-labelledby="ft-serv">
+        <h2 class="ft__h" id="ft-serv">Serviços</h2>
+        <ul>
+          <li><a href="/#servicos">Criação de sites</a></li>
+          <li><a href="/#servicos">Google Ads</a></li>
+          <li><a href="/#servicos">SEO e conteúdo</a></li>
+          <li><a href="/#servicos">Manutenção de sites</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="ft-emp">
+        <h2 class="ft__h" id="ft-emp">Agência</h2>
+        <ul>
+          <li><a href="/#sobre">Sobre nós</a></li>
+          <li><a href="/#projetos">Projetos</a></li>
+          <li><a href="/sites-para-empresas">Nichos atendidos</a></li>
+          <li><a href="/#processo">Como trabalhamos</a></li>
+          <li><a href="/#faq">Dúvidas frequentes</a></li>
+        </ul>
+      </nav>
+
+      <section aria-labelledby="ft-cont">
+        <h2 class="ft__h" id="ft-cont">Contato</h2>
+        <ul>
+          <li><a href={`mailto:${CONTATO.email}`}>{CONTATO.email}</a></li>
+          <li><a href={`tel:${CONTATO.telefoneE164}`}>{CONTATO.telefoneExibicao}</a></li>
+          <li>{CONTATO.horario}</li>
+          <li>{CONTATO.cidade} — {CONTATO.estado}, Brasil</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="ft-redes">
+        <h2 class="ft__h" id="ft-redes">Redes</h2>
+        <ul>
+          <li><a href={whatsappLink} target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href={CONTATO.instagram} target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href={CONTATO.linkedin} target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="ft__base">
+      <p>© {ano} {SITE.nome}. Todos os direitos reservados.</p>
+      <p class="ft__seo">
+        Criação de sites, Google Ads e SEO em {CONTATO.cidade}, Belo Horizonte e região —
+        atendimento para todo o Brasil.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .ft {
+    border-top: 1px solid var(--line);
+    background: var(--ink-2);
+    padding-block: clamp(2.8rem, 6vw, 4.5rem) 2rem;
+  }
+  .ft__topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-bottom: 2.2rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .ft__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 1.15rem;
+    letter-spacing: -0.03em;
+  }
+  .ft__logo img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+  }
+  .ft__logo b {
+    color: var(--amber);
+  }
+  .ft__topolink {
+    font-size: 0.85rem;
+    color: var(--txt-dim);
+    transition: color 0.2s;
+  }
+  .ft__topolink:hover {
+    color: var(--amber);
+  }
+  .ft__grade {
+    display: grid;
+    gap: 2rem;
+    padding-block: 2.4rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 165px), 1fr));
+  }
+  .ft__h {
+    font-family: var(--display);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--txt);
+    margin-bottom: 1rem;
+  }
+  .ft__grade ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.15rem;
+  }
+  .ft__grade li {
+    padding-block: 0.35rem; /* alvo de toque confortável no celular */
+  }
+  .ft__grade li,
+  .ft__grade a {
+    font-size: 0.9rem;
+    color: var(--txt-dim);
+  }
+  .ft__grade a {
+    transition: color 0.2s;
+  }
+  .ft__grade a:hover {
+    color: var(--amber);
+  }
+  .ft__base {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 1.5rem;
+    justify-content: space-between;
+    padding-top: 1.8rem;
+    border-top: 1px solid var(--line);
+    font-size: 0.82rem;
+    color: var(--txt-dim);
+  }
+  .ft__seo {
+    max-width: 60ch;
+    opacity: 0.75;
+  }
+</style>

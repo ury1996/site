@@ -5,25 +5,33 @@ import Footer from '../components/Footer.astro';
 import CtaFinal from '../components/CtaFinal.astro';
 import WhatsAppFloat from '../components/WhatsAppFloat.astro';
 import { whatsappUrl, site } from '../config/site';
-import { nichos, getNichosPorCategoria } from '../data/nichos';
+import { nichos } from '../data/nichos';
 import { categorias } from '../data/categorias';
+import { nichosEspeciais, getCardsDaCategoria } from '../data/nichos-especiais';
 
 const titulo = `Sites para Empresas por Nicho em MG | ${site.nome}`;
 const descricao = `Veja os segmentos para os quais a ${site.nome} cria sites em MG, organizados por categoria: construção, saúde, jurídico e mais. SEO local e WhatsApp.`;
 
+/* Nichos do template dinâmico e páginas de layout próprio já chegam em um
+   formato único de card, para a listagem não precisar saber a diferença. */
 const categoriasComNichos = categorias
-  .map((categoria) => ({ categoria, itens: getNichosPorCategoria(categoria.slug) }))
+  .map((categoria) => ({ categoria, itens: getCardsDaCategoria(categoria.slug) }))
   .filter((c) => c.itens.length > 0);
+
+const totalNichos = nichos.length + nichosEspeciais.length;
 
 const listaSchema = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
-  itemListElement: nichos.map((nicho, i) => ({
-    '@type': 'ListItem',
-    position: i + 1,
-    name: `Sites para ${nicho.nomePlural}`,
-    url: `${site.url}/sites-para-${nicho.slug}`,
-  })),
+  numberOfItems: totalNichos,
+  itemListElement: categoriasComNichos
+    .flatMap(({ itens }) => itens)
+    .map((nicho, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: `Sites para ${nicho.nomePlural}`,
+      url: `${site.url}${nicho.href}`,
+    })),
 };
 
 const breadcrumbSchema = {
@@ -91,7 +99,7 @@ const breadcrumbSchema = {
 
             <div class="nichos-grid">
               {itens.map((nicho) => (
-                <a class="nicho-card" href={`/sites-para-${nicho.slug}`}>
+                <a class="nicho-card" href={nicho.href}>
                   <h3>
                     Sites para {nicho.nomePlural} <span aria-hidden="true">→</span>
                   </h3>

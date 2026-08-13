@@ -1,0 +1,72 @@
+---
+import { EXTRAS, whatsappLink } from '../../consts';
+---
+
+<section class="sec ex" aria-labelledby="t-extras">
+  <div class="wrap">
+    <div class="ex__topo" data-reveal>
+      <div>
+        <p class="eyebrow">Além do site</p>
+        <h2 class="h2" id="t-extras">Também cuidamos do que ninguém quer cuidar.</h2>
+      </div>
+      <a class="btn btn--ghost" href={whatsappLink} target="_blank" rel="noopener">
+        Conte o que você precisa →
+      </a>
+    </div>
+
+    <ul class="ex__lista">
+      {EXTRAS.map((e) => (
+        <li class="ex__item" data-reveal>
+          <h3>{e.titulo}</h3>
+          <p>{e.texto}</p>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<style>
+  .ex {
+    background: linear-gradient(180deg, var(--ink), var(--ink-2));
+    border-block: 1px solid var(--line);
+  }
+  .ex__topo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: clamp(2.2rem, 4vw, 3.4rem);
+  }
+  .ex__topo h2 {
+    max-width: 20ch;
+  }
+  .ex__lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: var(--r);
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  }
+  .ex__item {
+    background: var(--ink);
+    padding: clamp(1.5rem, 3vw, 2.1rem);
+    transition: background 0.3s var(--ease);
+  }
+  .ex__item:hover {
+    background: rgba(157, 200, 240, 0.05);
+  }
+  .ex__item h3 {
+    font-size: 1.12rem;
+    margin-bottom: 0.6rem;
+  }
+  .ex__item p {
+    font-size: 0.92rem;
+    color: var(--txt-dim);
+  }
+</style>
