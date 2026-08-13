@@ -1,0 +1,109 @@
+---
+import Logo from './Logo.astro';
+import { site } from '../config/site';
+
+const ano = new Date().getFullYear();
+
+const navegacao = [
+  { href: '#diagnostico', texto: 'Diagnóstico do seu site' },
+  { href: '#como-funciona', texto: 'Como funciona' },
+  { href: '#faq', texto: 'Perguntas frequentes' },
+];
+---
+
+<footer class="rodape">
+  <div class="container rodape-grid">
+    <div>
+      <a href="#inicio" class="rodape-logo-link">
+        <Logo width={180} height={88} alt={site.nome} />
+      </a>
+      <p>
+        Sites que geram orçamentos para empresas de energia solar. Criação de sites,
+        landing pages, SEO local e Google Ads para integradoras solares em todo o estado
+        de {site.regiao}.
+      </p>
+    </div>
+
+    <address>
+      <p><strong>Contato</strong></p>
+      <p>
+        {site.endereco.rua}<br />
+        {site.endereco.cidade} — {site.endereco.estado}
+      </p>
+      <p>
+        <a href={site.telefoneLink}>{site.telefone}</a><br />
+        <a href={`mailto:${site.email}`}>{site.email}</a>
+      </p>
+    </address>
+
+    <div>
+      <p><strong>Navegação</strong></p>
+      <p>
+        {
+          navegacao.map((item, i) => (
+            <>
+              <a href={item.href}>{item.texto}</a>
+              {i < navegacao.length - 1 && <br />}
+            </>
+          ))
+        }
+      </p>
+    </div>
+  </div>
+
+  <div class="container rodape-base">
+    <p>© {ano} {site.nome}. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<style>
+  .rodape {
+    background: #060f20;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 0.9rem;
+  }
+
+  .rodape a {
+    color: rgba(255, 255, 255, 0.72);
+  }
+
+  .rodape a:hover {
+    color: var(--sol);
+  }
+
+  .rodape-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    gap: 32px;
+    padding-block: 48px 28px;
+  }
+
+  .rodape-logo-link {
+    display: inline-flex;
+    background: #fff;
+    border-radius: 12px;
+    padding: 8px 14px;
+    margin-bottom: 14px;
+  }
+
+  .rodape-logo-link :global(img) {
+    width: auto;
+    height: 64px;
+  }
+
+  address {
+    font-style: normal;
+  }
+
+  .rodape-base {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-block: 18px;
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: 820px) {
+    .rodape-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -1,0 +1,25 @@
+{
+  "name": "sites-rankly",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page de captação para Sites Rankly — sites para empresas de energia solar em Minas Gerais.",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check": "astro check",
+    "og": "node scripts/generate-og.mjs"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/sitemap": "^3.6.0",
+    "astro": "^5.14.1",
+    "typescript": "^5.9.2"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.3"
+  }
+}

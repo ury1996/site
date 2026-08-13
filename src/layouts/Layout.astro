@@ -1,0 +1,144 @@
+---
+import '../styles/global.css';
+import { site } from '../config/site';
+
+interface Props {
+  titulo?: string;
+  descricao?: string;
+  /** Caminho da página, ex.: "/" ou "/energia-solar-bh". */
+  path?: string;
+  noindex?: boolean;
+}
+
+const {
+  titulo = site.titulo,
+  descricao = site.descricao,
+  path = Astro.url.pathname,
+  noindex = false,
+} = Astro.props;
+
+const canonical = new URL(path, site.url).href;
+const ogImage = new URL(site.ogImage, site.url).href;
+
+const empresaSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  '@id': `${site.url}/#empresa`,
+  name: site.nome,
+  description: site.descricao,
+  url: `${site.url}/`,
+  telephone: site.telefone,
+  email: site.email,
+  image: ogImage,
+  priceRange: '$$',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: site.endereco.rua,
+    addressLocality: site.endereco.cidade,
+    addressRegion: site.endereco.estado,
+    postalCode: site.endereco.cep,
+    addressCountry: site.endereco.pais,
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: site.endereco.lat,
+    longitude: site.endereco.lng,
+  },
+  areaServed: { '@type': 'State', name: site.regiao },
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '08:00',
+      closes: '18:00',
+    },
+  ],
+  sameAs: [site.instagram],
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: site.avaliacao.nota,
+    reviewCount: site.avaliacao.quantidade,
+  },
+};
+
+const servicoSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  serviceType: 'Criação de sites para empresas de energia solar',
+  provider: { '@id': `${site.url}/#empresa` },
+  areaServed: { '@type': 'State', name: site.regiao },
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Serviços digitais para empresas de energia solar',
+    itemListElement: [
+      'Criação de site institucional para integradora solar',
+      'Landing page de captação de orçamentos de energia solar',
+      'SEO local e Google Ads para energia solar',
+    ].map((name) => ({
+      '@type': 'Offer',
+      itemOffered: { '@type': 'Service', name },
+    })),
+  },
+};
+---
+
+<!doctype html>
+<html lang={site.lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- SEO básico -->
+    <title>{titulo}</title>
+    <meta name="description" content={descricao} />
+    <link rel="canonical" href={canonical} />
+    <meta
+      name="robots"
+      content={noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large'}
+    />
+    <meta name="theme-color" content="#0A1830" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content={site.locale} />
+    <meta property="og:site_name" content={site.nome} />
+    <meta property="og:title" content={titulo} />
+    <meta property="og:description" content={descricao} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={titulo} />
+    <meta name="twitter:description" content={descricao} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <!-- Fontes: preconnect + swap (performance) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Dados estruturados -->
+    <script
+      type="application/ld+json"
+      is:inline
+      set:html={JSON.stringify(empresaSchema)}
+    />
+    <script
+      type="application/ld+json"
+      is:inline
+      set:html={JSON.stringify(servicoSchema)}
+    />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

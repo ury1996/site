@@ -1,0 +1,225 @@
+---
+import { itensDiagnostico } from '../data/conteudo';
+---
+
+<section class="secao simulador" id="diagnostico" aria-labelledby="titulo-sim">
+  <div class="container sim-grid">
+    <div>
+      <p class="eyebrow">Diagnóstico em 1 minuto</p>
+      <h2 id="titulo-sim">Seu site está pronto para vender energia solar?</h2>
+      <p>
+        Quando alguém da sua região pesquisa <strong>"energia solar"</strong> no Google,
+        seu site precisa aparecer, carregar rápido e convencer. Marque o que o seu site já
+        tem hoje e veja a nota dele como <strong>vendedor</strong>.
+      </p>
+      <p class="sim-nota">
+        Estes 6 pontos são o que separa um "site vitrine" de um site que gera orçamentos
+        toda semana. O diagnóstico completo — com análise do seu site e dos concorrentes —
+        é gratuito.
+      </p>
+    </div>
+
+    <div class="sim-card">
+      <p class="sim-label" id="diag-legenda">Marque o que o seu site já tem:</p>
+
+      <div class="diag-lista" role="group" aria-labelledby="diag-legenda">
+        {
+          itensDiagnostico.map((item) => (
+            <label class="diag-item">
+              <input type="checkbox" data-diag />
+              <span>{item}</span>
+            </label>
+          ))
+        }
+      </div>
+
+      <div class="diag-resultado" aria-live="polite">
+        <div class="diag-placar">
+          <span class="diag-nota" id="diag-nota">0</span>
+          <span class="diag-max">/100</span>
+        </div>
+        <p class="diag-msg" id="diag-msg">
+          Marque os itens acima para ver a nota do seu site.
+        </p>
+      </div>
+
+      <a class="btn btn-sol btn-full" href="#proposta" id="diag-cta">
+        Receber diagnóstico completo grátis →
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .simulador {
+    background: var(--ceu);
+  }
+
+  .sim-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(32px, 5vw, 72px);
+    align-items: center;
+  }
+
+  .sim-nota {
+    font-size: 0.82rem;
+    color: var(--cinza);
+  }
+
+  .sim-card {
+    background: var(--branco);
+    border: 1px solid var(--borda);
+    border-radius: var(--raio);
+    padding: 30px;
+    box-shadow: var(--sombra);
+  }
+
+  .sim-label {
+    font-size: 0.88rem;
+    font-weight: 600;
+  }
+
+  .diag-lista {
+    display: grid;
+    gap: 8px;
+    margin: 12px 0 18px;
+  }
+
+  .diag-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 11px 14px;
+    border: 1.5px solid var(--borda);
+    border-radius: 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition:
+      border-color 0.15s ease,
+      background 0.15s ease;
+  }
+
+  .diag-item:hover {
+    border-color: var(--brasa);
+  }
+
+  .diag-item:has(input:checked) {
+    border-color: var(--verde);
+    background: #f2fbf7;
+  }
+
+  .diag-item input {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    flex-shrink: 0;
+    accent-color: var(--verde);
+    cursor: pointer;
+  }
+
+  .diag-resultado {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 16px;
+    border-radius: 12px;
+    background: var(--ceu);
+    margin-bottom: 18px;
+  }
+
+  .diag-placar {
+    display: flex;
+    align-items: baseline;
+    flex-shrink: 0;
+  }
+
+  .diag-nota {
+    font-family: var(--fonte-display);
+    font-weight: 800;
+    font-size: 2.6rem;
+    color: var(--cinza);
+    transition: color 0.2s ease;
+  }
+
+  .diag-nota.ruim {
+    color: #c43d3d;
+  }
+
+  .diag-nota.media {
+    color: var(--brasa);
+  }
+
+  .diag-nota.boa {
+    color: var(--verde);
+  }
+
+  .diag-max {
+    font-family: var(--fonte-display);
+    font-weight: 700;
+    color: var(--cinza);
+  }
+
+  .diag-msg {
+    font-size: 0.85rem;
+    margin: 0;
+    color: var(--grafite);
+  }
+
+  .btn-full {
+    width: 100%;
+  }
+
+  @media (max-width: 900px) {
+    .sim-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<script>
+  const checkboxes = document.querySelectorAll<HTMLInputElement>('[data-diag]');
+  const notaEl = document.getElementById('diag-nota');
+  const msgEl = document.getElementById('diag-msg');
+  const ctaEl = document.getElementById('diag-cta');
+
+  function atualizar() {
+    if (!notaEl || !msgEl || !ctaEl) return;
+
+    const marcados = Array.from(checkboxes).filter((c) => c.checked).length;
+    const nota = Math.round((marcados / checkboxes.length) * 100);
+
+    notaEl.textContent = String(nota);
+    notaEl.classList.remove('ruim', 'media', 'boa');
+
+    let msg = 'Marque os itens acima para ver a nota do seu site.';
+    let cta = 'Receber diagnóstico completo grátis →';
+
+    if (marcados > 0 && nota <= 34) {
+      notaEl.classList.add('ruim');
+      msg =
+        'Seu site está custando vendas: os orçamentos da sua região estão indo para concorrentes com presença digital mais forte.';
+      cta = 'Quero parar de perder orçamentos →';
+    } else if (nota > 34 && nota <= 67) {
+      notaEl.classList.add('media');
+      msg =
+        'Seu site existe, mas não trabalha para você. Com os pontos que faltam, ele passa de vitrine a vendedor.';
+      cta = 'Quero completar os pontos que faltam →';
+    } else if (nota > 67 && nota < 100) {
+      notaEl.classList.add('boa');
+      msg =
+        'Falta pouco! Os itens que faltam costumam ser justamente os que mais geram orçamento.';
+      cta = 'Quero fechar os últimos pontos →';
+    } else if (nota === 100) {
+      notaEl.classList.add('boa');
+      msg =
+        'Excelente! Se o site já faz tudo isso, o próximo passo é escalar com SEO contínuo e Google Ads.';
+      cta = 'Quero escalar com tráfego →';
+    }
+
+    msgEl.textContent = msg;
+    ctaEl.textContent = cta;
+  }
+
+  checkboxes.forEach((c) => c.addEventListener('change', atualizar));
+</script>
