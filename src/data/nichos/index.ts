@@ -4,6 +4,7 @@ import { odontologia } from './odontologia';
 import { estetica } from './estetica';
 import { imobiliarias } from './imobiliarias';
 import { construcao } from './construcao';
+import { veterinaria } from './veterinaria';
 
 /**
  * Lista de nichos publicados. Cada entrada aqui vira uma página estática em
@@ -12,7 +13,14 @@ import { construcao } from './construcao';
  * Novos nichos são adicionados aqui um de cada vez, conforme o conteúdo de
  * cada página fica pronto.
  */
-export const nichos: Nicho[] = [advocacia, odontologia, estetica, imobiliarias, construcao];
+export const nichos: Nicho[] = [
+  advocacia,
+  odontologia,
+  estetica,
+  imobiliarias,
+  construcao,
+  veterinaria,
+];
 
 export function getNichoPorSlug(slug: string): Nicho | undefined {
   return nichos.find((n) => n.slug === slug);
