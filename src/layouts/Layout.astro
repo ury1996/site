@@ -9,6 +9,8 @@ interface Props {
   /** Caminho da página, ex.: "/" ou "/energia-solar-bh". */
   path?: string;
   noindex?: boolean;
+  /** Sobrescreve a imagem de compartilhamento padrão (og:image/twitter:image). */
+  imagem?: string;
 }
 
 const {
@@ -16,10 +18,13 @@ const {
   descricao = site.descricao,
   path = Astro.url.pathname,
   noindex = false,
+  imagem = site.ogImage,
 } = Astro.props;
 
 const canonical = new URL(path, site.url).href;
-const ogImage = new URL(site.ogImage, site.url).href;
+const ogImage = new URL(imagem, site.url).href;
+/** Imagem institucional (marca) usada no JSON-LD — não varia por página, diferente do og:image. */
+const brandImage = new URL(site.ogImage, site.url).href;
 
 const empresaSchema = {
   '@context': 'https://schema.org',
@@ -30,7 +35,7 @@ const empresaSchema = {
   url: `${site.url}/`,
   telephone: site.telefone,
   email: site.email,
-  image: ogImage,
+  image: brandImage,
   priceRange: '$$',
   address: {
     '@type': 'PostalAddress',
@@ -107,8 +112,10 @@ const servicoSchema = {
     <meta property="og:description" content={descricao} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogImage} />
+    {imagem.endsWith('.svg') && <meta property="og:image:type" content="image/svg+xml" />}
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={titulo} />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />

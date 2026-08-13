@@ -56,15 +56,29 @@ const breadcrumbSchema = {
     },
   ],
 };
+
+const imagemOg = `/og/${nicho.slug}.svg`;
 ---
 
-<Layout titulo={nicho.tituloSeo} descricao={nicho.descricaoSeo}>
+<Layout titulo={nicho.tituloSeo} descricao={nicho.descricaoSeo} imagem={imagemOg}>
   <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
   <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbSchema)} />
 
   <Header />
 
   <main id="inicio">
+    <div class="og-banner">
+      <img
+        src={imagemOg}
+        alt={nicho.tituloSeo}
+        title={nicho.tituloSeo}
+        width="1200"
+        height="630"
+        loading="eager"
+        fetchpriority="high"
+      />
+    </div>
+
     <Hero
       eyebrow={nicho.hero.eyebrow}
       tituloHtml={nicho.hero.tituloHtml}
@@ -115,3 +129,15 @@ const breadcrumbSchema = {
   <Footer />
   <WhatsAppFloat url={whatsappUrl} />
 </Layout>
+
+<style>
+  .og-banner {
+    line-height: 0;
+  }
+
+  .og-banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+</style>
