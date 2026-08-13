@@ -32,6 +32,12 @@ import { cerimonialEEventos } from './cerimonial-e-eventos';
 import { fotografia } from './fotografia';
 import { escolasECursos } from './escolas-e-cursos';
 import { educacaoInfantil } from './educacao-infantil';
+import { limpeza } from './limpeza';
+import { jardinagem } from './jardinagem';
+import { piscinas } from './piscinas';
+import { lavanderia } from './lavanderia';
+import { decoracao } from './decoracao';
+import { moveisPlanejados } from './moveis-planejados';
 
 /**
  * Lista de nichos publicados. Cada entrada aqui vira uma página estática em
@@ -74,6 +80,12 @@ export const nichos: Nicho[] = [
   fotografia,
   escolasECursos,
   educacaoInfantil,
+  limpeza,
+  jardinagem,
+  piscinas,
+  lavanderia,
+  decoracao,
+  moveisPlanejados,
 ];
 
 export function getNichoPorSlug(slug: string): Nicho | undefined {
