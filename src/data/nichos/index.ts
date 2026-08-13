@@ -30,6 +30,8 @@ import { hoteisEPousadas } from './hoteis-e-pousadas';
 import { restaurantes } from './restaurantes';
 import { cerimonialEEventos } from './cerimonial-e-eventos';
 import { fotografia } from './fotografia';
+import { escolasECursos } from './escolas-e-cursos';
+import { educacaoInfantil } from './educacao-infantil';
 
 /**
  * Lista de nichos publicados. Cada entrada aqui vira uma página estática em
@@ -70,6 +72,8 @@ export const nichos: Nicho[] = [
   restaurantes,
   cerimonialEEventos,
   fotografia,
+  escolasECursos,
+  educacaoInfantil,
 ];
 
 export function getNichoPorSlug(slug: string): Nicho | undefined {
