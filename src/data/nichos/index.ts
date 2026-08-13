@@ -38,6 +38,10 @@ import { piscinas } from './piscinas';
 import { lavanderia } from './lavanderia';
 import { decoracao } from './decoracao';
 import { moveisPlanejados } from './moveis-planejados';
+import { industriaEFabricas } from './industria-e-fabricas';
+import { manutencaoIndustrial } from './manutencao-industrial';
+import { logistica } from './logistica';
+import { agronegocio } from './agronegocio';
 
 /**
  * Lista de nichos publicados. Cada entrada aqui vira uma página estática em
@@ -86,6 +90,10 @@ export const nichos: Nicho[] = [
   lavanderia,
   decoracao,
   moveisPlanejados,
+  industriaEFabricas,
+  manutencaoIndustrial,
+  logistica,
+  agronegocio,
 ];
 
 export function getNichoPorSlug(slug: string): Nicho | undefined {
