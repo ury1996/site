@@ -215,7 +215,7 @@ export const imobiliarias: Nicho = {
         titulo: 'Por que escolher a Sites Rankly para o site da sua imobiliária',
         paragrafos: [
           'Construímos sites rápidos mesmo com catálogos grandes, com SEO local desde o primeiro dia e captação de leads integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de serviço em Minas Gerais, adaptado às particularidades do mercado imobiliário, incluindo integração com os principais portais.',
-          'O domínio e todos os acessos ficam no nome da imobiliária, sem contrato de fidelidade — você continua porque os resultados aparecem, não porque está preso a um contrato. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua imobiliária está performando hoje.',
+          'O domínio e todos os acessos ficam no nome da imobiliária, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua imobiliária está performando hoje.',
         ],
       },
     ],

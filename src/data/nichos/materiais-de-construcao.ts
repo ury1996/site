@@ -215,7 +215,7 @@ export const materiaisDeConstrucao: Nicho = {
         titulo: 'Por que escolher a Sites Rankly para o site da sua loja',
         paragrafos: [
           'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de varejo e construção em Minas Gerais, com atenção específica à organização de catálogo por categoria e ao fluxo de orçamento rápido.',
-          'O domínio e todos os acessos ficam no nome da sua loja, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua loja está performando hoje.',
+          'O domínio e todos os acessos ficam no nome da sua loja ficam sob seu controle, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua loja está performando hoje.',
         ],
       },
     ],

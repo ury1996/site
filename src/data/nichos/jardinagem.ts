@@ -163,6 +163,11 @@ export const jardinagem: Nicho = {
       resposta:
         'Fica, sim — domínio e todos os acessos administrativos registrados em nome da sua empresa, sem letras miúdas. Não usamos contrato de fidelidade: você continua com a gente pelos resultados, não por estar preso a um contrato.',
     },
+    {
+      pergunta: 'Também instalo sistema de irrigação automática. Vale destacar isso separado?',
+      resposta:
+        'Vale muito. Irrigação automática é um serviço técnico com público próprio — muitas vezes clientes que já têm jardim pronto e querem reduzir o trabalho manual de regar. Uma seção explicando o funcionamento e os benefícios (economia de água, praticidade) atrai esse público específico, complementando os pedidos de projeto e manutenção.',
+    },
   ],
 
   artigo: {
@@ -215,7 +220,7 @@ export const jardinagem: Nicho = {
         titulo: 'Por que escolher a Sites Rankly para o site da sua empresa',
         paragrafos: [
           'Construímos sites rápidos mesmo com portfólios visuais pesados, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de serviço doméstico e criativo em Minas Gerais, com atenção específica à curadoria de fotos de jardins e projetos.',
-          'O domínio e todos os acessos ficam no nome da sua empresa, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua empresa está performando hoje.',
+          'No nome da sua empresa ficam o domínio e todos os acessos, sem contrato de fidelidade — a parceria continua pelo resultado entregue, não por cláusula contratual. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama direto de como o site da sua empresa está performando hoje.',
         ],
       },
     ],

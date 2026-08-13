@@ -163,6 +163,11 @@ export const petShops: Nicho = {
       resposta:
         'Fica, sim — domínio e todos os acessos administrativos registrados em nome do seu pet shop, sem letras miúdas. Não usamos contrato de fidelidade: você continua com a gente pelos resultados, não por estar preso a um contrato.',
     },
+    {
+      pergunta: 'Também vendo ração e acessórios. Vale a pena incluir isso no site?',
+      resposta:
+        'Vale, principalmente como complemento ao agendamento de serviços — muitos tutores aproveitam a visita de banho e tosa para comprar ração. Uma seção simples mostrando as marcas trabalhadas, sem necessariamente virar uma loja virtual completa, já ajuda o tutor a saber que pode resolver tudo em um só lugar.',
+    },
   ],
 
   artigo: {

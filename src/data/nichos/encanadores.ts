@@ -163,6 +163,11 @@ export const encanadores: Nicho = {
       resposta:
         'Fica, sim — domínio e todos os acessos administrativos registrados em seu nome ou no da sua empresa, sem letras miúdas. Não usamos contrato de fidelidade: você continua com a gente pelos resultados, não por estar preso a um contrato.',
     },
+    {
+      pergunta: 'Também faço instalação de banheiro completo, não só reparo. Vale destacar isso?',
+      resposta:
+        'Vale muito. Instalação completa de banheiro (louças, metais, tubulação) tem um ticket bem maior do que um reparo pontual, e atrai um público diferente — geralmente quem está reformando, não em situação de urgência. Uma seção própria para esse serviço, com fotos de trabalhos concluídos, ajuda a captar esse cliente de maior valor.',
+    },
   ],
 
   artigo: {
@@ -179,7 +184,7 @@ export const encanadores: Nicho = {
       {
         titulo: 'O que um site hidráulico realmente precisa ter',
         paragrafos: [
-          'O elemento mais importante é o caminho de contato rápido: um botão de chamado de urgência visível assim que o site abre, sem precisar rolar a página. Cada segundo perdido procurando telefone é uma chance real de o cliente ligar para o próximo resultado do Google.',
+          'O elemento mais importante é um caminho de contato que não exija esforço: botão de chamado de urgência já na primeira tela, sem precisar rolar ou clicar em menu. Cada segundo procurando telefone em site alheio é uma chance de o cliente desistir e ligar para o próximo resultado do Google.',
           'O segundo elemento é a lista clara de serviços — conserto de vazamento, desentupimento, instalação de caixa d’água, troca de registro, instalação de banheiro completo. Isso ajuda o site a aparecer em buscas mais específicas e dá ao cliente confiança de que você atende exatamente o problema que ele tem.',
         ],
       },
@@ -207,15 +212,15 @@ export const encanadores: Nicho = {
       {
         titulo: 'Quanto custa e quanto tempo leva um site para encanador',
         paragrafos: [
-          'Uma landing page de captação de chamado, direta ao ponto, fica pronta em até 7 dias úteis. Um site completo, com todos os serviços e páginas de conteúdo técnico, leva entre 12 e 20 dias úteis, incluindo revisão da lista de serviços e configuração do botão de urgência.',
+          'Uma landing page direta ao ponto, focada em captar chamado, sai em até 7 dias úteis. Já um site completo, com todos os serviços detalhados e páginas de conteúdo técnico, leva entre 12 e 20 dias úteis — incluindo a configuração do botão de urgência e revisão de toda a lista de serviços.',
           'Considerando o valor médio de um chamado hidráulico, o investimento no site costuma se pagar já nas primeiras semanas de operação. Depois do diagnóstico gratuito, você recebe uma proposta fechada e sabe exatamente o que está incluso.',
         ],
       },
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua empresa hidráulica',
         paragrafos: [
-          'Construímos sites extremamente rápidos, com SEO local desde o primeiro dia e captação de chamados integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de urgência doméstica em Minas Gerais, com atenção específica ao caminho de contato mais curto possível.',
-          'O domínio e todos os acessos ficam no seu nome, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua empresa está performando hoje.',
+          'Construímos sites rápidos desde a primeira visita, com SEO local trabalhado desde o dia um e captação de chamado integrada ao WhatsApp — o mesmo padrão usado em outros serviços de urgência doméstica em Minas Gerais, sempre priorizando o caminho de contato mais curto possível.',
+          'O domínio e todos os acessos administrativos ficam registrados em seu nome, sem cláusula de fidelidade prendendo a parceria. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama honesto de como o site da sua empresa está performando hoje.',
         ],
       },
     ],

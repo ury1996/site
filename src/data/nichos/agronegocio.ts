@@ -215,7 +215,7 @@ export const agronegocio: Nicho = {
         titulo: 'Por que escolher a Sites Rankly para o site da sua empresa',
         paragrafos: [
           'Construímos sites rápidos mesmo para conexões de internet mais fracas, com SEO regional desde o primeiro dia e captação de cotações integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos do agronegócio e da indústria em Minas Gerais, com atenção específica ao calendário agrícola e à realidade do produtor rural.',
-          'O domínio e todos os acessos ficam no nome da sua empresa, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua empresa está performando hoje.',
+          'Registro do domínio e acessos administrativos ficam no nome da sua empresa desde o primeiro dia, sem cláusula de permanência mínima. Peça o diagnóstico gratuito e receba, em até 24h úteis, um diagnóstico honesto de como o site da sua empresa está performando hoje.',
         ],
       },
     ],

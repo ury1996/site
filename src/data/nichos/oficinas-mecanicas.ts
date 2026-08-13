@@ -151,7 +151,7 @@ export const oficinasMecanicas: Nicho = {
     {
       pergunta: 'Minha oficina já é conhecida no bairro. Vale a pena investir em site?',
       resposta:
-        'Vale — a fama do bairro se perde para quem mora do outro lado da cidade e simplesmente pesquisa "oficina mecânica" no Google. Um site bem posicionado capta esse público novo, além de servir como referência rápida para quem já ouviu falar de você e quer confirmar antes de ligar.',
+        'Vale — a fama do bairro se perde para quem mora do outro lado da cidade e simplesmente pesquisa "oficina mecânica" no Google. Um site bem posicionado capta esse público novo, além de servir como referência rápida para quem já ouviu falar de você e quer confirmar antes de ligar. É comum, inclusive, um cliente pesquisar o nome da oficina no Google só para checar avaliações antes de decidir levar o carro pela primeira vez.',
     },
     {
       pergunta: 'Como o site vai gerar agendamento de verdade?',
@@ -162,6 +162,11 @@ export const oficinasMecanicas: Nicho = {
       pergunta: 'O site fica no nome da oficina? E se eu quiser trocar de agência depois?',
       resposta:
         'Fica, sim — domínio e todos os acessos administrativos registrados em nome da sua oficina, sem letras miúdas. Não usamos contrato de fidelidade: você continua com a gente pelos resultados, não por estar preso a um contrato.',
+    },
+    {
+      pergunta: 'Também atendo frota de empresas, não só carro de particular. Vale destacar isso?',
+      resposta:
+        'Vale muito. Atendimento a frota costuma envolver contrato recorrente de manutenção preventiva para vários veículos, uma receita bem mais estável do que atendimento avulso. Uma seção explicando como funciona esse tipo de parceria — agendamento programado, relatório de manutenção, condições especiais para volume — atrai esse público corporativo específico, que costuma pesquisar oficina de forma bem mais criteriosa do que o motorista particular.',
     },
   ],
 
@@ -215,7 +220,7 @@ export const oficinasMecanicas: Nicho = {
         titulo: 'Por que escolher a Sites Rankly para o site da sua oficina',
         paragrafos: [
           'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de agendamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos automotivos em Minas Gerais, com atenção específica a como apresentar especialidades de forma que facilite a busca do cliente.',
-          'O domínio e todos os acessos ficam no nome da sua oficina, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua oficina está performando hoje.',
+          'Todo o histórico de acesso e o registro no nome da sua oficina ficam sob seu controle, sem cláusula de fidelidade — a continuidade depende só dos resultados entregues. Peça o diagnóstico gratuito e receba, em até 24h úteis, uma análise real de como o site da sua oficina está performando hoje.',
         ],
       },
     ],

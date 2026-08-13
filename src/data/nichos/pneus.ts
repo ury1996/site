@@ -215,7 +215,7 @@ export const pneus: Nicho = {
         titulo: 'Por que escolher a Sites Rankly para o site da sua loja',
         paragrafos: [
           'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos automotivos em Minas Gerais, com atenção específica à consulta rápida por medida e ao fluxo de orçamento simplificado.',
-          'O domínio e todos os acessos ficam no nome da sua loja, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua loja está performando hoje.',
+          'Todo o histórico de acesso e o registro no nome da sua loja ficam sob seu controle ficam sob seu controle, sem cláusula de fidelidade — a continuidade depende só dos resultados entregues. Peça o diagnóstico gratuito e receba, em até 24h úteis, uma análise real de como o site da sua loja está performando hoje.',
         ],
       },
     ],

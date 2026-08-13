@@ -163,6 +163,11 @@ export const industriaEFabricas: Nicho = {
       resposta:
         'Fica, sim — domínio e todos os acessos administrativos registrados em nome da sua indústria, sem letras miúdas. Não usamos contrato de fidelidade: você continua com a gente pelos resultados, não por estar preso a um contrato.',
     },
+    {
+      pergunta: 'Já temos uma equipe comercial e representantes. Como o site se encaixa nesse processo?',
+      resposta:
+        'O site não substitui a equipe comercial, ele a alimenta com leads mais qualificados. Um comprador que chega pelo site já veio atrás de informação sobre capacidade produtiva e catálogo — quando o formulário de cotação cai na mão do representante, a conversa começa em um estágio mais avançado do que um contato frio, o que costuma acelerar o ciclo de venda.',
+    },
   ],
 
   artigo: {
@@ -215,7 +220,7 @@ export const industriaEFabricas: Nicho = {
         titulo: 'Por que escolher a Sites Rankly para o site da sua indústria',
         paragrafos: [
           'Construímos sites rápidos, com SEO técnico desde o primeiro dia e captação de cotações integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos B2B em Minas Gerais, com atenção específica a como apresentar catálogo técnico e capacidade produtiva de forma que gere cotação qualificada.',
-          'O domínio e todos os acessos ficam no nome da sua empresa, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua indústria está performando hoje.',
+          'O domínio e todos os acessos ficam no nome da sua empresa ficam sob seu controle, sem letras miúdas e sem exigência de permanência — você segue com a gente porque o site entrega resultado. Peça o diagnóstico gratuito e receba, em até 24h úteis, um raio-x real de como o site da sua indústria está performando hoje.',
         ],
       },
     ],

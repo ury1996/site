@@ -215,7 +215,7 @@ export const fotografia: Nicho = {
         titulo: 'Por que escolher a Sites Rankly para o seu site de fotografia',
         paragrafos: [
           'Construímos sites rápidos mesmo com portfólios visuais pesados, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos criativos em Minas Gerais, com atenção específica à curadoria e organização de galerias de fotos.',
-          'O domínio e todos os acessos ficam no seu nome ou no do estúdio, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o seu site está performando hoje.',
+          'Domínio e acessos administrativos ficam registrados no seu nome ou no do estúdio, sem cláusula de fidelidade amarrando a parceria. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama honesto de como o seu site está performando hoje.',
         ],
       },
     ],

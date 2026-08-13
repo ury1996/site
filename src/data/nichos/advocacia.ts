@@ -215,7 +215,7 @@ export const advocacia: Nicho = {
         titulo: 'Por que escolher a Sites Rankly para o site do seu escritório',
         paragrafos: [
           'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de contatos integrada ao WhatsApp — o mesmo padrão que aplicamos para outros nichos de serviço em Minas Gerais, adaptado às particularidades da advocacia. Isso inclui atenção específica às regras de publicidade da OAB em cada texto, imagem e chamada para ação do site.',
-          'O domínio e todos os acessos ficam no nome do escritório, sem contrato de fidelidade — você continua porque os resultados aparecem, não porque está preso a um contrato. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site do seu escritório está performando hoje e o que fazer para ele começar a trazer clientes.',
+          'Todo o histórico de acesso e o registro no nome do escritório ficam sob seu controle, sem cláusula de fidelidade — a continuidade depende só dos resultados entregues. Peça o diagnóstico gratuito e receba, em até 24h úteis, uma análise real de como o site do seu escritório está performando hoje e o que fazer para ele começar a trazer clientes.',
         ],
       },
     ],

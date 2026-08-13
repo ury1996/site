@@ -163,6 +163,11 @@ export const oticas: Nicho = {
       resposta:
         'Fica, sim — domínio e todos os acessos administrativos registrados em nome da sua ótica, sem letras miúdas. Não usamos contrato de fidelidade: você continua com a gente pelos resultados, não por estar preso a um contrato.',
     },
+    {
+      pergunta: 'Também trabalho com lentes de contato. Vale a pena ter uma seção própria?',
+      resposta:
+        'Vale, sim. Lentes de contato atraem um público que já usa o produto e busca especificamente reposição ou troca de marca, diferente de quem está pesquisando óculos novo. Uma seção explicando as opções disponíveis (diárias, mensais, coloridas) e o acompanhamento oferecido ajuda a captar esse cliente recorrente, que costuma voltar com frequência bem maior do que quem compra apenas armação.',
+    },
   ],
 
   artigo: {

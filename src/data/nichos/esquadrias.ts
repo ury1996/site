@@ -215,7 +215,7 @@ export const esquadrias: Nicho = {
         titulo: 'Por que escolher a Sites Rankly para o site da sua empresa',
         paragrafos: [
           'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos da construção civil em Minas Gerais, com atenção específica a como apresentar linhas de produto e portfólio de forma que gere confiança real.',
-          'O domínio e todos os acessos ficam no nome da sua empresa, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua empresa está performando hoje.',
+          'Domínio e acessos administrativos são registrados em nome da sua empresa, sem contrato de fidelidade prendendo a parceria — você fica porque o resultado aparece. Peça o diagnóstico gratuito e receba, em até 24h úteis, um retrato real de como o site da sua empresa está performando hoje.',
         ],
       },
     ],

@@ -215,7 +215,7 @@ export const educacaoInfantil: Nicho = {
         titulo: 'Por que escolher a Sites Rankly para o site da sua escola infantil',
         paragrafos: [
           'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de agendamento de visita integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos educacionais em Minas Gerais, com atenção específica a como transmitir segurança e confiança para os pais.',
-          'O domínio e todos os acessos ficam no nome da sua escola, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua escola está performando hoje.',
+          'O domínio e todos os acessos ficam no nome da sua escola ficam sob seu controle, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua escola está performando hoje.',
         ],
       },
     ],

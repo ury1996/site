@@ -215,7 +215,7 @@ export const protecaoContraIncendio: Nicho = {
         titulo: 'Por que escolher a Sites Rankly para o site da sua empresa',
         paragrafos: [
           'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos técnicos e de segurança em Minas Gerais, com atenção específica a como explicar processos de regularização de forma clara e confiável.',
-          'O domínio e todos os acessos ficam no nome da sua empresa, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua empresa está performando hoje.',
+          'O domínio e o painel de acessos ficam registrados no nome da sua empresa já na entrega do site, sem cláusula de permanência mínima amarrando o contrato. Peça o diagnóstico gratuito e receba, em até 24h úteis, um diagnóstico honesto de como o site da sua empresa está performando hoje.',
         ],
       },
     ],

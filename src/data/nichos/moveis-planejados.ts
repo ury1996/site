@@ -163,6 +163,11 @@ export const moveisPlanejados: Nicho = {
       resposta:
         'Fica, sim — domínio e todos os acessos administrativos registrados em nome da sua empresa, sem letras miúdas. Não usamos contrato de fidelidade: você continua com a gente porque o site está trazendo pedido, não porque está preso a um contrato.',
     },
+    {
+      pergunta: 'Também atendo projetos comerciais, não só residenciais. Como separar isso no site?',
+      resposta:
+        'Recomendamos uma categoria própria para ambientes comerciais — recepções, salas de reunião, lojas — já que o processo de decisão e o volume do pedido costumam ser diferentes de um projeto residencial. Separar evita que um comprador corporativo veja só cozinhas residenciais e conclua, erroneamente, que sua empresa não atende esse tipo de projeto.',
+    },
   ],
 
   artigo: {
@@ -215,7 +220,7 @@ export const moveisPlanejados: Nicho = {
         titulo: 'Por que escolher a Sites Rankly para o site da sua empresa',
         paragrafos: [
           'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de casa e decoração em Minas Gerais, com atenção específica a como apresentar portfólio de ambientes de forma que gere confiança real.',
-          'O domínio e todos os acessos ficam no nome da sua empresa, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua empresa está performando hoje.',
+          'Todo o histórico de acesso e o registro no nome da sua empresa ficam sob seu controle, sem cláusula de fidelidade — a continuidade depende só dos resultados entregues. Peça o diagnóstico gratuito e receba, em até 24h úteis, uma análise real de como o site da sua empresa está performando hoje.',
         ],
       },
     ],

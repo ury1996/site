@@ -163,6 +163,11 @@ export const lavanderia: Nicho = {
       resposta:
         'Fica, sim — domínio e todos os acessos administrativos registrados em nome da sua lavanderia, sem letras miúdas. Não usamos contrato de fidelidade: você continua com a gente pelos resultados, não por estar preso a um contrato.',
     },
+    {
+      pergunta: 'Atendo também empresas, com contrato de lavagem de uniformes e enxoval. Como destacar isso?',
+      resposta:
+        'Recomendamos uma seção própria para o público corporativo — hotéis, restaurantes, clínicas, empresas com uniforme — explicando volume atendido, frequência de coleta e faturamento por contrato. Esse público busca de forma diferente do cliente doméstico avulso, e uma página dedicada facilita encontrar a empresa certa para esse tipo de demanda recorrente. Vale incluir também informações sobre prazo de entrega em grande volume e política de reposição em caso de dano, dúvidas comuns de gestores que avaliam trocar de fornecedor.',
+    },
   ],
 
   artigo: {

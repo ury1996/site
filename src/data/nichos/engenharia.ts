@@ -215,7 +215,7 @@ export const engenharia: Nicho = {
         titulo: 'Por que escolher a Sites Rankly para o site do seu escritório',
         paragrafos: [
           'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de pedidos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos técnicos em Minas Gerais, com atenção específica a como apresentar especialidades e credibilidade técnica de forma que gere confiança real, tanto para pessoa física quanto para construtoras.',
-          'O domínio e todos os acessos ficam no nome do escritório, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site do seu escritório está performando hoje.',
+          'O domínio e todos os acessos ficam no nome do escritório, sem letras miúdas e sem exigência de permanência — você segue com a gente porque o site entrega resultado. Peça o diagnóstico gratuito e receba, em até 24h úteis, um raio-x real de como o site do seu escritório está performando hoje.',
         ],
       },
     ],
@@ -226,7 +226,7 @@ export const engenharia: Nicho = {
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — seu escritório ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar pedidos de projeto.',
   },
 
-  relacionados: ['construtoras', 'arquitetura', 'materiais-de-construcao'],
+  relacionados: ['construtoras', 'escritorios-de-arquitetura', 'materiais-de-construcao'],
   resumoCard:
     'Sites com portfólio técnico por especialidade, credibilidade CREA e captação de projetos por WhatsApp.',
 };

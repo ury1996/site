@@ -163,6 +163,11 @@ export const saloesDeBeleza: Nicho = {
       resposta:
         'Fica, sim — domínio e todos os acessos administrativos registrados em nome do seu salão, sem letras miúdas. Não usamos contrato de fidelidade: você continua com a gente pela qualidade do trabalho, não por estar preso a um contrato.',
     },
+    {
+      pergunta: 'Também atendo noivas e debutantes com pacote completo. Vale destacar isso no site?',
+      resposta:
+        'Vale muito. Pacotes para noivas e debutantes têm ticket bem mais alto do que um atendimento avulso e costumam ser reservados com meses de antecedência. Uma página própria, com fotos de trabalhos anteriores para esse tipo de evento e explicação do que está incluso no pacote (teste, dia do evento, retoque), atrai esse público de forma direcionada.',
+    },
   ],
 
   artigo: {
@@ -215,7 +220,7 @@ export const saloesDeBeleza: Nicho = {
         titulo: 'Por que escolher a Sites Rankly para o site do seu salão',
         paragrafos: [
           'Construímos sites rápidos mesmo com portfólios visuais, com SEO local desde o primeiro dia e captação de agendamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de beleza e bem-estar em Minas Gerais, com atenção específica a como apresentar equipe e portfólio de forma que gere agendamento.',
-          'O domínio e todos os acessos ficam no nome do seu salão, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site do seu salão está performando hoje.',
+          'O domínio e todos os acessos ficam no nome do seu salão ficam sob seu controle, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site do seu salão está performando hoje.',
         ],
       },
     ],

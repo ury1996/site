@@ -163,6 +163,11 @@ export const restaurantes: Nicho = {
       resposta:
         'Fica, sim — domínio e todos os acessos administrativos registrados em nome do seu restaurante, sem letras miúdas. Não usamos contrato de fidelidade: você continua com a gente pelos resultados, não por estar preso a um contrato.',
     },
+    {
+      pergunta: 'Também atendo eventos e buffet corporativo. Vale a pena destacar isso separado?',
+      resposta:
+        'Vale muito. Encomenda para eventos e buffet corporativo costuma ter ticket bem maior do que o movimento diário do salão, e atrai um público que pesquisa de forma diferente — buscando "buffet para evento" ou "encomenda corporativa", não "restaurante perto de mim". Uma página própria, com exemplos de cardápios para grupo, capta esse público específico.',
+    },
   ],
 
   artigo: {

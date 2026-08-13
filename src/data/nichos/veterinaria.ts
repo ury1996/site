@@ -215,7 +215,7 @@ export const veterinaria: Nicho = {
         titulo: 'Por que escolher a Sites Rankly para o site da sua clínica',
         paragrafos: [
           'Construímos sites rápidos, com SEO local desde o primeiro dia e agendamento integrado ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de serviço em Minas Gerais, com atenção específica à urgência que caracteriza boa parte das buscas no mercado veterinário.',
-          'O domínio e todos os acessos ficam no nome da clínica, sem contrato de fidelidade — você continua porque os resultados aparecem, não porque está preso a um contrato. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua clínica está performando hoje.',
+          'O domínio e todos os acessos ficam no nome da clínica, sem letras miúdas e sem exigência de permanência — você segue com a gente porque o site entrega resultado. Peça o diagnóstico gratuito e receba, em até 24h úteis, um raio-x real de como o site da sua clínica está performando hoje.',
         ],
       },
     ],

@@ -215,7 +215,7 @@ export const piscinas: Nicho = {
         titulo: 'Por que escolher a Sites Rankly para o site da sua empresa',
         paragrafos: [
           'Construímos sites rápidos mesmo com portfólios visuais pesados, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de construção e serviço doméstico em Minas Gerais, com atenção específica a como separar construção e manutenção de forma que gere pedido nas duas frentes.',
-          'O domínio e todos os acessos ficam no nome da sua empresa, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua empresa está performando hoje.',
+          'Todo o histórico de acesso e o registro no nome da sua empresa ficam sob seu controle ficam sob seu controle, sem cláusula de fidelidade — a continuidade depende só dos resultados entregues. Peça o diagnóstico gratuito e receba, em até 24h úteis, uma análise real de como o site da sua empresa está performando hoje.',
         ],
       },
     ],

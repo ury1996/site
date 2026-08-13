@@ -163,6 +163,11 @@ export const limpeza: Nicho = {
       resposta:
         'Fica, sim — domínio e todos os acessos administrativos registrados em nome da sua empresa, sem letras miúdas. Não usamos contrato de fidelidade: você continua com a gente pelos resultados, não por estar preso a um contrato.',
     },
+    {
+      pergunta: 'Também faço limpeza especializada, como estofados e carpetes. Vale destacar isso?',
+      resposta:
+        'Vale muito. Limpeza de estofados, carpetes e cortinas costuma ter busca própria no Google, separada da limpeza geral, e atrai clientes dispostos a pagar mais por um serviço especializado. Uma página própria, explicando o processo e os equipamentos usados, amplia sua captação além do serviço recorrente padrão.',
+    },
   ],
 
   artigo: {
@@ -215,7 +220,7 @@ export const limpeza: Nicho = {
         titulo: 'Por que escolher a Sites Rankly para o site da sua empresa',
         paragrafos: [
           'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de serviço doméstico em Minas Gerais, com atenção específica a como apresentar planos recorrentes de forma que converta serviço avulso em contrato fixo.',
-          'O domínio e todos os acessos ficam no nome da sua empresa, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua empresa está performando hoje.',
+          'Domínio, acessos e todo o conteúdo ficam registrados no nome da sua empresa ficam sob seu controle, sem contrato de fidelidade amarrando a parceria. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama honesto de como o site da sua empresa está performando hoje.',
         ],
       },
     ],

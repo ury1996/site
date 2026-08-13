@@ -215,7 +215,7 @@ export const estetica: Nicho = {
         titulo: 'Por que escolher a Sites Rankly para o site da sua clínica',
         paragrafos: [
           'Construímos sites rápidos, com SEO local desde o primeiro dia e agendamento integrado ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de serviço em Minas Gerais, com atenção específica às regras de publicidade de procedimentos estéticos e uso de imagem.',
-          'O domínio e todos os acessos ficam no nome da clínica, sem contrato de fidelidade — você continua porque os resultados aparecem, não porque está preso a um contrato ou a um algoritmo de rede social. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua clínica está performando hoje.',
+          'Todo o histórico de acesso e o registro no nome da clínica ficam sob seu controle, sem cláusula de fidelidade — a continuidade depende só dos resultados entregues. Peça o diagnóstico gratuito e receba, em até 24h úteis, uma análise real de como o site da sua clínica está performando hoje.',
         ],
       },
     ],

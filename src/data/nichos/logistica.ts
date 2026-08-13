@@ -163,6 +163,11 @@ export const logistica: Nicho = {
       resposta:
         'Fica, sim — domínio e todos os acessos administrativos registrados em nome da sua empresa, sem letras miúdas. Não usamos contrato de fidelidade: você continua com a gente pelos resultados, não por estar preso a um contrato.',
     },
+    {
+      pergunta: 'Atendo principalmente e-commerce, com fulfillment e picking. O site fala essa língua?',
+      resposta:
+        'Fala, sim — recomendamos usar a terminologia real do setor (fulfillment, picking, packing, gestão de devolução) em vez de descrições genéricas, já que é assim que gestores de e-commerce pesquisam no Google. Uma página dedicada a esse tipo de operação, com prazo médio de processamento de pedido, atrai diretamente esse público especializado.',
+    },
   ],
 
   artigo: {
@@ -215,7 +220,7 @@ export const logistica: Nicho = {
         titulo: 'Por que escolher a Sites Rankly para o site da sua empresa',
         paragrafos: [
           'Construímos sites rápidos, com SEO regional desde o primeiro dia e captação de cotações integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de indústria e transporte em Minas Gerais, com atenção específica a como apresentar capacidade operacional de forma que gere cotação qualificada.',
-          'O domínio e todos os acessos ficam no nome da sua empresa, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua empresa está performando hoje.',
+          'O domínio e todos os acessos ficam no nome da sua empresa ficam sob seu controle, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua empresa está performando hoje.',
         ],
       },
     ],

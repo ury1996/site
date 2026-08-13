@@ -226,6 +226,6 @@ export const climatizacao: Nicho = {
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua empresa ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar orçamentos e contratos de manutenção.',
   },
 
-  relacionados: ['eletricistas', 'encanadores', 'gas'],
+  relacionados: ['eletricistas', 'encanadores', 'instalacoes-de-gas'],
   resumoCard: 'Sites com páginas separadas de instalação e manutenção, e captação de orçamento por WhatsApp.',
 };

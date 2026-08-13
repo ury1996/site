@@ -163,6 +163,11 @@ export const escolasECursos: Nicho = {
       resposta:
         'Fica, sim — domínio e todos os acessos administrativos registrados em nome da sua instituição, sem letras miúdas. Não usamos contrato de fidelidade: você continua com a gente pelos resultados, não por estar preso a um contrato.',
     },
+    {
+      pergunta: 'Ofereço aulas presenciais e online. O site consegue diferenciar isso?',
+      resposta:
+        'Consegue, sim — e recomendamos deixar bem claro em cada página de curso qual modalidade está disponível, já que muitos alunos filtram a busca justamente por isso. Cursos com opção híbrida (parte presencial, parte online) também merecem essa explicação, pois é um diferencial que costuma pesar na decisão de matrícula.',
+    },
   ],
 
   artigo: {
@@ -215,7 +220,7 @@ export const escolasECursos: Nicho = {
         titulo: 'Por que escolher a Sites Rankly para o site da sua escola ou curso',
         paragrafos: [
           'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de pré-matrículas integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos educacionais em Minas Gerais, com atenção específica a como apresentar grade de cursos de forma que gere interesse real.',
-          'O domínio e todos os acessos ficam no nome da sua instituição, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua escola está performando hoje.',
+          'O domínio e todos os acessos ficam no nome da sua instituição ficam sob seu controle, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua escola está performando hoje.',
         ],
       },
     ],

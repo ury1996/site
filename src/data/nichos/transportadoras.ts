@@ -163,6 +163,11 @@ export const transportadoras: Nicho = {
       resposta:
         'Fica, sim — domínio e todos os acessos administrativos registrados em nome da sua transportadora, sem letras miúdas. Não usamos contrato de fidelidade: você continua com a gente pelos resultados, não por estar preso a um contrato.',
     },
+    {
+      pergunta: 'Também faço transporte com exigências especiais, como carga perigosa ou refrigerada. Isso importa no site?',
+      resposta:
+        'Importa bastante. Cargas com exigência especial — perigosa, refrigerada, de alto valor — têm um público que busca especificamente esse diferencial e está disposto a pagar mais por uma transportadora certificada e experiente. Uma seção própria, com as certificações e o tipo de veículo utilizado, ajuda a captar esse cliente de forma direcionada.',
+    },
   ],
 
   artigo: {
@@ -194,7 +199,7 @@ export const transportadoras: Nicho = {
         titulo: 'Erros comuns em sites de transportadora que afastam clientes',
         paragrafos: [
           'O erro mais comum é um site genérico que só diz "fazemos transporte de carga", sem detalhar rotas, regiões de cobertura ou tipos de carga atendidos. Isso obriga o cliente a entrar em contato só para descobrir se a transportadora sequer atende a rota que ele precisa — atrito que faz muita gente desistir e procurar outra opção.',
-          'Outro erro frequente é não ter um formulário de cotação estruturado, deixando só um telefone genérico. Empresas que precisam de cotação para orçamento interno costumam preferir preencher um formulário simples, que já organiza a informação, do que explicar tudo por telefone.',
+          'Outro erro comum é deixar só um número de telefone genérico, sem nenhum formulário estruturado. Times de compras que precisam levar a cotação para aprovação interna preferem preencher um formulário simples, que já organiza origem, destino e volume, a ter que anotar tudo manualmente numa ligação.',
         ],
       },
       {

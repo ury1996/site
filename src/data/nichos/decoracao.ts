@@ -163,6 +163,11 @@ export const decoracao: Nicho = {
       resposta:
         'Fica, sim — domínio e todos os acessos administrativos registrados em seu nome ou no do estúdio, sem letras miúdas. Não usamos contrato de fidelidade: você continua com a gente pela qualidade do trabalho, não por estar preso a um contrato.',
     },
+    {
+      pergunta: 'Também trabalho com venda de objetos de decoração. Dá para incluir isso no site?',
+      resposta:
+        'Dá, sim — muitos decoradores complementam a renda de consultoria com curadoria e venda de peças (almofadas, quadros, objetos). O ideal é uma seção separada do portfólio de projetos, deixando claro que é uma frente de produto, não de serviço, para não confundir o visitante que está pesquisando apenas consultoria.',
+    },
   ],
 
   artigo: {

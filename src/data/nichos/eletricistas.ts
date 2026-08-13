@@ -215,7 +215,7 @@ export const eletricistas: Nicho = {
         titulo: 'Por que escolher a Sites Rankly para o site da sua empresa elétrica',
         paragrafos: [
           'Construímos sites extremamente rápidos, com SEO local desde o primeiro dia e captação de chamados integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de urgência doméstica em Minas Gerais, com atenção específica ao caminho de contato mais curto possível.',
-          'O domínio e todos os acessos ficam no seu nome, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua empresa está performando hoje.',
+          'Todo o histórico de acesso e o registro no seu nome ficam sob seu controle, sem cláusula de fidelidade — a continuidade depende só dos resultados entregues. Peça o diagnóstico gratuito e receba, em até 24h úteis, uma análise real de como o site da sua empresa está performando hoje.',
         ],
       },
     ],
@@ -226,6 +226,6 @@ export const eletricistas: Nicho = {
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua empresa ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site captar chamados de urgência.',
   },
 
-  relacionados: ['encanadores', 'climatizacao', 'gas'],
+  relacionados: ['encanadores', 'climatizacao', 'instalacoes-de-gas'],
   resumoCard: 'Sites com botão de chamado de urgência, SEO local e captação de chamados por WhatsApp.',
 };
