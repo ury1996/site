@@ -17,6 +17,8 @@ import { climatizacao } from './climatizacao';
 import { gas } from './gas';
 import { vidracarias } from './vidracarias';
 import { pocosArtesianos } from './pocos-artesianos';
+import { segurancaEletronica } from './seguranca-eletronica';
+import { protecaoContraIncendio } from './protecao-contra-incendio';
 
 /**
  * Lista de nichos publicados. Cada entrada aqui vira uma página estática em
@@ -44,6 +46,8 @@ export const nichos: Nicho[] = [
   gas,
   vidracarias,
   pocosArtesianos,
+  segurancaEletronica,
+  protecaoContraIncendio,
 ];
 
 export function getNichoPorSlug(slug: string): Nicho | undefined {
