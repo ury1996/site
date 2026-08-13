@@ -8,7 +8,7 @@ export const estetica: Nicho = {
 
   tituloSeo: 'Sites para Clínicas de Estética em MG | Sites Rankly',
   descricaoSeo:
-    'Criação de sites para clínicas de estética e harmonização facial em Minas Gerais. Site rápido, com agendamento online, SEO local e captação de clientes por WhatsApp. Proposta grátis em 24h.',
+    'Sites para clínicas de estética em MG, com portfólio de resultados, SEO local e captação de clientes por WhatsApp. Proposta grátis em 24h.',
 
   hero: {
     eyebrow: 'Sites para clínicas de estética · Minas Gerais',
@@ -96,7 +96,7 @@ export const estetica: Nicho = {
         icone: 'icone-alvo',
         titulo: 'Pronto para Google Ads e Instagram Ads',
         texto:
-          'Landing pages com rastreamento de conversão configurado (GTM). Cada real investido em anúncio vira dado — e agendamento.',
+          'Landing pages com rastreamento de conversão configurado (GTM), acompanhando de perto o retorno de cada real investido em Google Ads ou Instagram Ads.',
       },
       {
         icone: 'icone-escudo',
@@ -158,9 +158,9 @@ export const estetica: Nicho = {
         'Três frentes: SEO local para aparecer quando alguém busca um procedimento estético na sua região; páginas por procedimento com portfólio de resultados, que respondem à dúvida específica da cliente; e um botão de agendamento sempre visível, ligado ao WhatsApp. Opcionalmente, campanhas de Google Ads e Instagram Ads aceleram o volume de agendamentos.',
     },
     {
-      pergunta: 'O site fica no nome da clínica? E se eu quiser trocar de agência?',
+      pergunta: 'O site fica registrado no nome da clínica? Posso trocar de agência depois?',
       resposta:
-        'O domínio, o site e todos os acessos ficam registrados no nome da clínica ou do responsável técnico. Você tem total liberdade — nossa aposta é que você fique pelos resultados, não por contrato de fidelidade.',
+        'Sim. Tanto o domínio quanto os acessos de administração ficam registrados no nome da clínica ou do responsável técnico desde o início do projeto. Não usamos contrato de fidelidade — a ideia é que você continue com a gente pelos resultados, e tenha total liberdade para migrar quando quiser.',
     },
   ],
 

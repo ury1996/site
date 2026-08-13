@@ -8,7 +8,7 @@ export const odontologia: Nicho = {
 
   tituloSeo: 'Sites para Clínicas Odontológicas em MG | Sites Rankly',
   descricaoSeo:
-    'Criação de sites para clínicas odontológicas e dentistas em Minas Gerais. Site rápido, com agendamento online, SEO local e captação de pacientes por WhatsApp. Proposta grátis em 24h.',
+    'Sites para clínicas odontológicas em MG, com agendamento online, SEO local e captação de pacientes por WhatsApp. Proposta grátis em 24h.',
 
   hero: {
     eyebrow: 'Sites para clínicas odontológicas · Minas Gerais',
@@ -160,7 +160,7 @@ export const odontologia: Nicho = {
     {
       pergunta: 'O site fica no nome da clínica? E se eu quiser trocar de agência?',
       resposta:
-        'O domínio, o site e todos os acessos ficam registrados no nome da clínica ou do responsável técnico. Você tem total liberdade — nossa aposta é que você fique pelos resultados, não por contrato de fidelidade.',
+        'Sim — o domínio e todos os acessos administrativos são registrados no nome da clínica ou do cirurgião-dentista responsável técnico. Não trabalhamos com contrato de fidelidade: se um dia você quiser mudar de fornecedor, o site e o domínio já são inteiramente seus.',
     },
   ],
 

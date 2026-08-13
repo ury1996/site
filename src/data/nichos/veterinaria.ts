@@ -8,7 +8,7 @@ export const veterinaria: Nicho = {
 
   tituloSeo: 'Sites para Clínicas Veterinárias em MG | Sites Rankly',
   descricaoSeo:
-    'Criação de sites para clínicas veterinárias e pet shops em Minas Gerais. Agendamento online, SEO local e captação de tutores por WhatsApp. Proposta grátis em 24h.',
+    'Sites para clínicas veterinárias em MG, com agendamento online, SEO local e captação de tutores por WhatsApp. Proposta grátis em 24h.',
 
   hero: {
     eyebrow: 'Sites para clínicas veterinárias · Minas Gerais',
@@ -36,7 +36,7 @@ export const veterinaria: Nicho = {
     introHtml:
       'Quando o pet passa mal ou precisa de cuidado, o tutor busca <strong>veterinário perto de mim</strong> no Google — muitas vezes com urgência. Marque o que o site da sua clínica já tem hoje e veja a nota dele como <strong>captador de tutores</strong>.',
     notaTexto:
-      'Estes 6 pontos separam um "site institucional" de um site que enche a agenda toda semana. O diagnóstico completo — com análise do seu site e dos concorrentes — é gratuito.',
+      'Estes 6 pontos separam um site que só existe de um site que efetivamente enche a agenda de consultas. O diagnóstico completo — com análise do seu site e dos concorrentes da região — é gratuito.',
     itens: [
       'Aparece na 1ª página do Google para "veterinário" + sua cidade',
       'Abre em menos de 3 segundos no celular',
@@ -61,7 +61,7 @@ export const veterinaria: Nicho = {
     {
       titulo: 'No ar e enchendo a agenda',
       texto:
-        'Publicamos com SEO local configurado e, se quiser, campanhas de Google Ads. Você acompanha cada agendamento que o site gera.',
+        'Colocamos o site no ar já com SEO local ativo e, se fizer sentido, campanhas de Google Ads rodando. Cada pedido de agendamento fica registrado no seu painel de leads.',
     },
   ],
 
@@ -96,13 +96,13 @@ export const veterinaria: Nicho = {
         icone: 'icone-alvo',
         titulo: 'Pronto para Google Ads',
         texto:
-          'Landing pages com rastreamento de conversão configurado (GTM). Cada real investido em anúncio vira dado — e agendamento.',
+          'Landing pages com rastreamento de conversão configurado (GTM), para saber exatamente quanto cada real investido em anúncio te trouxe de volta em agendamento.',
       },
       {
         icone: 'icone-calc',
         titulo: 'Site 100% seu, com suporte',
         texto:
-          'Domínio e site no nome da clínica, hospedagem otimizada e suporte contínuo. Nada de ficar refém de plataforma alugada.',
+          'Domínio, site e hospedagem no nome da clínica, com suporte contínuo — sem depender de plataforma alugada para manter o site no ar.',
       },
     ],
   },
@@ -158,9 +158,9 @@ export const veterinaria: Nicho = {
         'Três frentes: SEO local para aparecer quando alguém busca veterinário na sua região, principalmente em situações de urgência; páginas de serviço que respondem à dúvida específica do tutor (vacina, castração, cirurgia, banho e tosa); e um botão de agendamento sempre visível, ligado ao WhatsApp. Opcionalmente, campanhas de Google Ads aceleram o volume de agendamentos.',
     },
     {
-      pergunta: 'O site fica no nome da clínica? E se eu quiser trocar de agência?',
+      pergunta: 'O site é registrado no nome da clínica? E se eu decidir trocar de agência?',
       resposta:
-        'O domínio, o site e todos os acessos ficam registrados no nome da clínica ou do responsável técnico. Você tem total liberdade — nossa aposta é que você fique pelos resultados, não por contrato de fidelidade.',
+        'É, sim — o domínio e todos os acessos administrativos ficam no nome da clínica ou do veterinário responsável técnico, sem exceção. Não trabalhamos com contrato de fidelidade: nossa aposta é que você continue por causa dos resultados, não por estar preso a um contrato.',
     },
   ],
 
@@ -222,7 +222,7 @@ export const veterinaria: Nicho = {
 
   ctaFinal: {
     titulo: 'Enquanto você lê isso, um tutor em Minas está procurando veterinário no Google',
-    sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua clínica ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site encher a agenda.',
+    sub: 'A pergunta é: para qual clínica esse tutor vai ligar primeiro — a sua ou a concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site encher a agenda de consultas.',
   },
 
   relacionados: ['clinicas-odontologicas', 'clinicas-de-estetica', 'academias'],

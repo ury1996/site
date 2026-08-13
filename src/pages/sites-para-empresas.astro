@@ -8,7 +8,7 @@ import { whatsappUrl, site } from '../config/site';
 import { nichos } from '../data/nichos';
 
 const titulo = `Sites para Empresas por Nicho em MG | ${site.nome}`;
-const descricao = `Veja os segmentos de negócio para os quais a ${site.nome} cria sites: advocacia, odontologia, estética, imobiliárias e outros. Site rápido, SEO local e captação por WhatsApp.`;
+const descricao = `Veja os segmentos para os quais a ${site.nome} cria sites em MG: advocacia, odontologia, estética, imobiliárias e outros. SEO local e WhatsApp.`;
 
 const listaSchema = {
   '@context': 'https://schema.org',
@@ -20,10 +20,20 @@ const listaSchema = {
     url: `${site.url}/sites-para-${nicho.slug}`,
   })),
 };
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Início', item: `${site.url}/` },
+    { '@type': 'ListItem', position: 2, name: 'Nichos atendidos', item: `${site.url}/sites-para-empresas` },
+  ],
+};
 ---
 
 <Layout titulo={titulo} descricao={descricao}>
   <script type="application/ld+json" is:inline set:html={JSON.stringify(listaSchema)} />
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbSchema)} />
 
   <Header />
 

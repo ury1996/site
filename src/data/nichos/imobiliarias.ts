@@ -8,7 +8,7 @@ export const imobiliarias: Nicho = {
 
   tituloSeo: 'Sites para Imobiliárias em MG | Sites Rankly',
   descricaoSeo:
-    'Criação de sites para imobiliárias e corretores de imóveis em Minas Gerais. Catálogo de imóveis, SEO local e captação de leads por WhatsApp. Proposta grátis em 24h.',
+    'Sites para imobiliárias em MG, com catálogo de imóveis, SEO local e captação de leads por WhatsApp. Proposta grátis em 24h.',
 
   hero: {
     eyebrow: 'Sites para imobiliárias · Minas Gerais',
@@ -160,7 +160,7 @@ export const imobiliarias: Nicho = {
     {
       pergunta: 'O site fica no nome da imobiliária? E se eu quiser trocar de agência?',
       resposta:
-        'O domínio, o site e todos os acessos ficam registrados no nome da imobiliária. Você tem total liberdade — nossa aposta é que você fique pelos resultados, não por contrato de fidelidade.',
+        'Fica. O domínio e os acessos de administração do site e do catálogo de imóveis ficam registrados em nome da sua imobiliária desde o primeiro dia. Sem contrato de fidelidade — você permanece porque o site converte, não porque está amarrado a nós.',
     },
   ],
 

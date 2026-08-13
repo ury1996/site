@@ -8,7 +8,7 @@ export const construcao: Nicho = {
 
   tituloSeo: 'Sites para Construtoras e Reformas em MG | Sites Rankly',
   descricaoSeo:
-    'Criação de sites para construtoras, empreiteiras e empresas de reforma em Minas Gerais. Portfólio de obras, SEO local e captação de orçamentos por WhatsApp. Proposta grátis em 24h.',
+    'Sites para construtoras e reformas em MG, com portfólio de obras, SEO local e captação de orçamentos por WhatsApp. Proposta grátis em 24h.',
 
   hero: {
     eyebrow: 'Sites para construtoras e reformas · Minas Gerais',
@@ -160,7 +160,7 @@ export const construcao: Nicho = {
     {
       pergunta: 'O site fica no nome da empresa? E se eu quiser trocar de agência?',
       resposta:
-        'O domínio, o site e todos os acessos ficam registrados no nome da sua empresa. Você tem total liberdade — nossa aposta é que você fique pelos resultados, não por contrato de fidelidade.',
+        'Fica, sim — domínio e todos os acessos administrativos registrados em nome da sua construtora ou empresa de reforma, sem letras miúdas. Não usamos contrato de fidelidade: você continua com a gente porque o site está trazendo obra, não porque está preso a um contrato.',
     },
   ],
 

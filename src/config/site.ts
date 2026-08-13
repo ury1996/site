@@ -3,7 +3,16 @@ export const site = {
   url: 'https://sitesparaempresas.sitesrankly.com.br',
   titulo: 'Sites para Empresas de Energia Solar em MG | Sites Rankly',
   descricao:
-    'Criação de sites e landing pages para empresas de energia solar em Minas Gerais. Site rápido, SEO local e captação por WhatsApp para gerar orçamentos todos os dias. Proposta grátis em 24h.',
+    'Sites para empresas de energia solar em MG, com SEO local e captação por WhatsApp para gerar orçamentos todos os dias. Proposta grátis em 24h.',
+  /**
+   * Descrição institucional da empresa (agência), usada no JSON-LD
+   * ProfessionalService em TODAS as páginas — precisa ser genérica o
+   * bastante para descrever a empresa como um todo, não um nicho
+   * específico. Não confundir com `descricao`, que é o meta description
+   * padrão da home (sobrescrito por página via <Layout descricao={...}>).
+   */
+  descricaoEmpresa:
+    'Agência especializada em criação de sites institucionais e landing pages para empresas de diversos segmentos em Minas Gerais — energia solar, advocacia, odontologia, estética, imobiliárias, construção civil, veterinária, academias e contabilidade. Sites rápidos, SEO local e captação de clientes por WhatsApp.',
   ogImage: '/og.png',
   locale: 'pt_BR',
   lang: 'pt-BR',

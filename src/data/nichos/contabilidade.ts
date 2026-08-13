@@ -8,7 +8,7 @@ export const contabilidade: Nicho = {
 
   tituloSeo: 'Sites para Escritórios de Contabilidade em MG | Sites Rankly',
   descricaoSeo:
-    'Criação de sites para escritórios de contabilidade em Minas Gerais. Site rápido, com portal do cliente, SEO local e captação de empresas por WhatsApp. Proposta grátis em 24h.',
+    'Sites para escritórios de contabilidade em MG, com página para abertura de MEI, SEO local e captação de empresas por WhatsApp. Proposta grátis em 24h.',
 
   hero: {
     eyebrow: 'Sites para escritórios de contabilidade · Minas Gerais',
@@ -61,7 +61,7 @@ export const contabilidade: Nicho = {
     {
       titulo: 'No ar e gerando contatos',
       texto:
-        'Publicamos com SEO local configurado e, se quiser, campanhas de Google Ads. Você acompanha cada contato que o site entrega.',
+        'Colocamos o site no ar já com SEO local ativo e, se fizer sentido, campanhas de Google Ads rodando. Cada contato que chega fica registrado no seu painel de leads.',
     },
   ],
 
@@ -96,13 +96,13 @@ export const contabilidade: Nicho = {
         icone: 'icone-alvo',
         titulo: 'Pronto para Google Ads',
         texto:
-          'Landing pages com rastreamento de conversão configurado (GTM). Cada real investido em anúncio vira dado — e contato qualificado.',
+          'Landing pages com rastreamento de conversão configurado (GTM), para você enxergar exatamente quanto cada real em anúncio te trouxe de volta em contato de empresa nova.',
       },
       {
         icone: 'icone-escudo',
         titulo: 'Site 100% seu, com suporte',
         texto:
-          'Domínio e site no nome do escritório, hospedagem otimizada e suporte contínuo. Nada de ficar refém de plataforma alugada.',
+          'Domínio, site e hospedagem no nome do seu escritório, com suporte contínuo — sem depender de plataforma de terceiro para manter o ar aberto.',
       },
     ],
   },
@@ -160,7 +160,7 @@ export const contabilidade: Nicho = {
     {
       pergunta: 'O site fica no nome do escritório? E se eu quiser trocar de agência?',
       resposta:
-        'O domínio, o site e todos os acessos ficam registrados no nome do escritório ou do contador responsável. Você tem total liberdade — nossa aposta é que você fique pelos resultados, não por contrato de fidelidade.',
+        'Sim, o domínio e os acessos administrativos são registrados no nome do escritório ou do contador responsável, sem exceção. Também não trabalhamos com fidelidade contratual: se os resultados não te convencerem a continuar, você é livre para sair quando quiser.',
     },
   ],
 
@@ -211,7 +211,7 @@ export const contabilidade: Nicho = {
         ],
       },
       {
-        titulo: 'Por que escolher a Sites Rankly para o site do seu escritório',
+        titulo: 'Por que escolher a Sites Rankly para o site do seu escritório de contabilidade',
         paragrafos: [
           'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de contatos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de serviço em Minas Gerais, com atenção específica à página de abertura de empresa/MEI, uma das maiores fontes de captação recorrente para escritórios de contabilidade.',
           'O domínio e todos os acessos ficam no nome do escritório, sem contrato de fidelidade — você continua porque os resultados aparecem, não porque está preso a um contrato. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site do seu escritório está performando hoje.',

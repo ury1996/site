@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import { site } from '../config/site';
+import { nichos } from '../data/nichos';
 
 interface Props {
   titulo?: string;
@@ -25,7 +26,7 @@ const empresaSchema = {
   '@type': 'ProfessionalService',
   '@id': `${site.url}/#empresa`,
   name: site.nome,
-  description: site.descricao,
+  description: site.descricaoEmpresa,
   url: `${site.url}/`,
   telephone: site.telefone,
   email: site.email,
@@ -64,16 +65,16 @@ const empresaSchema = {
 const servicoSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
-  serviceType: 'Criação de sites para empresas de energia solar',
+  serviceType: 'Criação de sites institucionais e landing pages para empresas',
   provider: { '@id': `${site.url}/#empresa` },
   areaServed: { '@type': 'State', name: site.regiao },
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
-    name: 'Serviços digitais para empresas de energia solar',
+    name: 'Serviços digitais por segmento de negócio',
     itemListElement: [
-      'Criação de site institucional para integradora solar',
-      'Landing page de captação de orçamentos de energia solar',
-      'SEO local e Google Ads para energia solar',
+      'Criação de site institucional para empresa de energia solar',
+      ...nichos.map((nicho) => `Criação de site para ${nicho.nomePlural}`),
+      'SEO local e Google Ads para pequenas e médias empresas',
     ].map((name) => ({
       '@type': 'Offer',
       itemOffered: { '@type': 'Service', name },

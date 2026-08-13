@@ -8,7 +8,7 @@ export const academias: Nicho = {
 
   tituloSeo: 'Sites para Academias e Estúdios Fitness em MG | Sites Rankly',
   descricaoSeo:
-    'Criação de sites para academias, estúdios de pilates e personal trainers em Minas Gerais. Matrícula online, SEO local e captação de alunos por WhatsApp. Proposta grátis em 24h.',
+    'Sites para academias e estúdios fitness em MG, com matrícula online, SEO local e captação de alunos por WhatsApp. Proposta grátis em 24h.',
 
   hero: {
     eyebrow: 'Sites para academias e estúdios fitness · Minas Gerais',
@@ -160,7 +160,7 @@ export const academias: Nicho = {
     {
       pergunta: 'O site fica no nome da academia? E se eu quiser trocar de agência?',
       resposta:
-        'O domínio, o site e todos os acessos ficam registrados no nome da sua empresa. Você tem total liberdade — nossa aposta é que você fique pelos resultados, não por contrato de fidelidade.',
+        'Fica. O domínio e todos os acessos administrativos são registrados em nome da sua empresa desde a entrega. Não existe contrato de fidelidade por aqui — se um dia você quiser levar o site para outra equipe, pode, sem burocracia. A ideia é te reter pelo resultado, não pelo contrato.',
     },
   ],
 

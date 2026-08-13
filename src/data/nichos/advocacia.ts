@@ -8,7 +8,7 @@ export const advocacia: Nicho = {
 
   tituloSeo: 'Sites para Advocacia em MG | Sites Rankly',
   descricaoSeo:
-    'Criação de sites para escritórios de advocacia em Minas Gerais. Site rápido, dentro das regras da OAB, com SEO local e captação de clientes por WhatsApp. Proposta grátis em 24h.',
+    'Sites para escritórios de advocacia em MG, dentro das regras da OAB. SEO local e captação de clientes por WhatsApp. Proposta grátis em 24h.',
 
   hero: {
     eyebrow: 'Sites para escritórios de advocacia · Minas Gerais',
@@ -160,7 +160,7 @@ export const advocacia: Nicho = {
     {
       pergunta: 'O site fica no nome do escritório? E se eu quiser trocar de agência depois?',
       resposta:
-        'O domínio, o site e todos os acessos ficam registrados no nome do escritório ou do advogado responsável. Você tem total liberdade — nossa aposta é que você fique pelos resultados, não por contrato de fidelidade.',
+        'Fica registrado no nome do escritório ou do advogado responsável — domínio e todos os acessos administrativos incluídos, sem exceção. Também não exigimos fidelidade contratual: preferimos manter o cliente pela qualidade do trabalho, não por cláusula de permanência.',
     },
   ],
 
