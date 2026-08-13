@@ -11,6 +11,12 @@ import { engenharia } from './engenharia';
 import { arquitetura } from './arquitetura';
 import { materiaisDeConstrucao } from './materiais-de-construcao';
 import { esquadrias } from './esquadrias';
+import { eletricistas } from './eletricistas';
+import { encanadores } from './encanadores';
+import { climatizacao } from './climatizacao';
+import { gas } from './gas';
+import { vidracarias } from './vidracarias';
+import { pocosArtesianos } from './pocos-artesianos';
 
 /**
  * Lista de nichos publicados. Cada entrada aqui vira uma página estática em
@@ -32,6 +38,12 @@ export const nichos: Nicho[] = [
   arquitetura,
   materiaisDeConstrucao,
   esquadrias,
+  eletricistas,
+  encanadores,
+  climatizacao,
+  gas,
+  vidracarias,
+  pocosArtesianos,
 ];
 
 export function getNichoPorSlug(slug: string): Nicho | undefined {
