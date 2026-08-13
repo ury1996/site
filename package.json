@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "npm run og && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "check": "astro check",
@@ -17,9 +17,7 @@
     "@astrojs/check": "^0.9.4",
     "@astrojs/sitemap": "^3.6.0",
     "astro": "^5.14.1",
+    "sharp": "^0.35.3",
     "typescript": "^5.9.2"
-  },
-  "devDependencies": {
-    "sharp": "^0.35.3"
   }
 }

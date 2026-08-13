@@ -3,9 +3,13 @@ dist/
 .output/
 .vercel/
 .astro/
+public/og.png
 
 # deps
 node_modules/
+# Lockfile não versionado: gerado via `npm install` (ranges em package.json
+# são todos com caret, então instalações novas resolvem versões compatíveis).
+package-lock.json
 
 # logs
 npm-debug.log*
