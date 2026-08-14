@@ -7,16 +7,16 @@ export const funilariaEPintura: Nicho = {
   nomePlural: 'oficinas de funilaria e pintura',
   profissional: 'funileiro ou pintor automotivo',
 
-  tituloSeo: 'Sites para Funilaria e Pintura Automotiva em MG | Sites Rankly',
+  tituloSeo: 'Sites para Funilaria e Pintura Automotiva | Sites Rankly',
   descricaoSeo:
-    'Sites para oficinas de funilaria e pintura em MG, com portfólio de antes/depois e orçamento por WhatsApp. Proposta grátis em 24h.',
+    'Sites para oficinas de funilaria e pintura, com portfólio de antes/depois e orçamento por WhatsApp. Proposta grátis em 24h.',
 
   hero: {
-    eyebrow: 'Sites para funilaria e pintura automotiva · Minas Gerais',
+    eyebrow: 'Sites para funilaria e pintura automotiva · Todo o Brasil',
     tituloHtml:
       'Sua funilaria merece um site que <em>mostra o resultado</em> e gera orçamento',
     subHtml:
-      'Criamos sites para oficinas de funilaria e pintura de Minas Gerais: com portfólio de antes e depois, no topo do Google e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para oficinas de funilaria e pintura de todo o Brasil: com portfólio de antes e depois, no topo do Google e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Portfólio de antes e depois',
@@ -115,19 +115,19 @@ export const funilariaEPintura: Nicho = {
         texto:
           'O portfólio de antes e depois foi determinante. O cliente já chega confiando na qualidade do acabamento, porque viu um resultado parecido com o dano do carro dele.',
         autor: 'Oficina de funilaria e pintura',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'O cliente manda foto do dano direto pelo WhatsApp depois de ver o formulário no site. Isso agiliza muito o orçamento, já dá pra ter uma ideia antes mesmo de ver o carro pessoalmente.',
         autor: 'Oficina especializada em pintura automotiva',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer bem no Google para "funilaria" na nossa cidade em poucos meses. O site se pagou com os primeiros reparos fechados por esse canal.',
         autor: 'Oficina de funilaria e reparo de sinistro',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -214,7 +214,7 @@ export const funilariaEPintura: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua oficina',
         paragrafos: [
-          'Construímos sites rápidos mesmo com portfólios visuais pesados, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos automotivos em Minas Gerais, com atenção específica à curadoria de fotos de antes e depois.',
+          'Construímos sites rápidos mesmo com portfólios visuais pesados, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos automotivos em todo o Brasil, com atenção específica à curadoria de fotos de antes e depois.',
           'O domínio e todos os acessos ficam no nome da sua oficina, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua oficina está performando hoje.',
         ],
       },
@@ -222,7 +222,7 @@ export const funilariaEPintura: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, alguém em Minas está pesquisando funilaria e pintura',
+    titulo: 'Enquanto você lê isso, alguém está pesquisando funilaria e pintura',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua oficina ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar pedidos de orçamento.',
   },
 

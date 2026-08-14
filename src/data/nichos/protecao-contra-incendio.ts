@@ -7,16 +7,16 @@ export const protecaoContraIncendio: Nicho = {
   nomePlural: 'empresas de proteção contra incêndio',
   profissional: 'técnico em segurança contra incêndio',
 
-  tituloSeo: 'Sites para Empresas de Proteção Contra Incêndio em MG | Sites Rankly',
+  tituloSeo: 'Sites para Empresas de Proteção Contra Incêndio | Sites Rankly',
   descricaoSeo:
-    'Sites para empresas de extintores, AVCB e proteção contra incêndio em MG, com orçamento por WhatsApp. Proposta grátis em 24h — Sites Rankly.',
+    'Sites para empresas de extintores, AVCB e proteção contra incêndio, com orçamento por WhatsApp. Proposta grátis em 24h — Sites Rankly.',
 
   hero: {
-    eyebrow: 'Sites para empresas de proteção contra incêndio · Minas Gerais',
+    eyebrow: 'Sites para empresas de proteção contra incêndio · Todo o Brasil',
     tituloHtml:
       'Sua empresa de proteção contra incêndio merece um site que <em>gera orçamento</em> todo mês',
     subHtml:
-      'Criamos sites para empresas de extintores, hidrantes, alarme de incêndio e regularização de AVCB de Minas Gerais: no topo do Google e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para empresas de extintores, hidrantes, alarme de incêndio e regularização de AVCB de todo o Brasil: no topo do Google e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Regularização de AVCB explicada',
@@ -115,19 +115,19 @@ export const protecaoContraIncendio: Nicho = {
         texto:
           'A página explicando o passo a passo do AVCB tirou muita dúvida do cliente antes mesmo da primeira ligação. Isso agilizou o fechamento, porque o síndico já chegava sabendo o que esperar.',
         autor: 'Empresa de regularização de AVCB',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a receber pedido de manutenção de extintores de comércios que nunca tinham ouvido falar da nossa empresa antes de encontrar no Google.',
         autor: 'Empresa de manutenção de extintores e hidrantes',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'O formulário de orçamento rápido facilitou muito o atendimento a administradoras de condomínio, que pedem cotação para vários prédios ao mesmo tempo.',
         autor: 'Empresa de sistemas de combate a incêndio',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -214,7 +214,7 @@ export const protecaoContraIncendio: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua empresa',
         paragrafos: [
-          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos técnicos e de segurança em Minas Gerais, com atenção específica a como explicar processos de regularização de forma clara e confiável.',
+          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos técnicos e de segurança em todo o Brasil, com atenção específica a como explicar processos de regularização de forma clara e confiável.',
           'O domínio e o painel de acessos ficam registrados no nome da sua empresa já na entrega do site, sem cláusula de permanência mínima amarrando o contrato. Peça o diagnóstico gratuito e receba, em até 24h úteis, um diagnóstico honesto de como o site da sua empresa está performando hoje.',
         ],
       },
@@ -222,7 +222,7 @@ export const protecaoContraIncendio: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, um síndico em Minas está pesquisando regularização de AVCB',
+    titulo: 'Enquanto você lê isso, um síndico está pesquisando regularização de AVCB',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua empresa ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar pedidos de orçamento.',
   },
 

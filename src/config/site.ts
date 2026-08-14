@@ -1,9 +1,9 @@
 export const site = {
   nome: 'Sites Rankly',
   url: 'https://www.sitesrankly.com.br',
-  titulo: 'Sites para Empresas de Energia Solar em MG | Sites Rankly',
+  titulo: 'Sites para Empresas de Energia Solar | Sites Rankly',
   descricao:
-    'Sites para empresas de energia solar em MG, com SEO local e captação por WhatsApp para gerar orçamentos todos os dias. Proposta grátis em 24h.',
+    'Sites para empresas de energia solar, com SEO local e captação por WhatsApp para gerar orçamentos todos os dias. Proposta grátis em 24h.',
   /**
    * Descrição institucional da empresa (agência), usada no JSON-LD
    * ProfessionalService em TODAS as páginas — precisa ser genérica o
@@ -24,7 +24,7 @@ export const site = {
   email: 'contato@sitesrankly.com.br',
 
   endereco: {
-    rua: 'Atendimento em todo o estado',
+    rua: 'Atendimento remoto para todo o Brasil',
     cidade: 'Belo Horizonte',
     estado: 'MG',
     cep: '30000-000',
@@ -33,7 +33,9 @@ export const site = {
     lng: -43.9345,
   },
 
-  regiao: 'Minas Gerais',
+  /* Usado nos textos das páginas de nicho. O atendimento é nacional —
+     a sede em BH aparece só no endereço, para o SEO local. */
+  regiao: 'todo o Brasil',
   instagram: 'https://www.instagram.com/sitesrankly',
 
   avaliacao: {

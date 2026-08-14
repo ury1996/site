@@ -7,16 +7,16 @@ export const materiaisDeConstrucao: Nicho = {
   nomePlural: 'lojas de materiais de construção',
   profissional: 'vendedor ou gerente comercial',
 
-  tituloSeo: 'Sites para Lojas de Materiais de Construção em MG | Sites Rankly',
+  tituloSeo: 'Sites para Lojas de Materiais de Construção | Sites Rankly',
   descricaoSeo:
-    'Sites para lojas e distribuidoras de materiais de construção em MG, com catálogo, orçamento rápido e SEO local. Proposta grátis em 24h.',
+    'Sites para lojas e distribuidoras de materiais de construção, com catálogo, orçamento rápido e SEO local. Proposta grátis em 24h.',
 
   hero: {
-    eyebrow: 'Sites para lojas de materiais de construção · Minas Gerais',
+    eyebrow: 'Sites para lojas de materiais de construção · Todo o Brasil',
     tituloHtml:
       'Sua loja de materiais de construção merece um site que <em>gera pedido de orçamento</em> todo dia',
     subHtml:
-      'Criamos sites para lojas, depósitos e distribuidoras de material de construção de Minas Gerais: com catálogo por categoria, no topo do Google da sua região e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para lojas, depósitos e distribuidoras de material de construção de todo o Brasil: com catálogo por categoria, no topo do Google da sua região e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Catálogo por categoria de produto',
@@ -35,7 +35,7 @@ export const materiaisDeConstrucao: Nicho = {
   diagnostico: {
     titulo: 'Seu site está pronto para gerar pedidos de orçamento de material?',
     introHtml:
-      'Quando alguém em Minas Gerais planeja uma obra ou reforma, pesquisa no Google onde comprar <strong>material de construção</strong> com melhor preço e entrega mais rápida. Marque o que o site da sua loja já tem hoje e veja a nota dele como <strong>gerador de orçamentos</strong>.',
+      'Quando alguém planeja uma obra ou reforma, pesquisa no Google onde comprar <strong>material de construção</strong> com melhor preço e entrega mais rápida. Marque o que o site da sua loja já tem hoje e veja a nota dele como <strong>gerador de orçamentos</strong>.',
     notaTexto:
       'Estes 6 pontos separam uma loja que só existe no mapa de uma loja que recebe pedido de orçamento todo dia pelo site. O diagnóstico completo é gratuito.',
     itens: [
@@ -115,19 +115,19 @@ export const materiaisDeConstrucao: Nicho = {
         texto:
           'Antes o movimento dependia só de quem passava na frente da loja. Depois do site, começamos a receber pedido de orçamento de bairros que nunca tínhamos vendido antes.',
         autor: 'Loja de materiais de construção',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'O catálogo organizado por categoria ajudou muito o cliente a montar a lista de compra antes mesmo de vir até a loja. Isso agilizou o atendimento e aumentou o ticket médio.',
         autor: 'Depósito de material de construção',
-        detalhe: 'Zona da Mata Mineira · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer bem no Google para "material de construção" na nossa cidade em poucos meses. Hoje o site é o segundo maior gerador de vendas depois da loja física.',
         autor: 'Distribuidora de materiais de construção',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -214,7 +214,7 @@ export const materiaisDeConstrucao: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua loja',
         paragrafos: [
-          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de varejo e construção em Minas Gerais, com atenção específica à organização de catálogo por categoria e ao fluxo de orçamento rápido.',
+          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de varejo e construção em todo o Brasil, com atenção específica à organização de catálogo por categoria e ao fluxo de orçamento rápido.',
           'O domínio e todos os acessos ficam no nome da sua loja ficam sob seu controle, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua loja está performando hoje.',
         ],
       },
@@ -222,7 +222,7 @@ export const materiaisDeConstrucao: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, alguém em Minas está pesquisando material de construção',
+    titulo: 'Enquanto você lê isso, alguém está pesquisando material de construção',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua loja ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar pedidos de orçamento.',
   },
 

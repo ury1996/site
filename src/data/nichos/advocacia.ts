@@ -7,16 +7,16 @@ export const advocacia: Nicho = {
   nomePlural: 'escritórios de advocacia',
   profissional: 'advogado',
 
-  tituloSeo: 'Sites para Advocacia em MG | Sites Rankly',
+  tituloSeo: 'Sites para Advocacia | Sites Rankly',
   descricaoSeo:
-    'Sites para escritórios de advocacia em MG, dentro das regras da OAB. SEO local e captação de clientes por WhatsApp. Proposta grátis em 24h.',
+    'Sites para escritórios de advocacia, dentro das regras da OAB. SEO local e captação de clientes por WhatsApp. Proposta grátis em 24h.',
 
   hero: {
-    eyebrow: 'Sites para escritórios de advocacia · Minas Gerais',
+    eyebrow: 'Sites para escritórios de advocacia · Todo o Brasil',
     tituloHtml:
       'Seu escritório de advocacia merece um site que <em>traz clientes</em> todos os meses',
     subHtml:
-      'Criamos sites para advogados e escritórios de Minas Gerais: dentro das regras da OAB, rápidos, no topo do Google da sua cidade e com contatos chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para advogados e escritórios de todo o Brasil: dentro das regras da OAB, rápidos, no topo do Google da sua cidade e com contatos chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Dentro do Provimento 205/2021 da OAB',
@@ -35,7 +35,7 @@ export const advocacia: Nicho = {
   diagnostico: {
     titulo: 'Seu site está pronto para trazer clientes para o escritório?',
     introHtml:
-      'Quando alguém em Minas Gerais precisa de um <strong>advogado</strong>, a primeira busca é no Google. Marque o que o site do seu escritório já tem hoje e veja a nota dele como <strong>captador de clientes</strong>.',
+      'Quando alguém precisa de um <strong>advogado</strong>, a primeira busca é no Google. Marque o que o site do seu escritório já tem hoje e veja a nota dele como <strong>captador de clientes</strong>.',
     notaTexto:
       'Estes 6 pontos separam um "site de currículo" de um site que gera contatos qualificados toda semana — sempre dentro das regras de publicidade da OAB. O diagnóstico completo é gratuito.',
     itens: [
@@ -115,19 +115,19 @@ export const advocacia: Nicho = {
         texto:
           'Antes o site só listava as áreas de atuação. Hoje chegam de 4 a 6 contatos qualificados por semana pelo WhatsApp, já dizendo qual é o problema jurídico. Mudou o fluxo do escritório inteiro.',
         autor: 'Escritório de advocacia',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'A equipe da Sites Rankly entendeu rápido os limites da publicidade da OAB e ainda assim entregou um site que converte. Isso fez toda a diferença na hora de aprovar internamente.',
         autor: 'Advogada, área cível e de família',
-        detalhe: 'Zona da Mata Mineira · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer na primeira página do Google para "advogado trabalhista" na nossa cidade em poucos meses. O site se pagou com o primeiro caso fechado por esse canal.',
         autor: 'Escritório de advocacia trabalhista',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -214,7 +214,7 @@ export const advocacia: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site do seu escritório',
         paragrafos: [
-          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de contatos integrada ao WhatsApp — o mesmo padrão que aplicamos para outros nichos de serviço em Minas Gerais, adaptado às particularidades da advocacia. Isso inclui atenção específica às regras de publicidade da OAB em cada texto, imagem e chamada para ação do site.',
+          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de contatos integrada ao WhatsApp — o mesmo padrão que aplicamos para outros nichos de serviço em todo o Brasil, adaptado às particularidades da advocacia. Isso inclui atenção específica às regras de publicidade da OAB em cada texto, imagem e chamada para ação do site.',
           'Todo o histórico de acesso e o registro no nome do escritório ficam sob seu controle, sem cláusula de fidelidade — a continuidade depende só dos resultados entregues. Peça o diagnóstico gratuito e receba, em até 24h úteis, uma análise real de como o site do seu escritório está performando hoje e o que fazer para ele começar a trazer clientes.',
         ],
       },
@@ -222,7 +222,7 @@ export const advocacia: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, alguém em Minas está procurando um advogado no Google',
+    titulo: 'Enquanto você lê isso, alguém está procurando um advogado no Google',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — seu escritório ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar contatos, dentro das regras da OAB.',
   },
 

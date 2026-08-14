@@ -18,7 +18,7 @@ export const passos = [
   {
     titulo: 'Diagnóstico gratuito',
     texto:
-      'Analisamos sua presença digital, seus concorrentes em Minas e as buscas por energia solar na sua região. Você recebe um plano claro — sem custo.',
+      'Analisamos sua presença digital, seus concorrentes e as buscas por energia solar na sua região. Você recebe um plano claro — sem custo.',
   },
   {
     titulo: 'Site construído para vender',
@@ -41,7 +41,7 @@ export const beneficios = [
   },
   {
     icone: 'icone-lupa',
-    titulo: 'SEO local para Minas',
+    titulo: 'SEO local para a sua cidade',
     texto:
       'Estrutura otimizada para buscas como "energia solar em [sua cidade]": dados estruturados, Google Business e conteúdo regional.',
   },
@@ -76,19 +76,19 @@ export const depoimentos = [
     texto:
       'Antes o site era só um cartão de visitas. Hoje chegam de 3 a 5 pedidos de orçamento por semana pelo WhatsApp, já com o valor da conta de luz do cliente. Mudou nosso comercial.',
     autor: 'Integradora de energia solar',
-    detalhe: 'Região Metropolitana de BH · ★★★★★',
+    detalhe: '★★★★★',
   },
   {
     texto:
       'A calculadora de economia no site foi um divisor de águas. O cliente chega na reunião já sabendo quanto vai economizar — fechar ficou muito mais fácil.',
     autor: 'Empresa de energia solar',
-    detalhe: 'Sul de Minas · ★★★★★',
+    detalhe: '★★★★★',
   },
   {
     texto:
       'Aparecemos na primeira página do Google para energia solar na nossa cidade em poucos meses. O investimento no site se pagou com o primeiro projeto fechado.',
     autor: 'Integradora solar',
-    detalhe: 'Triângulo Mineiro · ★★★★★',
+    detalhe: '★★★★★',
   },
 ];
 
@@ -116,7 +116,7 @@ export const faq = [
   {
     pergunta: 'Vocês também cuidam de Google Ads e SEO contínuo?',
     resposta:
-      'Sim. Além da criação do site, oferecemos gestão de campanhas de Google Ads com rastreamento de conversões e planos de SEO contínuo para dominar as buscas da sua região em Minas Gerais.',
+      'Sim. Além da criação do site, oferecemos gestão de campanhas de Google Ads com rastreamento de conversões e planos de SEO contínuo para dominar as buscas da sua região.',
   },
   {
     pergunta: 'O site fica no meu nome? E se eu quiser trocar de agência?',

@@ -7,16 +7,16 @@ export const petShops: Nicho = {
   nomePlural: 'pet shops',
   profissional: 'tosador ou atendente',
 
-  tituloSeo: 'Sites para Pet Shops em MG | Sites Rankly',
+  tituloSeo: 'Sites para Pet Shops | Sites Rankly',
   descricaoSeo:
-    'Sites para pet shops em MG, com agendamento de banho e tosa e catálogo de serviços por WhatsApp. Proposta grátis em 24h — Sites Rankly.',
+    'Sites para pet shops, com agendamento de banho e tosa e catálogo de serviços por WhatsApp. Proposta grátis em 24h — Sites Rankly.',
 
   hero: {
-    eyebrow: 'Sites para pet shops · Minas Gerais',
+    eyebrow: 'Sites para pet shops · Todo o Brasil',
     tituloHtml:
       'Seu pet shop merece um site que <em>enche a agenda</em> de banho e tosa',
     subHtml:
-      'Criamos sites para pet shops de Minas Gerais: com catálogo de serviços, no topo do Google da sua região e com agendamentos chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para pet shops de todo o Brasil: com catálogo de serviços, no topo do Google da sua região e com agendamentos chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Agendamento de banho e tosa',
@@ -115,19 +115,19 @@ export const petShops: Nicho = {
         texto:
           'Depois do site, começamos a receber agendamento de tutores de outros bairros que nunca tinham vindo na loja. O formulário com porte e raça do pet ajudou muito a organizar a agenda do dia.',
         autor: 'Pet shop com banho e tosa',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'As fotos dos pets atendidos no site deram muita confiança para tutores novos. Eles já chegam vendo o resultado do nosso trabalho de tosa.',
         autor: 'Pet shop especializado em tosa na tesoura',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer bem no Google para "pet shop" na nossa cidade em poucos meses. A agenda de banho e tosa ficou muito mais cheia durante a semana.',
         autor: 'Pet shop com hotelzinho e day care',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -219,7 +219,7 @@ export const petShops: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site do seu pet shop',
         paragrafos: [
-          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de agendamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de saúde e bem-estar em Minas Gerais, com atenção específica a como apresentar portfólio de pets de forma que gere confiança e agendamento.',
+          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de agendamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de saúde e bem-estar em todo o Brasil, com atenção específica a como apresentar portfólio de pets de forma que gere confiança e agendamento.',
           'O domínio e todos os acessos ficam no nome do seu pet shop, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site do seu pet shop está performando hoje.',
         ],
       },
@@ -227,7 +227,7 @@ export const petShops: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, um tutor em Minas está pesquisando pet shop',
+    titulo: 'Enquanto você lê isso, um tutor está pesquisando pet shop',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — seu pet shop ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site encher a agenda de banho e tosa.',
   },
 

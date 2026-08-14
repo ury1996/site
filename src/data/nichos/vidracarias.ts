@@ -7,16 +7,16 @@ export const vidracarias: Nicho = {
   nomePlural: 'vidraçarias',
   profissional: 'vidraceiro',
 
-  tituloSeo: 'Sites para Vidraçarias em MG | Sites Rankly',
+  tituloSeo: 'Sites para Vidraçarias | Sites Rankly',
   descricaoSeo:
-    'Sites para vidraçarias em MG, com portfólio de box, espelhos e fachadas de vidro, e orçamento por WhatsApp. Proposta grátis em 24h.',
+    'Sites para vidraçarias, com portfólio de box, espelhos e fachadas de vidro, e orçamento por WhatsApp. Proposta grátis em 24h.',
 
   hero: {
-    eyebrow: 'Sites para vidraçarias · Minas Gerais',
+    eyebrow: 'Sites para vidraçarias · Todo o Brasil',
     tituloHtml:
       'Sua vidraçaria merece um site que <em>gera pedido de orçamento</em> todo dia',
     subHtml:
-      'Criamos sites para vidraçarias de Minas Gerais: com portfólio de box, espelhos, janelas e fachadas de vidro, no topo do Google da sua região e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para vidraçarias de todo o Brasil: com portfólio de box, espelhos, janelas e fachadas de vidro, no topo do Google da sua região e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Portfólio de box, espelhos e fachadas',
@@ -35,7 +35,7 @@ export const vidracarias: Nicho = {
   diagnostico: {
     titulo: 'Seu site está pronto para gerar pedido de orçamento de vidro?',
     introHtml:
-      'Quando alguém em Minas Gerais precisa trocar um box, instalar espelho ou fazer uma fachada de vidro, a busca por <strong>vidraçaria</strong> de confiança começa no Google. Marque o que o site da sua vidraçaria já tem hoje e veja a nota dele como <strong>gerador de orçamentos</strong>.',
+      'Quando alguém precisa trocar um box, instalar espelho ou fazer uma fachada de vidro, a busca por <strong>vidraçaria</strong> de confiança começa no Google. Marque o que o site da sua vidraçaria já tem hoje e veja a nota dele como <strong>gerador de orçamentos</strong>.',
     notaTexto:
       'Estes 6 pontos separam uma vidraçaria que só existe na placa da loja de uma que recebe pedido de orçamento toda semana pelo site. O diagnóstico completo é gratuito.',
     itens: [
@@ -115,19 +115,19 @@ export const vidracarias: Nicho = {
         texto:
           'Antes vivíamos só do movimento da loja física. Com o site, com fotos organizadas dos box que já fizemos, começaram a chegar pedidos de bairros que nunca tínhamos atendido.',
         autor: 'Vidraçaria residencial e comercial',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'O cliente já chega no WhatsApp sabendo o tipo de box que quer, porque viu no site. Isso agilizou muito o fechamento do orçamento.',
         autor: 'Vidraçaria especializada em box e espelhos',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer bem no Google para "vidraçaria" na nossa cidade em poucos meses. O site se pagou com o primeiro projeto de fachada fechado por esse canal.',
         autor: 'Vidraçaria e serralheria',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -214,7 +214,7 @@ export const vidracarias: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua vidraçaria',
         paragrafos: [
-          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de instalação e acabamento em Minas Gerais, com atenção específica a como apresentar portfólio de produtos em vidro de forma que gere confiança real.',
+          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de instalação e acabamento em todo o Brasil, com atenção específica a como apresentar portfólio de produtos em vidro de forma que gere confiança real.',
           'O domínio e todos os acessos ficam no nome da sua vidraçaria, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua vidraçaria está performando hoje.',
         ],
       },
@@ -222,7 +222,7 @@ export const vidracarias: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, alguém em Minas está pesquisando vidraçaria no Google',
+    titulo: 'Enquanto você lê isso, alguém está pesquisando vidraçaria no Google',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua vidraçaria ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar pedidos de orçamento.',
   },
 

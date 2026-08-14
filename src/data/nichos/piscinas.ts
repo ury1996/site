@@ -7,16 +7,16 @@ export const piscinas: Nicho = {
   nomePlural: 'empresas de piscinas',
   profissional: 'técnico em piscinas',
 
-  tituloSeo: 'Sites para Empresas de Piscinas em MG | Sites Rankly',
+  tituloSeo: 'Sites para Empresas de Piscinas | Sites Rankly',
   descricaoSeo:
-    'Sites para empresas de construção e manutenção de piscinas em MG, com portfólio e contrato de manutenção por WhatsApp. Proposta grátis.',
+    'Sites para empresas de construção e manutenção de piscinas, com portfólio e contrato de manutenção por WhatsApp. Proposta grátis.',
 
   hero: {
-    eyebrow: 'Sites para empresas de piscinas · Minas Gerais',
+    eyebrow: 'Sites para empresas de piscinas · Todo o Brasil',
     tituloHtml:
       'Sua empresa de piscinas merece um site que <em>gera projeto</em> e contrato de manutenção',
     subHtml:
-      'Criamos sites para empresas de construção e manutenção de piscinas de Minas Gerais: com portfólio de projetos, no topo do Google e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para empresas de construção e manutenção de piscinas de todo o Brasil: com portfólio de projetos, no topo do Google e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Portfólio de piscinas construídas',
@@ -115,19 +115,19 @@ export const piscinas: Nicho = {
         texto:
           'O portfólio com fotos das piscinas que já construímos foi determinante. O cliente já chega com uma ideia clara do formato e acabamento que quer.',
         autor: 'Empresa de construção de piscinas de alvenaria',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'A página explicando manutenção recorrente ajudou muito a converter cliente que só tinha contratado a construção em contrato mensal de manutenção — a receita ficou muito mais estável.',
         autor: 'Empresa de construção e manutenção de piscinas',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Nos meses de mais calor, o site praticamente não para de receber pedido de orçamento para construção de piscina de vinil e fibra.',
         autor: 'Empresa especializada em piscinas de vinil e fibra',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -214,7 +214,7 @@ export const piscinas: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua empresa',
         paragrafos: [
-          'Construímos sites rápidos mesmo com portfólios visuais pesados, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de construção e serviço doméstico em Minas Gerais, com atenção específica a como separar construção e manutenção de forma que gere pedido nas duas frentes.',
+          'Construímos sites rápidos mesmo com portfólios visuais pesados, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de construção e serviço doméstico em todo o Brasil, com atenção específica a como separar construção e manutenção de forma que gere pedido nas duas frentes.',
           'Todo o histórico de acesso e o registro no nome da sua empresa ficam sob seu controle ficam sob seu controle, sem cláusula de fidelidade — a continuidade depende só dos resultados entregues. Peça o diagnóstico gratuito e receba, em até 24h úteis, uma análise real de como o site da sua empresa está performando hoje.',
         ],
       },
@@ -222,7 +222,7 @@ export const piscinas: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, alguém em Minas está pesquisando construção de piscina',
+    titulo: 'Enquanto você lê isso, alguém está pesquisando construção de piscina',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua empresa ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar projetos e contratos de manutenção.',
   },
 

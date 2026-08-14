@@ -7,16 +7,16 @@ export const agronegocio: Nicho = {
   nomePlural: 'empresas de insumos e serviços para o agronegócio',
   profissional: 'engenheiro agrônomo ou vendedor técnico',
 
-  tituloSeo: 'Sites para Empresas do Agronegócio em MG | Sites Rankly',
+  tituloSeo: 'Sites para Empresas do Agronegócio | Sites Rankly',
   descricaoSeo:
-    'Sites para fornecedores de insumos e serviços para o agronegócio em MG, com catálogo técnico e cotação por WhatsApp. Proposta grátis.',
+    'Sites para fornecedores de insumos e serviços para o agronegócio, com catálogo técnico e cotação por WhatsApp. Proposta grátis.',
 
   hero: {
-    eyebrow: 'Sites para empresas do agronegócio · Minas Gerais',
+    eyebrow: 'Sites para empresas do agronegócio · Todo o Brasil',
     tituloHtml:
       'Sua empresa do agro merece um site que <em>gera cotação</em> na safra e na entressafra',
     subHtml:
-      'Criamos sites para fornecedores de insumos, maquinário e serviços para o agronegócio de Minas Gerais: com catálogo técnico bem apresentado, no topo do Google e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para fornecedores de insumos, maquinário e serviços para o agronegócio de todo o Brasil: com catálogo técnico bem apresentado, no topo do Google e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Catálogo técnico para o produtor rural',
@@ -115,19 +115,19 @@ export const agronegocio: Nicho = {
         texto:
           'Antes dependíamos só de indicação entre produtores vizinhos e presença em feira agropecuária. Com o site, começamos a receber contato de produtores de regiões que nunca tínhamos atendido.',
         autor: 'Distribuidora de insumos agrícolas',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'O catálogo técnico organizado por categoria ajudou muito o produtor a montar o pedido antes mesmo de ligar. Isso agilizou nosso atendimento na época de plantio.',
         autor: 'Empresa de defensivos e fertilizantes',
-        detalhe: 'Norte de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer bem no Google para nosso segmento na nossa região em poucos meses. O site se pagou com os primeiros pedidos fechados por esse canal.',
         autor: 'Empresa de assistência técnica e consultoria agrícola',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -214,7 +214,7 @@ export const agronegocio: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua empresa',
         paragrafos: [
-          'Construímos sites rápidos mesmo para conexões de internet mais fracas, com SEO regional desde o primeiro dia e captação de cotações integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos do agronegócio e da indústria em Minas Gerais, com atenção específica ao calendário agrícola e à realidade do produtor rural.',
+          'Construímos sites rápidos mesmo para conexões de internet mais fracas, com SEO regional desde o primeiro dia e captação de cotações integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos do agronegócio e da indústria em todo o Brasil, com atenção específica ao calendário agrícola e à realidade do produtor rural.',
           'Registro do domínio e acessos administrativos ficam no nome da sua empresa desde o primeiro dia, sem cláusula de permanência mínima. Peça o diagnóstico gratuito e receba, em até 24h úteis, um diagnóstico honesto de como o site da sua empresa está performando hoje.',
         ],
       },
@@ -222,7 +222,7 @@ export const agronegocio: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, um produtor rural em Minas está pesquisando fornecedor no Google',
+    titulo: 'Enquanto você lê isso, um produtor rural está pesquisando fornecedor no Google',
     sub: 'A pergunta é: quem vai aparecer para esse produtor — sua empresa ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar cotações na safra e na entressafra.',
   },
 

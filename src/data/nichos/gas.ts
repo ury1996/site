@@ -7,16 +7,16 @@ export const gas: Nicho = {
   nomePlural: 'empresas de instalações de gás',
   profissional: 'técnico credenciado em gás',
 
-  tituloSeo: 'Sites para Empresas de Instalação de Gás em MG | Sites Rankly',
+  tituloSeo: 'Sites para Empresas de Instalação de Gás | Sites Rankly',
   descricaoSeo:
-    'Sites para empresas de instalação de gás encanado e GLP em MG, com laudo técnico e chamado de urgência. Proposta grátis em 24h — Sites Rankly.',
+    'Sites para empresas de instalação de gás encanado e GLP, com laudo técnico e chamado de urgência. Proposta grátis em 24h — Sites Rankly.',
 
   hero: {
-    eyebrow: 'Sites para empresas de instalação de gás · Minas Gerais',
+    eyebrow: 'Sites para empresas de instalação de gás · Todo o Brasil',
     tituloHtml:
       'Sua empresa de gás merece um site que <em>transmite segurança</em> e gera chamado',
     subHtml:
-      'Criamos sites para empresas de instalação de gás encanado e GLP de Minas Gerais: com laudo técnico em destaque, no topo do Google e com chamados chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para empresas de instalação de gás encanado e GLP de todo o Brasil: com laudo técnico em destaque, no topo do Google e com chamados chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Laudo técnico e ART em destaque',
@@ -115,19 +115,19 @@ export const gas: Nicho = {
         texto:
           'Mostrar nossa certificação e o número da ART no site logo na primeira página deu muito mais confiança para o cliente fechar a instalação com a gente e não com um "gasista" informal.',
         autor: 'Empresa de instalação de gás encanado',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'O formulário direto no WhatsApp agilizou muito o atendimento de vistoria — o cliente já manda o endereço e o tipo de imóvel, a gente já sabe o que levar.',
         autor: 'Empresa de manutenção e vistoria de gás',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer bem no Google para "instalação de gás" na nossa cidade em poucos meses. O site virou nosso principal canal de chamados novos.',
         autor: 'Empresa de instalações de GLP',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -214,7 +214,7 @@ export const gas: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua empresa',
         paragrafos: [
-          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de chamados integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos técnicos e de segurança em Minas Gerais, com atenção específica a como transmitir credibilidade técnica de forma clara e direta.',
+          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de chamados integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos técnicos e de segurança em todo o Brasil, com atenção específica a como transmitir credibilidade técnica de forma clara e direta.',
           'O domínio e todos os acessos ficam no nome da sua empresa, sem letras miúdas e sem exigência de permanência — você segue com a gente porque o site entrega resultado. Peça o diagnóstico gratuito e receba, em até 24h úteis, um raio-x real de como o site da sua empresa está performando hoje.',
         ],
       },
@@ -222,7 +222,7 @@ export const gas: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, alguém em Minas está pesquisando instalação de gás segura',
+    titulo: 'Enquanto você lê isso, alguém está pesquisando instalação de gás segura',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua empresa ou o concorrente informal? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar chamados qualificados.',
   },
 

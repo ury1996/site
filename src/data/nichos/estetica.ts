@@ -7,16 +7,16 @@ export const estetica: Nicho = {
   nomePlural: 'clínicas de estética',
   profissional: 'especialista em estética',
 
-  tituloSeo: 'Sites para Clínicas de Estética em MG | Sites Rankly',
+  tituloSeo: 'Sites para Clínicas de Estética | Sites Rankly',
   descricaoSeo:
-    'Sites para clínicas de estética em MG, com portfólio de resultados, SEO local e captação de clientes por WhatsApp. Proposta grátis em 24h.',
+    'Sites para clínicas de estética, com portfólio de resultados, SEO local e captação de clientes por WhatsApp. Proposta grátis em 24h.',
 
   hero: {
-    eyebrow: 'Sites para clínicas de estética · Minas Gerais',
+    eyebrow: 'Sites para clínicas de estética · Todo o Brasil',
     tituloHtml:
       'Sua clínica de estética merece um site que <em>lota a agenda</em> todos os meses',
     subHtml:
-      'Criamos sites para clínicas de estética e harmonização facial de Minas Gerais: rápidos, com portfólio de resultados, no topo do Google da sua cidade e com clientes chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para clínicas de estética e harmonização facial de todo o Brasil: rápidos, com portfólio de resultados, no topo do Google da sua cidade e com clientes chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Portfólio de resultados incluso',
@@ -35,7 +35,7 @@ export const estetica: Nicho = {
   diagnostico: {
     titulo: 'Seu site está pronto para lotar a agenda da clínica?',
     introHtml:
-      'Quando alguém em Minas Gerais pesquisa <strong>harmonização facial</strong> ou um procedimento estético, a decisão passa pelo Google antes de tudo. Marque o que o site da sua clínica já tem hoje e veja a nota dele como <strong>captador de clientes</strong>.',
+      'Quando alguém pesquisa <strong>harmonização facial</strong> ou um procedimento estético, a decisão passa pelo Google antes de tudo. Marque o que o site da sua clínica já tem hoje e veja a nota dele como <strong>captador de clientes</strong>.',
     notaTexto:
       'Estes 6 pontos separam uma "página de Instagram disfarçada de site" de um site que lota a agenda toda semana. O diagnóstico completo — com análise do seu site e dos concorrentes — é gratuito.',
     itens: [
@@ -115,19 +115,19 @@ export const estetica: Nicho = {
         texto:
           'A gente vivia refém do algoritmo do Instagram. Com o site e o SEO local, hoje chegam pedidos de agendamento direto pelo Google, todos os dias, sem depender de like ou alcance.',
         autor: 'Clínica de estética facial',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'O portfólio organizado por procedimento facilitou muito a vida das clientes — e a minha também, porque elas já chegam sabendo o que querem e o valor aproximado.',
         autor: 'Biomédica esteta, especialista em harmonização facial',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Em três meses passamos a aparecer na primeira página do Google para os principais procedimentos que oferecemos na nossa cidade. O site se pagou rápido.',
         autor: 'Clínica de estética corporal',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -214,7 +214,7 @@ export const estetica: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua clínica',
         paragrafos: [
-          'Construímos sites rápidos, com SEO local desde o primeiro dia e agendamento integrado ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de serviço em Minas Gerais, com atenção específica às regras de publicidade de procedimentos estéticos e uso de imagem.',
+          'Construímos sites rápidos, com SEO local desde o primeiro dia e agendamento integrado ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de serviço em todo o Brasil, com atenção específica às regras de publicidade de procedimentos estéticos e uso de imagem.',
           'Todo o histórico de acesso e o registro no nome da clínica ficam sob seu controle, sem cláusula de fidelidade — a continuidade depende só dos resultados entregues. Peça o diagnóstico gratuito e receba, em até 24h úteis, uma análise real de como o site da sua clínica está performando hoje.',
         ],
       },
@@ -222,7 +222,7 @@ export const estetica: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, alguém em Minas está pesquisando um procedimento estético',
+    titulo: 'Enquanto você lê isso, alguém está pesquisando um procedimento estético',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua clínica ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site lotar a agenda.',
   },
 

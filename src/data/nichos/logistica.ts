@@ -7,16 +7,16 @@ export const logistica: Nicho = {
   nomePlural: 'empresas de logística e armazenagem',
   profissional: 'gestor de logística',
 
-  tituloSeo: 'Sites para Empresas de Logística e Armazenagem em MG | Sites Rankly',
+  tituloSeo: 'Sites para Empresas de Logística e Armazenagem | Sites Rankly',
   descricaoSeo:
-    'Sites para empresas de logística, armazenagem e distribuição em MG, com captação de cotação B2B por WhatsApp. Proposta grátis em 24h.',
+    'Sites para empresas de logística, armazenagem e distribuição, com captação de cotação B2B por WhatsApp. Proposta grátis em 24h.',
 
   hero: {
-    eyebrow: 'Sites para empresas de logística e armazenagem · Minas Gerais',
+    eyebrow: 'Sites para empresas de logística e armazenagem · Todo o Brasil',
     tituloHtml:
       'Sua empresa de logística merece um site que <em>gera contrato B2B</em> qualificado',
     subHtml:
-      'Criamos sites para empresas de logística, armazenagem e distribuição de Minas Gerais: com serviços e diferenciais operacionais bem apresentados, no topo do Google e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para empresas de logística, armazenagem e distribuição de todo o Brasil: com serviços e diferenciais operacionais bem apresentados, no topo do Google e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Cotação B2B qualificada',
@@ -115,19 +115,19 @@ export const logistica: Nicho = {
         texto:
           'Antes dependíamos só de indicação entre empresas do setor. Com o site explicando nossa capacidade de armazenagem, começamos a receber cotação de empresas de outras regiões que nunca tinham fechado com a gente.',
         autor: 'Empresa de armazenagem e distribuição',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'O formulário de cotação rápido agilizou muito nosso atendimento comercial — o cliente já manda tipo de serviço e volume, a gente responde com o valor no mesmo dia.',
         autor: 'Empresa de logística e gestão de estoque',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer bem no Google para "logística" na nossa região em poucos meses. O site virou um canal relevante de novos contratos.',
         autor: 'Empresa de cross-docking e distribuição regional',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -219,7 +219,7 @@ export const logistica: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua empresa',
         paragrafos: [
-          'Construímos sites rápidos, com SEO regional desde o primeiro dia e captação de cotações integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de indústria e transporte em Minas Gerais, com atenção específica a como apresentar capacidade operacional de forma que gere cotação qualificada.',
+          'Construímos sites rápidos, com SEO regional desde o primeiro dia e captação de cotações integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de indústria e transporte em todo o Brasil, com atenção específica a como apresentar capacidade operacional de forma que gere cotação qualificada.',
           'O domínio e todos os acessos ficam no nome da sua empresa ficam sob seu controle, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua empresa está performando hoje.',
         ],
       },
@@ -227,7 +227,7 @@ export const logistica: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, uma empresa em Minas está pesquisando parceiro de logística',
+    titulo: 'Enquanto você lê isso, uma empresa está pesquisando parceiro de logística',
     sub: 'A pergunta é: quem vai aparecer para essa empresa — a sua ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar cotações.',
   },
 

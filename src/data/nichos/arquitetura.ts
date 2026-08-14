@@ -7,16 +7,16 @@ export const arquitetura: Nicho = {
   nomePlural: 'escritórios de arquitetura',
   profissional: 'arquiteto',
 
-  tituloSeo: 'Sites para Escritórios de Arquitetura em MG | Sites Rankly',
+  tituloSeo: 'Sites para Escritórios de Arquitetura | Sites Rankly',
   descricaoSeo:
-    'Sites para arquitetos e escritórios de arquitetura em MG, com portfólio visual de projetos, SEO local e captação por WhatsApp. Proposta grátis.',
+    'Sites para arquitetos e escritórios de arquitetura, com portfólio visual de projetos, SEO local e captação por WhatsApp. Proposta grátis.',
 
   hero: {
-    eyebrow: 'Sites para escritórios de arquitetura · Minas Gerais',
+    eyebrow: 'Sites para escritórios de arquitetura · Todo o Brasil',
     tituloHtml:
       'Seu escritório de arquitetura merece um site que <em>mostra seu talento</em> e traz clientes',
     subHtml:
-      'Criamos sites para arquitetos e escritórios de Minas Gerais: com portfólio visual de dar orgulho, no topo do Google da sua região e com pedidos de projeto chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para arquitetos e escritórios de todo o Brasil: com portfólio visual de dar orgulho, no topo do Google da sua região e com pedidos de projeto chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Portfólio visual em alta qualidade',
@@ -35,7 +35,7 @@ export const arquitetura: Nicho = {
   diagnostico: {
     titulo: 'Seu site está pronto para gerar pedidos de projeto de arquitetura?',
     introHtml:
-      'Quando alguém em Minas Gerais planeja construir ou reformar e busca um <strong>arquiteto</strong>, o primeiro filtro é visual: o portfólio precisa impressionar em segundos. Marque o que o site do seu escritório já tem hoje e veja a nota dele como <strong>vitrine de projetos</strong>.',
+      'Quando alguém planeja construir ou reformar e busca um <strong>arquiteto</strong>, o primeiro filtro é visual: o portfólio precisa impressionar em segundos. Marque o que o site do seu escritório já tem hoje e veja a nota dele como <strong>vitrine de projetos</strong>.',
     notaTexto:
       'Estes 6 pontos separam um portfólio bonito, mas parado, de um site que gera pedido de projeto toda semana. O diagnóstico completo é gratuito.',
     itens: [
@@ -115,19 +115,19 @@ export const arquitetura: Nicho = {
         texto:
           'O Instagram trazia curtida, mas não cliente. Depois do site, com portfólio organizado por ambiente e formulário direto pro WhatsApp, os pedidos de orçamento triplicaram em três meses.',
         autor: 'Arquiteta, projetos residenciais',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'A galeria em alta resolução carregando rápido no celular fez toda diferença. Cliente entra, vê o portfólio, já manda mensagem perguntando o valor do projeto.',
         autor: 'Escritório de arquitetura de interiores',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer no Google para "arquiteto" na nossa cidade em poucos meses, sem depender só de indicação de clientes antigos. Isso trouxe um público novo.',
         autor: 'Escritório de arquitetura e urbanismo',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -214,7 +214,7 @@ export const arquitetura: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site do seu escritório',
         paragrafos: [
-          'Construímos sites rápidos mesmo com portfólios visuais pesados, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos criativos e técnicos em Minas Gerais, com atenção específica à curadoria e organização de galerias de projeto.',
+          'Construímos sites rápidos mesmo com portfólios visuais pesados, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos criativos e técnicos em todo o Brasil, com atenção específica à curadoria e organização de galerias de projeto.',
           'O domínio e todos os acessos ficam no nome do escritório, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site do seu escritório está performando hoje.',
         ],
       },
@@ -222,7 +222,7 @@ export const arquitetura: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, alguém em Minas está procurando arquiteto no Google',
+    titulo: 'Enquanto você lê isso, alguém está procurando arquiteto no Google',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — seu escritório ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar pedidos de projeto.',
   },
 

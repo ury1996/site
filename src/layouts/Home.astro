@@ -64,11 +64,9 @@ const grafo: Record<string, unknown>[] = [
       latitude: CONTATO.geo.lat,
       longitude: CONTATO.geo.lng,
     },
-    areaServed: [
-      { '@type': 'AdministrativeArea', name: 'Minas Gerais' },
-      { '@type': 'AdministrativeArea', name: 'São Paulo' },
-      { '@type': 'Country', name: 'Brasil' },
-    ],
+    /* Só o país: listar estados junto faz o Google interpretar esses
+       estados como o foco real do atendimento, encolhendo o alcance. */
+    areaServed: { '@type': 'Country', name: 'Brasil' },
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',

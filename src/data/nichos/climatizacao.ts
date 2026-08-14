@@ -7,16 +7,16 @@ export const climatizacao: Nicho = {
   nomePlural: 'empresas de climatização',
   profissional: 'técnico em refrigeração',
 
-  tituloSeo: 'Sites para Empresas de Climatização em MG | Sites Rankly',
+  tituloSeo: 'Sites para Empresas de Climatização | Sites Rankly',
   descricaoSeo:
-    'Sites para empresas de ar-condicionado e climatização em MG, com orçamento de instalação e contrato de manutenção. Proposta grátis em 24h.',
+    'Sites para empresas de ar-condicionado e climatização, com orçamento de instalação e contrato de manutenção. Proposta grátis em 24h.',
 
   hero: {
-    eyebrow: 'Sites para empresas de climatização · Minas Gerais',
+    eyebrow: 'Sites para empresas de climatização · Todo o Brasil',
     tituloHtml:
       'Sua empresa de climatização merece um site que <em>gera orçamento</em> o ano inteiro',
     subHtml:
-      'Criamos sites para empresas de ar-condicionado e climatização de Minas Gerais: com serviços de instalação e manutenção bem apresentados, no topo do Google e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para empresas de ar-condicionado e climatização de todo o Brasil: com serviços de instalação e manutenção bem apresentados, no topo do Google e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Contrato de manutenção em destaque',
@@ -35,7 +35,7 @@ export const climatizacao: Nicho = {
   diagnostico: {
     titulo: 'Seu site está pronto para gerar orçamento de instalação e contrato de manutenção?',
     introHtml:
-      'Quando alguém em Minas Gerais decide instalar ar-condicionado ou precisa de manutenção preventiva, a busca por uma empresa de <strong>climatização</strong> confiável começa no Google. Marque o que o site da sua empresa já tem hoje e veja a nota dele como <strong>gerador de orçamentos</strong>.',
+      'Quando alguém decide instalar ar-condicionado ou precisa de manutenção preventiva, a busca por uma empresa de <strong>climatização</strong> confiável começa no Google. Marque o que o site da sua empresa já tem hoje e veja a nota dele como <strong>gerador de orçamentos</strong>.',
     notaTexto:
       'Estes 6 pontos separam uma empresa que só instala de uma que também fecha contratos de manutenção recorrentes pelo site. O diagnóstico completo é gratuito.',
     itens: [
@@ -115,19 +115,19 @@ export const climatizacao: Nicho = {
         texto:
           'Antes só instalávamos e o cliente sumia. Com a página de manutenção destacada no site, começamos a fechar contrato recorrente logo depois da instalação — a receita ficou muito mais previsível.',
         autor: 'Empresa de instalação e manutenção de ar-condicionado',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Nos meses de mais calor, o site praticamente não para de receber pedido de orçamento. O formulário rápido facilita muito o atendimento no período de maior demanda.',
         autor: 'Empresa de climatização comercial',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer bem no Google para "instalação de ar-condicionado" na nossa cidade em poucos meses. O site virou nosso principal canal de pedidos novos.',
         autor: 'Empresa de refrigeração e climatização',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -214,7 +214,7 @@ export const climatizacao: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua empresa',
         paragrafos: [
-          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de instalações técnicas em Minas Gerais, com atenção específica a como separar instalação e manutenção de forma que gere pedido nas duas frentes.',
+          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de instalações técnicas em todo o Brasil, com atenção específica a como separar instalação e manutenção de forma que gere pedido nas duas frentes.',
           'O domínio e todos os acessos ficam no nome da sua empresa, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua empresa está performando hoje.',
         ],
       },
@@ -222,7 +222,7 @@ export const climatizacao: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, alguém em Minas está pesquisando instalação de ar-condicionado',
+    titulo: 'Enquanto você lê isso, alguém está pesquisando instalação de ar-condicionado',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua empresa ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar orçamentos e contratos de manutenção.',
   },
 

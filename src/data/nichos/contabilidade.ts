@@ -7,16 +7,16 @@ export const contabilidade: Nicho = {
   nomePlural: 'escritórios de contabilidade',
   profissional: 'contador',
 
-  tituloSeo: 'Sites para Escritórios de Contabilidade em MG | Sites Rankly',
+  tituloSeo: 'Sites para Escritórios de Contabilidade | Sites Rankly',
   descricaoSeo:
-    'Sites para escritórios de contabilidade em MG, com página para abertura de MEI, SEO local e captação de empresas por WhatsApp. Proposta grátis em 24h.',
+    'Sites para escritórios de contabilidade, com página para abertura de MEI, SEO local e captação de empresas por WhatsApp. Proposta grátis em 24h.',
 
   hero: {
-    eyebrow: 'Sites para escritórios de contabilidade · Minas Gerais',
+    eyebrow: 'Sites para escritórios de contabilidade · Todo o Brasil',
     tituloHtml:
       'Seu escritório de contabilidade merece um site que <em>traz empresa nova</em> todos os meses',
     subHtml:
-      'Criamos sites para escritórios de contabilidade de Minas Gerais: rápidos, com portal do cliente, no topo do Google da sua região e com contatos chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para escritórios de contabilidade de todo o Brasil: rápidos, com portal do cliente, no topo do Google da sua região e com contatos chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Página para abertura de empresa/MEI',
@@ -35,7 +35,7 @@ export const contabilidade: Nicho = {
   diagnostico: {
     titulo: 'Seu site está pronto para trazer empresas novas para carteira?',
     introHtml:
-      'Quando um empreendedor em Minas Gerais precisa abrir empresa ou trocar de <strong>contador</strong>, a pesquisa começa no Google. Marque o que o site do seu escritório já tem hoje e veja a nota dele como <strong>captador de clientes</strong>.',
+      'Quando um empreendedor precisa abrir empresa ou trocar de <strong>contador</strong>, a pesquisa começa no Google. Marque o que o site do seu escritório já tem hoje e veja a nota dele como <strong>captador de clientes</strong>.',
     notaTexto:
       'Estes 6 pontos separam um "site institucional parado" de um site que gera contato de empresa nova toda semana. O diagnóstico completo — com análise do seu site e dos concorrentes — é gratuito.',
     itens: [
@@ -115,19 +115,19 @@ export const contabilidade: Nicho = {
         texto:
           'Antes o site só listava os serviços genéricos. Hoje chegam vários contatos por semana pelo WhatsApp, boa parte de gente querendo abrir MEI ou trocar de contador. A página específica para abertura de empresa fez toda diferença.',
         autor: 'Escritório de contabilidade',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Conseguimos captar empresas de outras cidades da região que nos encontraram pelo Google, sem nunca ter vindo por indicação. Isso ampliou nossa área de atuação de verdade.',
         autor: 'Contador, especialista em regime Simples Nacional',
-        detalhe: 'Zona da Mata Mineira · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Em poucos meses passamos a aparecer bem no Google para "contabilidade" na nossa cidade. O site se pagou com os primeiros contratos fechados por esse canal.',
         autor: 'Escritório de contabilidade para pequenas empresas',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -214,7 +214,7 @@ export const contabilidade: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site do seu escritório de contabilidade',
         paragrafos: [
-          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de contatos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de serviço em Minas Gerais, com atenção específica à página de abertura de empresa/MEI, uma das maiores fontes de captação recorrente para escritórios de contabilidade.',
+          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de contatos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de serviço em todo o Brasil, com atenção específica à página de abertura de empresa/MEI, uma das maiores fontes de captação recorrente para escritórios de contabilidade.',
           'O domínio e todos os acessos ficam no nome do escritório ficam sob seu controle, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site do seu escritório está performando hoje.',
         ],
       },
@@ -222,7 +222,7 @@ export const contabilidade: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, alguém em Minas está pesquisando "abrir empresa" no Google',
+    titulo: 'Enquanto você lê isso, alguém está pesquisando "abrir empresa" no Google',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — seu escritório ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site trazer empresas novas.',
   },
 

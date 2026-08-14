@@ -7,16 +7,16 @@ export const oficinasMecanicas: Nicho = {
   nomePlural: 'oficinas mecânicas',
   profissional: 'mecânico',
 
-  tituloSeo: 'Sites para Oficinas Mecânicas em MG | Sites Rankly',
+  tituloSeo: 'Sites para Oficinas Mecânicas | Sites Rankly',
   descricaoSeo:
-    'Sites para oficinas mecânicas em MG, com agendamento de revisão e orçamento por WhatsApp. SEO local. Proposta grátis em 24h — Sites Rankly.',
+    'Sites para oficinas mecânicas, com agendamento de revisão e orçamento por WhatsApp. SEO local. Proposta grátis em 24h — Sites Rankly.',
 
   hero: {
-    eyebrow: 'Sites para oficinas mecânicas · Minas Gerais',
+    eyebrow: 'Sites para oficinas mecânicas · Todo o Brasil',
     tituloHtml:
       'Sua oficina merece um site que <em>enche a agenda</em> de revisão todo mês',
     subHtml:
-      'Criamos sites para oficinas mecânicas de Minas Gerais: com serviços bem explicados, no topo do Google da sua região e com agendamentos chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para oficinas mecânicas de todo o Brasil: com serviços bem explicados, no topo do Google da sua região e com agendamentos chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Agendamento direto no WhatsApp',
@@ -115,19 +115,19 @@ export const oficinasMecanicas: Nicho = {
         texto:
           'Antes a agenda dependia só de cliente antigo voltando. Com o site aparecendo no Google, começaram a chegar carros novos, gente que nunca tinha vindo na oficina antes.',
         autor: 'Oficina mecânica geral',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'O cliente já manda mensagem explicando o problema do carro, porque viu no site que a gente atende aquele tipo de serviço. Isso agiliza muito o orçamento.',
         autor: 'Oficina especializada em suspensão e freios',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer bem no Google para "oficina mecânica" na nossa cidade em poucos meses. A agenda da semana ficou muito mais cheia.',
         autor: 'Oficina mecânica multimarcas',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -219,7 +219,7 @@ export const oficinasMecanicas: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua oficina',
         paragrafos: [
-          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de agendamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos automotivos em Minas Gerais, com atenção específica a como apresentar especialidades de forma que facilite a busca do cliente.',
+          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de agendamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos automotivos em todo o Brasil, com atenção específica a como apresentar especialidades de forma que facilite a busca do cliente.',
           'Todo o histórico de acesso e o registro no nome da sua oficina ficam sob seu controle, sem cláusula de fidelidade — a continuidade depende só dos resultados entregues. Peça o diagnóstico gratuito e receba, em até 24h úteis, uma análise real de como o site da sua oficina está performando hoje.',
         ],
       },
@@ -227,7 +227,7 @@ export const oficinasMecanicas: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, alguém em Minas está pesquisando oficina mecânica',
+    titulo: 'Enquanto você lê isso, alguém está pesquisando oficina mecânica',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua oficina ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site encher a agenda.',
   },
 

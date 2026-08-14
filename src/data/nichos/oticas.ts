@@ -7,16 +7,16 @@ export const oticas: Nicho = {
   nomePlural: 'óticas',
   profissional: 'optometrista ou vendedor',
 
-  tituloSeo: 'Sites para Óticas em MG | Sites Rankly',
+  tituloSeo: 'Sites para Óticas | Sites Rankly',
   descricaoSeo:
-    'Sites para óticas em MG, com catálogo de armações, agendamento de exame de vista e SEO local. Proposta grátis em 24h — Sites Rankly.',
+    'Sites para óticas, com catálogo de armações, agendamento de exame de vista e SEO local. Proposta grátis em 24h — Sites Rankly.',
 
   hero: {
-    eyebrow: 'Sites para óticas · Minas Gerais',
+    eyebrow: 'Sites para óticas · Todo o Brasil',
     tituloHtml:
       'Sua ótica merece um site que <em>traz cliente novo</em> todo mês',
     subHtml:
-      'Criamos sites para óticas de Minas Gerais: com catálogo de armações, agendamento de exame de vista, no topo do Google da sua região e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para óticas de todo o Brasil: com catálogo de armações, agendamento de exame de vista, no topo do Google da sua região e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Catálogo de armações',
@@ -115,19 +115,19 @@ export const oticas: Nicho = {
         texto:
           'O catálogo de armações no site ajudou muito o cliente a chegar já com uma ideia do que queria. Isso agilizou o atendimento e aumentou o ticket médio da venda.',
         autor: 'Ótica de bairro',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a receber agendamento de exame de vista direto pelo site, de gente que nunca tinha vindo na ótica antes. O SEO local fez muita diferença.',
         autor: 'Ótica com consultório de optometria',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'O formulário direto no WhatsApp facilitou muito: o cliente já manda a receita ou pergunta sobre uma armação específica que viu no catálogo do site.',
         autor: 'Ótica e laboratório de lentes',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -219,7 +219,7 @@ export const oticas: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua ótica',
         paragrafos: [
-          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de agendamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de saúde e bem-estar em Minas Gerais, com atenção específica à organização de catálogo visual de forma que engaje e converta.',
+          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de agendamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de saúde e bem-estar em todo o Brasil, com atenção específica à organização de catálogo visual de forma que engaje e converta.',
           'O domínio e todos os acessos ficam no nome da sua ótica, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua ótica está performando hoje.',
         ],
       },
@@ -227,7 +227,7 @@ export const oticas: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, alguém em Minas está pesquisando ótica no Google',
+    titulo: 'Enquanto você lê isso, alguém está pesquisando ótica no Google',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua ótica ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site trazer clientes novos.',
   },
 

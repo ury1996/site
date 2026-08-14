@@ -7,16 +7,16 @@ export const encanadores: Nicho = {
   nomePlural: 'empresas de serviços hidráulicos',
   profissional: 'encanador',
 
-  tituloSeo: 'Sites para Encanadores e Empresas Hidráulicas em MG | Sites Rankly',
+  tituloSeo: 'Sites para Encanadores e Empresas Hidráulicas | Sites Rankly',
   descricaoSeo:
-    'Sites para encanadores e empresas de serviços hidráulicos em MG, com chamado de urgência e SEO local. Proposta grátis em 24h — Sites Rankly.',
+    'Sites para encanadores e empresas de serviços hidráulicos, com chamado de urgência e SEO local. Proposta grátis em 24h — Sites Rankly.',
 
   hero: {
-    eyebrow: 'Sites para encanadores e empresas hidráulicas · Minas Gerais',
+    eyebrow: 'Sites para encanadores e empresas hidráulicas · Todo o Brasil',
     tituloHtml:
       'Sua empresa hidráulica merece um site que <em>toca o telefone</em> na hora do vazamento',
     subHtml:
-      'Criamos sites para encanadores e empresas de serviços hidráulicos de Minas Gerais: rápidos, no topo do Google quando alguém tem um vazamento, com chamado chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para encanadores e empresas de serviços hidráulicos de todo o Brasil: rápidos, no topo do Google quando alguém tem um vazamento, com chamado chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Botão de chamado de urgência',
@@ -115,19 +115,19 @@ export const encanadores: Nicho = {
         texto:
           'Um vazamento de madrugada e o cliente já me achou pelo Google, mandou mensagem direto pelo site. Sem o site, provavelmente ele teria ligado pra outro encanador que apareceu primeiro na busca.',
         autor: 'Encanador autônomo',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'O botão de chamado de urgência bem visível fez diferença direta: o cliente não perde tempo, clica e já explica o problema no WhatsApp.',
         autor: 'Empresa de desentupimento e serviços hidráulicos',
-        detalhe: 'Zona da Mata Mineira · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer bem no Google para "encanador" na nossa cidade em poucas semanas. Isso trouxe cliente novo sem depender só de indicação.',
         autor: 'Empresa de instalações hidráulicas',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -219,7 +219,7 @@ export const encanadores: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua empresa hidráulica',
         paragrafos: [
-          'Construímos sites rápidos desde a primeira visita, com SEO local trabalhado desde o dia um e captação de chamado integrada ao WhatsApp — o mesmo padrão usado em outros serviços de urgência doméstica em Minas Gerais, sempre priorizando o caminho de contato mais curto possível.',
+          'Construímos sites rápidos desde a primeira visita, com SEO local trabalhado desde o dia um e captação de chamado integrada ao WhatsApp — o mesmo padrão usado em outros serviços de urgência doméstica em todo o Brasil, sempre priorizando o caminho de contato mais curto possível.',
           'O domínio e todos os acessos administrativos ficam registrados em seu nome, sem cláusula de fidelidade prendendo a parceria. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama honesto de como o site da sua empresa está performando hoje.',
         ],
       },
@@ -227,7 +227,7 @@ export const encanadores: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Agora mesmo, alguém em Minas está com vazamento e procurando encanador no Google',
+    titulo: 'Agora mesmo, alguém está com vazamento e procurando encanador no Google',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua empresa ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site captar chamados de urgência.',
   },
 

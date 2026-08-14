@@ -7,16 +7,16 @@ export const limpeza: Nicho = {
   nomePlural: 'empresas de limpeza',
   profissional: 'gestor de operações',
 
-  tituloSeo: 'Sites para Empresas de Limpeza em MG | Sites Rankly',
+  tituloSeo: 'Sites para Empresas de Limpeza | Sites Rankly',
   descricaoSeo:
-    'Sites para empresas de limpeza residencial e comercial em MG, com orçamento recorrente por WhatsApp. Proposta grátis em 24h.',
+    'Sites para empresas de limpeza residencial e comercial, com orçamento recorrente por WhatsApp. Proposta grátis em 24h.',
 
   hero: {
-    eyebrow: 'Sites para empresas de limpeza · Minas Gerais',
+    eyebrow: 'Sites para empresas de limpeza · Todo o Brasil',
     tituloHtml:
       'Sua empresa de limpeza merece um site que <em>gera contrato recorrente</em> todo mês',
     subHtml:
-      'Criamos sites para empresas de limpeza residencial, comercial e pós-obra de Minas Gerais: com serviços bem explicados, no topo do Google e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para empresas de limpeza residencial, comercial e pós-obra de todo o Brasil: com serviços bem explicados, no topo do Google e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Contrato recorrente em destaque',
@@ -115,19 +115,19 @@ export const limpeza: Nicho = {
         texto:
           'Antes só fazíamos serviço avulso. Com a página explicando os planos recorrentes, começamos a fechar contrato mensal com residências e pequenos escritórios — a receita ficou muito mais previsível.',
         autor: 'Empresa de limpeza residencial e comercial',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'O formulário de orçamento com metragem e frequência facilitou muito o atendimento. A gente já responde com o valor certo, sem ir e voltar mensagem.',
         autor: 'Empresa de limpeza pós-obra',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer bem no Google para "empresa de limpeza" na nossa cidade em poucos meses. O site virou nosso principal canal de contratos novos.',
         autor: 'Empresa de limpeza comercial e condomínios',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -219,7 +219,7 @@ export const limpeza: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua empresa',
         paragrafos: [
-          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de serviço doméstico em Minas Gerais, com atenção específica a como apresentar planos recorrentes de forma que converta serviço avulso em contrato fixo.',
+          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de serviço doméstico em todo o Brasil, com atenção específica a como apresentar planos recorrentes de forma que converta serviço avulso em contrato fixo.',
           'Domínio, acessos e todo o conteúdo ficam registrados no nome da sua empresa ficam sob seu controle, sem contrato de fidelidade amarrando a parceria. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama honesto de como o site da sua empresa está performando hoje.',
         ],
       },
@@ -227,7 +227,7 @@ export const limpeza: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, alguém em Minas está pesquisando empresa de limpeza',
+    titulo: 'Enquanto você lê isso, alguém está pesquisando empresa de limpeza',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua empresa ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar contratos recorrentes.',
   },
 

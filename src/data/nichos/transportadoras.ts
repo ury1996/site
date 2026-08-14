@@ -7,16 +7,16 @@ export const transportadoras: Nicho = {
   nomePlural: 'transportadoras',
   profissional: 'gestor de logística',
 
-  tituloSeo: 'Sites para Transportadoras em MG | Sites Rankly',
+  tituloSeo: 'Sites para Transportadoras | Sites Rankly',
   descricaoSeo:
-    'Sites para transportadoras e empresas de frete em MG, com cotação de frete e rastreamento por WhatsApp. Proposta grátis em 24h.',
+    'Sites para transportadoras e empresas de frete, com cotação de frete e rastreamento por WhatsApp. Proposta grátis em 24h.',
 
   hero: {
-    eyebrow: 'Sites para transportadoras · Minas Gerais',
+    eyebrow: 'Sites para transportadoras · Todo o Brasil',
     tituloHtml:
       'Sua transportadora merece um site que <em>gera cotação de frete</em> todo dia',
     subHtml:
-      'Criamos sites para transportadoras de Minas Gerais: com áreas de atuação bem definidas, no topo do Google e com pedidos de cotação chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para transportadoras de todo o Brasil: com áreas de atuação bem definidas, no topo do Google e com pedidos de cotação chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Cotação de frete rápida',
@@ -115,19 +115,19 @@ export const transportadoras: Nicho = {
         texto:
           'Antes dependíamos só de contrato antigo e indicação entre empresas. Com o site explicando nossas rotas, começamos a receber cotação de empresas de outras regiões que nunca tinham fechado com a gente.',
         autor: 'Transportadora de carga fracionada',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'O formulário de cotação rápido agilizou muito nosso atendimento comercial — o cliente já manda origem, destino e tipo de carga, a gente responde com o valor no mesmo dia.',
         autor: 'Transportadora regional',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer bem no Google para "transportadora" na nossa região em poucos meses. O site virou um canal relevante de novos contratos.',
         autor: 'Transportadora de carga dedicada',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -219,7 +219,7 @@ export const transportadoras: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua transportadora',
         paragrafos: [
-          'Construímos sites rápidos, com SEO regional desde o primeiro dia e captação de cotações integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de logística e transporte em Minas Gerais, com atenção específica a como apresentar rotas e tipos de carga de forma que gere cotação qualificada.',
+          'Construímos sites rápidos, com SEO regional desde o primeiro dia e captação de cotações integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de logística e transporte em todo o Brasil, com atenção específica a como apresentar rotas e tipos de carga de forma que gere cotação qualificada.',
           'O domínio e todos os acessos ficam no nome da sua transportadora, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua transportadora está performando hoje.',
         ],
       },
@@ -227,7 +227,7 @@ export const transportadoras: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, uma empresa em Minas está pesquisando transportadora',
+    titulo: 'Enquanto você lê isso, uma empresa está pesquisando transportadora',
     sub: 'A pergunta é: quem vai aparecer para essa empresa — sua transportadora ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar cotações.',
   },
 

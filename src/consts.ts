@@ -7,9 +7,9 @@ export const SITE = {
   nome: 'Sites Rankly',
   nomeLegal: 'Sites Rankly',
   url: 'https://www.sitesrankly.com.br', // domínio final (com www), igual ao src/config/site.ts
-  titulo: 'Criação de Sites, Google Ads e SEO em MG | Sites Rankly',
+  titulo: 'Criação de Sites, Google Ads e SEO no Brasil | Sites Rankly',
   descricao:
-    'Agência digital de criação de sites, Google Ads e SEO. Sites rápidos, otimizados e prontos para ranquear no Google. Minas Gerais e todo o Brasil.',
+    'Agência digital de criação de sites, Google Ads e SEO. Sites rápidos, otimizados e prontos para ranquear no Google. Atendimento em todo o Brasil.',
   idioma: 'pt-BR',
   locale: 'pt_BR',
   temaCor: '#050D1F',
@@ -34,7 +34,10 @@ export const CONTATO = {
   regiao: 'BR-MG',
   pais: 'BR',
   cep: '30000-000',
-  endereco: 'Atendimento online e presencial em todo o estado',
+  /* A sede fica em BH, mas o atendimento é remoto e nacional — o endereço
+     serve só para o SEO local do Perfil da Empresa, não para limitar a
+     área atendida (ver `areaServed` no JSON-LD). */
+  endereco: 'Atendimento remoto para todo o Brasil, com base em Belo Horizonte',
   geo: { lat: -19.9167, lng: -43.9345 },
   horario: 'Seg a Sex, 09h às 18h',
   instagram: 'https://instagram.com/sitesrankly', // EDITE
@@ -259,9 +262,9 @@ export const FAQ = [
       'No orgânico, resultado consistente aparece entre 3 e 6 meses, dependendo da concorrência da sua palavra-chave e da sua região. Para termos locais menos disputados, costuma ser mais rápido. Se você precisa de cliente agora, o caminho é Google Ads em paralelo — o orgânico constrói o médio prazo.',
   },
   {
-    pergunta: 'Vocês atendem fora de Minas Gerais?',
+    pergunta: 'Vocês atendem em todo o Brasil?',
     resposta:
-      'Atendemos o Brasil inteiro. A operação é remota, com reunião por vídeo e acompanhamento no WhatsApp. Clientes em São Paulo, Minas e outros estados trabalham com a gente exatamente do mesmo jeito.',
+      'Atendemos o Brasil inteiro. A operação é remota, com reunião por vídeo e acompanhamento no WhatsApp — a distância não muda nada no andamento do projeto. Clientes de capitais e de cidades do interior, em estados diferentes, trabalham com a gente exatamente do mesmo jeito.',
   },
   {
     pergunta: 'Já tenho um site. Dá para melhorar em vez de refazer?',

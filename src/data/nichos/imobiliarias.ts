@@ -7,16 +7,16 @@ export const imobiliarias: Nicho = {
   nomePlural: 'imobiliárias',
   profissional: 'corretor de imóveis',
 
-  tituloSeo: 'Sites para Imobiliárias em MG | Sites Rankly',
+  tituloSeo: 'Sites para Imobiliárias | Sites Rankly',
   descricaoSeo:
-    'Sites para imobiliárias em MG, com catálogo de imóveis, SEO local e captação de leads por WhatsApp. Proposta grátis em 24h.',
+    'Sites para imobiliárias, com catálogo de imóveis, SEO local e captação de leads por WhatsApp. Proposta grátis em 24h.',
 
   hero: {
-    eyebrow: 'Sites para imobiliárias · Minas Gerais',
+    eyebrow: 'Sites para imobiliárias · Todo o Brasil',
     tituloHtml:
       'Sua imobiliária merece um site que <em>gera visitas e propostas</em> todos os dias',
     subHtml:
-      'Criamos sites para imobiliárias e corretores de Minas Gerais: catálogo de imóveis com busca, no topo do Google da sua região e com leads chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para imobiliárias e corretores de todo o Brasil: catálogo de imóveis com busca, no topo do Google da sua região e com leads chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Catálogo de imóveis com busca',
@@ -35,7 +35,7 @@ export const imobiliarias: Nicho = {
   diagnostico: {
     titulo: 'Seu site está pronto para vender e alugar imóveis?',
     introHtml:
-      'Quando alguém em Minas Gerais procura um imóvel para <strong>comprar ou alugar</strong>, a busca começa no Google e nos portais imobiliários. Marque o que o site da sua imobiliária já tem hoje e veja a nota dele como <strong>gerador de leads</strong>.',
+      'Quando alguém procura um imóvel para <strong>comprar ou alugar</strong>, a busca começa no Google e nos portais imobiliários. Marque o que o site da sua imobiliária já tem hoje e veja a nota dele como <strong>gerador de leads</strong>.',
     notaTexto:
       'Estes 6 pontos separam um "site vitrine" de um site que gera contato de interessados todos os dias. O diagnóstico completo — com análise do seu site e dos concorrentes — é gratuito.',
     itens: [
@@ -115,19 +115,19 @@ export const imobiliarias: Nicho = {
         texto:
           'Antes só recebíamos contato pelos portais pagos. Com o site próprio e o SEO local, hoje uma boa parte dos leads chega direto pelo Google, sem custo por lead.',
         autor: 'Imobiliária',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'O catálogo com busca por bairro e valor facilitou muito. O cliente já chega filtrando o que quer, e o corretor entra em contato já sabendo o interesse específico.',
         autor: 'Corretor de imóveis autônomo',
-        detalhe: 'Zona da Mata Mineira · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Em poucos meses passamos a aparecer bem no Google para "apartamento à venda" na nossa cidade. O site se pagou com as primeiras vendas fechadas por esse canal.',
         autor: 'Imobiliária especializada em lançamentos',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -214,7 +214,7 @@ export const imobiliarias: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua imobiliária',
         paragrafos: [
-          'Construímos sites rápidos mesmo com catálogos grandes, com SEO local desde o primeiro dia e captação de leads integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de serviço em Minas Gerais, adaptado às particularidades do mercado imobiliário, incluindo integração com os principais portais.',
+          'Construímos sites rápidos mesmo com catálogos grandes, com SEO local desde o primeiro dia e captação de leads integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de serviço em todo o Brasil, adaptado às particularidades do mercado imobiliário, incluindo integração com os principais portais.',
           'O domínio e todos os acessos ficam no nome da imobiliária, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua imobiliária está performando hoje.',
         ],
       },
@@ -222,7 +222,7 @@ export const imobiliarias: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, alguém em Minas está procurando um imóvel no Google',
+    titulo: 'Enquanto você lê isso, alguém está procurando um imóvel no Google',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua imobiliária ou o concorrente no portal pago? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar propostas.',
   },
 

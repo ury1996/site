@@ -7,16 +7,16 @@ export const pneus: Nicho = {
   nomePlural: 'lojas de pneus',
   profissional: 'vendedor ou borracheiro',
 
-  tituloSeo: 'Sites para Lojas de Pneus em MG | Sites Rankly',
+  tituloSeo: 'Sites para Lojas de Pneus | Sites Rankly',
   descricaoSeo:
-    'Sites para lojas de pneus e centros automotivos em MG, com catálogo por medida e orçamento por WhatsApp. Proposta grátis em 24h.',
+    'Sites para lojas de pneus e centros automotivos, com catálogo por medida e orçamento por WhatsApp. Proposta grátis em 24h.',
 
   hero: {
-    eyebrow: 'Sites para lojas de pneus · Minas Gerais',
+    eyebrow: 'Sites para lojas de pneus · Todo o Brasil',
     tituloHtml:
       'Sua loja de pneus merece um site que <em>gera pedido de orçamento</em> todo dia',
     subHtml:
-      'Criamos sites para lojas de pneus e centros automotivos de Minas Gerais: com consulta por medida, no topo do Google da sua região e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para lojas de pneus e centros automotivos de todo o Brasil: com consulta por medida, no topo do Google da sua região e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Consulta de pneu por medida',
@@ -115,19 +115,19 @@ export const pneus: Nicho = {
         texto:
           'Antes o movimento dependia só de quem passava na frente da loja. Com o site, começamos a receber pedido de orçamento de gente que estava com pneu furado na estrada e pesquisou no Google.',
         autor: 'Loja de pneus e alinhamento',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'A consulta por medida ajudou muito o cliente que não sabia bem qual pneu precisava. Ele informa a medida no site e já recebe as opções, sem precisar ligar.',
         autor: 'Centro automotivo especializado em pneus',
-        detalhe: 'Zona da Mata Mineira · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer bem no Google para "loja de pneus" na nossa cidade em poucos meses. O site virou o segundo maior gerador de vendas depois da loja física.',
         autor: 'Loja de pneus e serviços automotivos',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -214,7 +214,7 @@ export const pneus: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua loja',
         paragrafos: [
-          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos automotivos em Minas Gerais, com atenção específica à consulta rápida por medida e ao fluxo de orçamento simplificado.',
+          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos automotivos em todo o Brasil, com atenção específica à consulta rápida por medida e ao fluxo de orçamento simplificado.',
           'Todo o histórico de acesso e o registro no nome da sua loja ficam sob seu controle ficam sob seu controle, sem cláusula de fidelidade — a continuidade depende só dos resultados entregues. Peça o diagnóstico gratuito e receba, em até 24h úteis, uma análise real de como o site da sua loja está performando hoje.',
         ],
       },
@@ -222,7 +222,7 @@ export const pneus: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, alguém em Minas está pesquisando loja de pneus',
+    titulo: 'Enquanto você lê isso, alguém está pesquisando loja de pneus',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua loja ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar pedidos de orçamento.',
   },
 

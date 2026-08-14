@@ -7,16 +7,16 @@ export const segurancaEletronica: Nicho = {
   nomePlural: 'empresas de segurança eletrônica',
   profissional: 'técnico em segurança eletrônica',
 
-  tituloSeo: 'Sites para Empresas de Segurança Eletrônica em MG | Sites Rankly',
+  tituloSeo: 'Sites para Empresas de Segurança Eletrônica | Sites Rankly',
   descricaoSeo:
-    'Sites para empresas de CFTV, alarme e controle de acesso em MG, com orçamento de instalação e monitoramento. Proposta grátis em 24h.',
+    'Sites para empresas de CFTV, alarme e controle de acesso, com orçamento de instalação e monitoramento. Proposta grátis em 24h.',
 
   hero: {
-    eyebrow: 'Sites para empresas de segurança eletrônica · Minas Gerais',
+    eyebrow: 'Sites para empresas de segurança eletrônica · Todo o Brasil',
     tituloHtml:
       'Sua empresa de segurança eletrônica merece um site que <em>gera orçamento</em> todo mês',
     subHtml:
-      'Criamos sites para empresas de CFTV, alarme e controle de acesso de Minas Gerais: com serviços bem explicados, no topo do Google e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para empresas de CFTV, alarme e controle de acesso de todo o Brasil: com serviços bem explicados, no topo do Google e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Planos de monitoramento em destaque',
@@ -35,7 +35,7 @@ export const segurancaEletronica: Nicho = {
   diagnostico: {
     titulo: 'Seu site está pronto para gerar orçamento de instalação e contrato de monitoramento?',
     introHtml:
-      'Quando alguém em Minas Gerais decide instalar câmeras, alarme ou controle de acesso, a busca por uma empresa de <strong>segurança eletrônica</strong> confiável começa no Google. Marque o que o site da sua empresa já tem hoje e veja a nota dele como <strong>gerador de orçamentos</strong>.',
+      'Quando alguém decide instalar câmeras, alarme ou controle de acesso, a busca por uma empresa de <strong>segurança eletrônica</strong> confiável começa no Google. Marque o que o site da sua empresa já tem hoje e veja a nota dele como <strong>gerador de orçamentos</strong>.',
     notaTexto:
       'Estes 6 pontos separam uma empresa que só instala de uma que também fecha contrato de monitoramento recorrente pelo site. O diagnóstico completo é gratuito.',
     itens: [
@@ -115,19 +115,19 @@ export const segurancaEletronica: Nicho = {
         texto:
           'Antes só instalávamos câmera e o cliente ficava sem monitoramento ativo. Com a página explicando os planos, passamos a fechar contrato de monitoramento logo na instalação — a receita ficou muito mais previsível.',
         autor: 'Empresa de CFTV e monitoramento',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'O formulário de orçamento rápido facilitou muito o atendimento a condomínios, que costumam pedir várias cotações antes de decidir. A gente responde rápido e fecha mais.',
         autor: 'Empresa de segurança eletrônica para condomínios',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer bem no Google para "instalação de câmeras" na nossa cidade em poucos meses. O site virou nosso principal canal de pedidos residenciais.',
         autor: 'Empresa de alarme e controle de acesso',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -214,7 +214,7 @@ export const segurancaEletronica: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua empresa',
         paragrafos: [
-          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos técnicos e de segurança em Minas Gerais, com atenção específica a como separar instalação e monitoramento de forma que gere pedido nas duas frentes.',
+          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos técnicos e de segurança em todo o Brasil, com atenção específica a como separar instalação e monitoramento de forma que gere pedido nas duas frentes.',
           'O domínio e o painel de acessos ficam sob o nome da sua empresa, sem letras miúdas prendendo a parceria a um contrato mínimo. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua empresa está performando hoje.',
         ],
       },
@@ -222,7 +222,7 @@ export const segurancaEletronica: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, alguém em Minas está pesquisando instalação de câmeras',
+    titulo: 'Enquanto você lê isso, alguém está pesquisando instalação de câmeras',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua empresa ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar orçamentos e contratos de monitoramento.',
   },
 

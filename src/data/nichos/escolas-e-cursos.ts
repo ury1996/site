@@ -7,16 +7,16 @@ export const escolasECursos: Nicho = {
   nomePlural: 'escolas e cursos livres',
   profissional: 'coordenador pedagógico',
 
-  tituloSeo: 'Sites para Escolas e Cursos Livres em MG | Sites Rankly',
+  tituloSeo: 'Sites para Escolas e Cursos Livres | Sites Rankly',
   descricaoSeo:
-    'Sites para escolas, cursos livres e idiomas em MG, com pré-matrícula e agendamento de visita por WhatsApp. Proposta grátis em 24h.',
+    'Sites para escolas, cursos livres e idiomas, com pré-matrícula e agendamento de visita por WhatsApp. Proposta grátis em 24h.',
 
   hero: {
-    eyebrow: 'Sites para escolas e cursos livres · Minas Gerais',
+    eyebrow: 'Sites para escolas e cursos livres · Todo o Brasil',
     tituloHtml:
       'Sua escola ou curso merece um site que <em>enche as turmas</em> todo semestre',
     subHtml:
-      'Criamos sites para escolas, cursos de idiomas e cursos livres de Minas Gerais: com grade de cursos bem explicada, no topo do Google e com pedidos de matrícula chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para escolas, cursos de idiomas e cursos livres de todo o Brasil: com grade de cursos bem explicada, no topo do Google e com pedidos de matrícula chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Pré-matrícula direto no WhatsApp',
@@ -115,19 +115,19 @@ export const escolasECursos: Nicho = {
         texto:
           'Antes dependíamos só de indicação de aluno para aluno. Com o site explicando a grade de cursos, começamos a receber pré-matrícula de gente que nunca tinha ouvido falar da nossa escola.',
         autor: 'Curso de idiomas',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'O formulário de pré-matrícula agilizou muito o período de captação — o aluno já informa o curso de interesse, nossa equipe entra em contato rápido para fechar a matrícula.',
         autor: 'Escola de cursos técnicos livres',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer bem no Google para "curso de informática" na nossa cidade em poucos meses. Isso trouxe aluno novo em período de baixa procura também.',
         autor: 'Escola de cursos profissionalizantes',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -219,7 +219,7 @@ export const escolasECursos: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua escola ou curso',
         paragrafos: [
-          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de pré-matrículas integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos educacionais em Minas Gerais, com atenção específica a como apresentar grade de cursos de forma que gere interesse real.',
+          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de pré-matrículas integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos educacionais em todo o Brasil, com atenção específica a como apresentar grade de cursos de forma que gere interesse real.',
           'O domínio e todos os acessos ficam no nome da sua instituição ficam sob seu controle, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua escola está performando hoje.',
         ],
       },
@@ -227,7 +227,7 @@ export const escolasECursos: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, alguém em Minas está pesquisando curso novo',
+    titulo: 'Enquanto você lê isso, alguém está pesquisando curso novo',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua escola ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar pré-matrículas.',
   },
 

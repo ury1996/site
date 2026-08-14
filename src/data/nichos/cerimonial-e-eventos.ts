@@ -7,16 +7,16 @@ export const cerimonialEEventos: Nicho = {
   nomePlural: 'empresas de cerimonial e eventos',
   profissional: 'cerimonialista',
 
-  tituloSeo: 'Sites para Cerimonial e Empresas de Eventos em MG | Sites Rankly',
+  tituloSeo: 'Sites para Cerimonial e Empresas de Eventos | Sites Rankly',
   descricaoSeo:
-    'Sites para cerimonialistas e empresas de eventos em MG, com portfólio de casamentos e festas, e orçamento por WhatsApp. Proposta grátis.',
+    'Sites para cerimonialistas e empresas de eventos, com portfólio de casamentos e festas, e orçamento por WhatsApp. Proposta grátis.',
 
   hero: {
-    eyebrow: 'Sites para cerimonial e empresas de eventos · Minas Gerais',
+    eyebrow: 'Sites para cerimonial e empresas de eventos · Todo o Brasil',
     tituloHtml:
       'Sua empresa de eventos merece um site que <em>vende a experiência</em> e gera contrato',
     subHtml:
-      'Criamos sites para cerimonialistas e empresas de eventos de Minas Gerais: com portfólio visual de casamentos e festas, no topo do Google e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para cerimonialistas e empresas de eventos de todo o Brasil: com portfólio visual de casamentos e festas, no topo do Google e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Portfólio de eventos realizados',
@@ -115,19 +115,19 @@ export const cerimonialEEventos: Nicho = {
         texto:
           'O Instagram trazia curtida, mas os noivos que realmente fechavam contrato vinham depois de olhar o portfólio completo no site. Isso deu muito mais credibilidade no primeiro contato.',
         autor: 'Cerimonialista de casamentos',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'O formulário com data e número de convidados agilizou muito o orçamento inicial. Já entra na conversa sabendo o porte do evento, sem precisar de várias trocas de mensagem.',
         autor: 'Empresa de eventos corporativos e sociais',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer no Google para "cerimonial" na nossa cidade em poucos meses, captando um público que não conhecia nosso trabalho antes.',
         autor: 'Empresa de assessoria e cerimonial de casamentos',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -214,7 +214,7 @@ export const cerimonialEEventos: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua empresa',
         paragrafos: [
-          'Construímos sites rápidos mesmo com portfólios visuais pesados, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos criativos e de hospitalidade em Minas Gerais, com atenção específica à curadoria e organização de galerias de eventos.',
+          'Construímos sites rápidos mesmo com portfólios visuais pesados, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos criativos e de hospitalidade em todo o Brasil, com atenção específica à curadoria e organização de galerias de eventos.',
           'Domínio, acessos e todo o conteúdo ficam registrados no nome da sua empresa, sem contrato de fidelidade amarrando a parceria. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama honesto de como o site da sua empresa está performando hoje.',
         ],
       },
@@ -222,7 +222,7 @@ export const cerimonialEEventos: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, um casal em Minas está pesquisando cerimonial de casamento',
+    titulo: 'Enquanto você lê isso, um casal está pesquisando cerimonial de casamento',
     sub: 'A pergunta é: quem vai aparecer para esse casal — sua empresa ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar contratos.',
   },
 

@@ -7,16 +7,16 @@ export const saloesDeBeleza: Nicho = {
   nomePlural: 'salões de beleza',
   profissional: 'cabeleireiro ou manicure',
 
-  tituloSeo: 'Sites para Salões de Beleza em MG | Sites Rankly',
+  tituloSeo: 'Sites para Salões de Beleza | Sites Rankly',
   descricaoSeo:
-    'Sites para salões de beleza em MG, com agendamento de horário e catálogo de serviços por WhatsApp. Proposta grátis em 24h.',
+    'Sites para salões de beleza, com agendamento de horário e catálogo de serviços por WhatsApp. Proposta grátis em 24h.',
 
   hero: {
-    eyebrow: 'Sites para salões de beleza · Minas Gerais',
+    eyebrow: 'Sites para salões de beleza · Todo o Brasil',
     tituloHtml:
       'Seu salão merece um site que <em>enche a agenda</em> todo dia',
     subHtml:
-      'Criamos sites para salões de beleza de Minas Gerais: com catálogo de serviços, no topo do Google da sua região e com agendamentos chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para salões de beleza de todo o Brasil: com catálogo de serviços, no topo do Google da sua região e com agendamentos chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Agendamento direto no WhatsApp',
@@ -115,19 +115,19 @@ export const saloesDeBeleza: Nicho = {
         texto:
           'O Instagram trazia curtida, mas nem sempre virava agendamento. Com o site e o botão de WhatsApp em destaque, a conversão melhorou muito — a cliente vê o trabalho e já agenda.',
         autor: 'Salão de beleza especializado em coloração',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Mostrar a especialidade de cada profissional no site ajudou a cliente a escolher com quem queria marcar. Isso reduziu remarcação e aumentou a satisfação.',
         autor: 'Salão de beleza com equipe de 6 profissionais',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer bem no Google para "salão de beleza" na nossa cidade em poucos meses, sem depender só do movimento de quem passa na rua.',
         autor: 'Salão de beleza e estética',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -219,7 +219,7 @@ export const saloesDeBeleza: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site do seu salão',
         paragrafos: [
-          'Construímos sites rápidos mesmo com portfólios visuais, com SEO local desde o primeiro dia e captação de agendamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de beleza e bem-estar em Minas Gerais, com atenção específica a como apresentar equipe e portfólio de forma que gere agendamento.',
+          'Construímos sites rápidos mesmo com portfólios visuais, com SEO local desde o primeiro dia e captação de agendamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de beleza e bem-estar em todo o Brasil, com atenção específica a como apresentar equipe e portfólio de forma que gere agendamento.',
           'O domínio e todos os acessos ficam no nome do seu salão ficam sob seu controle, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site do seu salão está performando hoje.',
         ],
       },
@@ -227,7 +227,7 @@ export const saloesDeBeleza: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, alguém em Minas está pesquisando salão de beleza',
+    titulo: 'Enquanto você lê isso, alguém está pesquisando salão de beleza',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — seu salão ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site encher a agenda.',
   },
 

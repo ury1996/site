@@ -7,16 +7,16 @@ export const esquadrias: Nicho = {
   nomePlural: 'empresas de esquadrias',
   profissional: 'vendedor técnico',
 
-  tituloSeo: 'Sites para Empresas de Esquadrias em MG | Sites Rankly',
+  tituloSeo: 'Sites para Empresas de Esquadrias | Sites Rankly',
   descricaoSeo:
-    'Sites para fábricas e empresas de esquadrias de alumínio e PVC em MG, com portfólio e orçamento por WhatsApp. Proposta grátis em 24h.',
+    'Sites para fábricas e empresas de esquadrias de alumínio e PVC, com portfólio e orçamento por WhatsApp. Proposta grátis em 24h.',
 
   hero: {
-    eyebrow: 'Sites para empresas de esquadrias · Minas Gerais',
+    eyebrow: 'Sites para empresas de esquadrias · Todo o Brasil',
     tituloHtml:
       'Sua empresa de esquadrias merece um site que <em>gera pedido de orçamento</em> todo dia',
     subHtml:
-      'Criamos sites para fábricas e lojas de esquadrias de alumínio, PVC e vidro de Minas Gerais: com portfólio de projetos, no topo do Google da sua região e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para fábricas e lojas de esquadrias de alumínio, PVC e vidro de todo o Brasil: com portfólio de projetos, no topo do Google da sua região e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Portfólio de janelas, portas e fachadas',
@@ -35,7 +35,7 @@ export const esquadrias: Nicho = {
   diagnostico: {
     titulo: 'Seu site está pronto para gerar pedidos de orçamento de esquadrias?',
     introHtml:
-      'Quando alguém em Minas Gerais está reformando ou construindo e precisa trocar janelas, portas ou fazer uma fachada em vidro, a pesquisa por <strong>esquadrias</strong> de confiança começa no Google. Marque o que o site da sua empresa já tem hoje e veja a nota dele como <strong>gerador de orçamentos</strong>.',
+      'Quando alguém está reformando ou construindo e precisa trocar janelas, portas ou fazer uma fachada em vidro, a pesquisa por <strong>esquadrias</strong> de confiança começa no Google. Marque o que o site da sua empresa já tem hoje e veja a nota dele como <strong>gerador de orçamentos</strong>.',
     notaTexto:
       'Estes 6 pontos separam uma empresa que só aparece no boca a boca de uma empresa que recebe pedido de orçamento toda semana pelo site. O diagnóstico completo é gratuito.',
     itens: [
@@ -115,19 +115,19 @@ export const esquadrias: Nicho = {
         texto:
           'Antes vivíamos de indicação de obra em obra. Depois do site, com o portfólio de fachadas organizado, começaram a chegar pedidos de orçamento de gente que nunca tinha ouvido falar da nossa empresa.',
         autor: 'Fábrica de esquadrias de alumínio',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'O cliente já chega perguntando pela linha específica que viu no site — isso agilizou muito o atendimento e reduziu o tempo até fechar o orçamento.',
         autor: 'Empresa de esquadrias de PVC',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer bem no Google para "esquadrias" na nossa cidade em poucos meses. O site se pagou com o primeiro projeto de fachada fechado por esse canal.',
         autor: 'Empresa de vidros e esquadrias',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -214,7 +214,7 @@ export const esquadrias: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua empresa',
         paragrafos: [
-          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos da construção civil em Minas Gerais, com atenção específica a como apresentar linhas de produto e portfólio de forma que gere confiança real.',
+          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos da construção civil em todo o Brasil, com atenção específica a como apresentar linhas de produto e portfólio de forma que gere confiança real.',
           'Domínio e acessos administrativos são registrados em nome da sua empresa, sem contrato de fidelidade prendendo a parceria — você fica porque o resultado aparece. Peça o diagnóstico gratuito e receba, em até 24h úteis, um retrato real de como o site da sua empresa está performando hoje.',
         ],
       },
@@ -222,7 +222,7 @@ export const esquadrias: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, alguém em Minas está pesquisando esquadrias no Google',
+    titulo: 'Enquanto você lê isso, alguém está pesquisando esquadrias no Google',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua empresa ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar pedidos de orçamento.',
   },
 

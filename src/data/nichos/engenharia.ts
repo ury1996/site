@@ -7,16 +7,16 @@ export const engenharia: Nicho = {
   nomePlural: 'escritórios de engenharia',
   profissional: 'engenheiro',
 
-  tituloSeo: 'Sites para Escritórios de Engenharia em MG | Sites Rankly',
+  tituloSeo: 'Sites para Escritórios de Engenharia | Sites Rankly',
   descricaoSeo:
-    'Sites para escritórios de engenharia civil, estrutural e consultiva em MG. SEO local e captação de projetos por WhatsApp. Proposta grátis em 24h.',
+    'Sites para escritórios de engenharia civil, estrutural e consultiva. SEO local e captação de projetos por WhatsApp. Proposta grátis em 24h.',
 
   hero: {
-    eyebrow: 'Sites para escritórios de engenharia · Minas Gerais',
+    eyebrow: 'Sites para escritórios de engenharia · Todo o Brasil',
     tituloHtml:
       'Seu escritório de engenharia merece um site que <em>traz projetos novos</em> todo mês',
     subHtml:
-      'Criamos sites para engenheiros civis, estruturais e consultivos de Minas Gerais: com portfólio técnico, no topo do Google da sua região e com pedidos de projeto chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para engenheiros civis, estruturais e consultivos de todo o Brasil: com portfólio técnico, no topo do Google da sua região e com pedidos de projeto chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Selo de responsabilidade técnica (CREA)',
@@ -115,19 +115,19 @@ export const engenharia: Nicho = {
         texto:
           'Antes dependíamos só de indicação de construtoras parceiras. Depois do site, começaram a chegar pedidos de laudo e projeto estrutural de pessoas que nos encontraram direto no Google.',
         autor: 'Engenheiro civil, projetos estruturais',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'O portfólio técnico bem organizado por tipo de projeto deu muito mais credibilidade nas reuniões com incorporadoras. Fecharam dois contratos citando o site como referência.',
         autor: 'Escritório de engenharia e consultoria',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Em menos de três meses, o escritório já aparecia entre os primeiros resultados para "engenheiro civil" na nossa cidade. O telefone e o WhatsApp não pararam mais.',
         autor: 'Engenheiro autônomo, laudos e vistorias',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -214,7 +214,7 @@ export const engenharia: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site do seu escritório',
         paragrafos: [
-          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de pedidos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos técnicos em Minas Gerais, com atenção específica a como apresentar especialidades e credibilidade técnica de forma que gere confiança real, tanto para pessoa física quanto para construtoras.',
+          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de pedidos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos técnicos em todo o Brasil, com atenção específica a como apresentar especialidades e credibilidade técnica de forma que gere confiança real, tanto para pessoa física quanto para construtoras.',
           'O domínio e todos os acessos ficam no nome do escritório, sem letras miúdas e sem exigência de permanência — você segue com a gente porque o site entrega resultado. Peça o diagnóstico gratuito e receba, em até 24h úteis, um raio-x real de como o site do seu escritório está performando hoje.',
         ],
       },
@@ -222,7 +222,7 @@ export const engenharia: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, alguém em Minas está pesquisando engenheiro no Google',
+    titulo: 'Enquanto você lê isso, alguém está pesquisando engenheiro no Google',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — seu escritório ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar pedidos de projeto.',
   },
 

@@ -7,16 +7,16 @@ export const decoracao: Nicho = {
   nomePlural: 'estúdios de decoração de interiores',
   profissional: 'decorador ou designer de interiores',
 
-  tituloSeo: 'Sites para Decoradores e Estúdios de Decoração em MG | Sites Rankly',
+  tituloSeo: 'Sites para Decoradores e Estúdios de Decoração | Sites Rankly',
   descricaoSeo:
-    'Sites para decoradores e estúdios de decoração de interiores em MG, com portfólio visual e orçamento por WhatsApp. Proposta grátis.',
+    'Sites para decoradores e estúdios de decoração de interiores, com portfólio visual e orçamento por WhatsApp. Proposta grátis.',
 
   hero: {
-    eyebrow: 'Sites para decoradores e estúdios de decoração · Minas Gerais',
+    eyebrow: 'Sites para decoradores e estúdios de decoração · Todo o Brasil',
     tituloHtml:
       'Seu trabalho merece um site que <em>mostra seu estilo</em> e gera contrato',
     subHtml:
-      'Criamos sites para decoradores e estúdios de decoração de interiores de Minas Gerais: com portfólio visual de dar orgulho, no topo do Google e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para decoradores e estúdios de decoração de interiores de todo o Brasil: com portfólio visual de dar orgulho, no topo do Google e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Portfólio de ambientes decorados',
@@ -115,19 +115,19 @@ export const decoracao: Nicho = {
         texto:
           'O Instagram trazia curtida, mas o site com portfólio organizado por ambiente foi o que trouxe cliente pronto para fechar, já sabendo o estilo que eu trabalho.',
         autor: 'Decoradora de interiores residenciais',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'A galeria em alta resolução carregando rápido fez toda diferença. O cliente entra, vê o portfólio completo, já manda mensagem perguntando sobre o pacote de consultoria.',
         autor: 'Estúdio de decoração comercial',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer no Google para "decoração de interiores" na nossa cidade em poucos meses, captando um público novo que não conhecia nosso trabalho.',
         autor: 'Estúdio de decoração e styling de ambientes',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -219,7 +219,7 @@ export const decoracao: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o seu site de decoração',
         paragrafos: [
-          'Construímos sites rápidos mesmo com portfólios visuais pesados, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos criativos em Minas Gerais, com atenção específica à curadoria e organização de galerias de ambientes.',
+          'Construímos sites rápidos mesmo com portfólios visuais pesados, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos criativos em todo o Brasil, com atenção específica à curadoria e organização de galerias de ambientes.',
           'O domínio e todos os acessos ficam no seu nome ou no do estúdio, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o seu site está performando hoje.',
         ],
       },
@@ -227,7 +227,7 @@ export const decoracao: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, alguém em Minas está pesquisando decorador de interiores',
+    titulo: 'Enquanto você lê isso, alguém está pesquisando decorador de interiores',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — você ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar pedidos de orçamento.',
   },
 

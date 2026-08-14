@@ -7,16 +7,16 @@ export const lavanderia: Nicho = {
   nomePlural: 'lavanderias',
   profissional: 'gestor de lavanderia',
 
-  tituloSeo: 'Sites para Lavanderias em MG | Sites Rankly',
+  tituloSeo: 'Sites para Lavanderias | Sites Rankly',
   descricaoSeo:
-    'Sites para lavanderias self-service e profissionais em MG, com coleta e entrega agendadas por WhatsApp. Proposta grátis em 24h.',
+    'Sites para lavanderias self-service e profissionais, com coleta e entrega agendadas por WhatsApp. Proposta grátis em 24h.',
 
   hero: {
-    eyebrow: 'Sites para lavanderias · Minas Gerais',
+    eyebrow: 'Sites para lavanderias · Todo o Brasil',
     tituloHtml:
       'Sua lavanderia merece um site que <em>gera pedido de coleta</em> toda semana',
     subHtml:
-      'Criamos sites para lavanderias de Minas Gerais: com serviços bem explicados, no topo do Google da sua região e com pedidos de coleta e entrega chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para lavanderias de todo o Brasil: com serviços bem explicados, no topo do Google da sua região e com pedidos de coleta e entrega chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Coleta e entrega agendadas',
@@ -115,19 +115,19 @@ export const lavanderia: Nicho = {
         texto:
           'Antes o movimento dependia só de quem passava na frente da loja. Com o site explicando a coleta e entrega, começamos a atender bairros que nunca tínhamos alcançado antes.',
         autor: 'Lavanderia com serviço de coleta',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
-          'O formulário simples de pedido facilitou muito — o cliente já informa o tipo de item e o endereço, a gente organiza a rota de coleta do dia com mais eficiência.',
+          'O formulário simples de pedido facilitou muito — o cliente já informa o tipo de item e o endereço, e a gente monta a rota de coleta do dia com muito mais eficiência, sem precisar ligar de volta para confirmar detalhe nenhum.',
         autor: 'Lavanderia especializada em roupa de cama e tapetes',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer bem no Google para "lavanderia" na nossa cidade em poucos meses. O site virou nosso principal canal de pedidos novos.',
         autor: 'Lavanderia self-service e profissional',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -219,7 +219,7 @@ export const lavanderia: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua lavanderia',
         paragrafos: [
-          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de pedidos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de serviço doméstico em Minas Gerais, com atenção específica a como explicar o processo de coleta de forma simples e clara.',
+          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de pedidos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de serviço doméstico em todo o Brasil, com atenção específica a como explicar o processo de coleta de forma simples e clara.',
           'O domínio e todos os acessos ficam no nome da sua lavanderia, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua lavanderia está performando hoje.',
         ],
       },
@@ -227,7 +227,7 @@ export const lavanderia: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, alguém em Minas está pesquisando lavanderia com coleta',
+    titulo: 'Enquanto você lê isso, alguém está pesquisando lavanderia com coleta',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua lavanderia ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar pedidos toda semana.',
   },
 

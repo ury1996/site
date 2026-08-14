@@ -7,16 +7,16 @@ export const industriaEFabricas: Nicho = {
   nomePlural: 'indústrias e fábricas',
   profissional: 'gestor comercial industrial',
 
-  tituloSeo: 'Sites para Indústrias e Fábricas em MG | Sites Rankly',
+  tituloSeo: 'Sites para Indústrias e Fábricas | Sites Rankly',
   descricaoSeo:
-    'Sites institucionais para indústrias e fábricas em MG, com catálogo B2B e captação de cotação por WhatsApp. Proposta grátis em 24h.',
+    'Sites institucionais para indústrias e fábricas, com catálogo B2B e captação de cotação por WhatsApp. Proposta grátis em 24h.',
 
   hero: {
-    eyebrow: 'Sites para indústrias e fábricas · Minas Gerais',
+    eyebrow: 'Sites para indústrias e fábricas · Todo o Brasil',
     tituloHtml:
       'Sua indústria merece um site que <em>gera cotação B2B</em> qualificada',
     subHtml:
-      'Criamos sites institucionais para indústrias e fábricas de Minas Gerais: com catálogo de produtos e capacidade produtiva bem apresentados, no topo do Google e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites institucionais para indústrias e fábricas de todo o Brasil: com catálogo de produtos e capacidade produtiva bem apresentados, no topo do Google e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Catálogo técnico B2B',
@@ -115,19 +115,19 @@ export const industriaEFabricas: Nicho = {
         texto:
           'Antes dependíamos só de representante comercial e feira do setor. Com o site explicando nossa capacidade produtiva, começamos a receber cotação de compradores de outras regiões que nunca tinham fechado com a gente.',
         autor: 'Indústria de componentes metálicos',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'O catálogo técnico organizado por linha facilitou muito a vida de quem está comparando fornecedores. O comprador já chega sabendo exatamente o que quer cotar.',
         autor: 'Fábrica de embalagens industriais',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer bem no Google para o nosso segmento em poucos meses. O site virou um canal relevante de novos clientes, complementando o trabalho da equipe comercial.',
         autor: 'Indústria de peças plásticas sob encomenda',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -219,7 +219,7 @@ export const industriaEFabricas: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua indústria',
         paragrafos: [
-          'Construímos sites rápidos, com SEO técnico desde o primeiro dia e captação de cotações integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos B2B em Minas Gerais, com atenção específica a como apresentar catálogo técnico e capacidade produtiva de forma que gere cotação qualificada.',
+          'Construímos sites rápidos, com SEO técnico desde o primeiro dia e captação de cotações integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos B2B em todo o Brasil, com atenção específica a como apresentar catálogo técnico e capacidade produtiva de forma que gere cotação qualificada.',
           'O domínio e todos os acessos ficam no nome da sua empresa ficam sob seu controle, sem letras miúdas e sem exigência de permanência — você segue com a gente porque o site entrega resultado. Peça o diagnóstico gratuito e receba, em até 24h úteis, um raio-x real de como o site da sua indústria está performando hoje.',
         ],
       },

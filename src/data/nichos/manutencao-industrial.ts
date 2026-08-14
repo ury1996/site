@@ -7,16 +7,16 @@ export const manutencaoIndustrial: Nicho = {
   nomePlural: 'empresas de manutenção industrial e máquinas',
   profissional: 'técnico de manutenção industrial',
 
-  tituloSeo: 'Sites para Manutenção Industrial e Máquinas em MG | Sites Rankly',
+  tituloSeo: 'Sites para Manutenção Industrial e Máquinas | Sites Rankly',
   descricaoSeo:
-    'Sites para empresas de manutenção industrial e máquinas em MG, com contrato de manutenção preventiva por WhatsApp. Proposta grátis.',
+    'Sites para empresas de manutenção industrial e máquinas, com contrato de manutenção preventiva por WhatsApp. Proposta grátis.',
 
   hero: {
-    eyebrow: 'Sites para manutenção industrial e máquinas · Minas Gerais',
+    eyebrow: 'Sites para manutenção industrial e máquinas · Todo o Brasil',
     tituloHtml:
       'Sua empresa de manutenção merece um site que <em>gera contrato preventivo</em> todo mês',
     subHtml:
-      'Criamos sites para empresas de manutenção industrial e máquinas de Minas Gerais: com serviços bem explicados, no topo do Google e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para empresas de manutenção industrial e máquinas de todo o Brasil: com serviços bem explicados, no topo do Google e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Contrato de manutenção preventiva',
@@ -115,19 +115,19 @@ export const manutencaoIndustrial: Nicho = {
         texto:
           'Antes só fazíamos manutenção corretiva, quando a máquina já tinha parado. Com a página explicando manutenção preventiva, começamos a fechar contrato mensal com fábricas — evitando a parada não planejada do cliente e estabilizando nossa receita.',
         autor: 'Empresa de manutenção de máquinas industriais',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'O formulário de orçamento com tipo de máquina e urgência facilitou muito o atendimento em situação de emergência. A gente já sabe o que levar antes de sair para o cliente.',
         autor: 'Empresa de manutenção industrial multiespecialidade',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer bem no Google para "manutenção industrial" na nossa região em poucos meses. O site virou um canal relevante de novos contratos.',
         autor: 'Empresa de manutenção preditiva e preventiva',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -187,7 +187,7 @@ export const manutencaoIndustrial: Nicho = {
         titulo: 'Como transformar manutenção corretiva em contrato preventivo recorrente',
         paragrafos: [
           'O momento ideal para oferecer manutenção preventiva é logo depois de resolver uma emergência corretiva, quando o cliente já sentiu na pele o prejuízo de uma máquina parada. Uma página que explica claramente os planos de manutenção preventiva — frequência de visita, o que é verificado, o benefício de reduzir paradas não planejadas — ajuda a fechar esse contrato de forma natural.',
-          'Esse modelo de receita recorrente é o que dá estabilidade financeira a uma empresa de manutenção ao longo do ano, reduzindo a dependência de chamados emergenciais imprevisíveis para manter o faturamento.',
+          'Esse modelo de receita recorrente é o que dá estabilidade financeira a uma empresa de manutenção ao longo do ano, reduzindo a dependência de chamados emergenciais imprevisíveis para manter o faturamento e permitindo planejar equipe e estoque de peças com muito mais previsibilidade.',
         ],
       },
       {
@@ -214,7 +214,7 @@ export const manutencaoIndustrial: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua empresa',
         paragrafos: [
-          'Construímos sites rápidos, com SEO técnico desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos técnicos e industriais em Minas Gerais, com atenção específica a como explicar modalidades de manutenção de forma que gere contrato recorrente.',
+          'Construímos sites rápidos, com SEO técnico desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos técnicos e industriais em todo o Brasil, com atenção específica a como explicar modalidades de manutenção de forma que gere contrato recorrente.',
           'O domínio e cada acesso administrativo do site ficam em nome da sua empresa, sem contrato de fidelidade travando a continuidade. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama direto de como o site da sua empresa está performando hoje.',
         ],
       },
@@ -222,7 +222,7 @@ export const manutencaoIndustrial: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, uma fábrica em Minas está pesquisando manutenção industrial',
+    titulo: 'Enquanto você lê isso, uma fábrica está pesquisando manutenção industrial',
     sub: 'A pergunta é: quem vai aparecer para essa empresa — a sua ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar contratos de manutenção.',
   },
 

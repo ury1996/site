@@ -7,16 +7,16 @@ export const construcao: Nicho = {
   nomePlural: 'construtoras e empresas de reformas',
   profissional: 'engenheiro ou arquiteto',
 
-  tituloSeo: 'Sites para Construtoras e Reformas em MG | Sites Rankly',
+  tituloSeo: 'Sites para Construtoras e Reformas | Sites Rankly',
   descricaoSeo:
-    'Sites para construtoras e reformas em MG, com portfólio de obras, SEO local e captação de orçamentos por WhatsApp. Proposta grátis em 24h.',
+    'Sites para construtoras e reformas, com portfólio de obras, SEO local e captação de orçamentos por WhatsApp. Proposta grátis em 24h.',
 
   hero: {
-    eyebrow: 'Sites para construtoras e reformas · Minas Gerais',
+    eyebrow: 'Sites para construtoras e reformas · Todo o Brasil',
     tituloHtml:
       'Sua construtora merece um site que <em>gera pedidos de orçamento</em> todos os meses',
     subHtml:
-      'Criamos sites para construtoras, empreiteiras e empresas de reforma de Minas Gerais: com portfólio de obras, no topo do Google da sua região e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para construtoras, empreiteiras e empresas de reforma de todo o Brasil: com portfólio de obras, no topo do Google da sua região e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Portfólio de obras com antes/depois',
@@ -35,7 +35,7 @@ export const construcao: Nicho = {
   diagnostico: {
     titulo: 'Seu site está pronto para gerar pedidos de orçamento de obra?',
     introHtml:
-      'Quando alguém em Minas Gerais planeja uma <strong>reforma ou construção</strong>, a pesquisa por empresas de confiança começa no Google. Marque o que o site da sua construtora já tem hoje e veja a nota dele como <strong>gerador de orçamentos</strong>.',
+      'Quando alguém planeja uma <strong>reforma ou construção</strong>, a pesquisa por empresas de confiança começa no Google. Marque o que o site da sua construtora já tem hoje e veja a nota dele como <strong>gerador de orçamentos</strong>.',
     notaTexto:
       'Estes 6 pontos separam um "site institucional" de um site que gera pedido de orçamento toda semana. O diagnóstico completo — com análise do seu site e dos concorrentes — é gratuito.',
     itens: [
@@ -115,19 +115,19 @@ export const construcao: Nicho = {
         texto:
           'Antes o site só tinha uma página "sobre nós" genérica. Hoje chegam de 3 a 5 pedidos de orçamento por semana pelo WhatsApp, já com fotos do imóvel e o tipo de reforma desejada.',
         autor: 'Empresa de reformas residenciais',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'O portfólio com antes e depois das obras foi determinante. O cliente já chega na conversa acreditando na qualidade do serviço, porque viu resultado parecido com o dele.',
         autor: 'Construtora de pequeno porte',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer bem no Google para "construtora" na nossa cidade em poucos meses. O site se pagou com a primeira obra fechada por esse canal.',
         autor: 'Empreiteira especializada em reformas comerciais',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -214,7 +214,7 @@ export const construcao: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua construtora',
         paragrafos: [
-          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de serviço em Minas Gerais, com atenção específica a como apresentar portfólio de obras e responsabilidade técnica de forma que gere confiança real.',
+          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de serviço em todo o Brasil, com atenção específica a como apresentar portfólio de obras e responsabilidade técnica de forma que gere confiança real.',
           'Domínio, acessos e todo o conteúdo ficam registrados no nome da sua empresa, sem contrato de fidelidade amarrando a parceria. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama honesto de como o site da sua construtora está performando hoje.',
         ],
       },
@@ -222,7 +222,7 @@ export const construcao: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, alguém em Minas está pesquisando empresa de reforma',
+    titulo: 'Enquanto você lê isso, alguém está pesquisando empresa de reforma',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua empresa ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar pedidos de orçamento.',
   },
 

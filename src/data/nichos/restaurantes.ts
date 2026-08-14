@@ -7,16 +7,16 @@ export const restaurantes: Nicho = {
   nomePlural: 'restaurantes',
   profissional: 'gestor de restaurante',
 
-  tituloSeo: 'Sites para Restaurantes em MG | Sites Rankly',
+  tituloSeo: 'Sites para Restaurantes | Sites Rankly',
   descricaoSeo:
-    'Sites para restaurantes em MG, com cardápio digital, reserva de mesa e pedido por WhatsApp. SEO local. Proposta grátis em 24h.',
+    'Sites para restaurantes, com cardápio digital, reserva de mesa e pedido por WhatsApp. SEO local. Proposta grátis em 24h.',
 
   hero: {
-    eyebrow: 'Sites para restaurantes · Minas Gerais',
+    eyebrow: 'Sites para restaurantes · Todo o Brasil',
     tituloHtml:
       'Seu restaurante merece um site que <em>enche as mesas</em> toda semana',
     subHtml:
-      'Criamos sites para restaurantes de Minas Gerais: com cardápio digital, fotos que abrem o apetite, no topo do Google e com reservas e pedidos chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para restaurantes de todo o Brasil: com cardápio digital, fotos que abrem o apetite, no topo do Google e com reservas e pedidos chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Cardápio digital e reserva de mesa',
@@ -115,19 +115,19 @@ export const restaurantes: Nicho = {
         texto:
           'O cardápio digital com foto de cada prato ajudou muito o cliente a decidir o que pedir antes mesmo de chegar. Isso agilizou o atendimento e reduziu a fila em horário de pico.',
         autor: 'Restaurante à la carte',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a receber pedido de reserva para eventos e datas especiais direto pelo site, de gente que nunca tinha vindo no restaurante antes.',
         autor: 'Restaurante especializado em eventos e jantares',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'O formulário direto no WhatsApp facilitou muito o pedido de encomenda para buffet corporativo. O cliente já manda o pedido organizado.',
         autor: 'Restaurante com serviço de buffet e encomendas',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -219,7 +219,7 @@ export const restaurantes: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site do seu restaurante',
         paragrafos: [
-          'Construímos sites rápidos mesmo com fotos de pratos em alta resolução, com SEO local desde o primeiro dia e captação de reservas e pedidos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de hospitalidade em Minas Gerais, com atenção específica a como apresentar cardápio de forma que abra o apetite e converta.',
+          'Construímos sites rápidos mesmo com fotos de pratos em alta resolução, com SEO local desde o primeiro dia e captação de reservas e pedidos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de hospitalidade em todo o Brasil, com atenção específica a como apresentar cardápio de forma que abra o apetite e converta.',
           'O domínio e todos os acessos ficam no nome do seu restaurante, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site do seu restaurante está performando hoje.',
         ],
       },
@@ -227,7 +227,7 @@ export const restaurantes: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, alguém em Minas está decidindo onde comer',
+    titulo: 'Enquanto você lê isso, alguém está decidindo onde comer',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — seu restaurante ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site encher as mesas.',
   },
 

@@ -7,16 +7,16 @@ export const veterinaria: Nicho = {
   nomePlural: 'clínicas veterinárias',
   profissional: 'veterinário',
 
-  tituloSeo: 'Sites para Clínicas Veterinárias em MG | Sites Rankly',
+  tituloSeo: 'Sites para Clínicas Veterinárias | Sites Rankly',
   descricaoSeo:
-    'Sites para clínicas veterinárias em MG, com agendamento online, SEO local e captação de tutores por WhatsApp. Proposta grátis em 24h.',
+    'Sites para clínicas veterinárias, com agendamento online, SEO local e captação de tutores por WhatsApp. Proposta grátis em 24h.',
 
   hero: {
-    eyebrow: 'Sites para clínicas veterinárias · Minas Gerais',
+    eyebrow: 'Sites para clínicas veterinárias · Todo o Brasil',
     tituloHtml:
       'Sua clínica veterinária merece um site que <em>enche a agenda</em> de consultas todos os meses',
     subHtml:
-      'Criamos sites para clínicas veterinárias e pet shops de Minas Gerais: rápidos, com agendamento facilitado, no topo do Google da sua cidade e com tutores chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para clínicas veterinárias e pet shops de todo o Brasil: rápidos, com agendamento facilitado, no topo do Google da sua cidade e com tutores chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Botão de agendamento direto',
@@ -115,19 +115,19 @@ export const veterinaria: Nicho = {
         texto:
           'Antes o site só tinha o endereço e um telefone. Hoje chegam vários pedidos de agendamento por semana pelo WhatsApp, com foto do pet e descrição do sintoma — isso já ajuda a triagem antes mesmo da consulta.',
         autor: 'Clínica veterinária',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Destacar que atendemos emergência 24h logo na primeira tela do site mudou tudo. É a primeira coisa que o tutor desesperado procura, e agora ele acha rápido e já manda mensagem.',
         autor: 'Clínica veterinária com plantão 24h',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer bem no Google para "veterinário" na nossa cidade em poucos meses. O site trouxe tutores novos que nunca tinham ouvido falar da clínica antes.',
         autor: 'Clínica veterinária e pet shop',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -214,7 +214,7 @@ export const veterinaria: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua clínica',
         paragrafos: [
-          'Construímos sites rápidos, com SEO local desde o primeiro dia e agendamento integrado ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de serviço em Minas Gerais, com atenção específica à urgência que caracteriza boa parte das buscas no mercado veterinário.',
+          'Construímos sites rápidos, com SEO local desde o primeiro dia e agendamento integrado ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de serviço em todo o Brasil, com atenção específica à urgência que caracteriza boa parte das buscas no mercado veterinário.',
           'O domínio e todos os acessos ficam no nome da clínica, sem letras miúdas e sem exigência de permanência — você segue com a gente porque o site entrega resultado. Peça o diagnóstico gratuito e receba, em até 24h úteis, um raio-x real de como o site da sua clínica está performando hoje.',
         ],
       },
@@ -222,7 +222,7 @@ export const veterinaria: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, um tutor em Minas está procurando veterinário no Google',
+    titulo: 'Enquanto você lê isso, um tutor está procurando veterinário no Google',
     sub: 'A pergunta é: para qual clínica esse tutor vai ligar primeiro — a sua ou a concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site encher a agenda de consultas.',
   },
 

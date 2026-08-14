@@ -7,16 +7,16 @@ export const odontologia: Nicho = {
   nomePlural: 'clínicas odontológicas',
   profissional: 'dentista',
 
-  tituloSeo: 'Sites para Clínicas Odontológicas em MG | Sites Rankly',
+  tituloSeo: 'Sites para Clínicas Odontológicas | Sites Rankly',
   descricaoSeo:
-    'Sites para clínicas odontológicas em MG, com agendamento online, SEO local e captação de pacientes por WhatsApp. Proposta grátis em 24h.',
+    'Sites para clínicas odontológicas, com agendamento online, SEO local e captação de pacientes por WhatsApp. Proposta grátis em 24h.',
 
   hero: {
-    eyebrow: 'Sites para clínicas odontológicas · Minas Gerais',
+    eyebrow: 'Sites para clínicas odontológicas · Todo o Brasil',
     tituloHtml:
       'Sua clínica odontológica merece um site que <em>enche a agenda</em> todos os meses',
     subHtml:
-      'Criamos sites para dentistas e clínicas de Minas Gerais: rápidos, com agendamento facilitado, no topo do Google da sua cidade e com pacientes chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para dentistas e clínicas de todo o Brasil: rápidos, com agendamento facilitado, no topo do Google da sua cidade e com pacientes chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Botão de agendamento direto',
@@ -35,7 +35,7 @@ export const odontologia: Nicho = {
   diagnostico: {
     titulo: 'Seu site está pronto para encher a agenda da clínica?',
     introHtml:
-      'Quando alguém em Minas Gerais procura um <strong>dentista</strong>, a primeira parada é o Google. Marque o que o site da sua clínica já tem hoje e veja a nota dele como <strong>captador de pacientes</strong>.',
+      'Quando alguém procura um <strong>dentista</strong>, a primeira parada é o Google. Marque o que o site da sua clínica já tem hoje e veja a nota dele como <strong>captador de pacientes</strong>.',
     notaTexto:
       'Estes 6 pontos separam um "site institucional" de um site que enche a agenda toda semana. O diagnóstico completo — com análise do seu site e dos concorrentes — é gratuito.',
     itens: [
@@ -115,19 +115,19 @@ export const odontologia: Nicho = {
         texto:
           'Antes o site só mostrava fotos do consultório. Hoje chegam de 5 a 8 pedidos de agendamento por semana pelo WhatsApp, já dizendo qual tratamento procuram. A recepção ficou muito mais organizada.',
         autor: 'Clínica odontológica',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'O botão de agendamento direto no WhatsApp foi um divisor de águas. Os pacientes não precisam mais ligar — só clicam, mandam a dúvida e a gente já responde com horário disponível.',
         autor: 'Cirurgiã-dentista, especialista em ortodontia',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer na primeira página do Google para "dentista" na nossa cidade em poucos meses. O investimento no site se pagou com os primeiros tratamentos fechados por esse canal.',
         autor: 'Clínica odontológica especializada em implantes',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -214,7 +214,7 @@ export const odontologia: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua clínica',
         paragrafos: [
-          'Construímos sites rápidos, com SEO local desde o primeiro dia e agendamento integrado ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de serviço em Minas Gerais, adaptado às particularidades da odontologia, incluindo o cuidado com as regras de publicidade do CFO na hora de estruturar cada página.',
+          'Construímos sites rápidos, com SEO local desde o primeiro dia e agendamento integrado ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de serviço em todo o Brasil, adaptado às particularidades da odontologia, incluindo o cuidado com as regras de publicidade do CFO na hora de estruturar cada página.',
           'O domínio e todos os acessos ficam no nome da clínica, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua clínica está performando hoje e o que fazer para ele começar a encher a agenda.',
         ],
       },
@@ -222,7 +222,7 @@ export const odontologia: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, alguém em Minas está procurando um dentista no Google',
+    titulo: 'Enquanto você lê isso, alguém está procurando um dentista no Google',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua clínica ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site encher a agenda.',
   },
 

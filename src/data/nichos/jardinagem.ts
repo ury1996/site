@@ -7,16 +7,16 @@ export const jardinagem: Nicho = {
   nomePlural: 'empresas de jardinagem e paisagismo',
   profissional: 'jardineiro ou paisagista',
 
-  tituloSeo: 'Sites para Jardinagem e Paisagismo em MG | Sites Rankly',
+  tituloSeo: 'Sites para Jardinagem e Paisagismo | Sites Rankly',
   descricaoSeo:
-    'Sites para empresas de jardinagem e paisagismo em MG, com portfólio de projetos e manutenção recorrente por WhatsApp. Proposta grátis.',
+    'Sites para empresas de jardinagem e paisagismo, com portfólio de projetos e manutenção recorrente por WhatsApp. Proposta grátis.',
 
   hero: {
-    eyebrow: 'Sites para jardinagem e paisagismo · Minas Gerais',
+    eyebrow: 'Sites para jardinagem e paisagismo · Todo o Brasil',
     tituloHtml:
       'Sua empresa de jardinagem merece um site que <em>mostra o resultado</em> e gera contrato',
     subHtml:
-      'Criamos sites para empresas de jardinagem e paisagismo de Minas Gerais: com portfólio de projetos, no topo do Google e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para empresas de jardinagem e paisagismo de todo o Brasil: com portfólio de projetos, no topo do Google e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Portfólio de jardins e projetos',
@@ -115,19 +115,19 @@ export const jardinagem: Nicho = {
         texto:
           'O portfólio com fotos dos projetos que já fizemos foi determinante. O cliente já chega com uma ideia clara do estilo que quer, porque viu algo parecido no site.',
         autor: 'Empresa de paisagismo residencial',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'A página explicando manutenção recorrente ajudou muito a converter projeto pontual em contrato mensal. A receita ficou muito mais estável ao longo do ano.',
         autor: 'Empresa de jardinagem e manutenção de áreas verdes',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer bem no Google para "paisagismo" na nossa cidade em poucos meses. O site se pagou com o primeiro projeto fechado por esse canal.',
         autor: 'Empresa de paisagismo comercial e residencial',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -219,7 +219,7 @@ export const jardinagem: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua empresa',
         paragrafos: [
-          'Construímos sites rápidos mesmo com portfólios visuais pesados, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de serviço doméstico e criativo em Minas Gerais, com atenção específica à curadoria de fotos de jardins e projetos.',
+          'Construímos sites rápidos mesmo com portfólios visuais pesados, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de serviço doméstico e criativo em todo o Brasil, com atenção específica à curadoria de fotos de jardins e projetos.',
           'No nome da sua empresa ficam o domínio e todos os acessos, sem contrato de fidelidade — a parceria continua pelo resultado entregue, não por cláusula contratual. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama direto de como o site da sua empresa está performando hoje.',
         ],
       },
@@ -227,7 +227,7 @@ export const jardinagem: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, alguém em Minas está pesquisando paisagismo',
+    titulo: 'Enquanto você lê isso, alguém está pesquisando paisagismo',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua empresa ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar projetos e contratos de manutenção.',
   },
 

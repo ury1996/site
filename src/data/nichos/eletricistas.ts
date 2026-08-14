@@ -7,16 +7,16 @@ export const eletricistas: Nicho = {
   nomePlural: 'empresas de serviços elétricos',
   profissional: 'eletricista',
 
-  tituloSeo: 'Sites para Eletricistas e Empresas Elétricas em MG | Sites Rankly',
+  tituloSeo: 'Sites para Eletricistas e Empresas Elétricas | Sites Rankly',
   descricaoSeo:
-    'Sites para eletricistas e empresas de instalação elétrica em MG, com chamado de urgência e SEO local. Proposta grátis em 24h — Sites Rankly.',
+    'Sites para eletricistas e empresas de instalação elétrica, com chamado de urgência e SEO local. Proposta grátis em 24h — Sites Rankly.',
 
   hero: {
-    eyebrow: 'Sites para eletricistas e empresas elétricas · Minas Gerais',
+    eyebrow: 'Sites para eletricistas e empresas elétricas · Todo o Brasil',
     tituloHtml:
       'Sua empresa elétrica merece um site que <em>toca o telefone</em> na hora da urgência',
     subHtml:
-      'Criamos sites para eletricistas e empresas de instalação elétrica de Minas Gerais: rápidos, no topo do Google quando alguém precisa de socorro elétrico, com chamado chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para eletricistas e empresas de instalação elétrica de todo o Brasil: rápidos, no topo do Google quando alguém precisa de socorro elétrico, com chamado chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Botão de chamado de urgência',
@@ -115,19 +115,19 @@ export const eletricistas: Nicho = {
         texto:
           'Antes dependia só da minha lista de clientes antigos. Hoje, boa parte da minha agenda é chamado novo que chega pelo site, muitas vezes de gente com urgência real, quadro de luz queimado.',
         autor: 'Eletricista autônomo',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'O botão de chamado de urgência bem visível fez diferença direta: o cliente não perde tempo procurando telefone, clica e já manda a mensagem no WhatsApp.',
         autor: 'Empresa de instalações elétricas residenciais',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer bem no Google para "eletricista" na nossa cidade em poucas semanas. Isso trouxe cliente novo sem depender só de indicação de vizinho.',
         autor: 'Empresa de instalações elétricas prediais',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -214,7 +214,7 @@ export const eletricistas: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua empresa elétrica',
         paragrafos: [
-          'Construímos sites extremamente rápidos, com SEO local desde o primeiro dia e captação de chamados integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de urgência doméstica em Minas Gerais, com atenção específica ao caminho de contato mais curto possível.',
+          'Construímos sites extremamente rápidos, com SEO local desde o primeiro dia e captação de chamados integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de urgência doméstica em todo o Brasil, com atenção específica ao caminho de contato mais curto possível.',
           'Todo o histórico de acesso e o registro no seu nome ficam sob seu controle, sem cláusula de fidelidade — a continuidade depende só dos resultados entregues. Peça o diagnóstico gratuito e receba, em até 24h úteis, uma análise real de como o site da sua empresa está performando hoje.',
         ],
       },
@@ -222,7 +222,7 @@ export const eletricistas: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Agora mesmo, alguém em Minas está sem energia e procurando eletricista no Google',
+    titulo: 'Agora mesmo, alguém está sem energia e procurando eletricista no Google',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua empresa ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site captar chamados de urgência.',
   },
 

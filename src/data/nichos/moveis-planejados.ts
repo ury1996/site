@@ -7,16 +7,16 @@ export const moveisPlanejados: Nicho = {
   nomePlural: 'empresas de móveis planejados',
   profissional: 'projetista de móveis planejados',
 
-  tituloSeo: 'Sites para Empresas de Móveis Planejados em MG | Sites Rankly',
+  tituloSeo: 'Sites para Empresas de Móveis Planejados | Sites Rankly',
   descricaoSeo:
-    'Sites para empresas de móveis planejados em MG, com portfólio de projetos e orçamento por medida via WhatsApp. Proposta grátis.',
+    'Sites para empresas de móveis planejados, com portfólio de projetos e orçamento por medida via WhatsApp. Proposta grátis.',
 
   hero: {
-    eyebrow: 'Sites para empresas de móveis planejados · Minas Gerais',
+    eyebrow: 'Sites para empresas de móveis planejados · Todo o Brasil',
     tituloHtml:
       'Sua empresa de móveis planejados merece um site que <em>gera projeto</em> todo mês',
     subHtml:
-      'Criamos sites para empresas de móveis planejados de Minas Gerais: com portfólio de ambientes, no topo do Google e com pedidos de orçamento chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para empresas de móveis planejados de todo o Brasil: com portfólio de ambientes, no topo do Google e com pedidos de orçamento chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Portfólio de cozinhas, quartos e closets',
@@ -115,19 +115,19 @@ export const moveisPlanejados: Nicho = {
         texto:
           'O portfólio de cozinhas organizadas por estilo foi determinante. O cliente já chega com uma ideia clara do que quer, porque viu um projeto parecido no site.',
         autor: 'Empresa de móveis planejados para cozinha',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Explicar o processo de medição e projeto 3D no site tirou muita dúvida do cliente antes mesmo da primeira visita à loja. Isso agilizou o fechamento.',
         autor: 'Empresa de móveis planejados residenciais',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer bem no Google para "móveis planejados" na nossa cidade em poucos meses. O site se pagou com o primeiro projeto de closet fechado por esse canal.',
         autor: 'Empresa de móveis planejados para quartos e closets',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -219,7 +219,7 @@ export const moveisPlanejados: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua empresa',
         paragrafos: [
-          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de casa e decoração em Minas Gerais, com atenção específica a como apresentar portfólio de ambientes de forma que gere confiança real.',
+          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de casa e decoração em todo o Brasil, com atenção específica a como apresentar portfólio de ambientes de forma que gere confiança real.',
           'Todo o histórico de acesso e o registro no nome da sua empresa ficam sob seu controle, sem cláusula de fidelidade — a continuidade depende só dos resultados entregues. Peça o diagnóstico gratuito e receba, em até 24h úteis, uma análise real de como o site da sua empresa está performando hoje.',
         ],
       },
@@ -227,7 +227,7 @@ export const moveisPlanejados: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, alguém em Minas está pesquisando móveis planejados',
+    titulo: 'Enquanto você lê isso, alguém está pesquisando móveis planejados',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua empresa ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar pedidos de orçamento.',
   },
 

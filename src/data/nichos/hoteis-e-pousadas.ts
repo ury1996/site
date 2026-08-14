@@ -7,16 +7,16 @@ export const hoteisEPousadas: Nicho = {
   nomePlural: 'hotéis e pousadas',
   profissional: 'gestor de hospedagem',
 
-  tituloSeo: 'Sites para Hotéis e Pousadas em MG | Sites Rankly',
+  tituloSeo: 'Sites para Hotéis e Pousadas | Sites Rankly',
   descricaoSeo:
-    'Sites para hotéis e pousadas em MG, com verificação de disponibilidade e reserva por WhatsApp. SEO local. Proposta grátis em 24h.',
+    'Sites para hotéis e pousadas, com verificação de disponibilidade e reserva por WhatsApp. SEO local. Proposta grátis em 24h.',
 
   hero: {
-    eyebrow: 'Sites para hotéis e pousadas · Minas Gerais',
+    eyebrow: 'Sites para hotéis e pousadas · Todo o Brasil',
     tituloHtml:
       'Seu hotel ou pousada merece um site que <em>gera reserva</em> direto, sem comissão',
     subHtml:
-      'Criamos sites para hotéis e pousadas de Minas Gerais: com fotos que vendem a experiência, no topo do Google e com pedidos de reserva chegando <strong>direto no seu WhatsApp</strong>, sem pagar comissão de plataforma.',
+      'Criamos sites para hotéis e pousadas de todo o Brasil: com fotos que vendem a experiência, no topo do Google e com pedidos de reserva chegando <strong>direto no seu WhatsApp</strong>, sem pagar comissão de plataforma.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Reserva direta, sem comissão',
@@ -115,19 +115,19 @@ export const hoteisEPousadas: Nicho = {
         texto:
           'Antes, praticamente toda reserva vinha de plataforma, com comissão pesando no fim do mês. Com o site, boa parte dos hóspedes recorrentes já reserva direto com a gente, sem taxa nenhuma.',
         autor: 'Pousada familiar',
-        detalhe: 'Serra da Mantiqueira · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'As fotos profissionais no site fizeram muita diferença na decisão do hóspede. O formulário de disponibilidade também agilizou muito nosso atendimento nos fins de semana de alta procura.',
         autor: 'Hotel de charme',
-        detalhe: 'Circuito das Águas Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer bem no Google para "pousada" na nossa cidade, mesmo sem estar entre os anúncios pagos das plataformas grandes. Isso trouxe reserva direta o ano inteiro.',
         autor: 'Pousada em cidade histórica',
-        detalhe: 'Centro Histórico de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -214,7 +214,7 @@ export const hoteisEPousadas: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua hospedagem',
         paragrafos: [
-          'Construímos sites rápidos mesmo com galerias visuais extensas, com SEO local desde o primeiro dia e captação de reservas integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de hospitalidade em Minas Gerais, com atenção específica a como vender a experiência da hospedagem através das fotos e do texto.',
+          'Construímos sites rápidos mesmo com galerias visuais extensas, com SEO local desde o primeiro dia e captação de reservas integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de hospitalidade em todo o Brasil, com atenção específica a como vender a experiência da hospedagem através das fotos e do texto.',
           'O domínio e todos os acessos ficam no nome da sua hospedagem, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua hospedagem está performando hoje.',
         ],
       },
@@ -222,7 +222,7 @@ export const hoteisEPousadas: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, alguém está pesquisando onde se hospedar em Minas',
+    titulo: 'Enquanto você lê isso, alguém está pesquisando onde se hospedar na sua cidade',
     sub: 'A pergunta é: essa reserva vai vir com comissão de plataforma ou direto para você? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar reserva direta.',
   },
 

@@ -7,16 +7,16 @@ export const fotografia: Nicho = {
   nomePlural: 'estúdios de fotografia',
   profissional: 'fotógrafo',
 
-  tituloSeo: 'Sites para Fotógrafos e Estúdios de Fotografia em MG | Sites Rankly',
+  tituloSeo: 'Sites para Fotógrafos e Estúdios de Fotografia | Sites Rankly',
   descricaoSeo:
-    'Sites para fotógrafos e estúdios em MG, com portfólio profissional e orçamento de ensaios por WhatsApp. Proposta grátis em 24h.',
+    'Sites para fotógrafos e estúdios, com portfólio profissional e orçamento de ensaios por WhatsApp. Proposta grátis em 24h.',
 
   hero: {
-    eyebrow: 'Sites para fotógrafos e estúdios de fotografia · Minas Gerais',
+    eyebrow: 'Sites para fotógrafos e estúdios de fotografia · Todo o Brasil',
     tituloHtml:
       'Seu trabalho merece um site que <em>mostra seu talento</em> e gera contrato',
     subHtml:
-      'Criamos sites para fotógrafos e estúdios de Minas Gerais: com portfólio profissional de dar orgulho, no topo do Google e com pedidos de orçamento chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para fotógrafos e estúdios de todo o Brasil: com portfólio profissional de dar orgulho, no topo do Google e com pedidos de orçamento chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Portfólio profissional em alta qualidade',
@@ -115,19 +115,19 @@ export const fotografia: Nicho = {
         texto:
           'O Instagram trazia curtida, mas o site com portfólio organizado por categoria foi o que realmente trouxe contrato de casamento fechado de clientes que nunca tinham me visto antes.',
         autor: 'Fotógrafo de casamentos',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'A galeria em alta resolução carregando rápido no celular fez toda diferença. O cliente entra, vê o portfólio completo, já manda mensagem perguntando o pacote.',
         autor: 'Estúdio de ensaios fotográficos',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer no Google para "fotógrafo" na nossa cidade em poucos meses, captando um público novo que buscava especificamente por esse serviço.',
         autor: 'Estúdio de fotografia corporativa e de produto',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -214,7 +214,7 @@ export const fotografia: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o seu site de fotografia',
         paragrafos: [
-          'Construímos sites rápidos mesmo com portfólios visuais pesados, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos criativos em Minas Gerais, com atenção específica à curadoria e organização de galerias de fotos.',
+          'Construímos sites rápidos mesmo com portfólios visuais pesados, com SEO local desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos criativos em todo o Brasil, com atenção específica à curadoria e organização de galerias de fotos.',
           'Domínio e acessos administrativos ficam registrados no seu nome ou no do estúdio, sem cláusula de fidelidade amarrando a parceria. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama honesto de como o seu site está performando hoje.',
         ],
       },
@@ -222,7 +222,7 @@ export const fotografia: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, alguém em Minas está procurando fotógrafo no Google',
+    titulo: 'Enquanto você lê isso, alguém está procurando fotógrafo no Google',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — você ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar pedidos de orçamento.',
   },
 

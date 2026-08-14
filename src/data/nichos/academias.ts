@@ -7,16 +7,16 @@ export const academias: Nicho = {
   nomePlural: 'academias e estúdios fitness',
   profissional: 'personal trainer',
 
-  tituloSeo: 'Sites para Academias e Estúdios Fitness em MG | Sites Rankly',
+  tituloSeo: 'Sites para Academias e Estúdios Fitness | Sites Rankly',
   descricaoSeo:
-    'Sites para academias e estúdios fitness em MG, com matrícula online, SEO local e captação de alunos por WhatsApp. Proposta grátis em 24h.',
+    'Sites para academias e estúdios fitness, com matrícula online, SEO local e captação de alunos por WhatsApp. Proposta grátis em 24h.',
 
   hero: {
-    eyebrow: 'Sites para academias e estúdios fitness · Minas Gerais',
+    eyebrow: 'Sites para academias e estúdios fitness · Todo o Brasil',
     tituloHtml:
       'Sua academia merece um site que <em>traz aluno matriculado</em> todos os meses',
     subHtml:
-      'Criamos sites para academias, estúdios de pilates, crossfit e personal trainers de Minas Gerais: rápidos, no topo do Google da sua região e com interessados chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para academias, estúdios de pilates, crossfit e personal trainers de todo o Brasil: rápidos, no topo do Google da sua região e com interessados chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Aula experimental em destaque',
@@ -35,7 +35,7 @@ export const academias: Nicho = {
   diagnostico: {
     titulo: 'Seu site está pronto para trazer aluno matriculado?',
     introHtml:
-      'Quando alguém em Minas Gerais decide começar a treinar, a pesquisa por <strong>academia perto de mim</strong> acontece no Google antes mesmo de visitar qualquer unidade. Marque o que o site da sua academia já tem hoje e veja a nota dele como <strong>captador de alunos</strong>.',
+      'Quando alguém decide começar a treinar, a pesquisa por <strong>academia perto de mim</strong> acontece no Google antes mesmo de visitar qualquer unidade. Marque o que o site da sua academia já tem hoje e veja a nota dele como <strong>captador de alunos</strong>.',
     notaTexto:
       'Estes 6 pontos separam um "site de horário de aula" de um site que gera matrícula toda semana. O diagnóstico completo — com análise do seu site e dos concorrentes — é gratuito.',
     itens: [
@@ -115,19 +115,19 @@ export const academias: Nicho = {
         texto:
           'Antes o site só tinha a grade de horários das aulas. Hoje chegam vários pedidos de aula experimental por semana pelo WhatsApp, e a conversão de experimental para matrícula melhorou porque o aluno já chega sabendo o valor do plano.',
         autor: 'Academia de musculação e funcional',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Destacar a aula experimental gratuita logo na primeira tela do site aumentou muito o número de pessoas testando o estúdio antes de decidir. Isso reduziu nossa objeção de vendas na recepção.',
         autor: 'Estúdio de pilates',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer bem no Google para "academia" na nossa cidade em poucos meses. O site trouxe alunos novos que nunca tinham passado na porta da academia antes.',
         autor: 'Academia de crossfit',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -214,7 +214,7 @@ export const academias: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua academia',
         paragrafos: [
-          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de matrícula integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de serviço em Minas Gerais, adaptado para destacar aula experimental e planos de forma clara e convidativa.',
+          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de matrícula integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos de serviço em todo o Brasil, adaptado para destacar aula experimental e planos de forma clara e convidativa.',
           'Todo o histórico de acesso e o registro no nome da sua empresa ficam sob seu controle, sem cláusula de fidelidade — a continuidade depende só dos resultados entregues. Peça o diagnóstico gratuito e receba, em até 24h úteis, uma análise real de como o site da sua academia está performando hoje.',
         ],
       },
@@ -222,7 +222,7 @@ export const academias: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, alguém em Minas está procurando academia no Google',
+    titulo: 'Enquanto você lê isso, alguém está procurando academia no Google',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua academia ou a concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar matrículas.',
   },
 

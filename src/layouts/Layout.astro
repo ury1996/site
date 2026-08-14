@@ -53,7 +53,10 @@ const empresaSchema = {
     latitude: site.endereco.lat,
     longitude: site.endereco.lng,
   },
-  areaServed: { '@type': 'State', name: site.regiao },
+  /* Atendimento nacional: o negócio é remoto e não se limita ao estado
+     onde fica a sede. Declarar só o estado sinalizaria para o Google um
+     alcance menor do que o real. */
+  areaServed: { '@type': 'Country', name: 'Brasil' },
   openingHoursSpecification: [
     {
       '@type': 'OpeningHoursSpecification',
@@ -75,7 +78,10 @@ const servicoSchema = {
   '@type': 'Service',
   serviceType: 'Criação de sites institucionais e landing pages para empresas',
   provider: { '@id': `${site.url}/#empresa` },
-  areaServed: { '@type': 'State', name: site.regiao },
+  /* Atendimento nacional: o negócio é remoto e não se limita ao estado
+     onde fica a sede. Declarar só o estado sinalizaria para o Google um
+     alcance menor do que o real. */
+  areaServed: { '@type': 'Country', name: 'Brasil' },
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Serviços digitais por segmento de negócio',

@@ -7,16 +7,16 @@ export const pocosArtesianos: Nicho = {
   nomePlural: 'empresas de perfuração de poços artesianos',
   profissional: 'técnico em perfuração',
 
-  tituloSeo: 'Sites para Empresas de Poços Artesianos em MG | Sites Rankly',
+  tituloSeo: 'Sites para Empresas de Poços Artesianos | Sites Rankly',
   descricaoSeo:
-    'Sites para empresas de perfuração de poços artesianos em MG, com portfólio técnico e orçamento por WhatsApp. Proposta grátis em 24h.',
+    'Sites para empresas de perfuração de poços artesianos, com portfólio técnico e orçamento por WhatsApp. Proposta grátis em 24h.',
 
   hero: {
-    eyebrow: 'Sites para empresas de poços artesianos · Minas Gerais',
+    eyebrow: 'Sites para empresas de poços artesianos · Todo o Brasil',
     tituloHtml:
       'Sua empresa de poços artesianos merece um site que <em>gera orçamento</em> todo mês',
     subHtml:
-      'Criamos sites para empresas de perfuração de poços artesianos de Minas Gerais: com portfólio técnico, no topo do Google da sua região e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para empresas de perfuração de poços artesianos de todo o Brasil: com portfólio técnico, no topo do Google da sua região e com pedidos chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Outorga e licenciamento explicados',
@@ -115,19 +115,19 @@ export const pocosArtesianos: Nicho = {
         texto:
           'Antes dependíamos só de indicação entre fazendas vizinhas. Com o site explicando o processo de outorga, começamos a receber contato de produtores de regiões que nunca tínhamos atendido.',
         autor: 'Empresa de perfuração de poços artesianos',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'O conteúdo explicando outorga e licenciamento deu muita segurança para os clientes — muita gente não sabia que precisava regularizar o poço, e isso virou um diferencial nosso.',
         autor: 'Empresa de perfuração e manutenção de poços',
-        detalhe: 'Norte de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer bem no Google para "poço artesiano" na nossa região em poucos meses. O site se pagou com o primeiro projeto industrial fechado por esse canal.',
         autor: 'Empresa de perfuração para uso industrial e rural',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -214,7 +214,7 @@ export const pocosArtesianos: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua empresa',
         paragrafos: [
-          'Construímos sites rápidos mesmo para conexões de internet mais fracas, com SEO regional desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos técnicos e do agronegócio em Minas Gerais, com atenção específica a como explicar processos técnicos e legais de forma clara.',
+          'Construímos sites rápidos mesmo para conexões de internet mais fracas, com SEO regional desde o primeiro dia e captação de orçamentos integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos técnicos e do agronegócio em todo o Brasil, com atenção específica a como explicar processos técnicos e legais de forma clara.',
           'O domínio e todos os acessos ficam sob o nome da sua empresa, sem exigência de permanência mínima — a parceria segue enquanto o resultado aparecer, nada além disso. Peça o diagnóstico gratuito e receba, em até 24h úteis, um raio-x real de como o site da sua empresa está performando hoje.',
         ],
       },
@@ -222,7 +222,7 @@ export const pocosArtesianos: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, alguém em Minas está pesquisando poço artesiano no Google',
+    titulo: 'Enquanto você lê isso, alguém está pesquisando poço artesiano no Google',
     sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua empresa ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar pedidos de orçamento.',
   },
 

@@ -7,16 +7,16 @@ export const educacaoInfantil: Nicho = {
   nomePlural: 'escolas de educação infantil',
   profissional: 'coordenador pedagógico',
 
-  tituloSeo: 'Sites para Escolas de Educação Infantil em MG | Sites Rankly',
+  tituloSeo: 'Sites para Escolas de Educação Infantil | Sites Rankly',
   descricaoSeo:
-    'Sites para escolas infantis e berçários em MG, com agendamento de visita e pré-matrícula por WhatsApp. Proposta grátis em 24h.',
+    'Sites para escolas infantis e berçários, com agendamento de visita e pré-matrícula por WhatsApp. Proposta grátis em 24h.',
 
   hero: {
-    eyebrow: 'Sites para escolas de educação infantil · Minas Gerais',
+    eyebrow: 'Sites para escolas de educação infantil · Todo o Brasil',
     tituloHtml:
       'Sua escola infantil merece um site que <em>transmite confiança</em> para os pais',
     subHtml:
-      'Criamos sites para escolas infantis e berçários de Minas Gerais: com proposta pedagógica bem explicada, no topo do Google e com agendamento de visita chegando <strong>direto no seu WhatsApp</strong>.',
+      'Criamos sites para escolas infantis e berçários de todo o Brasil: com proposta pedagógica bem explicada, no topo do Google e com agendamento de visita chegando <strong>direto no seu WhatsApp</strong>.',
     selos: [
       'Diagnóstico e proposta grátis',
       'Agendamento de visita à escola',
@@ -115,19 +115,19 @@ export const educacaoInfantil: Nicho = {
         texto:
           'A página explicando nossa proposta pedagógica e mostrando fotos da estrutura deu muita segurança para os pais antes mesmo da primeira visita. Isso facilitou bastante a conversa na hora da matrícula.',
         autor: 'Escola de educação infantil',
-        detalhe: 'Região Metropolitana de BH · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'O formulário de agendamento de visita organizou muito nosso período de captação — os pais já chegam com informação sobre a escola, a visita fica mais objetiva.',
         autor: 'Berçário e escola infantil',
-        detalhe: 'Sul de Minas · ★★★★★',
+        detalhe: '★★★★★',
       },
       {
         texto:
           'Passamos a aparecer bem no Google para "escola infantil" na nossa cidade em poucos meses. Isso trouxe famílias novas que nunca tinham ouvido falar da nossa escola.',
         autor: 'Escola de educação infantil bilíngue',
-        detalhe: 'Triângulo Mineiro · ★★★★★',
+        detalhe: '★★★★★',
       },
     ],
   },
@@ -214,7 +214,7 @@ export const educacaoInfantil: Nicho = {
       {
         titulo: 'Por que escolher a Sites Rankly para o site da sua escola infantil',
         paragrafos: [
-          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de agendamento de visita integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos educacionais em Minas Gerais, com atenção específica a como transmitir segurança e confiança para os pais.',
+          'Construímos sites rápidos, com SEO local desde o primeiro dia e captação de agendamento de visita integrada ao WhatsApp — o mesmo padrão que aplicamos em outros nichos educacionais em todo o Brasil, com atenção específica a como transmitir segurança e confiança para os pais.',
           'O domínio e todos os acessos ficam no nome da sua escola ficam sob seu controle, sem contrato de fidelidade — você continua porque os resultados aparecem. Peça o diagnóstico gratuito e receba, em até 24h úteis, um panorama real de como o site da sua escola está performando hoje.',
         ],
       },
@@ -222,7 +222,7 @@ export const educacaoInfantil: Nicho = {
   },
 
   ctaFinal: {
-    titulo: 'Enquanto você lê isso, uma família em Minas está pesquisando escola infantil',
+    titulo: 'Enquanto você lê isso, uma família está pesquisando escola infantil',
     sub: 'A pergunta é: quem vai transmitir mais confiança para essa família — sua escola ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar agendamento de visita.',
   },
 
