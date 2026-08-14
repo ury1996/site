@@ -13,7 +13,7 @@ const links = [
 <header class="topo">
   <div class="container topo-inner">
     <a href="/" class="logo" aria-label={`${site.nome} — início`}>
-      <Logo width={132} height={64} priority />
+      <Logo priority />
     </a>
 
     <nav aria-label="Navegação principal">
@@ -41,18 +41,18 @@ const links = [
     padding-block: 12px;
   }
 
+  /* Sem fundo branco: a logo oficial tem o texto em branco e vive sobre o
+     fundo escuro do cabeçalho. */
   .logo {
     display: flex;
     align-items: center;
     text-decoration: none;
-    background: #fff;
-    border-radius: 12px;
-    padding: 5px 12px;
   }
 
   .logo :global(img) {
     width: auto;
-    height: 46px;
+    height: 38px;
+    object-fit: contain;
   }
 
   nav {

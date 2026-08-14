@@ -26,14 +26,16 @@ export const CONTATO = {
   whatsapp: '5531973392303',
   whatsappMensagem:
     'Olá, Sites Rankly! Vi o site de vocês e quero um orçamento para o meu projeto.',
-  cidade: 'Ribeirão das Neves', // EDITE
+  /* Cidade, CEP e coordenadas iguais aos de src/config/site.ts: NAP
+     divergente entre as páginas do mesmo domínio atrapalha o SEO local. */
+  cidade: 'Belo Horizonte',
   estado: 'MG',
   estadoNome: 'Minas Gerais',
   regiao: 'BR-MG',
   pais: 'BR',
-  cep: '33800-000', // EDITE
-  endereco: 'Atendimento online e presencial na Grande BH', // EDITE
-  geo: { lat: -19.7669, lng: -44.0869 }, // EDITE (coordenadas aproximadas)
+  cep: '30000-000',
+  endereco: 'Atendimento online e presencial em todo o estado',
+  geo: { lat: -19.9167, lng: -43.9345 },
   horario: 'Seg a Sex, 09h às 18h',
   instagram: 'https://instagram.com/sitesrankly', // EDITE
   linkedin: 'https://www.linkedin.com/company/sitesrankly', // EDITE

@@ -16,7 +16,7 @@ const navegacao = [
   <div class="container rodape-grid">
     <div>
       <a href="/" class="rodape-logo-link">
-        <Logo width={180} height={88} alt={site.nome} />
+        <Logo alt={site.nome} />
       </a>
       <p>
         Sites que geram orçamentos e agendamentos para empresas em {site.regiao}. Criação
@@ -79,17 +79,16 @@ const navegacao = [
     padding-block: 48px 28px;
   }
 
+  /* Sem fundo branco: a logo oficial já é feita para fundo escuro. */
   .rodape-logo-link {
     display: inline-flex;
-    background: #fff;
-    border-radius: 12px;
-    padding: 8px 14px;
     margin-bottom: 14px;
   }
 
   .rodape-logo-link :global(img) {
     width: auto;
-    height: 64px;
+    height: 46px;
+    object-fit: contain;
   }
 
   address {

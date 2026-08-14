@@ -1,11 +1,17 @@
 // Gera public/og.png (1200x630) a partir de um SVG desenhado em memória.
 // Rode com `npm run og` sempre que quiser atualizar a imagem de compartilhamento.
 import sharp from 'sharp';
+import fs from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
 const outDir = path.dirname(fileURLToPath(import.meta.url));
 const outFile = path.join(outDir, '..', 'public', 'og.png');
+
+// A logo vai embutida em base64: o SVG é rasterizado fora do contexto do
+// site, então um caminho relativo para /images não resolveria.
+const logoFile = path.join(outDir, '..', 'public', 'images', 'marca', 'logo.png');
+const logoDataUri = `data:image/png;base64,${fs.readFileSync(logoFile).toString('base64')}`;
 
 const svg = `
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
@@ -29,12 +35,7 @@ const svg = `
   <rect width="1200" height="630" fill="url(#bg)" />
   <circle cx="600" cy="760" r="520" fill="url(#sol)" />
 
-  <g transform="translate(90,100)">
-    <circle cx="42" cy="42" r="20" fill="url(#solido)" />
-    <g stroke="url(#solido)" stroke-width="4.5" stroke-linecap="round">
-      <path d="M42 2v12M42 72v12M2 42h12M72 42h12M13.6 13.6l8.5 8.5M61.9 61.9l8.5 8.5M70.4 13.6l-8.5 8.5M21.6 61.9l-8.5 8.5" />
-    </g>
-  </g>
+  <image x="90" y="96" width="232" height="65" href="${logoDataUri}" preserveAspectRatio="xMinYMid meet" />
 
   <text x="90" y="270" font-family="Arial, sans-serif" font-weight="800" font-size="30" letter-spacing="4" fill="#FFB627">SITES PARA EMPRESAS DE ENERGIA SOLAR</text>
 

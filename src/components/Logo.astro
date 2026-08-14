@@ -1,4 +1,14 @@
 ---
+/**
+ * Logo oficial da marca — o mesmo arquivo usado na página principal
+ * (src/components/home/Header.astro), para o site inteiro falar a mesma
+ * língua visual.
+ *
+ * Atenção ao fundo: a arte tem o texto em branco, então só funciona sobre
+ * fundo escuro. Header e rodapé das páginas de nicho são escuros, por isso
+ * a logo aparece direto, sem a "pílula" branca que existia quando o
+ * logo.svg antigo tinha o texto em azul-marinho.
+ */
 interface Props {
   width?: number;
   height?: number;
@@ -8,15 +18,15 @@ interface Props {
 }
 
 const {
-  width = 132,
-  height = 64,
+  width = 400,
+  height = 112,
   priority = false,
-  alt = 'Sites Rankly — sites para empresas de energia solar',
+  alt = 'Sites Rankly — criação de sites, Google Ads e SEO',
 } = Astro.props;
 ---
 
 <img
-  src="/logo.svg"
+  src="/images/marca/logo.png"
   alt={alt}
   width={width}
   height={height}

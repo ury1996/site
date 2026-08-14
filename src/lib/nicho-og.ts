@@ -1,3 +1,5 @@
+import fs from 'node:fs';
+import path from 'node:path';
 import type { Nicho } from '../data/nichos/tipos';
 import { site } from '../config/site';
 
@@ -8,6 +10,21 @@ import { site } from '../config/site';
  * subtítulo para o nicho. Usada tanto como <meta property="og:image">
  * quanto como imagem visível no topo da página do nicho.
  */
+
+/**
+ * A logo entra embutida em base64 porque um SVG consumido como <img> (ou
+ * como og:image) roda em modo restrito e não carrega arquivo externo — um
+ * <image href="/images/marca/logo.png"> simplesmente não apareceria.
+ * A leitura acontece uma única vez, no build.
+ */
+const LOGO_DATA_URI = (() => {
+  const arquivo = path.join(process.cwd(), 'public', 'images', 'marca', 'logo.png');
+  return `data:image/png;base64,${fs.readFileSync(arquivo).toString('base64')}`;
+})();
+
+/** Proporção real do arquivo (400 × 112). */
+const LOGO_LARGURA = 232;
+const LOGO_ALTURA = 65;
 
 interface Acao {
   /** Palavra em destaque branco, ex.: "orçamentos". */
@@ -94,12 +111,7 @@ export function buildNichoOgSvg(nicho: Nicho): string {
   <rect width="1200" height="630" fill="url(#bg)" />
   <circle cx="600" cy="760" r="520" fill="url(#sol)" />
 
-  <g transform="translate(90,100)">
-    <circle cx="42" cy="42" r="20" fill="url(#solido)" />
-    <g stroke="url(#solido)" stroke-width="4.5" stroke-linecap="round">
-      <path d="M42 2v12M42 72v12M2 42h12M72 42h12M13.6 13.6l8.5 8.5M61.9 61.9l8.5 8.5M70.4 13.6l-8.5 8.5M21.6 61.9l-8.5 8.5" />
-    </g>
-  </g>
+  <image x="90" y="96" width="${LOGO_LARGURA}" height="${LOGO_ALTURA}" href="${LOGO_DATA_URI}" preserveAspectRatio="xMinYMid meet" />
 
   <text x="90" y="270" font-family="Arial, sans-serif" font-weight="800" font-size="${eyebrowSize}" letter-spacing="3" fill="#FFB627">${eyebrowEsc}</text>
 
