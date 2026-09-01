@@ -161,7 +161,7 @@ export const protecaoContraIncendio: Nicho = {
     {
       pergunta: 'O site fica no nome da empresa? E se eu quiser trocar de agência depois?',
       resposta:
-        'Fica, sim — domínio e todos os acessos administrativos registrados em nome da sua empresa, sem letras miúdas. Não usamos contrato de fidelidade: você continua com a gente pelos resultados, não por estar preso a um contrato.',
+        'Fica. Todo o projeto é registrado no nome da sua empresa — domínio, hospedagem e acessos administrativos —, e você recebe as credenciais na entrega. Sem contrato de fidelidade e sem multa caso decida trocar de fornecedor mais adiante.',
     },
   ],
 
@@ -223,7 +223,7 @@ export const protecaoContraIncendio: Nicho = {
 
   ctaFinal: {
     titulo: 'Enquanto você lê isso, um síndico está pesquisando regularização de AVCB',
-    sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua empresa ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar pedidos de orçamento.',
+    sub: 'A pergunta é: quem vai aparecer para esse síndico ou gestor — a sua empresa ou a do concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar orçamentos de projeto e recarga.',
   },
 
   relacionados: ['seguranca-eletronica', 'imobiliarias', 'industria-e-fabricas'],

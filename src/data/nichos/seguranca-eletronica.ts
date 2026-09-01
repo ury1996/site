@@ -161,7 +161,7 @@ export const segurancaEletronica: Nicho = {
     {
       pergunta: 'O site fica no nome da empresa? E se eu quiser trocar de agência depois?',
       resposta:
-        'Fica, sim — domínio e todos os acessos administrativos registrados em nome da sua empresa, sem letras miúdas. Não usamos contrato de fidelidade: você continua com a gente pelos resultados, não por estar preso a um contrato.',
+        'Fica com você. O domínio é comprado no nome da sua empresa e os acessos administrativos são entregues junto com o site, sem meio-termo. Não trabalhamos com fidelidade: você continua conosco pelo retorno, não por estar preso a um prazo.',
     },
   ],
 

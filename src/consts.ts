@@ -289,6 +289,8 @@ export const NAV = [
   { rotulo: 'Projetos', href: '/#projetos' },
   /* Hub com os 44 nichos atendidos, agrupados por categoria. */
   { rotulo: 'Nichos', href: '/sites-para-empresas' },
+  /* Hub com as principais cidades atendidas, agrupadas por região. */
+  { rotulo: 'Cidades', href: '/criacao-de-sites' },
   { rotulo: 'Processo', href: '/#processo' },
   { rotulo: 'Contato', href: '/contato' },
 ];

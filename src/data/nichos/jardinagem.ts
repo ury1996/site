@@ -161,7 +161,7 @@ export const jardinagem: Nicho = {
     {
       pergunta: 'O site fica no nome da empresa? E se eu quiser trocar de agência depois?',
       resposta:
-        'Fica, sim — domínio e todos os acessos administrativos registrados em nome da sua empresa, sem letras miúdas. Não usamos contrato de fidelidade: você continua com a gente pelos resultados, não por estar preso a um contrato.',
+        'Fica com a sua empresa: domínio, hospedagem e todos os acessos administrativos são registrados no seu nome desde a contratação, e as senhas ficam com você. E sem contrato de fidelidade — a parceria se renova pelo resultado, não por obrigação.',
     },
     {
       pergunta: 'Também instalo sistema de irrigação automática. Vale destacar isso separado?',

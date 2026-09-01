@@ -161,7 +161,7 @@ export const pneus: Nicho = {
     {
       pergunta: 'O site fica no nome da loja? E se eu quiser trocar de agência depois?',
       resposta:
-        'Fica, sim — domínio e todos os acessos administrativos registrados em nome da sua loja, sem letras miúdas. Não usamos contrato de fidelidade: você continua com a gente pelos resultados, não por estar preso a um contrato.',
+        'Fica com você: domínio, hospedagem e acessos administrativos registrados em nome da sua loja, com as senhas entregues no fim do projeto. Também não existe fidelidade — você segue com a gente enquanto o site estiver trazendo agendamento.',
     },
   ],
 
@@ -223,7 +223,7 @@ export const pneus: Nicho = {
 
   ctaFinal: {
     titulo: 'Enquanto você lê isso, alguém está pesquisando loja de pneus',
-    sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua loja ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar pedidos de orçamento.',
+    sub: 'A pergunta é: quem vai aparecer para esse motorista — a sua loja ou a do concorrente da esquina? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site encher a agenda de troca e alinhamento.',
   },
 
   relacionados: ['oficinas-mecanicas', 'funilaria-e-pintura', 'transportadoras'],

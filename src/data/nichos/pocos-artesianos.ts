@@ -161,7 +161,7 @@ export const pocosArtesianos: Nicho = {
     {
       pergunta: 'O site fica no nome da empresa? E se eu quiser trocar de agência depois?',
       resposta:
-        'Fica, sim — domínio e todos os acessos administrativos registrados em nome da sua empresa, sem letras miúdas. Não usamos contrato de fidelidade: você continua com a gente pelos resultados, não por estar preso a um contrato.',
+        'Fica com a sua empresa. Domínio, hospedagem e acessos administrativos são criados no seu nome e entregues ao final do projeto, com as senhas. Nada de fidelidade contratual: a continuidade depende do resultado, não de prazo mínimo.',
     },
   ],
 
@@ -223,7 +223,7 @@ export const pocosArtesianos: Nicho = {
 
   ctaFinal: {
     titulo: 'Enquanto você lê isso, alguém está pesquisando poço artesiano no Google',
-    sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua empresa ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar pedidos de orçamento.',
+    sub: 'A pergunta é: quem vai aparecer para esse proprietário — a sua empresa ou a do concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site trazer pedidos de perfuração e manutenção.',
   },
 
   relacionados: ['encanadores', 'agronegocio', 'industria-e-fabricas'],

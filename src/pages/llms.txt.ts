@@ -3,6 +3,7 @@ import { site } from '../config/site';
 import { CONTATO } from '../consts';
 import { nichos, getNichosPorCategoria } from '../data/nichos';
 import { categorias } from '../data/categorias';
+import { cidades, getCidadesPorRegiao } from '../data/cidades';
 
 export const prerender = true;
 
@@ -27,14 +28,27 @@ export const GET: APIRoute = () => {
     })
     .join('\n\n');
 
+  const secoesPorRegiao = getCidadesPorRegiao()
+    .map(({ regiao, itens }) => {
+      const linhas = itens
+        .map(
+          (cidade) =>
+            `- [Criação de sites em ${cidade.nome} (${cidade.uf})](${site.url}/criacao-de-sites-em-${cidade.slug}): ${cidade.resumoCard}`,
+        )
+        .join('\n');
+      return `### ${regiao}\n\n${linhas}`;
+    })
+    .join('\n\n');
+
   const body = `# ${site.nome}
 
 > Agência digital de criação de sites, Google Ads e SEO, com sede em
 > ${CONTATO.cidade} (${CONTATO.estadoNome}) e atendimento em todo o Brasil.
 > Sites rápidos, com SEO técnico desde a primeira linha e captação de
 > clientes integrada ao WhatsApp. Além do serviço geral, mantemos páginas
-> específicas para ${nichos.length} segmentos de negócio, cada uma escrita
-> para o comportamento de busca daquele mercado.
+> específicas para ${nichos.length} segmentos de negócio e para
+> ${cidades.length} das maiores cidades do país, cada uma escrita para o
+> comportamento de busca daquele mercado.
 
 Contato: ${CONTATO.email} · WhatsApp/telefone: ${CONTATO.telefoneExibicao} ·
 ${CONTATO.horario} · ${CONTATO.endereco}.
@@ -43,6 +57,7 @@ ${CONTATO.horario} · ${CONTATO.endereco}.
 
 - [Início — Criação de Sites, Google Ads e SEO](${site.url}/): página institucional da agência, com serviços, projetos entregues e processo de trabalho.
 - [Nichos atendidos](${site.url}/sites-para-empresas): diretório com todos os segmentos, agrupados por categoria.
+- [Cidades atendidas](${site.url}/criacao-de-sites): diretório das principais cidades, agrupadas por região, com o perfil de mercado de cada praça.
 - [Contato](${site.url}/contato): formulário e canais diretos para orçamento.
 - [Sites para Empresas de Energia Solar](${site.url}/sites-para-energia-solar): página dedicada a integradoras e empresas de energia fotovoltaica.
 
@@ -56,6 +71,13 @@ ${CONTATO.horario} · ${CONTATO.endereco}.
 ## Nichos atendidos por categoria
 
 ${secoesPorCategoria}
+
+## Cidades atendidas por região
+
+O atendimento é remoto e nacional. As páginas abaixo descrevem o perfil de
+mercado, a concorrência local e o que muda no SEO de cada praça.
+
+${secoesPorRegiao}
 
 ## Sobre o serviço
 

@@ -2,6 +2,7 @@ import type { APIRoute } from 'astro';
 import { site } from '../config/site';
 import { nichos, getNichosPorCategoria } from '../data/nichos';
 import { categorias } from '../data/categorias';
+import { cidades } from '../data/cidades';
 
 export const prerender = true;
 
@@ -27,6 +28,7 @@ export const GET: APIRoute = () => {
   const entradas: { path: string; priority: string }[] = [
     { path: '/', priority: '1.0' },
     { path: '/sites-para-empresas', priority: '0.9' },
+    { path: '/criacao-de-sites', priority: '0.9' },
     { path: '/sites-para-energia-solar', priority: '0.8' },
     { path: '/contato', priority: '0.7' },
     ...categoriasPublicadas.map((categoria) => ({
@@ -35,6 +37,10 @@ export const GET: APIRoute = () => {
     })),
     ...nichos.map((nicho) => ({
       path: `/sites-para-${nicho.slug}`,
+      priority: '0.8',
+    })),
+    ...cidades.map((cidade) => ({
+      path: `/criacao-de-sites-em-${cidade.slug}`,
       priority: '0.8',
     })),
   ];

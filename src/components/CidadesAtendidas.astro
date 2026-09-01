@@ -1,0 +1,101 @@
+---
+/**
+ * Faixa compacta usada nas páginas de nicho para linkar as páginas de
+ * cidade. É deliberadamente pequena: a página de nicho é sobre o
+ * segmento, não sobre praça — aqui só criamos o caminho de navegação
+ * (e o link interno) para quem quer o recorte por cidade.
+ */
+import { cidades } from '../data/cidades';
+
+interface Props {
+  /** Ex.: "escritórios de advocacia". */
+  nomePlural: string;
+}
+
+const { nomePlural } = Astro.props;
+---
+
+<section class="cidades-faixa" aria-labelledby="titulo-cidades-faixa">
+  <div class="container">
+    <h2 id="titulo-cidades-faixa">
+      Atendemos {nomePlural} em todo o Brasil
+    </h2>
+    <p class="faixa-sub">
+      Veja como funciona a criação de sites em cada praça — perfil do mercado local,
+      concorrência e o que muda no SEO de cada cidade:
+    </p>
+
+    <ul class="faixa-lista">
+      {
+        cidades.map((cidade) => (
+          <li>
+            <a href={`/criacao-de-sites-em-${cidade.slug}`}>
+              {cidade.nome} <span aria-hidden="true">·</span> {cidade.uf}
+            </a>
+          </li>
+        ))
+      }
+      <li>
+        <a class="faixa-todas" href="/criacao-de-sites">Todas as cidades →</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<style>
+  .cidades-faixa {
+    background: var(--branco);
+    border-top: 1px solid var(--borda);
+    padding-block: clamp(30px, 4vw, 44px);
+  }
+
+  .cidades-faixa h2 {
+    font-size: 1.15rem;
+    color: var(--noite);
+    margin: 0 0 6px;
+  }
+
+  .faixa-sub {
+    font-size: 0.9rem;
+    color: var(--cinza);
+    max-width: 62ch;
+    margin: 0 0 18px;
+  }
+
+  .faixa-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .faixa-lista a {
+    display: inline-block;
+    border: 1px solid var(--borda);
+    border-radius: 999px;
+    padding: 7px 15px;
+    font-size: 0.85rem;
+    color: var(--noite);
+    text-decoration: none;
+    transition:
+      border-color 0.15s ease,
+      color 0.15s ease;
+  }
+
+  .faixa-lista a:hover {
+    border-color: var(--brasa);
+    color: var(--brasa);
+  }
+
+  .faixa-lista a span {
+    color: var(--cinza);
+  }
+
+  .faixa-todas {
+    font-weight: 700;
+    color: var(--brasa) !important;
+    border-color: var(--brasa) !important;
+  }
+</style>

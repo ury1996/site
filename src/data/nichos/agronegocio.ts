@@ -161,7 +161,7 @@ export const agronegocio: Nicho = {
     {
       pergunta: 'O site fica no nome da empresa? E se eu quiser trocar de agência depois?',
       resposta:
-        'Fica, sim — domínio e todos os acessos administrativos registrados em nome da sua empresa, sem letras miúdas. Não usamos contrato de fidelidade: você continua com a gente pelos resultados, não por estar preso a um contrato.',
+        'Fica com você. Domínio, hospedagem e todos os acessos administrativos são registrados no CNPJ da sua empresa desde o primeiro dia, e as senhas são entregues junto com o site. Não trabalhamos com contrato de fidelidade: a renovação depende do resultado que você enxerga, não de cláusula.',
     },
   ],
 

@@ -161,7 +161,7 @@ export const climatizacao: Nicho = {
     {
       pergunta: 'O site fica no nome da empresa? E se eu quiser trocar de agência depois?',
       resposta:
-        'Fica, sim — domínio e todos os acessos administrativos registrados em nome da sua empresa, sem letras miúdas. Não usamos contrato de fidelidade: você continua com a gente pelos resultados, não por estar preso a um contrato.',
+        'Fica. O domínio e todos os acessos ficam no nome da sua empresa, sem intermediário e sem letra miúda. Também não usamos contrato de fidelidade — se um dia quiser levar o projeto para outro fornecedor, você leva tudo, inclusive o histórico do domínio.',
     },
   ],
 

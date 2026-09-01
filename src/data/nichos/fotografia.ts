@@ -161,7 +161,7 @@ export const fotografia: Nicho = {
     {
       pergunta: 'O site fica no meu nome? E se eu quiser trocar de agência depois?',
       resposta:
-        'Fica, sim — domínio e todos os acessos administrativos registrados em seu nome ou no do estúdio, sem letras miúdas. Não usamos contrato de fidelidade: você continua com a gente pela qualidade do trabalho, não por estar preso a um contrato.',
+        'Fica com você: domínio, hospedagem e acessos administrativos registrados em seu nome ou no do estúdio, entregues junto com o site. Sem contrato de fidelidade — a parceria se sustenta pelo trabalho entregue, não por cláusula de permanência.',
     },
   ],
 
@@ -223,7 +223,7 @@ export const fotografia: Nicho = {
 
   ctaFinal: {
     titulo: 'Enquanto você lê isso, alguém está procurando fotógrafo no Google',
-    sub: 'A pergunta é: quem vai aparecer para essa pessoa — você ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar pedidos de orçamento.',
+    sub: 'A pergunta é: quem vai aparecer para esse cliente — o seu estúdio ou o do concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site transformar portfólio em pedido de orçamento.',
   },
 
   relacionados: ['cerimonial-e-eventos', 'hoteis-e-pousadas', 'escritorios-de-arquitetura'],

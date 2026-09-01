@@ -223,7 +223,7 @@ export const engenharia: Nicho = {
 
   ctaFinal: {
     titulo: 'Enquanto você lê isso, alguém está pesquisando engenheiro no Google',
-    sub: 'A pergunta é: quem vai aparecer para essa pessoa — seu escritório ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar pedidos de projeto.',
+    sub: 'A pergunta é: quem vai aparecer para esse cliente — a sua engenharia ou a do concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site atrair pedidos de projeto e laudo.',
   },
 
   relacionados: ['construtoras', 'escritorios-de-arquitetura', 'materiais-de-construcao'],

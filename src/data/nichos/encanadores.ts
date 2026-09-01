@@ -62,7 +62,7 @@ export const encanadores: Nicho = {
     {
       titulo: 'No ar e recebendo chamados',
       texto:
-        'Publicamos com SEO local configurado e, se quiser, campanhas de Google Ads para horários de maior demanda. Você acompanha cada chamado que o site gera.',
+        'Colocamos no ar com o SEO local já configurado e, se fizer sentido, uma campanha de Google Ads para as faixas de horário em que o vazamento vira urgência. Cada chamado gerado pelo site fica registrado para você acompanhar.',
     },
   ],
 
@@ -141,12 +141,12 @@ export const encanadores: Nicho = {
     {
       pergunta: 'Quanto custa um site para empresa de serviços hidráulicos?',
       resposta:
-        'Depende do escopo: uma landing page de captação de chamado tem investimento menor; um site completo com todos os serviços e blog técnico, um pouco maior. Após o diagnóstico gratuito, você recebe uma proposta fechada, sem surpresas.',
+        'Varia com o tamanho do projeto: uma página única voltada a captar chamado urgente custa menos; um site com todos os serviços separados, área de cobertura e conteúdo técnico custa mais. Depois do diagnóstico gratuito você recebe uma proposta fechada, com prazo e preço final definidos.',
     },
     {
       pergunta: 'Em quanto tempo o site fica pronto?',
       resposta:
-        'Landing pages de captação de chamado ficam prontas em até 7 dias úteis. Sites completos, entre 12 e 20 dias úteis, incluindo organização dos serviços e treinamento rápido para acompanhar os chamados recebidos.',
+        'Uma página de captação de chamado urgente fica pronta em até 7 dias úteis. Um site completo leva de 12 a 20 dias úteis, contando a organização dos serviços por tipo de problema e um treinamento rápido para a sua equipe acompanhar o que chega.',
     },
     {
       pergunta: 'Trabalho sozinho, sem CNPJ ainda. Posso ter site mesmo assim?',
@@ -161,7 +161,7 @@ export const encanadores: Nicho = {
     {
       pergunta: 'O site fica no meu nome? E se eu quiser trocar de agência depois?',
       resposta:
-        'Fica, sim — domínio e todos os acessos administrativos registrados em seu nome ou no da sua empresa, sem letras miúdas. Não usamos contrato de fidelidade: você continua com a gente pelos resultados, não por estar preso a um contrato.',
+        'Fica com você. Domínio, hospedagem e todos os acessos administrativos são abertos no seu nome ou no da sua empresa e entregues na conclusão do projeto. Não trabalhamos com fidelidade: a continuidade depende do volume de chamado que o site gera.',
     },
     {
       pergunta: 'Também faço instalação de banheiro completo, não só reparo. Vale destacar isso?',
@@ -228,7 +228,7 @@ export const encanadores: Nicho = {
 
   ctaFinal: {
     titulo: 'Agora mesmo, alguém está com vazamento e procurando encanador no Google',
-    sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua empresa ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site captar chamados de urgência.',
+    sub: 'A pergunta é: quem vai atender essa emergência — você ou o concorrente que apareceu primeiro? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site captar chamado no momento do vazamento.',
   },
 
   relacionados: ['eletricistas', 'pocos-artesianos', 'climatizacao'],

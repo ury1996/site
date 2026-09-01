@@ -161,7 +161,7 @@ export const manutencaoIndustrial: Nicho = {
     {
       pergunta: 'O site fica no nome da empresa? E se eu quiser trocar de agência depois?',
       resposta:
-        'Fica, sim — domínio e todos os acessos administrativos registrados em nome da sua empresa, sem letras miúdas. Não usamos contrato de fidelidade: você continua com a gente pelos resultados, não por estar preso a um contrato.',
+        'Fica. Registramos domínio, hospedagem e todos os acessos no nome da sua empresa e entregamos as senhas junto com o site. Não trabalhamos com fidelidade: a relação se mantém pelo volume de chamado que o site traz, não por cláusula de contrato.',
     },
   ],
 

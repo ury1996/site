@@ -1,0 +1,183 @@
+---
+import type { GetStaticPaths } from 'astro';
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Hero from '../components/Hero.astro';
+import Numeros from '../components/Numeros.astro';
+import Diagnostico from '../components/Diagnostico.astro';
+import SetoresCidade from '../components/SetoresCidade.astro';
+import Beneficios from '../components/Beneficios.astro';
+import Depoimentos from '../components/Depoimentos.astro';
+import Artigo from '../components/Artigo.astro';
+import Faq from '../components/Faq.astro';
+import CidadesRelacionadas from '../components/CidadesRelacionadas.astro';
+import CtaFinal from '../components/CtaFinal.astro';
+import WhatsAppFloat from '../components/WhatsAppFloat.astro';
+import { whatsappUrlPara, site } from '../config/site';
+import { cidades, getCidadesRelacionadas, getNichosDestaque } from '../data/cidades';
+
+export const getStaticPaths = (() => {
+  return cidades.map((cidade) => ({
+    params: { slug: cidade.slug },
+    props: { cidade },
+  }));
+}) satisfies GetStaticPaths;
+
+const { cidade } = Astro.props;
+
+const whatsappUrl = whatsappUrlPara(cidade.whatsappMensagem);
+const nichosDestaque = getNichosDestaque(cidade);
+const relacionadas = getCidadesRelacionadas(cidade).map((c) => ({
+  slug: c.slug,
+  nome: c.nome,
+  uf: c.uf,
+  resumo: c.resumoCard,
+}));
+
+const url = `${site.url}/criacao-de-sites-em-${cidade.slug}`;
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: cidade.faq.map((item) => ({
+    '@type': 'Question',
+    name: item.pergunta,
+    acceptedAnswer: { '@type': 'Answer', text: item.resposta },
+  })),
+};
+
+/* Aqui, diferente do schema institucional do Layout (que declara Brasil
+   inteiro), o areaServed é a cidade da página — é o sinal local que
+   justifica a existência desta URL. */
+const servicoLocalSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': `${url}#servico`,
+  name: `Criação de sites em ${cidade.nome}`,
+  serviceType: 'Criação de sites, SEO local e Google Ads',
+  description: cidade.descricaoSeo,
+  url,
+  provider: { '@id': `${site.url}/#empresa` },
+  areaServed: {
+    '@type': 'City',
+    name: cidade.nome,
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: cidade.nome,
+      addressRegion: cidade.uf,
+      addressCountry: 'BR',
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: cidade.geo.lat,
+      longitude: cidade.geo.lng,
+    },
+  },
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: `Segmentos atendidos em ${cidade.nome}`,
+    itemListElement: nichosDestaque.map((nicho) => ({
+      '@type': 'Offer',
+      itemOffered: {
+        '@type': 'Service',
+        name: `Criação de site para ${nicho.nomePlural} em ${cidade.nome}`,
+        url: `${site.url}/sites-para-${nicho.slug}`,
+      },
+    })),
+  },
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Início', item: `${site.url}/` },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Cidades atendidas',
+      item: `${site.url}/criacao-de-sites`,
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: `Criação de sites em ${cidade.nome}`,
+      item: url,
+    },
+  ],
+};
+
+const imagemOg = `/og/cidade/${cidade.slug}.svg`;
+---
+
+<Layout titulo={cidade.tituloSeo} descricao={cidade.descricaoSeo} imagem={imagemOg}>
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
+  <script
+    type="application/ld+json"
+    is:inline
+    set:html={JSON.stringify(servicoLocalSchema)}
+  />
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <Header />
+
+  <main id="inicio">
+    <Hero
+      eyebrow={cidade.hero.eyebrow}
+      tituloHtml={cidade.hero.tituloHtml}
+      subHtml={cidade.hero.subHtml}
+      selos={cidade.hero.selos}
+      whatsappUrl={whatsappUrl}
+      situacoes={cidade.situacoes}
+      mensagem={cidade.whatsappMensagem}
+      imagemOg={imagemOg}
+      imagemOgTitulo={cidade.tituloSeo}
+    />
+
+    <Numeros />
+
+    <Diagnostico
+      titulo={cidade.diagnostico.titulo}
+      introHtml={cidade.diagnostico.introHtml}
+      notaTexto={cidade.diagnostico.notaTexto}
+      itens={cidade.diagnostico.itens}
+    />
+
+    <SetoresCidade
+      cidade={cidade.nome}
+      titulo={cidade.setoresTitulo}
+      texto={cidade.setoresTexto}
+      itens={nichosDestaque}
+      bairros={cidade.bairros}
+    />
+
+    <Beneficios titulo={cidade.beneficios.titulo} itens={cidade.beneficios.itens} />
+
+    <Depoimentos titulo={cidade.depoimentos.titulo} itens={cidade.depoimentos.itens} />
+
+    <Artigo
+      eyebrow={cidade.artigo.eyebrow}
+      titulo={cidade.artigo.titulo}
+      secoes={cidade.artigo.secoes}
+    />
+
+    <Faq
+      titulo={`Dúvidas de quem quer criar um site em ${cidade.nome}`}
+      itens={cidade.faq}
+    />
+
+    {relacionadas.length > 0 && <CidadesRelacionadas itens={relacionadas} />}
+
+    <CtaFinal
+      titulo={cidade.ctaFinal.titulo}
+      sub={cidade.ctaFinal.sub}
+      whatsappUrl={whatsappUrl}
+      situacoes={cidade.situacoes}
+      mensagem={cidade.whatsappMensagem}
+    />
+  </main>
+
+  <Footer />
+  <WhatsAppFloat url={whatsappUrl} />
+</Layout>

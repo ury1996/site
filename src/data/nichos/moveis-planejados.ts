@@ -228,7 +228,7 @@ export const moveisPlanejados: Nicho = {
 
   ctaFinal: {
     titulo: 'Enquanto você lê isso, alguém está pesquisando móveis planejados',
-    sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua empresa ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar pedidos de orçamento.',
+    sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua loja ou a do concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site trazer clientes já com projeto na cabeça.',
   },
 
   relacionados: ['decoracao', 'escritorios-de-arquitetura', 'construtoras'],

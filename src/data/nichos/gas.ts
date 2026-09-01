@@ -161,7 +161,7 @@ export const gas: Nicho = {
     {
       pergunta: 'O site fica no nome da empresa? E se eu quiser trocar de agência depois?',
       resposta:
-        'Fica, sim — domínio e todos os acessos administrativos registrados em nome da sua empresa, sem letras miúdas. Não usamos contrato de fidelidade: você continua com a gente pelos resultados, não por estar preso a um contrato.',
+        'Fica com a sua empresa: domínio, hospedagem e painéis administrativos são registrados no seu nome, não no nosso, e as credenciais são entregues na conclusão. E não existe fidelidade no contrato — você permanece enquanto o trabalho estiver valendo a pena.',
     },
   ],
 

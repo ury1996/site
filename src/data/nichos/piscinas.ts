@@ -37,7 +37,7 @@ export const piscinas: Nicho = {
     introHtml:
       'Construir uma piscina é um investimento alto e de longo prazo — a busca por uma empresa de <strong>piscinas</strong> confiável envolve pesquisa cuidadosa no Google. Marque o que o site da sua empresa já tem hoje e veja a nota dele como <strong>gerador de projetos e contratos</strong>.',
     notaTexto:
-      'Estes 6 pontos separam uma empresa que só existe no boca a boca de uma que recebe pedido de projeto e manutenção recorrente pelo site. O diagnóstico completo é gratuito.',
+      'Estes 6 pontos separam a empresa que depende da indicação do vizinho da que recebe pedido de construção, reforma e contrato de manutenção direto pelo site. O diagnóstico completo é gratuito.',
     itens: [
       'Aparece na 1ª página do Google para "construção de piscina" + sua cidade',
       'Abre em menos de 3 segundos no celular, mesmo com fotos em alta resolução',
@@ -161,7 +161,7 @@ export const piscinas: Nicho = {
     {
       pergunta: 'O site fica no nome da empresa? E se eu quiser trocar de agência depois?',
       resposta:
-        'Fica, sim — domínio e todos os acessos administrativos registrados em nome da sua empresa, sem letras miúdas. Não usamos contrato de fidelidade: você continua com a gente pelos resultados, não por estar preso a um contrato.',
+        'Fica com você, do domínio às senhas de administração — tudo registrado no nome da sua empresa e entregue no fim do projeto. Também não amarramos ninguém em contrato de fidelidade: você segue com a gente enquanto o site estiver dando retorno.',
     },
   ],
 
@@ -223,7 +223,7 @@ export const piscinas: Nicho = {
 
   ctaFinal: {
     titulo: 'Enquanto você lê isso, alguém está pesquisando construção de piscina',
-    sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua empresa ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar projetos e contratos de manutenção.',
+    sub: 'A pergunta é: quem vai aparecer para esse proprietário — a sua empresa ou a do concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site fechar obra de piscina e contrato de manutenção.',
   },
 
   relacionados: ['jardinagem', 'construtoras', 'climatizacao'],

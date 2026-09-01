@@ -161,7 +161,7 @@ export const logistica: Nicho = {
     {
       pergunta: 'O site fica no nome da empresa? E se eu quiser trocar de agência depois?',
       resposta:
-        'Fica, sim — domínio e todos os acessos administrativos registrados em nome da sua empresa, sem letras miúdas. Não usamos contrato de fidelidade: você continua com a gente pelos resultados, não por estar preso a um contrato.',
+        'Fica com o seu operador: domínio, hospedagem, conta de anúncio e analytics são abertos no nome da sua empresa. Sem contrato de fidelidade, sem taxa de saída e sem depender da gente para qualquer alteração futura no site.',
     },
     {
       pergunta: 'Atendo principalmente e-commerce, com fulfillment e picking. O site fala essa língua?',

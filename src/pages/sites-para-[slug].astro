@@ -12,6 +12,7 @@ import Depoimentos from '../components/Depoimentos.astro';
 import Artigo from '../components/Artigo.astro';
 import Faq from '../components/Faq.astro';
 import NichosRelacionados from '../components/NichosRelacionados.astro';
+import CidadesAtendidas from '../components/CidadesAtendidas.astro';
 import CtaFinal from '../components/CtaFinal.astro';
 import WhatsAppFloat from '../components/WhatsAppFloat.astro';
 import { whatsappUrlPara, site } from '../config/site';
@@ -104,6 +105,8 @@ const imagemOg = `/og/${nicho.slug}.svg`;
       titulo={`Dúvidas de quem quer um site para ${nicho.nomeSingular}`}
       itens={nicho.faq}
     />
+
+    <CidadesAtendidas nomePlural={nicho.nomePlural} />
 
     {relacionados.length > 0 && <NichosRelacionados itens={relacionados} />}
 

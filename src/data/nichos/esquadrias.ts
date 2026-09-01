@@ -223,7 +223,7 @@ export const esquadrias: Nicho = {
 
   ctaFinal: {
     titulo: 'Enquanto você lê isso, alguém está pesquisando esquadrias no Google',
-    sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua empresa ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site gerar pedidos de orçamento.',
+    sub: 'A pergunta é: quem vai aparecer para essa pessoa — sua serralheria ou o concorrente? Peça o diagnóstico gratuito e receba em 24h úteis um plano para o seu site trazer pedidos de medição e orçamento.',
   },
 
   relacionados: ['construtoras', 'materiais-de-construcao', 'escritorios-de-arquitetura'],
