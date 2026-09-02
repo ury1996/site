@@ -1,0 +1,174 @@
+---
+import { site } from '../../config/site';
+
+interface Props {
+  /** Precisa ser único na página — vira o prefixo dos ids dos campos. */
+  id: string;
+  rotuloBotao?: string;
+  situacoes?: string[];
+  /** Primeira linha da mensagem enviada ao WhatsApp. */
+  mensagem?: string;
+}
+
+const {
+  id,
+  rotuloBotao = 'Receber proposta grátis',
+  situacoes = [
+    'Não tenho site',
+    'Tenho site, mas não gera orçamentos',
+    'Quero uma landing page para anúncios',
+    'Quero site + SEO/Google Ads',
+  ],
+  mensagem = site.whatsappMensagem,
+} = Astro.props;
+
+const whatsapp = site.whatsapp;
+---
+
+<form
+  class="lead"
+  data-lead-form
+  data-whats={whatsapp}
+  data-mensagem={mensagem}
+  id={`solar-form-${id}`}
+  novalidate
+>
+  <div class="campo">
+    <label for={`solar-form-${id}-nome`}>Seu nome</label>
+    <input
+      id={`solar-form-${id}-nome`}
+      name="nome"
+      type="text"
+      autocomplete="name"
+      placeholder="Como podemos te chamar?"
+      required
+      minlength="2"
+    />
+  </div>
+
+  <div class="campo">
+    <label for={`solar-form-${id}-fone`}>WhatsApp</label>
+    <input
+      id={`solar-form-${id}-fone`}
+      name="telefone"
+      type="tel"
+      autocomplete="tel"
+      inputmode="numeric"
+      placeholder="(31) 99999-9999"
+      required
+      minlength="10"
+    />
+  </div>
+
+  <div class="campo">
+    <label for={`solar-form-${id}-situacao`}>Sua empresa hoje</label>
+    <select id={`solar-form-${id}-situacao`} name="situacao" required>
+      <option value="" disabled selected>Selecione sua situação</option>
+      {situacoes.map((situacao) => <option value={situacao}>{situacao}</option>)}
+    </select>
+  </div>
+
+  <button type="submit" class="btn btn--amber lead__btn">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path
+        d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.1 3.2 5.1 4.49.71.3 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88a9.83 9.83 0 0 1 9.88 9.9c0 5.45-4.44 9.87-9.89 9.87M20.47 3.6A11.8 11.8 0 0 0 12.04 0C5.46 0 .1 5.35.1 11.93c0 2.1.55 4.16 1.6 5.97L0 24l6.25-1.64a11.93 11.93 0 0 0 5.79 1.47h.01c6.58 0 11.93-5.35 11.93-11.93 0-3.19-1.24-6.18-3.5-8.44"
+      ></path>
+    </svg>
+    {rotuloBotao}
+  </button>
+
+  <p class="lead__priv">🔒 Seus dados estão seguros. Sem spam, sem compromisso.</p>
+</form>
+
+<style>
+  .lead {
+    display: grid;
+    gap: 0.85rem;
+  }
+  .campo {
+    display: grid;
+    gap: 0.4rem;
+  }
+  label {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--txt);
+  }
+  input,
+  select {
+    font: inherit;
+    width: 100%;
+    padding: 0.8rem 0.95rem;
+    border-radius: 10px;
+    border: 1.5px solid var(--line-strong);
+    background: rgba(5, 13, 31, 0.35);
+    color: var(--txt);
+  }
+  .sec--paper input,
+  .sec--paper select {
+    background: #fff;
+  }
+  input::placeholder {
+    color: var(--txt-dim);
+  }
+  input:focus,
+  select:focus {
+    border-color: var(--blue-light);
+    outline: none;
+  }
+  input:user-invalid {
+    border-color: #e0665f;
+  }
+  select option {
+    color: #0b1b3a;
+  }
+  .lead__btn {
+    width: 100%;
+    margin-top: 0.2rem;
+  }
+  .lead__priv {
+    font-size: 0.76rem;
+    color: var(--txt-dim);
+    text-align: center;
+    margin: 0.1rem 0 0;
+  }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLFormElement>('[data-lead-form]').forEach((form) => {
+    if (form.dataset.wired) return;
+    form.dataset.wired = 'true';
+    form.addEventListener('submit', (evento) => {
+      evento.preventDefault();
+      if (!form.reportValidity()) return;
+
+      const dados = new FormData(form);
+      const whats = form.dataset.whats;
+      const mensagem = form.dataset.mensagem || 'Olá! Quero um site para minha empresa de energia solar.';
+
+      const texto = [
+        mensagem,
+        `*Nome:* ${dados.get('nome')}`,
+        `*WhatsApp:* ${dados.get('telefone')}`,
+        `*Situação:* ${dados.get('situacao')}`,
+      ].join('\n');
+
+      window.open(`https://wa.me/${whats}?text=${encodeURIComponent(texto)}`, '_blank', 'noopener');
+      form.reset();
+    });
+  });
+
+  document.querySelectorAll<HTMLInputElement>('input[type="tel"]').forEach((input) => {
+    if (input.dataset.wired) return;
+    input.dataset.wired = 'true';
+    input.addEventListener('input', () => {
+      let valor = input.value.replace(/\D/g, '').slice(0, 11);
+      if (valor.length > 6) {
+        valor = `(${valor.slice(0, 2)}) ${valor.slice(2, 7)}-${valor.slice(7)}`;
+      } else if (valor.length > 2) {
+        valor = `(${valor.slice(0, 2)}) ${valor.slice(2)}`;
+      }
+      input.value = valor;
+    });
+  });
+</script>

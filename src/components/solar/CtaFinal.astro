@@ -1,0 +1,67 @@
+---
+import FormularioSolar from './FormularioSolar.astro';
+
+interface Props {
+  titulo: string;
+  sub: string;
+  whatsappUrl: string;
+  situacoes?: string[];
+  mensagem?: string;
+}
+
+const { titulo, sub, whatsappUrl, situacoes, mensagem } = Astro.props;
+---
+
+<section class="sec cta" aria-labelledby="titulo-cta-solar">
+  <div class="cta__glow" aria-hidden="true"></div>
+  <div class="wrap cta__grid">
+    <div>
+      <h2 id="titulo-cta-solar" class="h2">{titulo}</h2>
+      <p class="cta__sub">{sub}</p>
+      <a class="btn btn--ghost" href={whatsappUrl} target="_blank" rel="noopener">
+        Prefiro falar no WhatsApp
+      </a>
+    </div>
+
+    <div class="cta__card">
+      <FormularioSolar id="final" situacoes={situacoes} mensagem={mensagem} />
+    </div>
+  </div>
+</section>
+
+<style>
+  .cta {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(160deg, var(--navy) 20%, #2a1f08 140%);
+  }
+  .cta__glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 15% 20%, rgba(74, 144, 217, 0.22), transparent 55%);
+    pointer-events: none;
+  }
+  .cta__grid {
+    position: relative;
+    display: grid;
+    gap: clamp(2rem, 5vw, 3.5rem);
+    align-items: center;
+  }
+  .cta__sub {
+    margin: 1rem 0 1.6rem;
+    color: var(--txt-dim);
+    max-width: 40ch;
+  }
+  .cta__card {
+    background: var(--card);
+    border: 1px solid var(--line-strong);
+    border-radius: var(--r-lg);
+    padding: clamp(1.5rem, 3vw, 1.9rem);
+  }
+
+  @media (min-width: 900px) {
+    .cta__grid {
+      grid-template-columns: 1.1fr 0.9fr;
+    }
+  }
+</style>

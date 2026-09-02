@@ -4,6 +4,7 @@ import { CONTATO } from '../consts';
 import { nichos, getNichosPorCategoria } from '../data/nichos';
 import { categorias } from '../data/categorias';
 import { cidades, getCidadesPorRegiao } from '../data/cidades';
+import { cidadesSolarMG } from '../data/energia-solar-mg';
 
 export const prerender = true;
 
@@ -40,6 +41,13 @@ export const GET: APIRoute = () => {
     })
     .join('\n\n');
 
+  const secoesSolarMG = cidadesSolarMG
+    .map(
+      (cidade) =>
+        `- [Energia solar em ${cidade.nome} (${cidade.mesorregiao})](${site.url}/sites-para-energia-solar-em-${cidade.slug}): ${cidade.resumoCard}`,
+    )
+    .join('\n');
+
   const body = `# ${site.nome}
 
 > Agência digital de criação de sites, Google Ads e SEO, com sede em
@@ -59,7 +67,8 @@ ${CONTATO.horario} · ${CONTATO.endereco}.
 - [Nichos atendidos](${site.url}/sites-para-empresas): diretório com todos os segmentos, agrupados por categoria.
 - [Cidades atendidas](${site.url}/criacao-de-sites): diretório das principais cidades, agrupadas por região, com o perfil de mercado de cada praça.
 - [Contato](${site.url}/contato): formulário e canais diretos para orçamento.
-- [Sites para Empresas de Energia Solar](${site.url}/sites-para-energia-solar): página dedicada a integradoras e empresas de energia fotovoltaica.
+- [Sites para Empresas de Energia Solar](${site.url}/sites-para-energia-solar): página dedicada a integradoras e empresas de energia fotovoltaica em todo o Brasil.
+- [Energia Solar em Minas Gerais](${site.url}/sites-para-energia-solar-em-minas-gerais): nicho de atenção comercial especial — ${cidadesSolarMG.length} páginas com o perfil real do mercado solar de cada cidade mineira.
 
 ## Serviços
 
@@ -78,6 +87,10 @@ O atendimento é remoto e nacional. As páginas abaixo descrevem o perfil de
 mercado, a concorrência local e o que muda no SEO de cada praça.
 
 ${secoesPorRegiao}
+
+## Energia solar em Minas Gerais (nicho de atenção comercial especial)
+
+${secoesSolarMG}
 
 ## Sobre o serviço
 

@@ -1,0 +1,294 @@
+---
+import Base from '../layouts/Home.astro';
+import CtaFinal from '../components/solar/CtaFinal.astro';
+import { whatsappUrlPara } from '../config/site';
+import { SITE } from '../consts';
+import { cidadesSolarMG } from '../data/energia-solar-mg';
+
+const titulo = `Site para Empresa de Energia Solar em Minas Gerais | ${SITE.nome}`;
+const descricao = `Criação de sites para integradoras de energia solar em ${cidadesSolarMG.length} cidades de Minas Gerais. SEO local, calculadora de economia e leads pelo WhatsApp. Proposta grátis em 24h.`;
+
+const whatsappUrl = whatsappUrlPara(
+  'Olá! Tenho uma empresa de energia solar em Minas Gerais e quero um site.',
+);
+
+const url = `${SITE.url}/sites-para-energia-solar-em-minas-gerais`;
+const imagemOg = '/og/solar-mg-hub.svg';
+
+const listaSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  numberOfItems: cidadesSolarMG.length,
+  itemListElement: cidadesSolarMG.map((cidade, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: `Energia solar em ${cidade.nome}`,
+    url: `${SITE.url}/sites-para-energia-solar-em-${cidade.slug}`,
+  })),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Início', item: `${SITE.url}/` },
+    { '@type': 'ListItem', position: 2, name: 'Energia solar em Minas Gerais', item: url },
+  ],
+};
+---
+
+<Base titulo={titulo} descricao={descricao} imagem={imagemOg}>
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(listaSchema)} />
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <section class="hero" aria-labelledby="titulo-hub-solar">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="wrap hero__in">
+      <p class="hero__tag">
+        <span class="hero__ponto" aria-hidden="true"></span>
+        Energia solar · Minas Gerais
+      </p>
+      <h1 id="titulo-hub-solar" class="hero__h1">
+        Sites para empresas de energia solar em Minas Gerais
+      </h1>
+      <p class="hero__sub">
+        Minas está entre os estados que mais instalam geração distribuída no Brasil — e o
+        mercado muda de cidade para cidade: agronegócio no Triângulo, indústria no Vale do
+        Aço, condomínio na Grande BH. Escolha a sua praça e veja o que a gente já sabe sobre
+        aquele mercado.
+      </p>
+      <div class="hero__acoes">
+        <a class="btn btn--amber" href={whatsappUrl} target="_blank" rel="noopener">
+          Falar no WhatsApp
+        </a>
+        <a class="btn btn--ghost" href="#cidades">Ver cidades atendidas</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec--paper porque" aria-labelledby="titulo-porque">
+    <div class="wrap">
+      <p class="eyebrow">Por que Minas Gerais</p>
+      <h2 id="titulo-porque" class="h2">Um dos mercados solares mais fortes do país</h2>
+      <div class="porque__grid">
+        <article class="porque__card">
+          <h3>Irradiação solar acima da média</h3>
+          <p>
+            O Triângulo Mineiro, o Alto Paranaíba e o Norte de Minas estão entre as regiões
+            de maior incidência solar do Sudeste, o que reduz o prazo de retorno do
+            investimento e torna o discurso de venda mais fácil.
+          </p>
+        </article>
+        <article class="porque__card">
+          <h3>Agronegócio com conta de luz alta</h3>
+          <p>
+            Irrigação por pivô, secagem de grãos, avicultura e pecuária de leite consomem
+            energia o ano inteiro. É um dos perfis de cliente que mais compensa investir em
+            solar — e que mais pesquisa fornecedor antes de fechar.
+          </p>
+        </article>
+        <article class="porque__card">
+          <h3>Indústria espalhada pelo estado</h3>
+          <p>
+            Vale do Aço, Triângulo Mineiro e a Região Metropolitana de BH concentram fábricas
+            com consumo alto de energia — um mercado de ticket médio maior, orientado a ROI.
+          </p>
+        </article>
+        <article class="porque__card">
+          <h3>Ainda pouca concorrência digital</h3>
+          <p>
+            Fora da capital, boa parte das integradoras mineiras ainda vende só por
+            indicação. Quem monta um site estruturado, com calculadora e SEO local, sai na
+            frente com menos esforço do que em mercados já saturados.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec cidades" id="cidades" aria-labelledby="titulo-cidades-solar">
+    <div class="wrap">
+      <p class="eyebrow">Cidades atendidas</p>
+      <h2 id="titulo-cidades-solar" class="h2">Escolha a cidade da sua integradora</h2>
+      <p class="lede">
+        Cada página traz o perfil real daquele mercado solar — que tipo de cliente predomina,
+        qual objeção mais aparece e como estruturar o site para captar orçamento naquela
+        praça específica.
+      </p>
+
+      <div class="cidades__grid">
+        {
+          cidadesSolarMG.map((cidade) => (
+            <a class="cidades__card" href={`/sites-para-energia-solar-em-${cidade.slug}`}>
+              <p class="cidades__meso">{cidade.mesorregiao}</p>
+              <h3>
+                Energia solar em {cidade.nome} <span aria-hidden="true">→</span>
+              </h3>
+              <p>{cidade.resumoCard}</p>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec--paper nota">
+    <div class="wrap">
+      <p class="nota__texto">
+        Não achou a sua cidade? Atendemos integradoras solares de todo o estado — estas são
+        as praças para as quais já mapeamos o mercado local. Fale com a gente e analisamos a
+        sua região do mesmo jeito. Também criamos sites para
+        <a href="/sites-para-energia-solar">empresas de energia solar em qualquer lugar do Brasil</a>.
+      </p>
+    </div>
+  </section>
+
+  <CtaFinal
+    titulo="Peça o diagnóstico gratuito do site da sua integradora"
+    sub="Analisamos a sua presença digital hoje e mostramos o que está travando os orçamentos na sua cidade. Resposta em até 24h úteis."
+    whatsappUrl={whatsappUrl}
+  />
+</Base>
+
+<style>
+  .hero {
+    position: relative;
+    overflow: hidden;
+    padding-block: clamp(3rem, 7vw, 5.5rem) clamp(3.5rem, 6vw, 5rem);
+  }
+  .hero__glow {
+    position: absolute;
+    top: -30%;
+    right: -10%;
+    width: 70vw;
+    height: 70vw;
+    max-width: 900px;
+    max-height: 900px;
+    background: radial-gradient(circle, rgba(74, 144, 217, 0.24), transparent 62%);
+    filter: blur(20px);
+    pointer-events: none;
+  }
+  .hero__in {
+    position: relative;
+  }
+  .hero__tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.45rem 0.95rem;
+    border: 1px solid var(--line-strong);
+    border-radius: 999px;
+    font-size: 0.78rem;
+    color: var(--txt-dim);
+    margin-bottom: 1.6rem;
+  }
+  .hero__ponto {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--amber);
+  }
+  .hero__h1 {
+    font-size: clamp(2.1rem, 4.8vw, 3.4rem);
+    font-weight: 800;
+    max-width: 20ch;
+  }
+  .hero__sub {
+    margin-top: 1.5rem;
+    max-width: 58ch;
+    color: var(--txt-dim);
+    font-size: clamp(1rem, 1.6vw, 1.14rem);
+  }
+  .hero__acoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+    margin-top: 1.8rem;
+  }
+
+  .porque__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.1rem;
+    margin-top: 2.2rem;
+  }
+  .porque__card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--r);
+    padding: 1.5rem;
+  }
+  .porque__card h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+  }
+  .porque__card p {
+    font-size: 0.92rem;
+    color: var(--txt-dim);
+    margin: 0;
+  }
+
+  .lede {
+    margin-top: 0.9rem;
+    max-width: 62ch;
+  }
+
+  .cidades__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.1rem;
+    margin-top: 2.2rem;
+  }
+  .cidades__card {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--r);
+    padding: 1.5rem;
+    transition: transform 0.2s var(--ease), border-color 0.2s var(--ease);
+  }
+  .cidades__card:hover {
+    transform: translateY(-4px);
+    border-color: var(--blue-light);
+  }
+  .cidades__meso {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin: 0 0 0.5rem;
+  }
+  .cidades__card h3 {
+    font-size: 1.08rem;
+    margin-bottom: 0.5rem;
+  }
+  .cidades__card h3 span {
+    color: var(--amber);
+  }
+  .cidades__card p:last-child {
+    font-size: 0.9rem;
+    color: var(--txt-dim);
+    margin: 0;
+  }
+
+  .nota {
+    padding-block: clamp(2rem, 4vw, 3rem);
+  }
+  .nota__texto {
+    color: var(--txt-dim);
+    max-width: 72ch;
+    margin: 0;
+  }
+  .nota__texto a {
+    color: var(--amber-deep);
+    font-weight: 600;
+  }
+
+  @media (max-width: 820px) {
+    .porque__grid,
+    .cidades__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

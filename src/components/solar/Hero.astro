@@ -1,0 +1,228 @@
+---
+import FormularioSolar from './FormularioSolar.astro';
+
+interface Props {
+  eyebrow: string;
+  /** HTML confiável — a palavra dentro de <em> ganha o acento em seta azul. */
+  tituloHtml: string;
+  /** HTML confiável — permite <strong>. */
+  subHtml: string;
+  selos: string[];
+  whatsappUrl: string;
+  formTitulo?: string;
+  formSub?: string;
+  situacoes?: string[];
+  mensagem?: string;
+}
+
+const {
+  eyebrow,
+  tituloHtml,
+  subHtml,
+  selos,
+  whatsappUrl,
+  formTitulo = 'Receba uma proposta grátis',
+  formSub = 'Diagnóstico da sua presença digital em até 24h úteis.',
+  situacoes,
+  mensagem,
+} = Astro.props;
+
+/* Extrai a palavra em <em>...</em> para desenhar embaixo dela o mesmo
+   acento em seta azul usado no <em> da home (components/home/Hero.astro),
+   já que set:html não permite passar o SVG dentro da própria string HTML
+   vinda dos dados do nicho. */
+const match = tituloHtml.match(/<em>(.*?)<\/em>/);
+const antes = match ? tituloHtml.slice(0, match.index) : tituloHtml;
+const destaque = match ? match[1] : '';
+const depois = match ? tituloHtml.slice((match.index ?? 0) + match[0].length) : '';
+---
+
+<section class="hero" aria-labelledby="titulo-hero">
+  <div class="hero__glow" aria-hidden="true"></div>
+
+  <div class="wrap hero__in">
+    <div class="hero__txt">
+      <p class="hero__tag">
+        <span class="hero__ponto" aria-hidden="true"></span>
+        {eyebrow}
+      </p>
+
+      <h1 id="titulo-hero" class="hero__h1">
+        <Fragment set:html={antes} />
+        {destaque && (
+          <span class="hero__marca">
+            {destaque}
+            <svg class="hero__seta" viewBox="0 0 300 26" fill="none" aria-hidden="true" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="grad-seta-solar" x1="0" y1="1" x2="1" y2="0">
+                  <stop offset="0%" stop-color="#4A90D9"></stop>
+                  <stop offset="100%" stop-color="#9DC8F0"></stop>
+                </linearGradient>
+              </defs>
+              <path d="M4 21C60 21 120 19 178 12" stroke="url(#grad-seta-solar)" stroke-width="7" stroke-linecap="round"></path>
+              <path d="M176 3l22 8-16 12z" fill="url(#grad-seta-solar)"></path>
+            </svg>
+          </span>
+        )}
+        <Fragment set:html={depois} />
+      </h1>
+
+      <p class="hero__sub" set:html={subHtml} />
+
+      <ul class="hero__selos" role="list">
+        {selos.map((selo) => <li>✓ {selo}</li>)}
+      </ul>
+
+      <div class="hero__acoes">
+        <a class="btn btn--ghost" href={whatsappUrl} target="_blank" rel="noopener">
+          Falar no WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__card" id="proposta">
+      <h2 class="hero__card-titulo">{formTitulo}</h2>
+      <p class="hero__card-sub">{formSub}</p>
+      <FormularioSolar id="hero" situacoes={situacoes} mensagem={mensagem} />
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    padding-block: clamp(3rem, 7vw, 5.5rem) clamp(4rem, 8vw, 6.5rem);
+    overflow: hidden;
+  }
+  .hero__glow {
+    position: absolute;
+    top: -30%;
+    right: -10%;
+    width: 70vw;
+    height: 70vw;
+    max-width: 900px;
+    max-height: 900px;
+    background: radial-gradient(circle, rgba(74, 144, 217, 0.24), transparent 62%);
+    filter: blur(20px);
+    pointer-events: none;
+  }
+  .hero__in {
+    position: relative;
+    display: grid;
+    gap: clamp(3rem, 5vw, 3.5rem);
+    align-items: start;
+  }
+  .hero__tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.45rem 0.95rem;
+    border: 1px solid var(--line-strong);
+    border-radius: 999px;
+    font-size: 0.78rem;
+    color: var(--txt-dim);
+    margin-bottom: 1.6rem;
+  }
+  .hero__ponto {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--amber);
+    box-shadow: 0 0 0 0 rgba(255, 193, 10, 0.6);
+    animation: pulso-solar 2.4s infinite;
+  }
+  @keyframes pulso-solar {
+    50% {
+      box-shadow: 0 0 0 7px rgba(255, 193, 10, 0);
+    }
+  }
+  .hero__h1 {
+    font-size: clamp(2.15rem, 5.2vw, 3.6rem);
+    font-weight: 800;
+  }
+  .hero__marca {
+    position: relative;
+    display: inline-block;
+    padding-right: 0.6em;
+    color: #fff;
+  }
+  .hero__seta {
+    position: absolute;
+    left: 0;
+    bottom: -0.22em;
+    width: 108%;
+    height: 0.3em;
+    overflow: visible;
+  }
+  .hero__seta path {
+    stroke-dasharray: 240;
+    stroke-dashoffset: 240;
+    animation: risca-solar 1.1s 0.35s var(--ease) forwards;
+  }
+  .hero__seta path:last-child {
+    stroke-dasharray: none;
+    stroke-dashoffset: 0;
+    opacity: 0;
+    animation: aparece-solar 0.4s 1.3s forwards;
+  }
+  @keyframes risca-solar {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes aparece-solar {
+    to {
+      opacity: 1;
+    }
+  }
+  .hero__sub {
+    margin-top: 1.7rem;
+    max-width: 40rem;
+    color: var(--txt-dim);
+    font-size: clamp(1rem, 1.6vw, 1.14rem);
+  }
+  .hero__sub :global(strong) {
+    color: var(--txt);
+  }
+  .hero__selos {
+    list-style: none;
+    padding: 0;
+    margin: 1.4rem 0 1.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.4rem;
+    font-size: 0.92rem;
+    color: var(--txt);
+    font-weight: 500;
+  }
+  .hero__acoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+  }
+  .hero__card {
+    position: relative;
+    background: var(--card, rgba(157, 200, 240, 0.05));
+    border: 1px solid var(--line-strong);
+    border-radius: var(--r-lg);
+    padding: clamp(1.5rem, 3vw, 1.9rem);
+    backdrop-filter: blur(6px);
+    scroll-margin-top: 90px;
+  }
+  .hero__card-titulo {
+    font-size: 1.3rem;
+    margin-bottom: 0.2rem;
+  }
+  .hero__card-sub {
+    font-size: 0.88rem;
+    color: var(--txt-dim);
+    margin-bottom: 1.2rem;
+  }
+
+  @media (min-width: 960px) {
+    .hero__in {
+      grid-template-columns: 1.15fr 0.85fr;
+      align-items: center;
+    }
+  }
+</style>

@@ -8,13 +8,15 @@ import Diagnostico from '../components/Diagnostico.astro';
 import ComoFunciona from '../components/ComoFunciona.astro';
 import Beneficios from '../components/Beneficios.astro';
 import Depoimentos from '../components/Depoimentos.astro';
+import Artigo from '../components/Artigo.astro';
 import Faq from '../components/Faq.astro';
 import CtaFinal from '../components/CtaFinal.astro';
 import NichosRelacionados from '../components/NichosRelacionados.astro';
 import WhatsAppFloat from '../components/WhatsAppFloat.astro';
 import { whatsappUrl } from '../config/site';
-import { passos, beneficios, depoimentos, faq } from '../data/conteudo';
+import { passos, beneficios, depoimentos, artigoEnergiaSolar, faq } from '../data/conteudo';
 import { getNichosPorCategoria } from '../data/nichos';
+import { cidadesSolarMG } from '../data/energia-solar-mg';
 
 /* Nichos vizinhos de categoria (instalações e energia), para esta página não
    ficar sem saída depois que a raiz do domínio virou a página institucional. */
@@ -64,7 +66,33 @@ const faqSchema = {
       itens={depoimentos}
     />
 
+    <Artigo
+      eyebrow={artigoEnergiaSolar.eyebrow}
+      titulo={artigoEnergiaSolar.titulo}
+      secoes={artigoEnergiaSolar.secoes}
+    />
+
     <Faq titulo="Dúvidas de quem quer um site para empresa de energia solar" itens={faq} />
+
+    <section class="secao mg-destaque" aria-labelledby="titulo-mg-destaque">
+      <div class="container mg-destaque-inner">
+        <div>
+          <p class="eyebrow eyebrow-claro">Atenção especial · Minas Gerais</p>
+          <h2 id="titulo-mg-destaque">
+            Sua integradora fica em Minas? Temos páginas feitas para a sua cidade
+          </h2>
+          <p class="mg-destaque-texto">
+            Energia solar é um dos nichos que mais crescem em Minas Gerais — do agronegócio
+            do Triângulo Mineiro à indústria do Vale do Aço. Criamos {cidadesSolarMG.length}{' '}
+            páginas com o perfil real do mercado solar de cada cidade mineira, calculadora de
+            economia e conteúdo específico para o seu tipo de cliente.
+          </p>
+          <a class="btn btn-sol" href="/sites-para-energia-solar-em-minas-gerais">
+            Ver cidades de Minas Gerais →
+          </a>
+        </div>
+      </div>
+    </section>
 
     <NichosRelacionados itens={relacionados} />
 
@@ -78,3 +106,22 @@ const faqSchema = {
   <Footer />
   <WhatsAppFloat />
 </Layout>
+
+<style>
+  .mg-destaque {
+    background: linear-gradient(160deg, var(--noite) 30%, #12294f 130%);
+    color: #fff;
+  }
+
+  .mg-destaque-inner h2 {
+    color: #fff;
+    max-width: 32ch;
+    margin-top: 4px;
+  }
+
+  .mg-destaque-texto {
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 60ch;
+    margin: 16px 0 26px;
+  }
+</style>

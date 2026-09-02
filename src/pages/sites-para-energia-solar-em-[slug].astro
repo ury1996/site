@@ -1,0 +1,145 @@
+---
+import type { GetStaticPaths } from 'astro';
+import Base from '../layouts/Home.astro';
+import Hero from '../components/solar/Hero.astro';
+import Faixa from '../components/solar/Faixa.astro';
+import Diagnostico from '../components/solar/Diagnostico.astro';
+import PerfilMercado from '../components/solar/PerfilMercado.astro';
+import Beneficios from '../components/solar/Beneficios.astro';
+import Depoimentos from '../components/solar/Depoimentos.astro';
+import Artigo from '../components/solar/Artigo.astro';
+import Faq from '../components/solar/Faq.astro';
+import CidadesRelacionadas from '../components/solar/CidadesRelacionadas.astro';
+import CtaFinal from '../components/solar/CtaFinal.astro';
+import { whatsappUrlPara } from '../config/site';
+import { SITE } from '../consts';
+import { cidadesSolarMG, getCidadesSolarRelacionadas } from '../data/energia-solar-mg';
+
+export const getStaticPaths = (() => {
+  return cidadesSolarMG.map((cidade) => ({
+    params: { slug: cidade.slug },
+    props: { cidade },
+  }));
+}) satisfies GetStaticPaths;
+
+const { cidade } = Astro.props;
+
+const whatsappUrl = whatsappUrlPara(cidade.whatsappMensagem);
+const relacionadas = getCidadesSolarRelacionadas(cidade).map((c) => ({
+  slug: c.slug,
+  nome: c.nome,
+  resumo: c.resumoCard,
+}));
+
+const url = `${SITE.url}/sites-para-energia-solar-em-${cidade.slug}`;
+const imagemOg = `/og/solar-mg/${cidade.slug}.svg`;
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: cidade.faq.map((item) => ({
+    '@type': 'Question',
+    name: item.pergunta,
+    acceptedAnswer: { '@type': 'Answer', text: item.resposta },
+  })),
+};
+
+/* Service com areaServed City — sinal local que justifica esta URL,
+   diferente do schema institucional (Brasil inteiro) do Layout da home. */
+const servicoLocalSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': `${url}#servico`,
+  name: `Criação de sites para empresas de energia solar em ${cidade.nome}`,
+  serviceType: 'Criação de sites, SEO local e Google Ads para integradoras solares',
+  description: cidade.descricaoSeo,
+  url,
+  provider: { '@id': `${SITE.url}/#organizacao` },
+  areaServed: {
+    '@type': 'City',
+    name: cidade.nome,
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: cidade.nome,
+      addressRegion: 'MG',
+      addressCountry: 'BR',
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: cidade.geo.lat,
+      longitude: cidade.geo.lng,
+    },
+  },
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Início', item: `${SITE.url}/` },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Energia solar em Minas Gerais',
+      item: `${SITE.url}/sites-para-energia-solar-em-minas-gerais`,
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: `Energia solar em ${cidade.nome}`,
+      item: url,
+    },
+  ],
+};
+---
+
+<Base titulo={cidade.tituloSeo} descricao={cidade.descricaoSeo} imagem={imagemOg}>
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(servicoLocalSchema)} />
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <Hero
+    eyebrow={cidade.hero.eyebrow}
+    tituloHtml={cidade.hero.tituloHtml}
+    subHtml={cidade.hero.subHtml}
+    selos={cidade.hero.selos}
+    whatsappUrl={whatsappUrl}
+    situacoes={cidade.situacoes}
+    mensagem={cidade.whatsappMensagem}
+  />
+
+  <Faixa />
+
+  <PerfilMercado
+    cidade={cidade.nome}
+    mesorregiao={cidade.mesorregiao}
+    titulo={cidade.perfilMercado.titulo}
+    introHtml={cidade.perfilMercado.introHtml}
+    itens={cidade.perfilMercado.itens}
+  />
+
+  <Diagnostico
+    titulo={cidade.diagnostico.titulo}
+    introHtml={cidade.diagnostico.introHtml}
+    notaTexto={cidade.diagnostico.notaTexto}
+    itens={cidade.diagnostico.itens}
+  />
+
+  <Beneficios titulo={cidade.beneficios.titulo} itens={cidade.beneficios.itens} />
+
+  <Depoimentos titulo={cidade.depoimentos.titulo} itens={cidade.depoimentos.itens} />
+
+  <Artigo eyebrow={cidade.artigo.eyebrow} titulo={cidade.artigo.titulo} secoes={cidade.artigo.secoes} />
+
+  <Faq titulo={`Dúvidas de quem quer vender energia solar em ${cidade.nome}`} itens={cidade.faq} />
+
+  {relacionadas.length > 0 && <CidadesRelacionadas itens={relacionadas} />}
+
+  <CtaFinal
+    titulo={cidade.ctaFinal.titulo}
+    sub={cidade.ctaFinal.sub}
+    whatsappUrl={whatsappUrl}
+    situacoes={cidade.situacoes}
+    mensagem={cidade.whatsappMensagem}
+  />
+</Base>

@@ -3,6 +3,7 @@ import { site } from '../config/site';
 import { nichos, getNichosPorCategoria } from '../data/nichos';
 import { categorias } from '../data/categorias';
 import { cidades } from '../data/cidades';
+import { cidadesSolarMG } from '../data/energia-solar-mg';
 
 export const prerender = true;
 
@@ -29,7 +30,8 @@ export const GET: APIRoute = () => {
     { path: '/', priority: '1.0' },
     { path: '/sites-para-empresas', priority: '0.9' },
     { path: '/criacao-de-sites', priority: '0.9' },
-    { path: '/sites-para-energia-solar', priority: '0.8' },
+    { path: '/sites-para-energia-solar', priority: '0.85' },
+    { path: '/sites-para-energia-solar-em-minas-gerais', priority: '0.85' },
     { path: '/contato', priority: '0.7' },
     ...categoriasPublicadas.map((categoria) => ({
       path: `/categoria/${categoria.slug}`,
@@ -42,6 +44,12 @@ export const GET: APIRoute = () => {
     ...cidades.map((cidade) => ({
       path: `/criacao-de-sites-em-${cidade.slug}`,
       priority: '0.8',
+    })),
+    /* Prioridade acima da média: energia solar é nicho de atenção comercial
+       especial, com páginas dedicadas por cidade em Minas Gerais. */
+    ...cidadesSolarMG.map((cidade) => ({
+      path: `/sites-para-energia-solar-em-${cidade.slug}`,
+      priority: '0.85',
     })),
   ];
 

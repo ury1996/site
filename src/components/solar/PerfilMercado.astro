@@ -1,0 +1,79 @@
+---
+/**
+ * Seção que dá lastro local à página — perfil real do mercado de energia
+ * solar naquela cidade (tipo de cliente, economia que sustenta a demanda).
+ * É o que evita que a página vire "doorway page": cada cidade descreve um
+ * mercado diferente, não o mesmo texto com o nome trocado.
+ */
+interface Props {
+  cidade: string;
+  mesorregiao: string;
+  titulo: string;
+  introHtml: string;
+  itens: string[];
+}
+
+const { cidade, mesorregiao, titulo, introHtml, itens } = Astro.props;
+---
+
+<section class="sec mercado" aria-labelledby="titulo-mercado">
+  <div class="wrap">
+    <p class="eyebrow">
+      Mercado solar em {cidade} <span class="mercado__meso">· {mesorregiao}</span>
+    </p>
+    <h2 id="titulo-mercado" class="h2">{titulo}</h2>
+    <p class="mercado__lede" set:html={introHtml} />
+
+    <ul class="mercado__lista">
+      {itens.map((item) => <li>{item}</li>)}
+    </ul>
+  </div>
+</section>
+
+<style>
+  .mercado__meso {
+    color: var(--txt-dim);
+    text-transform: none;
+    letter-spacing: normal;
+    font-weight: 500;
+  }
+  .mercado__lede {
+    margin-top: 1rem;
+    max-width: 62ch;
+    color: var(--txt-dim);
+  }
+  .mercado__lede :global(strong) {
+    color: var(--txt);
+  }
+  .mercado__lista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.7rem 1.4rem;
+    list-style: none;
+    padding: 0;
+    margin: 1.6rem 0 0;
+    max-width: 62ch;
+  }
+  .mercado__lista li {
+    position: relative;
+    padding-left: 1.4rem;
+    font-size: 0.95rem;
+    color: var(--txt-dim);
+  }
+  .mercado__lista li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.5em;
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+    background: var(--grad-arrow);
+  }
+
+  @media (max-width: 640px) {
+    .mercado__lista {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

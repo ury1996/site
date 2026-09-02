@@ -1,0 +1,112 @@
+---
+interface Beneficio {
+  icone: string;
+  titulo: string;
+  texto: string;
+}
+
+interface Props {
+  eyebrow?: string;
+  titulo: string;
+  itens: Beneficio[];
+}
+
+const { eyebrow = 'O que o seu site terá', titulo, itens } = Astro.props;
+---
+
+<section class="sec ben" aria-labelledby="titulo-ben-solar">
+  <div class="wrap">
+    <p class="eyebrow">{eyebrow}</p>
+    <h2 id="titulo-ben-solar" class="h2">{titulo}</h2>
+
+    <div class="ben__grid">
+      {
+        itens.map((beneficio) => (
+          <article class="ben__card">
+            <span class:list={['ben__icone', beneficio.icone]} aria-hidden="true" />
+            <h3>{beneficio.titulo}</h3>
+            <p>{beneficio.texto}</p>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .ben__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.1rem;
+    margin-top: 2.2rem;
+  }
+  .ben__card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--r);
+    padding: 1.5rem;
+    transition: transform 0.2s var(--ease), border-color 0.2s var(--ease);
+  }
+  .ben__card:hover {
+    transform: translateY(-4px);
+    border-color: var(--blue-light);
+  }
+  .ben__card h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.4rem;
+  }
+  .ben__card p {
+    font-size: 0.9rem;
+    color: var(--txt-dim);
+    margin: 0;
+  }
+  .ben__icone {
+    display: block;
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    margin-bottom: 0.9rem;
+    background: linear-gradient(135deg, rgba(74, 144, 217, 0.25), rgba(255, 193, 10, 0.2));
+    position: relative;
+  }
+  .ben__icone::after {
+    content: '';
+    position: absolute;
+    inset: 10px;
+    border-radius: 4px;
+    background: var(--amber);
+  }
+  .icone-lupa::after {
+    border-radius: 50%;
+    inset: 10px 13px 13px 10px;
+    box-shadow: 8px 8px 0 -6px var(--amber);
+  }
+  .icone-raio::after {
+    clip-path: polygon(60% 0, 20% 55%, 45% 55%, 40% 100%, 80% 42%, 55% 42%);
+    border-radius: 0;
+    background: var(--blue-light);
+  }
+  .icone-whats::after {
+    border-radius: 50% 50% 50% 4px;
+  }
+  .icone-escudo::after {
+    clip-path: polygon(50% 0, 100% 18%, 100% 60%, 50% 100%, 0 60%, 0 18%);
+    border-radius: 0;
+    background: var(--blue-light);
+  }
+  .icone-alvo::after {
+    border-radius: 50%;
+    border: 4px solid var(--navy);
+    background: var(--amber);
+  }
+  .icone-calc::after {
+    inset: 9px 12px;
+    border-radius: 3px;
+  }
+
+  @media (max-width: 820px) {
+    .ben__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

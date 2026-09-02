@@ -1,0 +1,64 @@
+---
+interface Item {
+  valor: string;
+  rotulo: string;
+}
+
+interface Props {
+  itens?: Item[];
+}
+
+const {
+  itens = [
+    { valor: '24h', rotulo: 'Prazo de resposta ao diagnóstico' },
+    { valor: '95+', rotulo: 'Nota média no PageSpeed' },
+    { valor: '40+', rotulo: 'Segmentos atendidos no Brasil' },
+    { valor: '0', rotulo: 'Contrato de fidelidade' },
+  ],
+} = Astro.props;
+---
+
+<section class="faixa" aria-label="Números da Sites Rankly">
+  <div class="wrap faixa__in">
+    {
+      itens.map((item) => (
+        <div>
+          <strong>{item.valor}</strong>
+          <span>{item.rotulo}</span>
+        </div>
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .faixa {
+    border-block: 1px solid var(--line);
+    background: var(--ink-2);
+  }
+  .faixa__in {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding-block: 1.7rem;
+    text-align: center;
+  }
+  .faixa__in strong {
+    display: block;
+    font-family: var(--display);
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--amber);
+  }
+  .faixa__in span {
+    font-size: 0.76rem;
+    color: var(--txt-dim);
+    letter-spacing: 0.02em;
+  }
+  @media (max-width: 720px) {
+    .faixa__in {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.4rem;
+    }
+  }
+</style>

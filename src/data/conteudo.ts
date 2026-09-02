@@ -92,6 +92,55 @@ export const depoimentos = [
   },
 ];
 
+export const artigoEnergiaSolar = {
+  eyebrow: 'Guia completo',
+  titulo: 'Site para empresa de energia solar: como vender mais no Brasil inteiro',
+  secoes: [
+    {
+      titulo: 'Um dos mercados que mais cresce no país — e um dos mais disputados',
+      paragrafos: [
+        'O Brasil está entre os líderes mundiais em geração distribuída de energia solar, com centenas de milhares de novos sistemas instalados a cada ano em residências, comércios, indústrias e propriedades rurais. É um mercado grande e ainda em expansão, mas também é um mercado cada vez mais concorrido: o número de integradoras cresceu junto com a demanda, e muitas delas ainda vendem só por indicação, sem presença digital estruturada.',
+        'Isso cria uma oportunidade concreta para quem monta um site de verdade: não um cartão de visita digital, mas uma ferramenta de vendas que educa o cliente, calcula a economia e captura o contato antes que ele procure outra empresa. Em um mercado onde o preço do sistema costuma ser parecido entre concorrentes, é a experiência online que decide quem recebe a mensagem no WhatsApp primeiro.',
+      ],
+    },
+    {
+      titulo: 'A calculadora de economia é o que mais converte visita em contato',
+      paragrafos: [
+        'Diferente de outros nichos, energia solar tem um elemento que pesa mais do que em qualquer outro: a calculadora de economia. É a ferramenta que faz o visitante passar do "estou pesquisando" para o "quero orçamento" — ele insere o valor da conta de luz e vê, na hora, uma estimativa de quanto pode economizar. Páginas com esse recurso convertem visivelmente mais do que páginas puramente institucionais, que só mostram fotos de painel no telhado.',
+        'Uma calculadora bem construída não depende de tarifa fixa cadastrada no código — ela usa o valor que o próprio visitante digita, o que evita o problema comum de calculadora desatualizada depois de reajuste tarifário. É um detalhe técnico pequeno que faz diferença grande na credibilidade do site ao longo do tempo.',
+      ],
+    },
+    {
+      titulo: 'O que faz um site de energia solar ranquear no Google',
+      paragrafos: [
+        'A base técnica vale para qualquer nicho: site rápido, responsivo, com títulos e descrições únicos por página, dados estruturados e Google Business Profile completo. Sem essa fundação, o Google não tem como associar o site a nenhuma intenção de busca local, e ele fica orbitando resultados genéricos que não trazem cliente.',
+        'Acima da base, o que decide é conteúdo que responde à objeção real do cliente: como funciona a compensação de energia, o que muda com a Lei 14.300, qual o prazo de retorno do investimento e o que acontece em dia nublado ou à noite. Integradora que só mostra imagem de instalação, sem responder a essas perguntas, perde para quem educa o visitante antes de pedir o contato.',
+      ],
+    },
+    {
+      titulo: 'A Lei 14.300 é um conteúdo que gera confiança — e resultado',
+      paragrafos: [
+        'A Lei 14.300/2022 estabeleceu o novo marco legal da geração distribuída no Brasil, com uma transição nas regras de cobrança pelo uso da rede elétrica (o chamado Fio B) que torna vantajoso, para quem está pensando em instalar solar, protocolar o pedido de acesso à rede o quanto antes. É um tema técnico, mas que impacta diretamente o bolso do cliente — e explicá-lo em linguagem simples no site é uma forma de gerar autoridade sem prometer economia que a lei não garante.',
+        'Integradoras que investem nesse tipo de conteúdo se diferenciam de concorrentes que vendem só com apelo emocional. É também um conteúdo que tende a ranquear bem, porque muita gente pesquisa especificamente sobre a lei antes de decidir instalar — uma busca de alta intenção que poucos sites exploram com profundidade.',
+      ],
+    },
+    {
+      titulo: 'Residencial, comercial e rural: três públicos, três discursos',
+      paragrafos: [
+        'Um erro comum de sites de integradoras é tratar todo mundo com o mesmo texto genérico. Mas o morador que quer economizar na conta de casa, o comerciante que analisa redução de custo operacional e o produtor rural que já lida com financiamento agrícola têm objeções e argumentos de venda diferentes. Um site que separa esse conteúdo — mesmo que de forma simples, com seções distintas — converte muito mais do que um texto único tentando falar com todo mundo ao mesmo tempo.',
+        'O público comercial e industrial, em especial, costuma ter um ticket médio de venda maior e decide com base em retorno sobre investimento, não em economia doméstica. Uma página dedicada a esse público, com linguagem de ROI, é um dos ajustes que mais amplia o potencial de faturamento de uma integradora que hoje vende só para residência.',
+      ],
+    },
+    {
+      titulo: 'Prazo, investimento e o que esperar de retorno',
+      paragrafos: [
+        'Um site completo para integradora solar leva de duas a cinco semanas entre briefing, calculadora, redação e desenvolvimento. A calculadora de economia é o elemento que mais exige atenção nesse prazo, porque precisa ser simples de usar e honesta na estimativa — calculadora que promete economia irreal destrói a credibilidade do site assim que o cliente faz as contas depois.',
+        'Sobre retorno: Google Ads gera orçamento desde a primeira semana, com custo por lead que em energia solar costuma compensar porque o ticket médio da venda é alto. O SEO leva de três a seis meses para produzir tráfego orgânico relevante, dependendo do nível de concorrência da sua região, mas constrói um ativo que reduz a dependência de anúncio ao longo do tempo. A combinação dos dois é o que sustenta o funil de vendas de uma integradora que quer crescer sem depender só de indicação.',
+      ],
+    },
+  ],
+};
+
 export const faq = [
   {
     pergunta: 'Quanto custa um site para empresa de energia solar?',
