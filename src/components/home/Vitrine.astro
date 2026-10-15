@@ -10,7 +10,7 @@
    sair de sincronia. */
 import { VITRINE } from '../../consts';
 
-const DURACAO = 8000; // ms por projeto
+const DURACAO = 4500; // ms por projeto
 const pad = (n: number) => String(n).padStart(2, '0');
 ---
 
@@ -678,20 +678,29 @@ const pad = (n: number) => String(n).padStart(2, '0');
     const total = barras.length;
     let atual = 0;
 
-    // carrega as capturas dos outros projetos só depois da página pronta
-    const carregar = () =>
-      vt.querySelectorAll<HTMLImageElement>('img[data-src]').forEach((img) => {
-        img.src = img.dataset.src!;
-        img.removeAttribute('data-src');
+    // as capturas de cada projeto só são baixadas quando ele é o próximo da
+    // fila — com 8 projetos, não faz sentido baixar todos de uma vez
+    const telas = [...vt.querySelectorAll<HTMLElement>('.vt__tela, .vt__celular-tela')].map((t) => [
+      ...t.querySelectorAll<HTMLImageElement>(':scope > img[data-vt-item]'),
+    ]);
+    const preparar = (i: number) =>
+      telas.forEach((imgs) => {
+        const img = imgs[(i + total) % total];
+        if (img?.dataset.src) {
+          img.src = img.dataset.src;
+          img.removeAttribute('data-src');
+        }
       });
-    if (document.readyState === 'complete') setTimeout(carregar, 600);
-    else window.addEventListener('load', () => setTimeout(carregar, 600), { once: true });
+    const preparar1 = () => setTimeout(() => preparar(1), 400);
+    if (document.readyState === 'complete') preparar1();
+    else window.addEventListener('load', preparar1, { once: true });
 
     function ir(proximo: number) {
       if (proximo === atual) return;
-      carregar();
       const anterior = atual;
       atual = (proximo + total) % total;
+      preparar(atual);
+      preparar(atual + 1);
 
       for (const itens of grupos) {
         const sai = itens[anterior];

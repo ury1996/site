@@ -170,17 +170,19 @@ export const PROJETOS = [
    {slug}-mobile.webp (360 × 1200px, topo da página no celular).
    A altura extra é o que a animação percorre, como se a página rolasse. */
 export const VITRINE = [
-  {
-    nome: 'Teceart',
-    categoria: 'Marcenaria e decoração',
-    dominio: 'teceart.com',
-    slug: 'teceart',
-  },
+  { nome: 'Teceart', categoria: 'Marcenaria e decoração', dominio: 'teceart.com', slug: 'teceart' },
   {
     nome: 'Curaçao Vacations Tours',
     categoria: 'Turismo receptivo',
     dominio: 'curacaovacationstours.com',
     slug: 'curacao-vacations-tours',
+  },
+  { nome: 'Clínica Anapelle', categoria: 'Clínica de estética', dominio: 'anapelle.com.br', slug: 'anapelle' },
+  {
+    nome: 'Folha Jundiaiense',
+    categoria: 'Portal de notícias',
+    dominio: 'folhajundiaiense.com.br',
+    slug: 'folha-jundiaiense',
   },
   {
     nome: 'Colégio Laranjeiras',
@@ -188,6 +190,14 @@ export const VITRINE = [
     dominio: 'colegiolaranjeiras.com.br',
     slug: 'colegio-laranjeiras',
   },
+  { nome: 'Azul Sol Energia Solar', categoria: 'Energia solar', dominio: 'azulsol.com.br', slug: 'azul-sol' },
+  {
+    nome: 'Brasil Mídia Móvel',
+    categoria: 'Mídia em movimento',
+    dominio: 'brasilmidiamovel.com.br',
+    slug: 'brasil-midia-movel',
+  },
+  { nome: 'Nítido Painéis', categoria: 'Mídia exterior', dominio: 'nitidopaineis.com.br', slug: 'nitido-paineis' },
 ];
 
 /* ---------------------------------------------------------- outros serviços */
