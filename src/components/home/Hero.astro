@@ -1,50 +1,6 @@
 ---
 import { whatsappLink } from '../../consts';
-
-/* Cada janela alterna entre dois sites. "percurso" é o quanto a captura sobe
-   dentro do quadro; "zoom" é para captura curta (só a primeira dobra), que entra
-   ampliada para ter altura suficiente de rolagem. */
-const janelaA = [
-  {
-    src: '/images/scroll-folha-jundiaiense.webp',
-    url: 'folhajundiaiense.com.br',
-    alt: 'Portal Folha Jundiaiense desenvolvido pela Sites Rankly',
-    w: 900,
-    h: 428,
-    percurso: '-22%',
-    zoom: true,
-  },
-  {
-    src: '/images/scroll-brasil-midia-movel.webp',
-    url: 'brasilmidiamovel.com.br',
-    alt: 'Site da Brasil Mídia Móvel desenvolvido pela Sites Rankly',
-    w: 680,
-    h: 2500,
-    percurso: '-80%',
-    zoom: false,
-  },
-];
-
-const janelaB = [
-  {
-    src: '/images/scroll-kgiro.webp',
-    url: 'kgiro.com.br',
-    alt: 'Landing page da Kgiro Securitizadora criada pela Sites Rankly',
-    w: 620,
-    h: 2570,
-    percurso: '-82%',
-    zoom: false,
-  },
-  {
-    src: '/images/scroll-doctor-insect.webp',
-    url: 'doctorinsect.com',
-    alt: 'Site da Doctor Insect desenvolvido pela Sites Rankly',
-    w: 620,
-    h: 3100,
-    percurso: '-85%',
-    zoom: false,
-  },
-];
+import Vitrine from './Vitrine.astro';
 ---
 
 <section class="hero" aria-labelledby="titulo-principal">
@@ -71,7 +27,7 @@ const janelaB = [
             <path d="M4 21C60 21 120 19 178 12" stroke="url(#grad-seta)" stroke-width="7" stroke-linecap="round"></path>
             <path d="M176 3l22 8-16 12z" fill="url(#grad-seta)"></path>
           </svg>
-        </span>
+        </span><br />
         e vendem.
       </h1>
 
@@ -103,64 +59,9 @@ const janelaB = [
       </dl>
     </div>
 
-    <div class="hero__palco">
-      <!-- janela grande -->
-      <figure class="jn jn--a" style="--ciclo:30s">
-        <div class="jn__barra" aria-hidden="true">
-          <span class="jn__bolha"></span><span class="jn__bolha"></span><span class="jn__bolha"></span>
-          <span class="jn__urls">
-            {janelaA.map((s, i) => (
-              <em class="jn__url" style={`animation-delay:calc(var(--ciclo) / -2 * ${i})`}>{s.url}</em>
-            ))}
-          </span>
-        </div>
-        <div class="jn__tela">
-          {janelaA.map((s, i) => (
-            <img
-              class={s.zoom ? 'jn__img jn__img--zoom' : 'jn__img'}
-              src={s.src}
-              alt={s.alt}
-              width={s.w}
-              height={s.h}
-              loading={i === 0 ? 'eager' : 'lazy'}
-              fetchpriority={i === 0 ? 'high' : 'auto'}
-              decoding="async"
-              style={`--percurso:${s.percurso}; animation-delay:calc(var(--ciclo) / -2 * ${i})`}
-            />
-          ))}
-        </div>
-      </figure>
-
-      <!-- janela pequena sobreposta -->
-      <figure class="jn jn--b" style="--ciclo:24s">
-        <div class="jn__barra" aria-hidden="true">
-          <span class="jn__bolha"></span><span class="jn__bolha"></span><span class="jn__bolha"></span>
-          <span class="jn__urls">
-            {janelaB.map((s, i) => (
-              <em class="jn__url" style={`animation-delay:calc(var(--ciclo) / -2 * ${i})`}>{s.url}</em>
-            ))}
-          </span>
-        </div>
-        <div class="jn__tela">
-          {janelaB.map((s, i) => (
-            <img
-              class="jn__img"
-              src={s.src}
-              alt={s.alt}
-              width={s.w}
-              height={s.h}
-              loading="lazy"
-              decoding="async"
-              style={`--percurso:${s.percurso}; animation-delay:calc(var(--ciclo) / -2 * ${i})`}
-            />
-          ))}
-        </div>
-      </figure>
-
-      <p class="hero__selo">
-        <strong>Disponível</strong>
-        <span>para novos projetos</span>
-      </p>
+    <div class="hero__vitrine">
+      <Vitrine />
+    </div>
   </div>
 </section>
 
@@ -212,9 +113,17 @@ const janelaB = [
       box-shadow: 0 0 0 7px rgba(255, 193, 10, 0);
     }
   }
+  /* O título cabe em três linhas — "Criamos sites que / sobem no Google /
+     e vendem." — em qualquer largura de coluna: o tamanho acompanha a
+     própria coluna (cqi), não a janela. */
+  .hero__txt {
+    container-type: inline-size;
+  }
   .hero__h1 {
-    font-size: clamp(2.4rem, 7vw, 4.6rem);
+    font-size: clamp(2.2rem, 6vw, 3.9rem);
+    font-size: clamp(2rem, 10.2cqi, 3.9rem);
     font-weight: 800;
+    line-height: 1.13;
   }
   .hero__marca {
     position: relative;
@@ -289,165 +198,19 @@ const janelaB = [
     color: var(--amber);
   }
 
-  /* -------------------------------------------------- janelas de navegador */
-  .hero__palco {
+  .hero__vitrine {
     position: relative;
-    padding-bottom: 26%;
-    padding-right: 6%;
-  }
-  .jn {
-    margin: 0;
-    border: 1px solid var(--line-strong);
-    border-radius: 14px;
-    overflow: hidden;
-    background: #0d1c38;
-  }
-  .jn__barra {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    padding: 0.5rem 0.7rem;
-    background: rgba(157, 200, 240, 0.09);
-    border-bottom: 1px solid var(--line);
-  }
-  .jn__bolha {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: rgba(157, 200, 240, 0.35);
-    flex: none;
-  }
-  .jn__urls {
-    position: relative;
-    display: block;
-    flex: 1;
-    height: 1.15rem;
-    margin-left: 0.5rem;
-  }
-  .jn__url {
-    position: absolute;
-    inset: 0 auto 0 0;
-    display: inline-flex;
-    align-items: center;
-    padding: 0 0.7rem;
-    border-radius: 999px;
-    background: rgba(5, 13, 31, 0.55);
-    font-family: var(--body);
-    font-style: normal;
-    font-size: 0.66rem;
-    color: var(--txt-dim);
-    white-space: nowrap;
-    opacity: 0;
-    animation: rotulo var(--ciclo) linear infinite;
-  }
-  .jn__tela {
-    position: relative;
-    overflow: hidden;
-  }
-  .jn__img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    opacity: 0;
-    animation: alternar var(--ciclo) linear infinite;
-  }
-  /* captura curta: entra ampliada para sobrar altura e poder rolar */
-  .jn__img--zoom {
-    width: 160%;
-    max-width: none;
-    left: 50%;
-    margin-left: -80%;
   }
 
-  /* duas capturas por janela: cada uma aparece em metade do ciclo */
-  @keyframes alternar {
-    0% {
-      opacity: 0;
-      transform: translateY(0);
-    }
-    3%,
-    44% {
-      opacity: 1;
-    }
-    44% {
-      transform: translateY(var(--percurso, -80%));
-    }
-    49% {
-      opacity: 0;
-      transform: translateY(var(--percurso, -80%));
-    }
-    50%,
-    100% {
-      opacity: 0;
-      transform: translateY(0);
-    }
-  }
-  @keyframes rotulo {
-    0% {
-      opacity: 0;
-    }
-    3%,
-    46% {
-      opacity: 1;
-    }
-    49%,
-    100% {
-      opacity: 0;
-    }
-  }
-
-  .jn--a .jn__tela {
-    aspect-ratio: 16 / 9.5;
-  }
-  .jn--b {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 58%;
-  }
-  .jn--b .jn__tela {
-    aspect-ratio: 16 / 10;
-  }
-  .jn:hover .jn__img,
-  .jn:hover .jn__url {
-    animation-play-state: paused;
-  }
-  .hero__selo {
-    position: absolute;
-    left: 0;
-    bottom: 6%;
-    background: var(--amber);
-    color: var(--navy);
-    border-radius: 12px;
-    padding: 0.6rem 0.9rem;
-    line-height: 1.25;
-    margin: 0;
-  }
-  .hero__selo strong {
-    display: block;
-    font-family: var(--display);
-    font-size: 0.9rem;
-  }
-  .hero__selo span {
-    font-size: 0.72rem;
-    opacity: 0.8;
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .jn__img,
-    .jn__url {
-      animation: none;
-    }
-    .jn__img:first-of-type,
-    .jn__url:first-of-type {
-      opacity: 1;
-    }
-  }
   @media (min-width: 960px) {
     .hero__in {
-      grid-template-columns: 1.1fr 0.9fr;
+      grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+    }
+  }
+  /* em tela larga a vitrine avança um pouco sobre a margem direita */
+  @media (min-width: 1200px) {
+    .hero__vitrine {
+      margin-right: -7%;
     }
   }
 </style>

@@ -106,28 +106,28 @@ export const PROJETOS = [
     destaque: true,
   },
   {
-    nome: 'Doctor Insect',
-    categoria: 'Site + Google Ads',
-    imagem: '/images/projetos/doctor-insect.webp',
+    nome: 'Teceart',
+    categoria: 'Marcenaria e decoração',
+    imagem: '/images/projetos/teceart.webp',
     descricao:
-      'Dedetizadora 24h em São Paulo. Site novo com orçamento no WhatsApp, campanha de pesquisa e rastreamento de conversão ponta a ponta.',
-    tags: ['Elementor Pro', 'Google Ads', 'GTM', 'SEO local'],
+      'Marcenaria criativa fundada em 1988, com lojas em Campinas e Paulínia. Site de marca com a fotografia em primeiro plano, portfólio de projetos e blog.',
+    tags: ['WordPress', 'Elementor', 'Portfólio', 'Blog'],
   },
   {
-    nome: 'Kgiro Securitizadora',
-    categoria: 'Landing page',
-    imagem: '/images/projetos/kgiro.webp',
+    nome: 'Curaçao Vacations Tours',
+    categoria: 'Turismo receptivo',
+    imagem: '/images/projetos/curacao-tours.webp',
     descricao:
-      'Antecipação de cheques e duplicatas. Página de captação com simulador, prova de números e foco em lead qualificado.',
-    tags: ['Landing page', 'Simulador', 'CRO', 'Copy'],
+      'Receptivo em Curaçao para quem fala português: passeios, traslados e reserva direto pelo WhatsApp, com o site disponível em vários idiomas.',
+    tags: ['WordPress', 'Elementor', 'Turismo', 'Multilíngue'],
   },
   {
-    nome: 'Atena PRO',
-    categoria: 'Página de produto',
-    imagem: '/images/projetos/atena-pro.webp',
+    nome: 'Colégio Laranjeiras',
+    categoria: 'Educação',
+    imagem: '/images/projetos/colegio-laranjeiras.webp',
     descricao:
-      'Software de bancada para manutenção de videogames. Página de venda com demonstração do produto e checkout integrado.',
-    tags: ['HTML', 'Conversão', 'Checkout'],
+      'Colégio boutique fundado em 1943 em Laranjeiras, no Rio, com sistema alemão de ensino. Site institucional com agendamento de visita direto no WhatsApp.',
+    tags: ['WordPress', 'Elementor', 'Educação', 'Matrículas'],
   },
   {
     nome: 'Azul Sol Energia Solar',
@@ -161,22 +161,33 @@ export const PROJETOS = [
       'Clínica de estética premium no Itaim Bibi. Página por tratamento, depoimentos verificados e agendamento de avaliação.',
     tags: ['WordPress', 'Agendamento', 'SEO local'],
   },
-  /* Prontos para entrar — basta descomentar (as imagens já estão na pasta):
+];
+
+/* --------------------------------------------------------------- vitrine */
+/* Projetos que se alternam no topo da home, dentro do navegador e do celular.
+   Cada um precisa de duas capturas em /public/images/vitrine/:
+   {slug}-desktop.webp (1000 × 1250px, topo da página a 1920px de largura) e
+   {slug}-mobile.webp (360 × 1200px, topo da página no celular).
+   A altura extra é o que a animação percorre, como se a página rolasse. */
+export const VITRINE = [
   {
     nome: 'Teceart',
-    categoria: 'Marca e decoração',
-    imagem: '/images/projetos/teceart.webp',
-    descricao: 'Site de marca de decoração autoral, com forte apelo visual e catálogo de peças.',
-    tags: ['WordPress', 'Visual', 'Catálogo'],
+    categoria: 'Marcenaria e decoração',
+    dominio: 'teceart.com',
+    slug: 'teceart',
   },
   {
     nome: 'Curaçao Vacations Tours',
     categoria: 'Turismo receptivo',
-    imagem: '/images/projetos/curacao-tours.webp',
-    descricao: 'Receptivo em Curaçao: passeios, traslados e contato internacional em português.',
-    tags: ['WordPress', 'Turismo', 'Multilíngue'],
+    dominio: 'curacaovacationstours.com',
+    slug: 'curacao-vacations-tours',
   },
-  */
+  {
+    nome: 'Colégio Laranjeiras',
+    categoria: 'Educação',
+    dominio: 'colegiolaranjeiras.com.br',
+    slug: 'colegio-laranjeiras',
+  },
 ];
 
 /* ---------------------------------------------------------- outros serviços */

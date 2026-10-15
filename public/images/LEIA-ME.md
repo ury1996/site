@@ -62,13 +62,26 @@ montado, detalhe do ambiente. Mais fechada e mais solta que a do topo.
 | Arquivo | Tamanho | Proporção |
 |---|---|---|
 | `folha-jundiaiense.webp` | 1600 × 900px | 16/9 — **é o card grande, ocupa duas colunas** |
-| `doctor-insect.webp` | 900 × 675px | 4/3 |
-| `kgiro.webp` | 900 × 675px | 4/3 |
-| `atena-pro.webp` | 900 × 675px | 4/3 |
-| `rede-calejados.webp` | 900 × 675px | 4/3 |
-| `age-tu-e-eu.webp` | 900 × 675px | 4/3 |
-| `livro-terezinha.webp` | 900 × 675px | 4/3 |
-| `energia-solar.webp` | 900 × 675px | 4/3 |
+| `teceart.webp` | 900 × 675px | 4/3 |
+| `curacao-tours.webp` | 900 × 675px | 4/3 |
+| `colegio-laranjeiras.webp` | 900 × 675px | 4/3 |
+| `azul-sol.webp` | 900 × 675px | 4/3 |
+| `brasil-midia-movel.webp` | 900 × 675px | 4/3 |
+| `nitido-paineis.webp` | 900 × 675px | 4/3 |
+| `anapelle.webp` | 900 × 675px | 4/3 |
+
+## 3.1. Vitrine do topo — `/public/images/vitrine/`
+
+Os projetos que se alternam no navegador e no celular do topo da home. Duas capturas por
+projeto, ambas começando no topo da página — a parte de baixo é o que a animação "rola":
+
+| Arquivo | Tamanho | Como capturar |
+|---|---|---|
+| `{slug}-desktop.webp` | 1000 × 1250px | página aberta a 1920px de largura, recorte do topo |
+| `{slug}-mobile.webp` | 360 × 1200px | página no celular (390px de largura), recorte do topo |
+
+Esconda botões flutuantes (WhatsApp, tradutor, chat) antes de capturar — senão eles ficam
+"carimbados" no meio da tela. A lista de projetos fica em `VITRINE`, no `src/consts.ts`.
 
 **Como tirar o print de cada projeto:**
 
@@ -77,7 +90,7 @@ montado, detalhe do ambiente. Mais fechada e mais solta que a do topo.
 - No DevTools, `Ctrl+Shift+P` e digite "screenshot" para capturar em alta resolução.
 - Se quiser um visual mais caprichado, coloque o print dentro de um mockup de notebook ou de
   janela de navegador. Fica bonito, mas não é obrigatório.
-- Mantenha o mesmo estilo nos oito: ou todos com mockup, ou todos sem. Misturado fica
+- Mantenha o mesmo estilo em todos: ou todos com mockup, ou todos sem. Misturado fica
   bagunçado.
 
 ---
@@ -94,7 +107,7 @@ navegador) ou o Photoshop exportando como WebP.
 - logo e ícones: até 50 KB.
 
 **Nome do arquivo.** Minúsculo, com hífen, sem acento e sem espaço. O Google lê o nome do
-arquivo como sinal de relevância — `criacao-site-dedetizadora.webp` diz mais que
+arquivo como sinal de relevância — `criacao-site-colegio.webp` diz mais que
 `IMG_9432.webp`. Os nomes da tabela já seguem esse padrão; se quiser trocar, troque também
 em `src/consts.ts`.
 

@@ -1,0 +1,773 @@
+---
+/* Vitrine do topo da home: navegador + celular em perspectiva, alternando
+   entre projetos no ar. A página "rola" dentro de cada tela enquanto o
+   projeto está ativo; a legenda em vidro mostra qual é e quanto falta para
+   o próximo.
+
+   O tempo é controlado pela própria animação da barra de progresso — quando
+   ela termina, o próximo projeto entra. Pausar (hover, foco, botão, fora da
+   tela, aba oculta) é só congelar essa animação: não há timer em JS para
+   sair de sincronia. */
+import { VITRINE } from '../../consts';
+
+const DURACAO = 8000; // ms por projeto
+const pad = (n: number) => String(n).padStart(2, '0');
+---
+
+<div class="vt" data-vitrine style={`--dur:${DURACAO}ms`}>
+  <div class="vt__aura" aria-hidden="true"></div>
+  <div class="vt__grade" aria-hidden="true"></div>
+
+  <!-- Composição puramente ilustrativa: os mesmos projetos aparecem, com
+       texto alternativo, na seção "Projetos no ar". -->
+  <div class="vt__cena" aria-hidden="true">
+    <div class="vt__giro">
+      <div class="vt__browser">
+        <div class="vt__topo">
+          <span class="vt__luzes"><i></i><i></i><i></i></span>
+          <span class="vt__url">
+            <svg viewBox="0 0 16 16" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.6">
+              <rect x="3.2" y="7" width="9.6" height="7" rx="1.6"></rect>
+              <path d="M5.3 7V5.1a2.7 2.7 0 0 1 5.4 0V7"></path>
+            </svg>
+            <span class="vt__dominios">
+              {VITRINE.map((p, i) => (
+                <span class={`vt__dominio${i === 0 ? ' is-ativo' : ''}`} data-vt-item>{p.dominio}</span>
+              ))}
+            </span>
+          </span>
+          <span class="vt__espaco"></span>
+        </div>
+        <div class="vt__tela">
+          {VITRINE.map((p, i) => (
+            <img
+              class={`vt__img vt__img--d${i === 0 ? ' is-ativo' : ''}`}
+              data-vt-item
+              {...(i === 0
+                ? { src: `/images/vitrine/${p.slug}-desktop.webp`, loading: 'eager', fetchpriority: 'high' }
+                : { 'data-src': `/images/vitrine/${p.slug}-desktop.webp` })}
+              alt=""
+              width="1000"
+              height="1250"
+              decoding="async"
+            />
+          ))}
+          <span class="vt__reflexo"></span>
+          <span class="vt__varredura"></span>
+        </div>
+      </div>
+
+      <div class="vt__celular">
+        <div class="vt__celular-tela">
+          {VITRINE.map((p, i) => (
+            <img
+              class={`vt__img vt__img--m${i === 0 ? ' is-ativo' : ''}`}
+              data-vt-item
+              {...(i === 0
+                ? { src: `/images/vitrine/${p.slug}-mobile.webp`, loading: 'eager' }
+                : { 'data-src': `/images/vitrine/${p.slug}-mobile.webp` })}
+              alt=""
+              width="360"
+              height="1200"
+              decoding="async"
+            />
+          ))}
+          <span class="vt__ilha"></span>
+          <span class="vt__reflexo"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="vt__card">
+    <div class="vt__card-topo">
+      <span class="vt__ao-vivo"><i></i>No ar</span>
+      <span class="vt__indice">
+        <span class="vt__nums" aria-hidden="true">
+          {VITRINE.map((_, i) => <b class={`${i === 0 ? 'is-ativo' : ''}`} data-vt-item>{pad(i + 1)}</b>)}
+        </span>
+        <span aria-hidden="true">/ {pad(VITRINE.length)}</span>
+      </span>
+    </div>
+
+    <div class="vt__info">
+      {VITRINE.map((p, i) => (
+        <p class={`vt__projeto${i === 0 ? ' is-ativo' : ''}`} data-vt-item>
+          <strong>{p.nome}</strong>
+          <span>{p.categoria}</span>
+        </p>
+      ))}
+    </div>
+
+    <div class="vt__ctrl">
+      <div class="vt__barras">
+        {VITRINE.map((p, i) => (
+          <button
+            type="button"
+            class={`vt__barra${i === 0 ? ' is-ativo' : ''}`}
+            data-vt-item
+            data-vt-ir={i}
+            aria-label={`Mostrar ${p.nome}`}
+            aria-current={i === 0 ? 'true' : undefined}
+          >
+            <span></span>
+          </button>
+        ))}
+      </div>
+      <button type="button" class="vt__pausa" data-vt-pausa aria-label="Pausar a apresentação" aria-pressed="false">
+        <svg class="vt__ico-pausa" viewBox="0 0 16 16" width="12" height="12" fill="currentColor" aria-hidden="true">
+          <rect x="3.5" y="2.5" width="3" height="11" rx="1"></rect>
+          <rect x="9.5" y="2.5" width="3" height="11" rx="1"></rect>
+        </svg>
+        <svg class="vt__ico-play" viewBox="0 0 16 16" width="12" height="12" fill="currentColor" aria-hidden="true">
+          <path d="M5 2.8v10.4a.8.8 0 0 0 1.2.7l8-5.2a.8.8 0 0 0 0-1.4l-8-5.2A.8.8 0 0 0 5 2.8Z"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<style>
+  .vt {
+    --pan-d: -46%;
+    --pan-m: -33%;
+    --ry: -9deg;
+    --rx: 5deg;
+    position: relative;
+    container-type: inline-size;
+    width: 100%;
+    max-width: 600px;
+    margin-inline: auto;
+  }
+
+  /* ------------------------------------------------------------ ambiente */
+  .vt__aura {
+    position: absolute;
+    inset: -6% -10% -4% -8%;
+    background:
+      radial-gradient(42% 46% at 62% 38%, rgba(74, 144, 217, 0.32), transparent 72%),
+      radial-gradient(30% 30% at 18% 86%, rgba(255, 193, 10, 0.09), transparent 72%);
+    filter: blur(24px);
+    pointer-events: none;
+  }
+  .vt__grade {
+    position: absolute;
+    inset: -10% -14% -12% -10%;
+    background-image:
+      linear-gradient(rgba(157, 200, 240, 0.075) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(157, 200, 240, 0.075) 1px, transparent 1px);
+    background-size: 32px 32px;
+    background-position: center;
+    -webkit-mask-image: radial-gradient(closest-side, #000 20%, transparent 100%);
+    mask-image: radial-gradient(closest-side, #000 20%, transparent 100%);
+    pointer-events: none;
+  }
+
+  /* --------------------------------------------------------------- cena */
+  .vt__cena {
+    position: relative;
+    aspect-ratio: 1 / 0.86;
+    perspective: 2200px;
+    perspective-origin: 60% 40%;
+  }
+  .vt__giro {
+    position: absolute;
+    inset: 0;
+    transform-style: preserve-3d;
+    transform: rotateY(var(--ry)) rotateX(var(--rx));
+    transition: transform 0.9s var(--ease);
+    animation: vt-entra 1.2s 0.15s var(--ease) both;
+  }
+  @keyframes vt-entra {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 28px, 0) rotateY(-18deg) rotateX(9deg);
+    }
+  }
+
+  /* --------------------------------------------------------- navegador */
+  .vt__browser {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 88%;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #0a1730;
+    border: 1px solid rgba(157, 200, 240, 0.22);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.07),
+      0 50px 90px -40px rgba(1, 5, 15, 0.95),
+      0 28px 60px -34px rgba(74, 144, 217, 0.55);
+  }
+  .vt__topo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    height: 34px;
+    padding: 0 0.85rem;
+    background: linear-gradient(180deg, #14294d, #0e1f40);
+    border-bottom: 1px solid rgba(157, 200, 240, 0.12);
+  }
+  .vt__luzes,
+  .vt__espaco {
+    display: flex;
+    gap: 6px;
+    flex: 0 0 46px;
+  }
+  .vt__luzes i {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #f2645a;
+    box-shadow: inset 0 0 0 0.5px rgba(0, 0, 0, 0.25);
+  }
+  .vt__luzes i:nth-child(2) {
+    background: #f4bd4f;
+  }
+  .vt__luzes i:nth-child(3) {
+    background: #4fc35c;
+  }
+  .vt__url {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    height: 22px;
+    max-width: 62%;
+    margin-inline: auto;
+    padding: 0 0.8rem;
+    border-radius: 7px;
+    background: rgba(5, 13, 31, 0.6);
+    border: 1px solid rgba(157, 200, 240, 0.1);
+    color: var(--txt-dim);
+  }
+  .vt__url svg {
+    flex: none;
+    color: #6fd39a;
+  }
+  .vt__dominios {
+    display: grid;
+    font-family: var(--body);
+    font-size: 0.68rem;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+  }
+  .vt__dominio {
+    grid-area: 1 / 1;
+    opacity: 0;
+    transform: translateY(4px);
+    transition: opacity 0.5s var(--ease), transform 0.5s var(--ease);
+  }
+  .vt__dominio.is-ativo {
+    opacity: 1;
+    transform: none;
+  }
+
+  .vt__tela {
+    position: relative;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: #0d1c38;
+  }
+
+  /* --------------------------------------------- capturas que "rolam" */
+  .vt__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    max-width: none;
+    opacity: 0;
+    transition: opacity 0.9s var(--ease);
+    will-change: transform, opacity;
+  }
+  .vt__img.is-ativo,
+  .vt__img.is-saindo {
+    animation: vt-rola var(--dur) cubic-bezier(0.45, 0, 0.25, 1) both;
+  }
+  .vt__img.is-ativo {
+    opacity: 1;
+  }
+  .vt__img.is-saindo {
+    animation-play-state: paused;
+  }
+  .vt__img--d {
+    --pan: var(--pan-d);
+  }
+  .vt__img--m {
+    --pan: var(--pan-m);
+  }
+  @keyframes vt-rola {
+    0%,
+    22% {
+      transform: translate3d(0, 0, 0);
+    }
+    94%,
+    100% {
+      transform: translate3d(0, var(--pan), 0);
+    }
+  }
+
+  .vt__reflexo {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: linear-gradient(118deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 34%);
+    pointer-events: none;
+  }
+  /* brilho que atravessa a tela a cada troca de projeto */
+  .vt__varredura {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    background: linear-gradient(105deg, transparent 35%, rgba(255, 255, 255, 0.16) 50%, transparent 65%);
+    transform: translateX(-110%);
+    pointer-events: none;
+  }
+  .vt.is-trocando .vt__varredura {
+    animation: vt-varre 1.1s var(--ease);
+  }
+  @keyframes vt-varre {
+    to {
+      transform: translateX(110%);
+    }
+  }
+
+  /* ----------------------------------------------------------- celular */
+  .vt__celular {
+    position: absolute;
+    left: 0;
+    bottom: 3%;
+    width: 27%;
+    padding: 8px;
+    padding: 1.45cqi;
+    border-radius: 30px;
+    border-radius: 5.4cqi;
+    background: linear-gradient(150deg, #263b62 0%, #0c162c 42%, #050a16 100%);
+    border: 1px solid rgba(157, 200, 240, 0.3);
+    box-shadow:
+      inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+      0 40px 70px -24px rgba(0, 0, 0, 0.9),
+      0 18px 34px -18px rgba(0, 0, 0, 0.7);
+    transform: translateZ(70px);
+    animation: vt-flutua 7s ease-in-out infinite;
+  }
+  @keyframes vt-flutua {
+    0%,
+    100% {
+      translate: 0 0;
+    }
+    50% {
+      translate: 0 -6px;
+    }
+  }
+  .vt__celular-tela {
+    position: relative;
+    aspect-ratio: 9 / 19.5;
+    overflow: hidden;
+    border-radius: 23px;
+    border-radius: 4.1cqi;
+    background: #fff;
+  }
+  .vt__ilha {
+    position: absolute;
+    top: 6px;
+    top: 1.15cqi;
+    left: 50%;
+    z-index: 4;
+    width: 34%;
+    height: 11px;
+    height: 2.1cqi;
+    border-radius: 999px;
+    background: #04070e;
+    transform: translateX(-50%);
+  }
+
+  /* ----------------------------------------------------- legenda/vidro */
+  .vt__card {
+    position: absolute;
+    right: -1%;
+    bottom: 0;
+    z-index: 5;
+    width: min(56%, 300px);
+    padding: 0.95rem 1.05rem 0.8rem;
+    border-radius: 18px;
+    background: linear-gradient(160deg, rgba(20, 44, 84, 0.72), rgba(7, 18, 40, 0.82));
+    -webkit-backdrop-filter: blur(16px) saturate(150%);
+    backdrop-filter: blur(16px) saturate(150%);
+    border: 1px solid rgba(157, 200, 240, 0.22);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.07),
+      0 26px 50px -26px rgba(0, 0, 0, 0.85);
+    animation: vt-sobe 0.9s 0.55s var(--ease) both;
+  }
+  @keyframes vt-sobe {
+    from {
+      opacity: 0;
+      transform: translateY(14px);
+    }
+  }
+  .vt__card-topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--display);
+    font-size: 0.66rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--txt-dim);
+  }
+  .vt__ao-vivo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    color: #8fe3b2;
+  }
+  .vt__ao-vivo i {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #3ddc84;
+    box-shadow: 0 0 0 0 rgba(61, 220, 132, 0.55);
+    animation: vt-pulso 2.2s infinite;
+  }
+  @keyframes vt-pulso {
+    70% {
+      box-shadow: 0 0 0 7px rgba(61, 220, 132, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(61, 220, 132, 0);
+    }
+  }
+  .vt__indice {
+    display: inline-flex;
+    gap: 0.3rem;
+    letter-spacing: 0.08em;
+  }
+  .vt__nums {
+    display: grid;
+  }
+  .vt__nums b {
+    grid-area: 1 / 1;
+    color: var(--txt);
+    font-weight: 700;
+    opacity: 0;
+    transition: opacity 0.4s var(--ease);
+  }
+  .vt__nums b.is-ativo {
+    opacity: 1;
+  }
+
+  .vt__info {
+    display: grid;
+    margin: 0.55rem 0 0.75rem;
+  }
+  .vt__projeto {
+    grid-area: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    margin: 0;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 0.55s var(--ease), transform 0.55s var(--ease);
+    pointer-events: none;
+  }
+  .vt__projeto.is-ativo {
+    opacity: 1;
+    transform: none;
+    transition-delay: 0.12s;
+  }
+  .vt__projeto strong {
+    font-family: var(--display);
+    font-size: 1.02rem;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    line-height: 1.25;
+    color: #fff;
+  }
+  .vt__projeto span {
+    font-size: 0.78rem;
+    color: var(--txt-dim);
+  }
+
+  .vt__ctrl {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+  .vt__barras {
+    flex: 1;
+    display: flex;
+    gap: 6px;
+  }
+  .vt__barra {
+    position: relative;
+    flex: 1;
+    height: 24px;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+  }
+  .vt__barra::before,
+  .vt__barra span {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 3px;
+    margin-top: -1.5px;
+    border-radius: 3px;
+  }
+  .vt__barra::before {
+    background: rgba(157, 200, 240, 0.2);
+    transition: background 0.2s;
+  }
+  .vt__barra:hover::before {
+    background: rgba(157, 200, 240, 0.34);
+  }
+  .vt__barra span {
+    background: var(--grad-arrow);
+    transform: scaleX(0);
+    transform-origin: left center;
+  }
+  .vt__barra.is-feito span {
+    transform: scaleX(1);
+  }
+  .vt__barra.is-ativo span {
+    animation: vt-progresso var(--dur) linear forwards;
+  }
+  @keyframes vt-progresso {
+    to {
+      transform: scaleX(1);
+    }
+  }
+  .vt__barra:focus-visible,
+  .vt__pausa:focus-visible {
+    outline: 2px solid var(--amber);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+  .vt__pausa {
+    flex: none;
+    display: grid;
+    place-items: center;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    border-radius: 50%;
+    border: 1px solid var(--line-strong);
+    background: rgba(5, 13, 31, 0.35);
+    color: var(--txt);
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .vt__pausa:hover {
+    border-color: var(--blue-light);
+    background: rgba(157, 200, 240, 0.1);
+  }
+  .vt__pausa svg {
+    grid-area: 1 / 1;
+  }
+  .vt__ico-play,
+  .vt.is-pausado .vt__ico-pausa {
+    display: none;
+  }
+  .vt.is-pausado .vt__ico-play {
+    display: block;
+  }
+
+  /* congela rolagem + progresso (e, com isso, a troca de projeto) */
+  .vt:is(.is-pausado, .is-hover, .is-foco, .is-fora, .is-oculto)
+    :is(.vt__img.is-ativo, .vt__barra.is-ativo span) {
+    animation-play-state: paused;
+  }
+
+  /* ------------------------------------------------------- responsivo */
+  @media (max-width: 959px) {
+    .vt {
+      --ry: -6deg;
+      --rx: 4deg;
+      max-width: 540px;
+    }
+  }
+  /* no celular a legenda sai de cima das telas e vira uma faixa logo abaixo */
+  @media (max-width: 520px) {
+    .vt__cena {
+      aspect-ratio: 1 / 0.8;
+    }
+    .vt__celular {
+      width: 30%;
+      bottom: 0;
+    }
+    .vt__card {
+      position: relative;
+      right: auto;
+      width: auto;
+      margin: 0.9rem 0 0 32%;
+      padding: 0.75rem 0.9rem 0.55rem;
+      border-radius: 16px;
+    }
+    .vt__info {
+      margin: 0.4rem 0 0.5rem;
+    }
+    .vt__projeto strong {
+      font-size: 0.95rem;
+    }
+    .vt__topo {
+      height: 28px;
+      padding: 0 0.6rem;
+    }
+    .vt__luzes,
+    .vt__espaco {
+      flex-basis: 36px;
+      gap: 4px;
+    }
+    .vt__luzes i {
+      width: 7px;
+      height: 7px;
+    }
+    .vt__url {
+      height: 18px;
+      max-width: 70%;
+    }
+    .vt__dominios {
+      font-size: 0.6rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .vt__giro,
+    .vt__celular,
+    .vt__card,
+    .vt__img.is-ativo,
+    .vt__img.is-saindo,
+    .vt__barra.is-ativo span,
+    .vt.is-trocando .vt__varredura,
+    .vt__ao-vivo i {
+      animation-name: none !important;
+    }
+    .vt__barra.is-ativo span {
+      transform: scaleX(1);
+    }
+    .vt__pausa {
+      display: none;
+    }
+  }
+</style>
+
+<script>
+  const SAIDA_MS = 950;
+
+  document.querySelectorAll<HTMLElement>('[data-vitrine]').forEach((vt) => {
+    const reduzido = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // cada camada (domínio, capturas, número, legenda, barra) tem um item
+    // por projeto, na mesma ordem
+    const grupos: HTMLElement[][] = [];
+    vt.querySelectorAll<HTMLElement>(
+      '.vt__dominios, .vt__tela, .vt__celular-tela, .vt__nums, .vt__info, .vt__barras',
+    ).forEach((pai) => grupos.push([...pai.querySelectorAll<HTMLElement>(':scope > [data-vt-item]')]));
+    const barras = [...vt.querySelectorAll<HTMLButtonElement>('[data-vt-ir]')];
+    const total = barras.length;
+    let atual = 0;
+
+    // carrega as capturas dos outros projetos só depois da página pronta
+    const carregar = () =>
+      vt.querySelectorAll<HTMLImageElement>('img[data-src]').forEach((img) => {
+        img.src = img.dataset.src!;
+        img.removeAttribute('data-src');
+      });
+    if (document.readyState === 'complete') setTimeout(carregar, 600);
+    else window.addEventListener('load', () => setTimeout(carregar, 600), { once: true });
+
+    function ir(proximo: number) {
+      if (proximo === atual) return;
+      carregar();
+      const anterior = atual;
+      atual = (proximo + total) % total;
+
+      for (const itens of grupos) {
+        const sai = itens[anterior];
+        const entra = itens[atual];
+        sai.classList.remove('is-ativo');
+        if (sai.tagName === 'IMG') {
+          sai.classList.add('is-saindo');
+          setTimeout(() => sai.classList.remove('is-saindo'), SAIDA_MS);
+        }
+        entra.classList.remove('is-saindo');
+        void entra.offsetWidth; // reinicia a animação de rolagem
+        entra.classList.add('is-ativo');
+      }
+
+      barras.forEach((b, i) => {
+        b.classList.toggle('is-feito', i < atual);
+        if (i === atual) b.setAttribute('aria-current', 'true');
+        else b.removeAttribute('aria-current');
+      });
+
+      vt.classList.remove('is-trocando');
+      void vt.offsetWidth;
+      vt.classList.add('is-trocando');
+    }
+
+    barras.forEach((b) => b.addEventListener('click', () => ir(Number(b.dataset.vtIr))));
+
+    if (!reduzido) {
+      vt.addEventListener('animationend', (e) => {
+        if (e.animationName === 'vt-progresso' && (e.target as HTMLElement).parentElement === barras[atual]) {
+          ir(atual + 1);
+        }
+      });
+    }
+
+    // pausas
+    const pausa = vt.querySelector<HTMLButtonElement>('[data-vt-pausa]')!;
+    pausa.addEventListener('click', () => {
+      const pausado = vt.classList.toggle('is-pausado');
+      pausa.setAttribute('aria-pressed', String(pausado));
+      pausa.setAttribute('aria-label', pausado ? 'Continuar a apresentação' : 'Pausar a apresentação');
+    });
+    // pausa por foco só na navegação por teclado; com clique, o botão
+    // continuaria focado e a apresentação nunca retomaria
+    vt.addEventListener('focusin', (e) => {
+      if ((e.target as HTMLElement).matches(':focus-visible')) vt.classList.add('is-foco');
+    });
+    vt.addEventListener('focusout', (e) => {
+      if (!vt.contains(e.relatedTarget as Node)) vt.classList.remove('is-foco');
+    });
+    new IntersectionObserver(([e]) => vt.classList.toggle('is-fora', !e.isIntersecting), {
+      threshold: 0.15,
+    }).observe(vt);
+    document.addEventListener('visibilitychange', () =>
+      vt.classList.toggle('is-oculto', document.hidden),
+    );
+
+    // inclinação acompanha o mouse (só com mouse de verdade)
+    const cena = vt.querySelector<HTMLElement>('.vt__cena')!;
+    if (!reduzido && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+      const base = getComputedStyle(vt);
+      const ryBase = parseFloat(base.getPropertyValue('--ry'));
+      const rxBase = parseFloat(base.getPropertyValue('--rx'));
+      cena.addEventListener('pointermove', (e) => {
+        const r = cena.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - 0.5;
+        const y = (e.clientY - r.top) / r.height - 0.5;
+        vt.style.setProperty('--ry', `${ryBase + x * 7}deg`);
+        vt.style.setProperty('--rx', `${rxBase - y * 5}deg`);
+      });
+      cena.addEventListener('pointerenter', () => vt.classList.add('is-hover'));
+      cena.addEventListener('pointerleave', () => {
+        vt.classList.remove('is-hover');
+        vt.style.removeProperty('--ry');
+        vt.style.removeProperty('--rx');
+      });
+    }
+  });
+</script>
